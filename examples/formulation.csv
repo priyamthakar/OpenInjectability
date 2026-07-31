@@ -1,0 +1,2 @@
+scenario_id,formulation_id,viscosity_value,viscosity_unit,viscosity_temperature_c,use_temperature_c,rheology_class,newtonian_evidence,needle_id_mm,needle_length_mm,needle_gauge_label,needle_geometry_source,barrel_id_mm,barrel_geometry_source,volume_ml,injection_time_s,flow_rate_ml_s,density_kg_m3,force_ceiling_n,force_ceiling_source,notes
+example-newtonian-27g,example-formulation,35,cP,25,25,newtonian,EXAMPLE-RHEO-001,0.21,12.7,27G,example supplier drawing,6.35,example syringe drawing,2.0,15,,1000,,,Illustrative data only

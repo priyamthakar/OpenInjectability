@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openinjectability"
+version = "0.1.0"
+description = "Transparent Newtonian fluid-resistance assessment for syringe and needle scenarios"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "OpenInjectability contributors"}]
+keywords = ["biologics", "formulation", "injectability", "syringeability"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Scientific/Engineering",
+]
+
+[project.scripts]
+openinjectability = "openinjectability.cli:main"
+
+[project.optional-dependencies]
+dev = ["build>=1.2", "pytest>=8", "ruff>=0.8"]
+reports = ["matplotlib>=3.8", "reportlab>=4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+openinjectability = ["validation_registry/*.json"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
