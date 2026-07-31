@@ -2,12 +2,11 @@
 
 from __future__ import annotations
 
+import html
 from collections.abc import Iterable
 from pathlib import Path
-import html
 
 from .models import AssessmentResult
-
 
 DISCLAIMER = (
     "This is the predicted fluid-resistance force from an idealized Newtonian "
