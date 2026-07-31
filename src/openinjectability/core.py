@@ -4,8 +4,8 @@ from __future__ import annotations
 
 import math
 import uuid
+from collections.abc import Iterable
 from dataclasses import asdict, replace
-from typing import Iterable
 
 from .models import (
     AssessmentConfig,

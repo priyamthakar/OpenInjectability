@@ -10,24 +10,24 @@ from openinjectability import (
 
 
 def case(**changes):
-    values = dict(
-        scenario_id="case-1",
-        formulation_id="f-1",
-        viscosity_value=35.0,
-        viscosity_unit="cP",
-        viscosity_temperature_c=25.0,
-        use_temperature_c=25.0,
-        rheology_class="newtonian",
-        newtonian_evidence="RHEO-1",
-        needle_id_mm=0.21,
-        needle_length_mm=12.7,
-        needle_geometry_source="drawing-1",
-        barrel_id_mm=6.35,
-        barrel_geometry_source="drawing-2",
-        volume_ml=2.0,
-        injection_time_s=15.0,
-        density_kg_m3=1000.0,
-    )
+    values = {
+        "scenario_id": "case-1",
+        "formulation_id": "f-1",
+        "viscosity_value": 35.0,
+        "viscosity_unit": "cP",
+        "viscosity_temperature_c": 25.0,
+        "use_temperature_c": 25.0,
+        "rheology_class": "newtonian",
+        "newtonian_evidence": "RHEO-1",
+        "needle_id_mm": 0.21,
+        "needle_length_mm": 12.7,
+        "needle_geometry_source": "drawing-1",
+        "barrel_id_mm": 6.35,
+        "barrel_geometry_source": "drawing-2",
+        "volume_ml": 2.0,
+        "injection_time_s": 15.0,
+        "density_kg_m3": 1000.0,
+    }
     values.update(changes)
     return AssessmentInput(**values)
 
