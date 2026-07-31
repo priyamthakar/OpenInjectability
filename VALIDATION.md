@@ -13,6 +13,7 @@ The implementation is checked using:
 - analytical scaling properties;
 - fail-closed rheology, geometry, temperature, and provenance tests;
 - CLI and report smoke tests.
+- side-effect-free backend-engine single-case, batch-order, and explicit-rejection tests.
 
 These checks verify implementation behavior. They do not demonstrate agreement with an
 independent experimental injection-force dataset. The software must therefore not be

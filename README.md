@@ -37,6 +37,25 @@ See [PROJECT_SPECIFICATION.md](PROJECT_SPECIFICATION.md) for the scientific basi
 schemas, roadmap, references, and release gates. See [VALIDATION.md](VALIDATION.md) for
 the current evidence level.
 
+## Backend engine API
+
+For services, notebooks, or another application backend, use the in-memory engine. It
+does not read files, produce plots or reports, or invoke the CLI. It preserves the same
+Newtonian-only scientific boundary as the command line.
+
+```python
+from openinjectability import AssessmentInput, OpenInjectabilityEngine
+
+engine = OpenInjectabilityEngine()
+result = engine.assess(case)  # `case` is a validated AssessmentInput
+batch = engine.assess_batch([case_a, case_b])
+metadata = engine.metadata.to_dict()
+```
+
+`assess_batch` preserves accepted input order and records each invalid or unsupported
+case as a typed `RejectedAssessment`; it never applies a fallback rheology model. The
+returned value remains the predicted fluid-resistance force, not total device force.
+
 ## Status
 
 Version 0.1.0 is an alpha implementation. Its equations and internal reference cases

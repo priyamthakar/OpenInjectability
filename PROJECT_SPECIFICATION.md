@@ -422,8 +422,8 @@ from openinjectability import (
     AssessmentConfig,
     AssessmentInput,
     AssessmentResult,
+    OpenInjectabilityEngine,
     assess,
-    assess_file,
 )
 
 case = AssessmentInput(
@@ -446,6 +446,12 @@ case = AssessmentInput(
 )
 
 result = assess(case, config=AssessmentConfig())
+
+# Backend/service façade: no file, CLI, plotting, or reporting side effects.
+engine = OpenInjectabilityEngine(config=AssessmentConfig())
+result = engine.assess(case)
+batch_result = engine.assess_batch([case])
+metadata = engine.metadata.to_dict()
 ```
 
 API rules:
@@ -456,6 +462,8 @@ API rules:
 - result serialization is schema-versioned;
 - exceptions are typed (`InputSchemaError`, `ScientificBoundaryError`, `UnitError`);
 - low-level equations may be public only if their units and assumptions are explicit.
+- `OpenInjectabilityEngine` is the stable in-memory backend façade; its batch method
+  preserves accepted-row order and returns explicit typed rejected-row records.
 
 ## 11. Command-line interface
 
