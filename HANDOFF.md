@@ -1,7 +1,7 @@
 # OpenInjectability handoff
 
-**Snapshot date:** 2026-07-31  
-**Baseline commit:** `0add542847977da2ddd723f57a55cee353056c51`  
+**Snapshot date:** 2026-08-01  
+**Baseline commit:** `7500ccf`  
 **Package version:** `0.1.0`  
 **Lifecycle state:** alpha; internal verification only
 
@@ -14,33 +14,32 @@ force.
 
 ## Verified baseline
 
-The 2026-07-31 audit confirmed 21 passing tests, Ruff, package builds, 87%
-branch coverage, wheel import, Python 3.11/3.13 import smoke tests, and a passing
-GitHub Quality run for the baseline commit. Independent experimental validation
-remains pending.
+Phases A–C from [project.md](project.md) are closed: 46 tests, Ruff, `mypy
+--strict`, package build, ≥87% coverage, wheel install smoke, and CI matrix
+enforcement for Python 3.10–3.13. Independent experimental validation remains
+pending.
 
-## Open release gates
+## Closed release gates (formerly open)
 
-1. Sensitivity changes to injection time must not leave a supplied flow rate
-   scientifically inconsistent with volume and time.
-2. Malformed typed/provenance values must return stable domain errors rather
-   than raw exceptions or silent Boolean-to-number coercion.
-3. Backend batch input must reject duplicate scenario identifiers.
-4. `VALIDATION.md` claims must map to inspectable independent fixtures and
-   tests.
-5. Strict static typing and the declared Python 3.10-3.13 compatibility matrix
-   must become enforced release gates.
+1. Sensitivity preserves the flow/time contract via the validated core path.
+2. Malformed typed/provenance values return stable domain errors (no bool
+   coercion / raw TypeError/AttributeError).
+3. Backend batch rejects duplicate scenario identifiers.
+4. `VALIDATION.md` is a claims-to-evidence map with
+   `tests/reference_data/reference_case.json`.
+5. Strict typing and the 3.10–3.13 matrix are enforced in CI.
 
 ## Next objective
 
-Implement the first three fail-closed defects, add regression tests for each,
-then reconcile the validation document and CI gates. Do not broaden the
-scientific model during this hardening step.
+Phase D: obtain an independently traceable Newtonian experimental dataset under
+the locked protocol in [docs/validation-protocol-lock.md](docs/validation-protocol-lock.md).
+Do not advance `validation_status` without a published hashed validation report.
+Phase E public publish waits on D and registry credentials.
 
 ## Verification commands
 
 ```powershell
-python -m pytest --cov=openinjectability --cov-branch
+python -m pytest --cov=openinjectability --cov-branch --cov-fail-under=87
 python -m ruff check src tests
 python -m mypy --strict src
 python -m build
