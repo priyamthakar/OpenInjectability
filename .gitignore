@@ -1,10 +1,36 @@
+# Bytecode / caches
 __pycache__/
 *.py[cod]
+*.egg-info/
 .pytest_cache/
+.mypy_cache/
 .ruff_cache/
-.venv/
+.coverage
+htmlcov/
+.coverage.*
+
+# Build artifacts
 build/
 dist/
-*.egg-info/
-.smoke-*
-graphify-out/
+*.egg
+
+# Local environments
+.venv/
+venv/
+.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local run outputs
+assessment.json
+assessment.md
+assessment.html
+assessment.pdf
+force-vs-needle.png
+audit.zip
+*.png
+!docs/**
