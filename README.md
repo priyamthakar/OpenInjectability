@@ -11,31 +11,34 @@ gauge label is metadata only; a traceable needle inner diameter is required.
 ## Quick start
 
 ```powershell
-python -m pip install -e .
+python -m pip install -e ".[dev,reports]"
 openinjectability assess examples/formulation.csv `
+  --config examples/assessment.json `
   --results assessment.json `
-  --report assessment.pdf `
-  --plot force-vs-needle.png
+  --report assessment.md `
+  --plot force-vs-needle.png `
+  --audit-bundle audit.zip
 ```
 
-PDF and plot output require `python -m pip install -e ".[reports]"`. Markdown and
-HTML reports require no optional dependency.
-
-Validate without calculating:
+PDF and plot output require the `reports` extra. Markdown and HTML reports require no
+optional dependency beyond the core install.
 
 ```powershell
+openinjectability version
+openinjectability schema --format json
 openinjectability validate-input examples/formulation.csv
-```
-
-Inspect validation status:
-
-```powershell
 openinjectability validation-status --json
+openinjectability assess-one --viscosity-value 35 --viscosity-temperature 25 `
+  --use-temperature 25 --rheology-evidence RHEO-1 --needle-id 0.21 `
+  --needle-length 12.7 --needle-source drawing --barrel-id 6.35 `
+  --barrel-source syringe --volume 2 --injection-time 15
 ```
 
-See [PROJECT_SPECIFICATION.md](PROJECT_SPECIFICATION.md) for the scientific basis,
-schemas, roadmap, references, and release gates. See [VALIDATION.md](VALIDATION.md) for
-the current evidence level.
+Documentation: [docs/scientific-basis.md](docs/scientific-basis.md),
+[docs/input-schema.md](docs/input-schema.md),
+[docs/interpretation.md](docs/interpretation.md),
+[docs/roadmap.md](docs/roadmap.md), [VALIDATION.md](VALIDATION.md),
+[PROJECT_SPECIFICATION.md](PROJECT_SPECIFICATION.md), [project.md](project.md).
 
 ## Backend engine API
 

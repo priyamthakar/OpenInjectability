@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it as below.
+title: OpenInjectability
+version: 0.1.0
+date-released: "2026-08-01"
+license: MIT
+abstract: >
+  Transparent Newtonian fluid-resistance assessment for syringe and needle
+  scenarios. Computes predicted fluid-resistance force from idealized laminar
+  capillary flow; not a total device force model.
+authors:
+  - name: OpenInjectability contributors
+keywords:
+  - injectability
+  - syringeability
+  - newtonian
+  - hagen-poiseuille

@@ -147,20 +147,47 @@ def _calculate(case: AssessmentInput) -> dict[str, float | None]:
     }
 
 
+def _sensitivity_changes(config: AssessmentConfig) -> tuple[float, ...]:
+    """Resolve one-at-a-time relative changes from config (multi-step or single)."""
+
+    if config.sensitivity_relative_changes is not None:
+        changes = tuple(config.sensitivity_relative_changes)
+        if not changes:
+            raise InputValidationError("sensitivity_relative_changes must not be empty")
+        for change in changes:
+            if not math.isfinite(change) or change == 0 or abs(change) >= 1:
+                raise InputValidationError(
+                    "each sensitivity_relative_changes entry must be nonzero and |delta| < 1"
+                )
+        return changes
+    return (-config.sensitivity_relative_change, config.sensitivity_relative_change)
+
+
+def _perturbed_force(case: AssessmentInput, config: AssessmentConfig) -> float:
+    """Rerun the validated scientific core for one perturbed case."""
+
+    _validate(case, config)
+    force = _calculate(case)["fluid_resistance_force_n"]
+    assert force is not None
+    return force
+
+
 def _sensitivity(
-    case: AssessmentInput, baseline_force: float, relative_change: float
+    case: AssessmentInput,
+    baseline_force: float,
+    config: AssessmentConfig,
 ) -> tuple[SensitivityItem, ...]:
     items: list[SensitivityItem] = []
+    changes = _sensitivity_changes(config)
     for field_name in (
         "viscosity_value",
         "needle_length_mm",
         "needle_id_mm",
         "barrel_id_mm",
     ):
-        for change in (-relative_change, relative_change):
+        for change in changes:
             changed = replace(case, **{field_name: getattr(case, field_name) * (1 + change)})
-            force = _calculate(changed)["fluid_resistance_force_n"]
-            assert force is not None
+            force = _perturbed_force(changed, config)
             items.append(
                 SensitivityItem(
                     input_name=field_name,
@@ -169,11 +196,22 @@ def _sensitivity(
                     force_relative_change=(force / baseline_force) - 1.0,
                 )
             )
-    rate_field = "injection_time_s" if case.injection_time_s is not None else "flow_rate_ml_s"
-    for change in (-relative_change, relative_change):
-        changed = replace(case, **{rate_field: getattr(case, rate_field) * (1 + change)})
-        force = _calculate(changed)["fluid_resistance_force_n"]
-        assert force is not None
+    # Prefer supplied rate field; when both are present, null the companion so the
+    # perturbed case remains scientifically consistent with volume and time/flow.
+    if case.injection_time_s is not None:
+        rate_field = "injection_time_s"
+        companion: dict[str, float | None] = {"flow_rate_ml_s": None}
+    else:
+        rate_field = "flow_rate_ml_s"
+        companion = {"injection_time_s": None}
+    for change in changes:
+        rate_value = getattr(case, rate_field)
+        assert rate_value is not None
+        changed = replace(
+            case,
+            **{rate_field: rate_value * (1 + change), **companion},
+        )
+        force = _perturbed_force(changed, config)
         items.append(
             SensitivityItem(
                 input_name=rate_field,
@@ -222,6 +260,107 @@ def assess(
 
     force = outputs["fluid_resistance_force_n"]
     assert force is not None
+
+    # Inverse screening quantities when a provenance-backed ceiling is supplied.
+    if case.force_ceiling_n is not None:
+        mu = outputs["dynamic_viscosity_pa_s"]
+        assert mu is not None
+        length = case.needle_length_mm / 1000.0
+        needle_id = case.needle_id_mm / 1000.0
+        barrel_id = case.barrel_id_mm / 1000.0
+        volume = case.volume_ml / 1_000_000.0
+        q_max = (case.force_ceiling_n * needle_id**4) / (
+            32.0 * mu * length * barrel_id**2
+        )
+        outputs = {
+            **outputs,
+            "max_flow_rate_m3_s_at_force_ceiling": q_max,
+            "min_injection_time_s_at_force_ceiling": volume / q_max,
+        }
+        warnings.append(
+            AssessmentWarning(
+                code="INVERSE_SCREENING_QUANTITIES",
+                severity="info",
+                field="force_ceiling_n",
+                message=(
+                    "max_flow_rate_m3_s_at_force_ceiling and "
+                    "min_injection_time_s_at_force_ceiling are model-derived "
+                    "screening quantities from the user-supplied force ceiling; "
+                    "they are not total device capability."
+                ),
+            )
+        )
+
+    if case.geometry_tolerance_relative is None:
+        warnings.append(
+            AssessmentWarning(
+                code="GEOMETRY_TOLERANCE_ABSENT",
+                severity="info",
+                field="geometry_tolerance_relative",
+                message="Geometry manufacturing tolerance was not supplied.",
+            )
+        )
+
+    shear = outputs["wall_shear_rate_s_1"]
+    assert shear is not None
+    if (
+        case.validated_shear_rate_min_s_1 is not None
+        and case.validated_shear_rate_max_s_1 is not None
+        and not (
+            case.validated_shear_rate_min_s_1
+            <= shear
+            <= case.validated_shear_rate_max_s_1
+        )
+    ):
+        warnings.append(
+            AssessmentWarning(
+                code="SHEAR_RATE_OUTSIDE_EVIDENCE_RANGE",
+                severity="warning",
+                field="wall_shear_rate_s_1",
+                message=(
+                    "Apparent wall shear rate lies outside the declared rheology "
+                    "evidence range."
+                ),
+            )
+        )
+
+    if (
+        case.needle_gauge_label is not None
+        and case.needle_geometry_source
+        and case.needle_gauge_label.lower() not in case.needle_geometry_source.lower()
+        and case.needle_gauge_label.replace("G", "").replace("g", "")
+        not in case.needle_geometry_source
+    ):
+        warnings.append(
+            AssessmentWarning(
+                code="GAUGE_GEOMETRY_METADATA_INCONSISTENT",
+                severity="info",
+                field="needle_gauge_label",
+                message=(
+                    "Gauge label and needle geometry source metadata do not appear "
+                    "to reference the same designation; ID remains authoritative."
+                ),
+            )
+        )
+
+    pressure = outputs["needle_pressure_drop_pa"]
+    assert pressure is not None
+    if (
+        case.component_pressure_rating_pa is not None
+        and pressure > case.component_pressure_rating_pa
+    ):
+        warnings.append(
+            AssessmentWarning(
+                code="COMPONENT_PRESSURE_RATING_EXCEEDED",
+                severity="warning",
+                field="component_pressure_rating_pa",
+                message=(
+                    "Predicted needle pressure drop exceeds the user-provided "
+                    "component pressure rating."
+                ),
+            )
+        )
+
     return AssessmentResult(
         schema_version="1.0",
         package_version="0.1.0",
@@ -238,7 +377,7 @@ def assess(
             "volume_m3": case.volume_ml / 1_000_000.0,
         },
         outputs=outputs,
-        sensitivity=_sensitivity(case, force, effective.sensitivity_relative_change),
+        sensitivity=_sensitivity(case, force, effective),
         warnings=tuple(warnings),
         exclusions=EXCLUSIONS,
         validation_status="internal_validation; experimental_validation_pending",

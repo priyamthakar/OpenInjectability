@@ -14,6 +14,9 @@ def force_vs_needle_geometry(
     """Plot force against actual needle ID, with gauge labels as annotations."""
 
     try:
+        import matplotlib
+
+        matplotlib.use("Agg")
         import matplotlib.pyplot as plt
     except ImportError as exc:  # pragma: no cover - depends on optional environment
         raise RuntimeError(
@@ -23,13 +26,22 @@ def force_vs_needle_geometry(
     items = list(results)
     if not items:
         raise ValueError("at least one result is required for plotting")
-    ids = [item.normalized_input["needle_id_mm"] for item in items]
-    forces = [item.outputs["fluid_resistance_force_n"] for item in items]
-    labels = [
-        item.normalized_input.get("needle_gauge_label")
-        or item.normalized_input["scenario_id"]
-        for item in items
-    ]
+    ids: list[float] = []
+    forces: list[float] = []
+    labels: list[str] = []
+    for item in items:
+        needle_id = item.normalized_input["needle_id_mm"]
+        force = item.outputs["fluid_resistance_force_n"]
+        if not isinstance(needle_id, (int, float)) or isinstance(needle_id, bool):
+            raise TypeError("needle_id_mm must be numeric for plotting")
+        if force is None:
+            raise ValueError("fluid_resistance_force_n is required for plotting")
+        ids.append(float(needle_id))
+        forces.append(float(force))
+        label = item.normalized_input.get("needle_gauge_label") or item.normalized_input[
+            "scenario_id"
+        ]
+        labels.append(str(label))
     fig, axis = plt.subplots(figsize=(7.2, 4.8), constrained_layout=True)
     axis.scatter(ids, forces, color="#176b87", s=45)
     for x_value, y_value, label in zip(ids, forces, labels, strict=True):

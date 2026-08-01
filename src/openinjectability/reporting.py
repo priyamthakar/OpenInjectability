@@ -8,6 +8,13 @@ from pathlib import Path
 
 from .models import AssessmentResult
 
+
+def _require_float(value: float | None) -> float:
+    if value is None:
+        raise ValueError("expected a numeric assessment output, got None")
+    return value
+
+
 DISCLAIMER = (
     "This is the predicted fluid-resistance force from an idealized Newtonian "
     "needle-flow model. It excludes syringe friction, break-loose force, device "
@@ -36,13 +43,22 @@ def markdown_report(results: Iterable[AssessmentResult], source_sha256: str) -> 
                 f"- Status: `{result.status}`",
                 f"- Model: `{result.model_id}`",
                 f"- Validation: `{result.validation_status}`",
-                f"- Needle pressure drop: {output['needle_pressure_drop_pa'] / 1e6:.6g} MPa",
+                (
+                    "- Needle pressure drop: "
+                    f"{_require_float(output['needle_pressure_drop_pa']) / 1e6:.6g} MPa"
+                ),
                 (
                     "- Predicted fluid-resistance force: "
-                    f"{output['fluid_resistance_force_n']:.6g} N"
+                    f"{_require_float(output['fluid_resistance_force_n']):.6g} N"
                 ),
-                f"- Injection time: {output['injection_time_s']:.6g} s",
-                f"- Wall shear rate: {output['wall_shear_rate_s_1']:.6g} s^-1",
+                (
+                    "- Injection time: "
+                    f"{_require_float(output['injection_time_s']):.6g} s"
+                ),
+                (
+                    "- Wall shear rate: "
+                    f"{_require_float(output['wall_shear_rate_s_1']):.6g} s^-1"
+                ),
                 "",
                 "### Warnings",
                 "",
@@ -149,16 +165,17 @@ def _write_pdf(
                 Paragraph(f"Status: {result.status}", styles["BodyText"]),
                 Paragraph(f"Model: {result.model_id}", styles["BodyText"]),
                 Paragraph(
-                    f"Needle pressure drop: {output['needle_pressure_drop_pa'] / 1e6:.6g} MPa",
+                    "Needle pressure drop: "
+                    f"{_require_float(output['needle_pressure_drop_pa']) / 1e6:.6g} MPa",
                     styles["BodyText"],
                 ),
                 Paragraph(
                     "Predicted fluid-resistance force: "
-                    f"{output['fluid_resistance_force_n']:.6g} N",
+                    f"{_require_float(output['fluid_resistance_force_n']):.6g} N",
                     styles["BodyText"],
                 ),
                 Paragraph(
-                    f"Injection time: {output['injection_time_s']:.6g} s",
+                    f"Injection time: {_require_float(output['injection_time_s']):.6g} s",
                     styles["BodyText"],
                 ),
             ]

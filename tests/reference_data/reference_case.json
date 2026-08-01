@@ -1,0 +1,32 @@
+{
+  "description": "Independent hand-calculated Newtonian Hagen-Poiseuille reference (SI).",
+  "derivation": "mu=0.035 Pa s; L=0.0127 m; d=0.00021 m; Db=0.00635 m; V=2e-6 m3; t=15 s; Q=V/t; DeltaP=128*mu*L*Q/(pi*d^4); F=DeltaP*pi*Db^2/4; also F=32*mu*L*Q*Db^2/d^4; shear=32*Q/(pi*d^3); Re=rho*v*d/mu with rho=1000.",
+  "inputs": {
+    "scenario_id": "reference-newtonian",
+    "formulation_id": "reference-formulation",
+    "viscosity_value": 35.0,
+    "viscosity_unit": "cP",
+    "viscosity_temperature_c": 25.0,
+    "use_temperature_c": 25.0,
+    "rheology_class": "newtonian",
+    "newtonian_evidence": "HAND-CALC-REF-001",
+    "needle_id_mm": 0.21,
+    "needle_length_mm": 12.7,
+    "needle_geometry_source": "reference drawing",
+    "barrel_id_mm": 6.35,
+    "barrel_geometry_source": "reference syringe drawing",
+    "volume_ml": 2.0,
+    "injection_time_s": 15.0,
+    "density_kg_m3": 1000.0
+  },
+  "expected": {
+    "dynamic_viscosity_pa_s": 0.035,
+    "flow_rate_m3_s": 1.3333333333333334e-07,
+    "injection_time_s": 15.0,
+    "needle_pressure_drop_pa": 1241633.4952557804,
+    "fluid_resistance_force_n": 39.321561146504465,
+    "simplified_force_n": 39.32156114650446,
+    "wall_shear_rate_s_1": 146649.62542391106,
+    "reynolds_number": 23.09731600426599
+  }
+}

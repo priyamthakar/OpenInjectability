@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "calculation_model": "newtonian_hagen_poiseuille_v1",
+  "temperature_tolerance_c": 0.5,
+  "time_flow_relative_tolerance": 0.001,
+  "sensitivity": {
+    "method": "one_at_a_time",
+    "relative_changes": [-0.10, -0.05, 0.05, 0.10]
+  }
+}

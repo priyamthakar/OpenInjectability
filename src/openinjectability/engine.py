@@ -91,14 +91,28 @@ class OpenInjectabilityEngine:
         """Assess cases in input order, retaining every domain rejection.
 
         Invalid or scientifically unsupported cases become explicit rejected-row
-        records. Unexpected programming errors deliberately propagate rather than
-        being represented as a scientific rejection.
+        records. Duplicate scenario identifiers are hard errors recorded without
+        dropping later rows. Unexpected programming errors deliberately propagate
+        rather than being represented as a scientific rejection.
         """
 
         results: list[AssessmentResult] = []
         rejected: list[RejectedAssessment] = []
+        seen_ids: set[str] = set()
         for row_number, case in enumerate(cases, start=1):
             scenario_id = case.scenario_id if isinstance(case, AssessmentInput) else None
+            if isinstance(case, AssessmentInput) and scenario_id is not None:
+                if scenario_id in seen_ids:
+                    rejected.append(
+                        RejectedAssessment(
+                            row_number=row_number,
+                            scenario_id=scenario_id,
+                            error_type="InputValidationError",
+                            message=f"duplicate scenario_id: {scenario_id!r}",
+                        )
+                    )
+                    continue
+                seen_ids.add(scenario_id)
             try:
                 results.append(self.assess(case))
             except OpenInjectabilityError as exc:

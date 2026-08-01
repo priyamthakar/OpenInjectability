@@ -101,3 +101,27 @@ def test_batch_rejects_wrong_input_type_without_losing_later_cases():
     assert batch.rejected[0].row_number == 2
     assert batch.rejected[0].scenario_id is None
     assert batch.rejected[0].error_type == "InputValidationError"
+
+
+def test_batch_rejects_duplicate_scenario_ids_without_dropping_later_cases():
+    batch = OpenInjectabilityEngine().assess_batch(
+        (
+            case(scenario_id="alpha"),
+            case(scenario_id="beta"),
+            case(scenario_id="alpha"),
+            case(scenario_id="gamma"),
+            case(scenario_id="beta"),
+        )
+    )
+
+    assert [result.normalized_input["scenario_id"] for result in batch.results] == [
+        "alpha",
+        "beta",
+        "gamma",
+    ]
+    assert [(item.row_number, item.scenario_id, item.error_type) for item in batch.rejected] == [
+        (3, "alpha", "InputValidationError"),
+        (5, "beta", "InputValidationError"),
+    ]
+    assert batch.rejected[0].message == "duplicate scenario_id: 'alpha'"
+    assert batch.rejected[1].message == "duplicate scenario_id: 'beta'"

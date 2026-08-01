@@ -22,8 +22,15 @@ classifiers = [
 openinjectability = "openinjectability.cli:main"
 
 [project.optional-dependencies]
-dev = ["build>=1.2", "pytest>=8", "ruff>=0.8"]
-reports = ["matplotlib>=3.8", "reportlab>=4"]
+dev = [
+  "build>=1.2",
+  "mypy>=1.13",
+  "pytest>=8",
+  "pytest-cov>=5",
+  "ruff>=0.8",
+  "types-PyYAML>=6",
+]
+reports = ["matplotlib>=3.8", "reportlab>=4", "PyYAML>=6"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
@@ -39,3 +46,15 @@ pythonpath = ["src"]
 [tool.ruff]
 line-length = 100
 target-version = "py310"
+
+[tool.mypy]
+python_version = "3.10"
+mypy_path = "src"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+packages = ["openinjectability"]
+
+[[tool.mypy.overrides]]
+module = ["reportlab.*", "matplotlib.*", "yaml"]
+ignore_missing_imports = true
