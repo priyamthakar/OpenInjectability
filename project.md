@@ -90,7 +90,8 @@ friction-subtraction caveats). Independent lab-traceable panel still required.
 ## Phase E — M5 public release
 
 - Tagged, signed release; wheel + sdist published; documentation site/README finalized; fresh public-index install verified.
-- **Blocked:** independent Phase D incomplete; PyPI / registry signing credentials pending.
+- **Done (alpha):** `openinjectability==0.1.0` on PyPI; fresh `pip install` verified (2026-08-02).
+- **Still open for a “validated” release:** independent experimental D (not digitized literature alone); optional signing/docs site.
 
 ## Guardrails (apply to every phase)
 
@@ -108,5 +109,5 @@ friction-subtraction caveats). Independent lab-traceable panel still required.
 - [x] **A5** mypy --strict clean, typing config, CI matrix 3.10-3.13 with enforced gates and wheel smoke
 - [x] **B** v0.1 spec completion (config file, inverse calculation, multi-step sensitivity, warning codes, CLI completion, audit bundle, docs)
 - [x] **C** spec 14.5 release gates for v0.1.0
-- [~] **D** literature comparison pass (Allmendinger 2014 digitized Fig. 3A + Table 1; experimental_comparison pass vs 20% criterion); independent lab panel + `independently_validated` still open
-- [~] **E** public release — blocked on completed independent D + PyPI/registry credentials; annotated tag v0.1.0 may exist (not a public-index publish)
+- [~] **D** literature comparison pass (Allmendinger 2014 digitized); independent lab/SI panel + `independently_validated` still open
+- [x] **E** PyPI alpha `0.1.0` published; install verified — full “validated” release still open

@@ -2,15 +2,15 @@
 
 **Updated:** 2026-08-02  
 **Branch tip (at write time):** see `git log -1` on `main`  
-**Package:** `0.1.0` alpha — internal verification only
+**Package:** `0.1.0` alpha on PyPI — [pypi.org/project/openinjectability/0.1.0](https://pypi.org/project/openinjectability/0.1.0/)
 
 | Phase | Status | Evidence |
 |---|---|---|
 | A — v0.1 hardening | **Complete** | Sensitivity contract, construction-time types, batch duplicates, VALIDATION claims map, mypy+CI matrix |
 | B — spec completion | **Complete** | Config load, inverse screening, multi-step sensitivity, warning codes, CLI completion, audit bundle, docs |
 | C — release gates | **Complete** | Version agreement, language audit, wheel smoke JSON/MD/HTML/PDF/plot, suite green |
-| D — independent experimental validation | **Literature comparison pass (digitized); not independent** | Allmendinger 2014 PDFs ingested; Table 1 exact + Fig. 3(A) digitized glycerol panel (12 rows); median \|rel err\| ≈ 13.5% → report status `experimental_comparison` **pass** vs 20% criterion; package `validation_status` **not** advanced; **not** `independently_validated` (digitization + friction-subtraction caveats); see `docs/pdf-ingestion-2026-08-02.md` |
-| E — public release | **Blocked** | Requires completed independent D + registry/signing / PyPI credentials; no false PyPI publish (see [`pypi-publish-blocker.md`](pypi-publish-blocker.md) if present) |
+| D — independent experimental validation | **Literature comparison pass (digitized); not independent** | Allmendinger 2014 panel (12 rows); median \|rel err\| ≈ 13.5%; report `experimental_comparison` only; package still `experimental_validation_pending` |
+| E — public release | **Alpha published on PyPI** | `pip install openinjectability==0.1.0` verified; still **not** marketed as independently validated; signed/stable “validated” release waits on true D |
 
 ## What must not happen while blocked
 

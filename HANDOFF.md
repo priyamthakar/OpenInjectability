@@ -1,83 +1,54 @@
 # OpenInjectability handoff
 
 **Snapshot date:** 2026-08-02  
-**Baseline commit:** see `git log -1` on `main`  
 **Package version:** `0.1.0`  
-**Lifecycle state:** alpha; internal verification only
+**Lifecycle state:** alpha on PyPI; experimental validation still pending  
+**PyPI:** https://pypi.org/project/openinjectability/0.1.0/
 
 ## Product destination
 
-The canonical final goal and definition of complete are in
-[PROJECT_GOAL.md](PROJECT_GOAL.md). The project remains deliberately limited to
-Newtonian fluid resistance and must never label the result as total device
-force.
+See [PROJECT_GOAL.md](PROJECT_GOAL.md). Result is always **predicted fluid-resistance force**, never total device force.
 
-## Verified baseline
+## Phase status
 
-Phases **A–C** from [project.md](project.md) are closed: full test suite, Ruff,
-`mypy --strict`, package build, ≥87% branch coverage, wheel install smoke, and
-CI matrix enforcement for Python 3.10–3.13.
+| Phase | Status |
+|---|---|
+| A — v0.1 hardening | **Done** |
+| B — spec completion | **Done** |
+| C — release gates | **Done** |
+| D — independent experimental validation | **Literature `experimental_comparison` only** (digitized Allmendinger 2014); **not** independently validated |
+| E — public alpha release | **Done on PyPI** (`0.1.0`); full “validated” release still blocked on true D |
 
-| Phase | Status | Notes |
-|---|---|---|
-| A — v0.1 hardening | **Done** | Sensitivity contract, construction-time types, batch duplicates, VALIDATION claims map, mypy + CI matrix |
-| B — spec completion | **Done** | Config, inverse screening, multi-step sensitivity, warning codes, CLI completion, audit bundle, docs |
-| C — release gates | **Done** | Version agreement, language audit, wheel smoke (JSON/MD/HTML/PDF/plot), suite green |
-| D — independent experimental validation | **Literature comparison pass only** | Digitized Allmendinger 2014 glycerol panel; report status `experimental_comparison` **pass** vs 20% median abs rel err; **not** `independently_validated` (digitization caveats) |
-| E — public release | **Blocked** | Independent D incomplete; PyPI/registry credentials pending; no false publish |
+Durable table: [docs/phase-status.md](docs/phase-status.md).
 
-Durable phase table: [docs/phase-status.md](docs/phase-status.md).
-
-## Closed release gates (formerly open)
-
-1. Sensitivity preserves the flow/time contract via the validated core path.
-2. Malformed typed/provenance values return stable domain errors (no bool
-   coercion / raw TypeError/AttributeError).
-3. Backend batch rejects duplicate scenario identifiers.
-4. `VALIDATION.md` is a claims-to-evidence map with
-   `tests/reference_data/reference_case.json`.
-5. Strict typing and the 3.10–3.13 matrix are enforced in CI.
-
-## Phase D status (honest)
-
-A literature comparison pass exists:
-
-- Panel: [`validation/experimental/panel_allmendinger2014_glycerol_digitized.json`](validation/experimental/panel_allmendinger2014_glycerol_digitized.json)
-- Report: [`validation/experimental/reports/allmendinger2014_digitized/`](validation/experimental/reports/allmendinger2014_digitized/)
-- Ingestion notes: [`docs/pdf-ingestion-2026-08-02.md`](docs/pdf-ingestion-2026-08-02.md)
-- Pipeline never advances package `validation_status` to `independently_validated`
-- Registry remains `internal_validation` / `experimental_validation_pending`
-
-Do **not** describe the package as experimentally validated. Digitized figures and
-friction-subtracted glide forces are not independently traceable lab measurements.
-
-## Next objective
-
-1. **Phase D (remaining):** obtain independently traceable Newtonian measurements
-   under [docs/validation-protocol-lock.md](docs/validation-protocol-lock.md);
-   reproduce with this package version; publish a hashed validation report before
-   any status advance.
-2. **Phase E:** public PyPI publish waits on completed independent D **and**
-   registry/signing credentials. Annotated tag `v0.1.0` may exist; that is not a
-   public-index release.
-
-## Verification commands
+## Install (public)
 
 ```powershell
+python -m pip install openinjectability==0.1.0
+openinjectability --version
+openinjectability assess examples/formulation.csv --results out.json --report out.md
+```
+
+Repo developers:
+
+```powershell
+python -m pip install -e ".[dev,reports]"
 python -m pytest --cov=openinjectability --cov-branch --cov-fail-under=87
-python -m ruff check src tests
-python -m mypy --strict src
-python -m build
 ```
 
-After building, install the wheel into a fresh environment and run the CLI help,
-example assessment, and package import against the installed artifact rather
-than the repository source tree.
+## Phase D artifacts
 
-Literature comparison (does **not** advance package validation status):
+- Panel: `validation/experimental/panel_allmendinger2014_glycerol_digitized.json`
+- Report: `validation/experimental/reports/allmendinger2014_digitized/`
+- Notes: `docs/pdf-ingestion-2026-08-02.md`
+- Package `validation_status` remains `internal_validation; experimental_validation_pending`
 
-```powershell
-openinjectability validate-experimental `
-  validation/experimental/panel_allmendinger2014_glycerol_digitized.json `
-  --out validation/experimental/reports/allmendinger2014_digitized
-```
+## Next objectives (honest)
+
+1. **Optional stronger D:** author SI tables or wet-lab friction-subtracted Newtonian rows → re-run `validate-experimental`; only then consider advancing validation vocabulary.
+2. **Ops:** revoke PyPI token if it was exposed in chat; create a new entire-account token in `~\.pypirc`.
+3. **Product:** use/monitor PyPI installs; patch releases as needed without overclaiming validation.
+
+## Scientific boundary
+
+Never label results as total injection force, safe, or compliant. Non-Newtonian inputs fail closed.

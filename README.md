@@ -20,9 +20,24 @@ The model is intentionally narrow:
 Non-Newtonian or otherwise unsupported inputs **fail closed** (typed rejection; no
 fallback rheology model).
 
+## Install
+
+```powershell
+python -m pip install openinjectability
+# optional reports (PDF + plots):
+python -m pip install "openinjectability[reports]"
+```
+
+PyPI: [https://pypi.org/project/openinjectability/](https://pypi.org/project/openinjectability/)
+
 ## Quick start
 
 ```powershell
+# From PyPI (any directory):
+openinjectability version
+openinjectability validation-status --json
+
+# From a clone (dev + example CSV in-tree):
 python -m pip install -e ".[dev,reports]"
 openinjectability assess examples/formulation.csv `
   --config examples/assessment.json `
@@ -97,7 +112,8 @@ returned value remains the predicted fluid-resistance force, not total device fo
 | Equations / internal reference cases | `internal_validation` (unit-tested) |
 | Independent experimental validation | **Pending** — package `experimental_validation_pending` |
 | Literature comparison (Allmendinger 2014 digitized panel) | Report status `experimental_comparison` only; **not** `independently_validated` |
-| Public PyPI release (Phase E) | Blocked on independent D + credentials |
+| Public PyPI alpha (Phase E) | **Published** — [0.1.0 on PyPI](https://pypi.org/project/openinjectability/0.1.0/) |
+| Independently validated / signed “validated” release | **Blocked** on true experimental D (not figure digitization alone) |
 
 - Do **not** describe this release as experimentally validated.
 - Digitized figures, geometry setups from papers, or exploratory literature comparisons
