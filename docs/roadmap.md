@@ -1,32 +1,33 @@
 # Roadmap
 
-## Completed (v0.1 Phases A–C)
+## Completed (v0.1.0 alpha)
 
 - Newtonian Hagen–Poiseuille core with fail-closed boundaries
 - Engine façade, CLI, reports, plots, audit bundle
 - Sensitivity, inverse screening quantities, warning codes
 - Internal validation evidence map
 - `validate-experimental` panel comparison pipeline (never claims independent validation)
-
-## In progress (Phase D)
-
 - Literature comparison: digitized Allmendinger 2014 glycerol panel
-  (`experimental_comparison` report; **not** `independently_validated`)
-- Still required: independently traceable lab Newtonian measurements under the locked
-  protocol before any package status advance
+  (`experimental_comparison` only)
+- **PyPI alpha:** https://pypi.org/project/openinjectability/0.1.0/
 
-## Deferred until independent validation
+## Still open (scientific)
+
+- Independently traceable lab Newtonian measurements (or author SI tables) under
+  [validation-protocol-lock.md](validation-protocol-lock.md)
+- Advancing package `validation_status` to `independently_validated`
+- Signed “validated” release marketing (not the current alpha)
+
+## Deferred until independent validation of those models
 
 - Non-Newtonian rheology models
 - Friction / break-loose / device drivetrain terms
 - Tissue backpressure and depot formation
 - Probabilistic uncertainty stacks
 - Web application hosting
-- Public PyPI release (Phase E; also needs registry/signing credentials)
 
 ## Next scientific milestone
 
-Obtain an independently traceable Newtonian dataset under
-[validation-protocol-lock.md](validation-protocol-lock.md), reproduce without hidden
-correction factors, publish a hashed validation report, and only then advance
-`validation_status` beyond experimental-pending. See [phase-status.md](phase-status.md).
+Obtain author SI or wet-lab friction-subtracted Newtonian rows (not figure
+digitization alone), re-run `validate-experimental`, publish a hashed report,
+and only then advance `validation_status`. See [phase-status.md](phase-status.md).
