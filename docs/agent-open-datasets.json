@@ -1,0 +1,167 @@
+{
+  "document": "agent-open-datasets",
+  "phase": "D",
+  "purpose": "Search open research data repositories for downloadable experimental datasets (CSV/XLS) on syringe/needle injection force with viscosity and geometry for Newtonian fluids.",
+  "searched_on": "2026-08-02",
+  "no_fabrication": true,
+  "protocol_fields_required": {
+    "mu": "dynamic viscosity (measured, temperature stated; Newtonian)",
+    "d": "needle inner diameter (measured/traceable, not gauge-only)",
+    "L": "needle length (traceable)",
+    "barrel": "barrel / plunger inner diameter",
+    "Q": "volumetric flow rate or controlled injection time + volume",
+    "F_fluid": "fluid-side force or pressure (friction-separated or pressure transducer)"
+  },
+  "search_channels": [
+    {
+      "name": "Zenodo REST API",
+      "base": "https://zenodo.org/api/records",
+      "queries": [
+        "syringe injection force viscosity needle (type=dataset)",
+        "glycerol needle injection force OR glide force OR hagen poiseuille syringe (type=dataset)",
+        "\"injection force\" AND (syringe OR needle) AND (viscosity OR glycerol OR Newtonian)",
+        "\"glide force\" OR \"break loose\" syringe OR \"expulsion force\" needle viscosity",
+        "syringeability OR injectability force viscosity (type=dataset)",
+        "title:(injection AND force) AND (syringe OR needle OR viscosity)",
+        "syringe needle force viscosity (type=dataset, sort=bestmatch)"
+      ],
+      "result_summary": "Exact-phrase and Boolean queries for injection/glide force + syringe/viscosity returned 0 relevant hits. Broad keyword queries returned thousands of irrelevant records (syringe services programs, MD glycerol viscosity, medieval syringe 3D models, filtration robots). No downloadable experimental injection-force panel found."
+    },
+    {
+      "name": "DataCite REST API",
+      "base": "https://api.datacite.org/dois",
+      "queries": [
+        "injection force syringe",
+        "injection force syringe viscosity",
+        "\"glide force\" OR syringeability viscosity glycerol"
+      ],
+      "result_summary": "43 hits for 'injection force syringe' — most theses/immune-system noise; useful hits redirected to Springer Nature Figshare collections for intravitreal syringe force papers (see datasets). No complete Newtonian fluid-resistance CSV registered under DataCite."
+    },
+    {
+      "name": "Dryad API v2",
+      "base": "https://datadryad.org/api/v2/search",
+      "queries": [
+        "syringe injection force viscosity"
+      ],
+      "result_summary": "count=0 for targeted query. Web site search for injection force + syringe/needle viscosity also empty."
+    },
+    {
+      "name": "Figshare API / Springer Nature Figshare",
+      "base": "https://api.figshare.com/v2",
+      "queries": [
+        "collections 8462301, 8411480 (DataCite-discovered)",
+        "article 32195520 (raw injection force XLSX)",
+        "article 20800108 (Rini LVAI Newtonian delivery times)",
+        "web: site:figshare.com injection force syringe viscosity"
+      ],
+      "result_summary": "Two real downloadable / open supplementary packages related to syringe force vs viscosity (ophthalmic IVI and autoinjector time). Neither meets full Phase D field bar for F_fluid + measured geometry."
+    },
+    {
+      "name": "EuropePMC REST",
+      "base": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "queries": [
+        "injection force syringe viscosity HAS_DATA:y"
+      ],
+      "result_summary": "hitCount large (~2919) with HAS_DATA flag not reliably populated; top hits include Ackermann 2026 and Felfeli 2026 (OA). Data availability statements often 'upon request' rather than repository deposit of complete panels."
+    },
+    {
+      "name": "Web / Google-style dataset queries",
+      "queries": [
+        "syringe injection force viscosity needle glycerol dataset CSV OR XLS site:zenodo.org OR site:figshare.com OR site:datadryad.org",
+        "\"injection force\" syringe needle viscosity dataset OR supplementary glycerol Newtonian",
+        "\"Hagen-Poiseuille\" syringe force experiment data OR dataset viscosity needle",
+        "\"raw data\" OR supplementary \"injection force\" glycerol water syringe needle",
+        "site:osf.io syringe injection force viscosity",
+        "site:data.mendeley.com injection force syringe OR needle viscosity OR glycerol",
+        "\"friction\" glycerol (\"glide force\" OR \"injection force\") syringe (supplementary OR dataset OR zenodo OR figshare)"
+      ],
+      "result_summary": "No OSF/Mendeley/Harvard Dataverse deposits of row-level Newtonian syringe fluid-force tables found. Classic literature (Allmendinger 2014, Verwulgen 2018, Zhang 2018) discussed in papers/PDFs; not open machine-readable complete panels with friction-separated F_fluid."
+    }
+  ],
+  "datasets_found": [
+    {
+      "id": "felfeli-2026-figshare-raw-force",
+      "title": "Additional file 10 of Guiding syringe selection for intravitreal injections... (Table S2. Unaggregated eye characteristics and raw injection force data)",
+      "url": "https://springernature.figshare.com/articles/dataset/Additional_file_10_of_Guiding_syringe_selection_for_intravitreal_injections_injectability_and_stability_analysis_of_compounded_pegcetacoplan_SYFOVRE_and_the_broader_implications_for_high-viscosity_ophthalmic_therapies/32195520",
+      "download_url": "https://ndownloader.figshare.com/files/64317894",
+      "doi": "10.6084/m9.figshare.32195520.v1",
+      "parent_paper_doi": "10.1186/s40942-026-00832-3",
+      "license": "CC BY 4.0 / CC0 for data (Figshare license value 47: CC BY + CC0)",
+      "format": "XLSX (40942_2026_832_MOESM10_ESM.xlsx, ~17 KB)",
+      "access": "public download",
+      "description": "Row-level time series of injection pressure/force into cadaver eyes for 15 cP and 120 cP viscosity mimics across several syringe brands (StaClear, ClearJect, BD, ZR0.2) with 27G needle. Columns include date, syringe, fluid_density (viscosity label), EYEID, needle, IOP, inj_max, inj_mean, inj_time, and force samples vs time.",
+      "fields_present": {
+        "mu": "partial — labeled 15 cP and 120 cP viscosity mimics (not glycerol series; composition of mimics not in XLSX)",
+        "d": "no — gauge only (27G), no measured ID",
+        "L": "no — needle length not tabulated in XLSX",
+        "barrel": "partial — syringe brand only; plunger/barrel ID not numeric in file",
+        "Q": "no — inj_time present but not controlled fixed Q; manual clinical-style injection into eye",
+        "F_fluid": "no — total injection effort into tissue (includes friction + tissue backpressure); not fluid-only resistance"
+      },
+      "phase_d_usable": false,
+      "phase_d_notes": "Real downloadable experimental force data, but wrong measurand (tissue injection), incomplete geometry, no friction separation."
+    },
+    {
+      "id": "ackermann-2026-tables-and-si",
+      "title": "The effect of syringe design and cannula dimensions on time-force curve in intravitreal injection across different drug viscosities",
+      "url": "https://doi.org/10.1186/s40942-026-00833-2",
+      "pmc": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13063457/",
+      "doi": "10.1186/s40942-026-00833-2",
+      "figshare_collection_doi": "10.6084/m9.figshare.c.8411480.v1",
+      "license": "CC BY 4.0 (article); SI on Springer Nature Figshare CC BY + CC0",
+      "format": "Published tables (peak force N; AUC N·s) in main text; SI DOCX/PDF stats (ANOVA). Raw time-series: 'available from corresponding author upon reasonable request' — not a public CSV/XLS deposit.",
+      "access": "open article tables; SI supplementary stats; raw data on request only",
+      "description": "Manual force-gauge expulsion of 0.1 mL of four fluids (BSS, PEG-40000, PEG-400, Tween80+BSS) through 30G (13 mm) and 33G (9 mm) cannulas with three syringe plunger diameters (~2.48, 4.71, 4.76 mm). Complex viscosity measured on rheometer at 25 °C.",
+      "fields_present": {
+        "mu": "partial — complex viscosity η* at one frequency (27.25–13656 mPa·s); fluids are PEG/Tween solutions, not certified Newtonian glycerol–water panel",
+        "d": "no — gauge only (30G/33G), no measured ID",
+        "L": "yes — cannula lengths stated (13 mm / 9 mm)",
+        "barrel": "yes — plunger diameters stated (~2.48 / 4.71 / 4.76 mm)",
+        "Q": "no — manual injection; time varies; no fixed Q",
+        "F_fluid": "no — total resistance force (friction + hydrodynamic); empty-syringe friction not subtracted"
+      },
+      "phase_d_usable": false,
+      "phase_d_notes": "Best open tabular near-miss for geometry×viscosity×force factorial design, but total force, manual Q, gauge-only needle ID, non-glycerol fluids. Not a friction-separated F_fluid validation panel."
+    },
+    {
+      "id": "rini-2022-figshare-lvai",
+      "title": "Enabling faster subcutaneous delivery of larger volume, high viscosity fluids (supplementary materials)",
+      "url": "https://tandf.figshare.com/articles/dataset/Enabling_faster_subcutaneous_delivery_of_larger_volume_high_viscosity_fluids/20800108",
+      "doi": "10.6084/m9.figshare.20800108.v1",
+      "parent_paper_doi": "10.1080/17425247.2022.2116425",
+      "license": "CC BY 4.0",
+      "format": "DOCX supplementary tables/figures (statistical contrasts on delivery time; not force CSV)",
+      "access": "public download",
+      "description": "Large-volume autoinjector delivery duration vs Newtonian solution viscosity (2.3–50 cP), spring force tiers, and 27G/29G wall types — in air and in vivo. Outcomes are time/volume/depot, not plunger force or needle ΔP.",
+      "fields_present": {
+        "mu": "yes — Newtonian solutions 2.3–50 cP stated",
+        "d": "no — gauge/wall-type only",
+        "L": "no",
+        "barrel": "no — PFS type only",
+        "Q": "partial — delivery time under spring drive (not imposed constant Q)",
+        "F_fluid": "no — spring force category only; no measured F_fluid"
+      },
+      "phase_d_usable": false,
+      "phase_d_notes": "Explicitly Newtonian viscosities, but wrong primary measurand (injection time under spring force, not fluid resistance force)."
+    }
+  ],
+  "classic_literature_not_open_datasets": [
+    {
+      "citation": "Allmendinger et al., Eur J Pharm Biopharm 2014 — Rheological characterization and injection forces of concentrated protein formulations",
+      "note": "Uses glycerol/water as Newtonian surrogate and Hagen–Poiseuille glide-force prediction; no open CSV/XLS deposit found in Zenodo/Figshare/Dryad."
+    },
+    {
+      "citation": "Verwulgen et al., Pharm Res 2018 — Assessment of forces in intradermal injection devices",
+      "note": "Water–glycerol Newtonian mixtures and hydrodynamic vs human factors; institutional PDF/snippets exist; no public row-level repository dataset with complete μ,d,L,barrel,Q,F_fluid."
+    },
+    {
+      "citation": "Zhang et al., AAPS PharmSciTech 2018 — Assessment of Injectability via Measurement of Total Work",
+      "note": "HPMC/PEO non-Newtonian; total work/DGF metrics; not open fluid-only force panel."
+    }
+  ],
+  "verdict": {
+    "phase_d_repository_data_availability": "NONE_USABLE",
+    "summary": "No open repository dataset provides a downloadable CSV/XLS experimental panel for Newtonian syringe/needle injection with complete fields μ, measured d, L, barrel, Q, and friction-separated F_fluid (or equivalent pressure). A few near-miss open files exist (total force or autoinjector time with viscosity labels) but fail the protocol bar.",
+    "implication": "Phase D independent experimental validation remains blocked from repository sources alone. Requires new benchtop glycerol–water campaign with pressure/load-cell + empty-friction baseline, or full text+SI of a paper that already publishes friction-corrected hydrodynamic force as machine-readable rows."
+  }
+}

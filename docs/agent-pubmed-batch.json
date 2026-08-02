@@ -1,0 +1,1608 @@
+{
+  "generated_at_utc": "2026-08-02T02:21:54.159619+00:00",
+  "source": "NCBI E-utilities (eutils.ncbi.nlm.nih.gov)",
+  "endpoints_used": [
+    "esearch.fcgi",
+    "esummary.fcgi",
+    "elink.fcgi"
+  ],
+  "disclaimer": "No experimental numbers fabricated. Titles and access flags come from PubMed metadata only. free full text[filter] is a PubMed filter; PMC link via elink indicates PMC deposit (usually OA). Friction-corrected fluid force cannot be asserted from title alone.",
+  "queries": [
+    {
+      "id": "q1_injection_force_viscosity_needle",
+      "label": "Injection/glide force + viscosity + needle/syringe (free full text)",
+      "term": "(\"injection force\"[tiab] OR \"glide force\"[tiab] OR injectability[tiab]) AND viscosity[tiab] AND (needle[tiab] OR syringe[tiab]) AND free full text[filter]",
+      "count": 17,
+      "returned": 17,
+      "ids": [
+        "42272978",
+        "41863023",
+        "41821033",
+        "41081304",
+        "40925691",
+        "40868739",
+        "40483284",
+        "38596590",
+        "37754414",
+        "37376156",
+        "34723096",
+        "32854439",
+        "32653597",
+        "32378675",
+        "23072273",
+        "21553165",
+        "22915910"
+      ],
+      "rows": [
+        {
+          "pmid": "42272978",
+          "title": "Feasibility and pharmacokinetic evaluation of a needle-free injector for delivering high concentration antibody formulations.",
+          "pubdate": "2026 May",
+          "source": "Bioeng Transl Med",
+          "authors": "Josowitz A, Manoj AS, Laiacona D, Pelletier M, Molano D, Jennings S et al.",
+          "elocationid": "doi: 10.1002/btm2.70063",
+          "doi": "10.1002/btm2.70063",
+          "pmcid": "PMC13247403",
+          "pmcids": [
+            "PMC13247403"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42272978/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13247403/"
+        },
+        {
+          "pmid": "41863023",
+          "title": "The effect of syringe design and cannula dimensions on time-force curve in intravitreal injection across different drug viscosities: area under the curve and peak injection force.",
+          "pubdate": "2026 Mar 20",
+          "source": "Int J Retina Vitreous",
+          "authors": "Ackermann BC, Junker N, Friedrich M, J\u00f8rstad \u00d8K, Moe MC, Augustin VA et al.",
+          "elocationid": "doi: 10.1186/s40942-026-00833-2",
+          "doi": "10.1186/s40942-026-00833-2",
+          "pmcid": "PMC13063457",
+          "pmcids": [
+            "PMC13063457"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41863023/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13063457/"
+        },
+        {
+          "pmid": "41821033",
+          "title": "Guiding syringe selection for intravitreal injections: injectability and stability analysis of compounded pegcetacoplan (SYFOVRE) and the broader implications for high-viscosity ophthalmic therapies.",
+          "pubdate": "2026 Mar 12",
+          "source": "Int J Retina Vitreous",
+          "authors": "Felfeli T, Lane NM, Mandelcorn ED",
+          "elocationid": "doi: 10.1186/s40942-026-00832-3",
+          "doi": "10.1186/s40942-026-00832-3",
+          "pmcid": "PMC13147785",
+          "pmcids": [
+            "PMC13147785"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41821033/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13147785/"
+        },
+        {
+          "pmid": "41081304",
+          "title": "Exploring the Rheology and Clinical Potential of Calcium Hydroxylapatite-Hyaluronic Acid Hybrids.",
+          "pubdate": "2025 Oct",
+          "source": "J Cosmet Dermatol",
+          "authors": "Kaczuba E, Fakih-Gomez N, Kadouch J, Bartsch R, Pecora C, Yutskovskaya YA et al.",
+          "elocationid": "doi: 10.1111/jocd.70473",
+          "doi": "10.1111/jocd.70473",
+          "pmcid": "PMC12516938",
+          "pmcids": [
+            "PMC12516938"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41081304/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12516938/"
+        },
+        {
+          "pmid": "40925691",
+          "title": "A numerical investigation of the kinematic and fluid dynamic behaviour of an intramuscular autoinjector designed for optimising injection efficiency.",
+          "pubdate": "2025 Oct",
+          "source": "Med Eng Phys",
+          "authors": "Sivarasu S, Magubane N, Mbanefo C, Ngoepe M",
+          "elocationid": "doi: 10.1016/j.medengphy.2025.104407",
+          "doi": "10.1016/j.medengphy.2025.104407",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40925691/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "40868739",
+          "title": "Chitosan-Glycerol Injectable Hydrogel for Intratumoral Delivery of Macromolecules.",
+          "pubdate": "2025 Aug 2",
+          "source": "Gels",
+          "authors": "Kobrin RL, Mantooth SM, Mulry AL, Zaharoff DJ, Zaharoff DA",
+          "elocationid": "doi: 10.3390/gels11080607",
+          "doi": "10.3390/gels11080607",
+          "pmcid": "PMC12385344",
+          "pmcids": [
+            "PMC12385344"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40868739/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12385344/"
+        },
+        {
+          "pmid": "40483284",
+          "title": "Development of an in-situ forming implant system for levodopa and carbidopa for the treatment of parkinson's disease.",
+          "pubdate": "2025 Nov",
+          "source": "Drug Deliv Transl Res",
+          "authors": "Nakmode DD, Abdella S, Song Y, Garg S",
+          "elocationid": "doi: 10.1007/s13346-025-01892-y",
+          "doi": "10.1007/s13346-025-01892-y",
+          "pmcid": "PMC12507947",
+          "pmcids": [
+            "PMC12507947"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40483284/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12507947/"
+        },
+        {
+          "pmid": "38596590",
+          "title": "Investigating the Mechanisms of Intradermal Injection for Easier \"Skin Booster\" Treatment: A Fluid Mechanics Approach to Determine Optimal Delivery Method.",
+          "pubdate": "2024 Apr",
+          "source": "Plast Reconstr Surg Glob Open",
+          "authors": "Oh SM, Lee Y, Lee JH, Oh M",
+          "elocationid": "doi: 10.1097/GOX.0000000000005723",
+          "doi": "10.1097/GOX.0000000000005723",
+          "pmcid": "PMC11000758",
+          "pmcids": [
+            "PMC11000758"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38596590/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11000758/"
+        },
+        {
+          "pmid": "37754414",
+          "title": "Investigation of Crosslinking Parameters and Characterization of Hyaluronic Acid Dermal Fillers: From Design to Product Performances.",
+          "pubdate": "2023 Sep 9",
+          "source": "Gels",
+          "authors": "Pluda S, Salvagnini C, Fontana A, Marchetti A, Di Lucia A, Galesso D et al.",
+          "elocationid": "doi: 10.3390/gels9090733",
+          "doi": "10.3390/gels9090733",
+          "pmcid": "PMC10530960",
+          "pmcids": [
+            "PMC10530960"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37754414/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10530960/"
+        },
+        {
+          "pmid": "37376156",
+          "title": "Injectable Hyaluronan-Based Thermoresponsive Hydrogels for Dermatological Applications.",
+          "pubdate": "2023 Jun 11",
+          "source": "Pharmaceutics",
+          "authors": "Gou S, Porcello A, All\u00e9mann E, Salomon D, Micheels P, Jordan O et al.",
+          "elocationid": "doi: 10.3390/pharmaceutics15061708",
+          "doi": "10.3390/pharmaceutics15061708",
+          "pmcid": "PMC10302034",
+          "pmcids": [
+            "PMC10302034"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37376156/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10302034/"
+        },
+        {
+          "pmid": "34723096",
+          "title": "A microfluidic approach to studying the injection flow of concentrated albumin solutions.",
+          "pubdate": "2021",
+          "source": "SN Appl Sci",
+          "authors": "Lanzaro A",
+          "elocationid": "doi: 10.1007/s42452-021-04767-2",
+          "doi": "10.1007/s42452-021-04767-2",
+          "pmcid": "PMC8550001",
+          "pmcids": [
+            "PMC8550001"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34723096/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8550001/"
+        },
+        {
+          "pmid": "32854439",
+          "title": "Saturated Fatty Acid-Based In Situ Forming Matrices for Localized Antimicrobial Delivery.",
+          "pubdate": "2020 Aug 25",
+          "source": "Pharmaceutics",
+          "authors": "Chantadee T, Santimaleeworagun W, Phorom Y, Phaechamud T",
+          "elocationid": "doi: 10.3390/pharmaceutics12090808",
+          "doi": "10.3390/pharmaceutics12090808",
+          "pmcid": "PMC7559323",
+          "pmcids": [
+            "PMC7559323"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32854439/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7559323/"
+        },
+        {
+          "pmid": "32653597",
+          "title": "Extended release pellets prepared by hot melt extrusion technique for abuse deterrent potential: Category-1 in-vitro evaluation.",
+          "pubdate": "2020 Sep 25",
+          "source": "Int J Pharm",
+          "authors": "Butreddy A, Sarabu S, Dumpa N, Bandari S, Repka MA",
+          "elocationid": "doi: 10.1016/j.ijpharm.2020.119624",
+          "doi": "10.1016/j.ijpharm.2020.119624",
+          "pmcid": "PMC7484191",
+          "pmcids": [
+            "PMC7484191"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32653597/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7484191/"
+        },
+        {
+          "pmid": "32378675",
+          "title": "[Research on Gliding and Discharge Performance of Suspended Injection from Syringe -Effect of Diameter Ratio of Suspending Particle against Needle Hole on Needle Passageability].",
+          "pubdate": "2020",
+          "source": "Yakugaku Zasshi",
+          "authors": "Niwa T, Morisaki M, Kondo K, Nakashima A",
+          "elocationid": "doi: 10.1248/yakushi.19-00254",
+          "doi": "10.1248/yakushi.19-00254",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32378675/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "23072273",
+          "title": "Hypothermic manipulation of bone cement can extend the handling time during vertebroplasty.",
+          "pubdate": "2012 Oct 16",
+          "source": "BMC Musculoskelet Disord",
+          "authors": "Lai PL, Tai CL, Chu IM, Fu TS, Chen LH, Chen WJ",
+          "elocationid": "doi: 10.1186/1471-2474-13-198",
+          "doi": "10.1186/1471-2474-13-198",
+          "pmcid": "PMC3524464",
+          "pmcids": [
+            "PMC3524464"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23072273/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3524464/"
+        },
+        {
+          "pmid": "21553165",
+          "title": "Injectability evaluation: an open issue.",
+          "pubdate": "2011 Jun",
+          "source": "AAPS PharmSciTech",
+          "authors": "Cilurzo F, Selmin F, Minghetti P, Adami M, Bertoni E, Lauria S et al.",
+          "elocationid": "doi: 10.1208/s12249-011-9625-y",
+          "doi": "10.1208/s12249-011-9625-y",
+          "pmcid": "PMC3134656",
+          "pmcids": [
+            "PMC3134656"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/21553165/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3134656/"
+        },
+        {
+          "pmid": "22915910",
+          "title": "Preparation and characterization of gelatin sponge millispheres injectable through microcatheters.",
+          "pubdate": "2009",
+          "source": "Med Devices (Auckl)",
+          "authors": "Yamashita N, Saitou K, Takagi A, Maruyama A",
+          "elocationid": "",
+          "doi": "10.2147/mder.s4798",
+          "pmcid": "PMC3417857",
+          "pmcids": [
+            "PMC3417857"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/22915910/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3417857/"
+        }
+      ],
+      "note": null
+    },
+    {
+      "id": "q2_glycerol_needle_force",
+      "label": "Glycerol/glycerin + needle + force (free full text)",
+      "term": "(glycerol[tiab] OR glycerin[tiab]) AND (needle[tiab]) AND (force[tiab]) AND free full text[filter]",
+      "count": 1,
+      "returned": 1,
+      "ids": [
+        "39369766"
+      ],
+      "rows": [
+        {
+          "pmid": "39369766",
+          "title": "The effect of temperature-dependent drug viscosity on needle-free jet injection.",
+          "pubdate": "2024 Dec 5",
+          "source": "Int J Pharm",
+          "authors": "William McKeage J, Janet Full H, Zheng Hao Tan A, James Taberner A",
+          "elocationid": "doi: 10.1016/j.ijpharm.2024.124777",
+          "doi": "10.1016/j.ijpharm.2024.124777",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39369766/",
+          "pmc_url": null
+        }
+      ],
+      "note": null
+    },
+    {
+      "id": "q3_allmendinger_author",
+      "label": "Allmendinger[author] + injection (free full text)",
+      "term": "Allmendinger[author] AND injection AND free full text[filter]",
+      "count": 3,
+      "returned": 3,
+      "ids": [
+        "39758252",
+        "33333826",
+        "27390260"
+      ],
+      "rows": [
+        {
+          "pmid": "39758252",
+          "title": "An oncolytic HAdV-5 with reduced surface charge combines diminished toxicity and improved tumor targeting.",
+          "pubdate": "2024 Dec 19",
+          "source": "Mol Ther Oncol",
+          "authors": "Wienen F, Nilson R, Allmendinger E, Peters S, Barth TFE, Kochanek S et al.",
+          "elocationid": "doi: 10.1016/j.omton.2024.200909",
+          "doi": "10.1016/j.omton.2024.200909",
+          "pmcid": "PMC11699628",
+          "pmcids": [
+            "PMC11699628"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39758252/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11699628/"
+        },
+        {
+          "pmid": "33333826",
+          "title": "EGFR-Binding Peptides: From Computational Design towards Tumor-Targeting of Adeno-Associated Virus Capsids.",
+          "pubdate": "2020 Dec 15",
+          "source": "Int J Mol Sci",
+          "authors": "Feiner RC, Kemker I, Krutzke L, Allmendinger E, Mandell DJ, Sewald N et al.",
+          "elocationid": "doi: 10.3390/ijms21249535",
+          "doi": "10.3390/ijms21249535",
+          "pmcid": "PMC7765298",
+          "pmcids": [
+            "PMC7765298"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33333826/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7765298/"
+        },
+        {
+          "pmid": "27390260",
+          "title": "Life-cycle and cost of goods assessment of fed-batch and perfusion-based manufacturing processes for mAbs.",
+          "pubdate": "2016 Sep",
+          "source": "Biotechnol Prog",
+          "authors": "Bunnak P, Allmendinger R, Ramasamy SV, Lettieri P, Titchener-Hooker NJ",
+          "elocationid": "doi: 10.1002/btpr.2323",
+          "doi": "10.1002/btpr.2323",
+          "pmcid": "PMC5082523",
+          "pmcids": [
+            "PMC5082523"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/27390260/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5082523/"
+        }
+      ],
+      "note": null
+    },
+    {
+      "id": "q4_hagen_poiseuille_syringe",
+      "label": "Hagen-Poiseuille + syringe (free full text)",
+      "term": "\"Hagen-Poiseuille\"[tiab] AND syringe AND free full text[filter]",
+      "count": 3,
+      "returned": 3,
+      "ids": [
+        "41860823",
+        "40428693",
+        "36149647"
+      ],
+      "rows": [
+        {
+          "pmid": "41860823",
+          "title": "A theoretical and experimental model of flow characteristics in subretinal injections.",
+          "pubdate": "2026",
+          "source": "PLoS One",
+          "authors": "Ladha R, Merveille B, Wyns R, Scheid B, Willermain F, de Smet MD",
+          "elocationid": "doi: 10.1371/journal.pone.0344836",
+          "doi": "10.1371/journal.pone.0344836",
+          "pmcid": "PMC13004354",
+          "pmcids": [
+            "PMC13004354"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41860823/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13004354/"
+        },
+        {
+          "pmid": "40428693",
+          "title": "Microfluidic Chip for Quantitatively Assessing Hemorheological Parameters.",
+          "pubdate": "2025 May 8",
+          "source": "Micromachines (Basel)",
+          "authors": "Kang YJ",
+          "elocationid": "doi: 10.3390/mi16050567",
+          "doi": "10.3390/mi16050567",
+          "pmcid": "PMC12113853",
+          "pmcids": [
+            "PMC12113853"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40428693/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12113853/"
+        },
+        {
+          "pmid": "36149647",
+          "title": "A Multi-Lumen Glaucoma Stent With Titratable Pressure-Lowering Effect: A Proof of Concept Study.",
+          "pubdate": "2022 Sep 1",
+          "source": "Transl Vis Sci Technol",
+          "authors": "Sverstad A, Torheim EA, J\u00f8rstad \u00d8K",
+          "elocationid": "doi: 10.1167/tvst.11.9.20",
+          "doi": "10.1167/tvst.11.9.20",
+          "pmcid": "PMC9520513",
+          "pmcids": [
+            "PMC9520513"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36149647/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9520513/"
+        }
+      ],
+      "note": null
+    }
+  ],
+  "classic_allmendinger_access_checks": [
+    {
+      "id": "classic_allmendinger_2014",
+      "label": "Allmendinger[author] + injection (no free-full-text filter)",
+      "term": "Allmendinger[author] AND injection",
+      "count": 15,
+      "returned": 15,
+      "ids": [
+        "41935636",
+        "39758252",
+        "37992868",
+        "36165932",
+        "34102300",
+        "33333826",
+        "33258013",
+        "32888065",
+        "27390260",
+        "25537343",
+        "24877984",
+        "24560966",
+        "24123410",
+        "23395554",
+        "20421799"
+      ],
+      "rows": [
+        {
+          "pmid": "41935636",
+          "title": "Reaching new heights? Maximum subcutaneous injection volumes from a technical and clinical development strategy perspective.",
+          "pubdate": "2026 Jul",
+          "source": "Adv Drug Deliv Rev",
+          "authors": "Allmendinger A, Mahler HC, Bittner B",
+          "elocationid": "doi: 10.1016/j.addr.2026.115863",
+          "doi": "10.1016/j.addr.2026.115863",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41935636/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "39758252",
+          "title": "An oncolytic HAdV-5 with reduced surface charge combines diminished toxicity and improved tumor targeting.",
+          "pubdate": "2024 Dec 19",
+          "source": "Mol Ther Oncol",
+          "authors": "Wienen F, Nilson R, Allmendinger E, Peters S, Barth TFE, Kochanek S et al.",
+          "elocationid": "doi: 10.1016/j.omton.2024.200909",
+          "doi": "10.1016/j.omton.2024.200909",
+          "pmcid": "PMC11699628",
+          "pmcids": [
+            "PMC11699628"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39758252/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11699628/"
+        },
+        {
+          "pmid": "37992868",
+          "title": "Filling Unit Operation for Biological Drug Products: Challenges and Considerations.",
+          "pubdate": "2024 Feb",
+          "source": "J Pharm Sci",
+          "authors": "Adler M, Allmendinger A",
+          "elocationid": "doi: 10.1016/j.xphs.2023.11.017",
+          "doi": "10.1016/j.xphs.2023.11.017",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37992868/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "36165932",
+          "title": "Reduced Iodinated Contrast Media Administration in Coronary CT Angiography on a Clinical Photon-Counting Detector CT System: A Phantom Study Using a Dynamic Circulation Model.",
+          "pubdate": "2023 Feb 1",
+          "source": "Invest Radiol",
+          "authors": "Emrich T, O'Doherty J, Schoepf UJ, Suranyi P, Aquino G, Kloeckner R et al.",
+          "elocationid": "doi: 10.1097/RLI.0000000000000911",
+          "doi": "10.1097/RLI.0000000000000911",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36165932/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "34102300",
+          "title": "Intraocular pressure and injection forces during intravitreal injection into enucleated porcine eyes.",
+          "pubdate": "2021 Sep",
+          "source": "Eur J Pharm Biopharm",
+          "authors": "Allmendinger A, Butt YL, Mueller C",
+          "elocationid": "doi: 10.1016/j.ejpb.2021.06.001",
+          "doi": "10.1016/j.ejpb.2021.06.001",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34102300/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "33333826",
+          "title": "EGFR-Binding Peptides: From Computational Design towards Tumor-Targeting of Adeno-Associated Virus Capsids.",
+          "pubdate": "2020 Dec 15",
+          "source": "Int J Mol Sci",
+          "authors": "Feiner RC, Kemker I, Krutzke L, Allmendinger E, Mandell DJ, Sewald N et al.",
+          "elocationid": "doi: 10.3390/ijms21249535",
+          "doi": "10.3390/ijms21249535",
+          "pmcid": "PMC7765298",
+          "pmcids": [
+            "PMC7765298"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33333826/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7765298/"
+        },
+        {
+          "pmid": "33258013",
+          "title": "Correction to: Tissue Resistance during Large-Volume Injections in Subcutaneous Tissue of Minipigs.",
+          "pubdate": "2020 Nov 30",
+          "source": "Pharm Res",
+          "authors": "Allmendinger A, Fischer S",
+          "elocationid": "doi: 10.1007/s11095-020-02970-1",
+          "doi": "10.1007/s11095-020-02970-1",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33258013/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "32888065",
+          "title": "Tissue Resistance during Large-Volume Injections in Subcutaneous Tissue of Minipigs.",
+          "pubdate": "2020 Sep 4",
+          "source": "Pharm Res",
+          "authors": "Allmendinger A, Fischer S",
+          "elocationid": "doi: 10.1007/s11095-020-02906-9",
+          "doi": "10.1007/s11095-020-02906-9",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32888065/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "27390260",
+          "title": "Life-cycle and cost of goods assessment of fed-batch and perfusion-based manufacturing processes for mAbs.",
+          "pubdate": "2016 Sep",
+          "source": "Biotechnol Prog",
+          "authors": "Bunnak P, Allmendinger R, Ramasamy SV, Lettieri P, Titchener-Hooker NJ",
+          "elocationid": "doi: 10.1002/btpr.2323",
+          "doi": "10.1002/btpr.2323",
+          "pmcid": "PMC5082523",
+          "pmcids": [
+            "PMC5082523"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/27390260/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5082523/"
+        },
+        {
+          "pmid": "25537343",
+          "title": "Measuring tissue back-pressure--in vivo injection forces during subcutaneous injection.",
+          "pubdate": "2015 Jul",
+          "source": "Pharm Res",
+          "authors": "Allmendinger A, Mueller R, Schwarb E, Chipperfield M, Huwyler J, Mahler HC et al.",
+          "elocationid": "doi: 10.1007/s11095-014-1611-0",
+          "doi": "10.1007/s11095-014-1611-0",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/25537343/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "24877984",
+          "title": "Closing in on the K edge: coronary CT angiography at 100, 80, and 70 kV-initial comparison of a second- versus a third-generation dual-source CT system.",
+          "pubdate": "2014 Nov",
+          "source": "Radiology",
+          "authors": "Meyer M, Haubenreisser H, Schoepf UJ, Vliegenthart R, Leidecker C, Allmendinger T et al.",
+          "elocationid": "doi: 10.1148/radiol.14140244",
+          "doi": "10.1148/radiol.14140244",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/24877984/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "24560966",
+          "title": "Rheological characterization and injection forces of concentrated protein formulations: an alternative predictive model for non-Newtonian solutions.",
+          "pubdate": "2014 Jul",
+          "source": "Eur J Pharm Biopharm",
+          "authors": "Allmendinger A, Fischer S, Huwyler J, Mahler HC, Schwarb E, Zarraga IE et al.",
+          "elocationid": "doi: 10.1016/j.ejpb.2014.01.009",
+          "doi": "10.1016/j.ejpb.2014.01.009",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/24560966/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "24123410",
+          "title": "Enantiopurity determination of the enantiomers of the triple reuptake inhibitor indatraline.",
+          "pubdate": "2013 Dec",
+          "source": "Chirality",
+          "authors": "Grimm SH, Allmendinger L, H\u00f6fner G, Wanner KT",
+          "elocationid": "doi: 10.1002/chir.22235",
+          "doi": "10.1002/chir.22235",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/24123410/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "23395554",
+          "title": "Spontaneous intracranial hypotension from calcified thoracic disc protrusions causing CSF leak successfully treated with targeted epidural blood patch.",
+          "pubdate": "2013 Jul-Aug",
+          "source": "Clin Imaging",
+          "authors": "Allmendinger AM, Lee TC",
+          "elocationid": "doi: 10.1016/j.clinimag.2012.11.006",
+          "doi": "10.1016/j.clinimag.2012.11.006",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23395554/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "20421799",
+          "title": "Quantitative whole heart stress perfusion CT imaging as noninvasive assessment of hemodynamics in coronary artery stenosis: preliminary animal experience.",
+          "pubdate": "2010 Jun",
+          "source": "Invest Radiol",
+          "authors": "Mahnken AH, Klotz E, Pietsch H, Schmidt B, Allmendinger T, Haberland U et al.",
+          "elocationid": "doi: 10.1097/RLI.0b013e3181dfa3cf",
+          "doi": "10.1097/RLI.0b013e3181dfa3cf",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/20421799/",
+          "pmc_url": null
+        }
+      ],
+      "note": "Includes paywalled classic papers; compare to free full text filter"
+    },
+    {
+      "id": "classic_allmendinger_broader",
+      "label": "Allmendinger + injection force / injectability / rheolog*",
+      "term": "Allmendinger[author] AND (\"injection force\" OR injectability OR rheolog*)",
+      "count": 17,
+      "returned": 17,
+      "ids": [
+        "41935636",
+        "39758252",
+        "37992868",
+        "36165932",
+        "34102300",
+        "33333826",
+        "33258013",
+        "32888065",
+        "27390260",
+        "26149748",
+        "25537343",
+        "25077704",
+        "24877984",
+        "24560966",
+        "24123410",
+        "23395554",
+        "20421799"
+      ],
+      "rows": [
+        {
+          "pmid": "41935636",
+          "title": "Reaching new heights? Maximum subcutaneous injection volumes from a technical and clinical development strategy perspective.",
+          "pubdate": "2026 Jul",
+          "source": "Adv Drug Deliv Rev",
+          "authors": "Allmendinger A, Mahler HC, Bittner B",
+          "elocationid": "doi: 10.1016/j.addr.2026.115863",
+          "doi": "10.1016/j.addr.2026.115863",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41935636/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "39758252",
+          "title": "An oncolytic HAdV-5 with reduced surface charge combines diminished toxicity and improved tumor targeting.",
+          "pubdate": "2024 Dec 19",
+          "source": "Mol Ther Oncol",
+          "authors": "Wienen F, Nilson R, Allmendinger E, Peters S, Barth TFE, Kochanek S et al.",
+          "elocationid": "doi: 10.1016/j.omton.2024.200909",
+          "doi": "10.1016/j.omton.2024.200909",
+          "pmcid": "PMC11699628",
+          "pmcids": [
+            "PMC11699628"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39758252/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11699628/"
+        },
+        {
+          "pmid": "37992868",
+          "title": "Filling Unit Operation for Biological Drug Products: Challenges and Considerations.",
+          "pubdate": "2024 Feb",
+          "source": "J Pharm Sci",
+          "authors": "Adler M, Allmendinger A",
+          "elocationid": "doi: 10.1016/j.xphs.2023.11.017",
+          "doi": "10.1016/j.xphs.2023.11.017",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37992868/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "36165932",
+          "title": "Reduced Iodinated Contrast Media Administration in Coronary CT Angiography on a Clinical Photon-Counting Detector CT System: A Phantom Study Using a Dynamic Circulation Model.",
+          "pubdate": "2023 Feb 1",
+          "source": "Invest Radiol",
+          "authors": "Emrich T, O'Doherty J, Schoepf UJ, Suranyi P, Aquino G, Kloeckner R et al.",
+          "elocationid": "doi: 10.1097/RLI.0000000000000911",
+          "doi": "10.1097/RLI.0000000000000911",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36165932/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "34102300",
+          "title": "Intraocular pressure and injection forces during intravitreal injection into enucleated porcine eyes.",
+          "pubdate": "2021 Sep",
+          "source": "Eur J Pharm Biopharm",
+          "authors": "Allmendinger A, Butt YL, Mueller C",
+          "elocationid": "doi: 10.1016/j.ejpb.2021.06.001",
+          "doi": "10.1016/j.ejpb.2021.06.001",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34102300/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "33333826",
+          "title": "EGFR-Binding Peptides: From Computational Design towards Tumor-Targeting of Adeno-Associated Virus Capsids.",
+          "pubdate": "2020 Dec 15",
+          "source": "Int J Mol Sci",
+          "authors": "Feiner RC, Kemker I, Krutzke L, Allmendinger E, Mandell DJ, Sewald N et al.",
+          "elocationid": "doi: 10.3390/ijms21249535",
+          "doi": "10.3390/ijms21249535",
+          "pmcid": "PMC7765298",
+          "pmcids": [
+            "PMC7765298"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33333826/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7765298/"
+        },
+        {
+          "pmid": "33258013",
+          "title": "Correction to: Tissue Resistance during Large-Volume Injections in Subcutaneous Tissue of Minipigs.",
+          "pubdate": "2020 Nov 30",
+          "source": "Pharm Res",
+          "authors": "Allmendinger A, Fischer S",
+          "elocationid": "doi: 10.1007/s11095-020-02970-1",
+          "doi": "10.1007/s11095-020-02970-1",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33258013/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "32888065",
+          "title": "Tissue Resistance during Large-Volume Injections in Subcutaneous Tissue of Minipigs.",
+          "pubdate": "2020 Sep 4",
+          "source": "Pharm Res",
+          "authors": "Allmendinger A, Fischer S",
+          "elocationid": "doi: 10.1007/s11095-020-02906-9",
+          "doi": "10.1007/s11095-020-02906-9",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32888065/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "27390260",
+          "title": "Life-cycle and cost of goods assessment of fed-batch and perfusion-based manufacturing processes for mAbs.",
+          "pubdate": "2016 Sep",
+          "source": "Biotechnol Prog",
+          "authors": "Bunnak P, Allmendinger R, Ramasamy SV, Lettieri P, Titchener-Hooker NJ",
+          "elocationid": "doi: 10.1002/btpr.2323",
+          "doi": "10.1002/btpr.2323",
+          "pmcid": "PMC5082523",
+          "pmcids": [
+            "PMC5082523"
+          ],
+          "has_pmc_fulltext_link": true,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/27390260/",
+          "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5082523/"
+        },
+        {
+          "pmid": "26149748",
+          "title": "Sterile Filtration of Highly Concentrated Protein Formulations: Impact of Protein Concentration, Formulation Composition, and Filter Material.",
+          "pubdate": "2015 Oct",
+          "source": "J Pharm Sci",
+          "authors": "Allmendinger A, Mueller R, Huwyler J, Mahler HC, Fischer S",
+          "elocationid": "doi: 10.1002/jps.24561",
+          "doi": "10.1002/jps.24561",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/26149748/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "25537343",
+          "title": "Measuring tissue back-pressure--in vivo injection forces during subcutaneous injection.",
+          "pubdate": "2015 Jul",
+          "source": "Pharm Res",
+          "authors": "Allmendinger A, Mueller R, Schwarb E, Chipperfield M, Huwyler J, Mahler HC et al.",
+          "elocationid": "doi: 10.1007/s11095-014-1611-0",
+          "doi": "10.1007/s11095-014-1611-0",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/25537343/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "25077704",
+          "title": "High-throughput viscosity measurement using capillary electrophoresis instrumentation and its application to protein formulation.",
+          "pubdate": "2014 Oct",
+          "source": "J Pharm Biomed Anal",
+          "authors": "Allmendinger A, Dieu LH, Fischer S, Mueller R, Mahler HC, Huwyler J",
+          "elocationid": "doi: 10.1016/j.jpba.2014.07.005",
+          "doi": "10.1016/j.jpba.2014.07.005",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/25077704/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "24877984",
+          "title": "Closing in on the K edge: coronary CT angiography at 100, 80, and 70 kV-initial comparison of a second- versus a third-generation dual-source CT system.",
+          "pubdate": "2014 Nov",
+          "source": "Radiology",
+          "authors": "Meyer M, Haubenreisser H, Schoepf UJ, Vliegenthart R, Leidecker C, Allmendinger T et al.",
+          "elocationid": "doi: 10.1148/radiol.14140244",
+          "doi": "10.1148/radiol.14140244",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/24877984/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "24560966",
+          "title": "Rheological characterization and injection forces of concentrated protein formulations: an alternative predictive model for non-Newtonian solutions.",
+          "pubdate": "2014 Jul",
+          "source": "Eur J Pharm Biopharm",
+          "authors": "Allmendinger A, Fischer S, Huwyler J, Mahler HC, Schwarb E, Zarraga IE et al.",
+          "elocationid": "doi: 10.1016/j.ejpb.2014.01.009",
+          "doi": "10.1016/j.ejpb.2014.01.009",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/24560966/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "24123410",
+          "title": "Enantiopurity determination of the enantiomers of the triple reuptake inhibitor indatraline.",
+          "pubdate": "2013 Dec",
+          "source": "Chirality",
+          "authors": "Grimm SH, Allmendinger L, H\u00f6fner G, Wanner KT",
+          "elocationid": "doi: 10.1002/chir.22235",
+          "doi": "10.1002/chir.22235",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/24123410/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "23395554",
+          "title": "Spontaneous intracranial hypotension from calcified thoracic disc protrusions causing CSF leak successfully treated with targeted epidural blood patch.",
+          "pubdate": "2013 Jul-Aug",
+          "source": "Clin Imaging",
+          "authors": "Allmendinger AM, Lee TC",
+          "elocationid": "doi: 10.1016/j.clinimag.2012.11.006",
+          "doi": "10.1016/j.clinimag.2012.11.006",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/23395554/",
+          "pmc_url": null
+        },
+        {
+          "pmid": "20421799",
+          "title": "Quantitative whole heart stress perfusion CT imaging as noninvasive assessment of hemodynamics in coronary artery stenosis: preliminary animal experience.",
+          "pubdate": "2010 Jun",
+          "source": "Invest Radiol",
+          "authors": "Mahnken AH, Klotz E, Pietsch H, Schmidt B, Allmendinger T, Haberland U et al.",
+          "elocationid": "doi: 10.1097/RLI.0b013e3181dfa3cf",
+          "doi": "10.1097/RLI.0b013e3181dfa3cf",
+          "pmcid": null,
+          "pmcids": [],
+          "has_pmc_fulltext_link": false,
+          "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/20421799/",
+          "pmc_url": null
+        }
+      ],
+      "note": "Broader Allmendinger set for OA vs abstract-only classification"
+    }
+  ],
+  "allmendinger_oa_vs_abstract_note": {
+    "free_full_text_filter_count": 3,
+    "free_full_text_pmids": [
+      "39758252",
+      "33333826",
+      "27390260"
+    ],
+    "free_full_text_rows": [
+      {
+        "pmid": "39758252",
+        "title": "An oncolytic HAdV-5 with reduced surface charge combines diminished toxicity and improved tumor targeting.",
+        "pubdate": "2024 Dec 19",
+        "source": "Mol Ther Oncol",
+        "authors": "Wienen F, Nilson R, Allmendinger E, Peters S, Barth TFE, Kochanek S et al.",
+        "elocationid": "doi: 10.1016/j.omton.2024.200909",
+        "doi": "10.1016/j.omton.2024.200909",
+        "pmcid": "PMC11699628",
+        "pmcids": [
+          "PMC11699628"
+        ],
+        "has_pmc_fulltext_link": true,
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39758252/",
+        "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11699628/"
+      },
+      {
+        "pmid": "33333826",
+        "title": "EGFR-Binding Peptides: From Computational Design towards Tumor-Targeting of Adeno-Associated Virus Capsids.",
+        "pubdate": "2020 Dec 15",
+        "source": "Int J Mol Sci",
+        "authors": "Feiner RC, Kemker I, Krutzke L, Allmendinger E, Mandell DJ, Sewald N et al.",
+        "elocationid": "doi: 10.3390/ijms21249535",
+        "doi": "10.3390/ijms21249535",
+        "pmcid": "PMC7765298",
+        "pmcids": [
+          "PMC7765298"
+        ],
+        "has_pmc_fulltext_link": true,
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33333826/",
+        "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7765298/"
+      },
+      {
+        "pmid": "27390260",
+        "title": "Life-cycle and cost of goods assessment of fed-batch and perfusion-based manufacturing processes for mAbs.",
+        "pubdate": "2016 Sep",
+        "source": "Biotechnol Prog",
+        "authors": "Bunnak P, Allmendinger R, Ramasamy SV, Lettieri P, Titchener-Hooker NJ",
+        "elocationid": "doi: 10.1002/btpr.2323",
+        "doi": "10.1002/btpr.2323",
+        "pmcid": "PMC5082523",
+        "pmcids": [
+          "PMC5082523"
+        ],
+        "has_pmc_fulltext_link": true,
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/27390260/",
+        "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5082523/"
+      }
+    ],
+    "unfiltered_injection_count": 15,
+    "unfiltered_injection_pmids": [
+      "41935636",
+      "39758252",
+      "37992868",
+      "36165932",
+      "34102300",
+      "33333826",
+      "33258013",
+      "32888065",
+      "27390260",
+      "25537343",
+      "24877984",
+      "24560966",
+      "24123410",
+      "23395554",
+      "20421799"
+    ],
+    "unfiltered_rows": [
+      {
+        "pmid": "41935636",
+        "title": "Reaching new heights? Maximum subcutaneous injection volumes from a technical and clinical development strategy perspective.",
+        "pubdate": "2026 Jul",
+        "source": "Adv Drug Deliv Rev",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      },
+      {
+        "pmid": "39758252",
+        "title": "An oncolytic HAdV-5 with reduced surface charge combines diminished toxicity and improved tumor targeting.",
+        "pubdate": "2024 Dec 19",
+        "source": "Mol Ther Oncol",
+        "pmcid": "PMC11699628",
+        "has_pmc": true,
+        "access_note": "PMC full-text link present (typically open-access deposit)"
+      },
+      {
+        "pmid": "37992868",
+        "title": "Filling Unit Operation for Biological Drug Products: Challenges and Considerations.",
+        "pubdate": "2024 Feb",
+        "source": "J Pharm Sci",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      },
+      {
+        "pmid": "36165932",
+        "title": "Reduced Iodinated Contrast Media Administration in Coronary CT Angiography on a Clinical Photon-Counting Detector CT System: A Phantom Study Using a Dynamic Circulation Model.",
+        "pubdate": "2023 Feb 1",
+        "source": "Invest Radiol",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      },
+      {
+        "pmid": "34102300",
+        "title": "Intraocular pressure and injection forces during intravitreal injection into enucleated porcine eyes.",
+        "pubdate": "2021 Sep",
+        "source": "Eur J Pharm Biopharm",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      },
+      {
+        "pmid": "33333826",
+        "title": "EGFR-Binding Peptides: From Computational Design towards Tumor-Targeting of Adeno-Associated Virus Capsids.",
+        "pubdate": "2020 Dec 15",
+        "source": "Int J Mol Sci",
+        "pmcid": "PMC7765298",
+        "has_pmc": true,
+        "access_note": "PMC full-text link present (typically open-access deposit)"
+      },
+      {
+        "pmid": "33258013",
+        "title": "Correction to: Tissue Resistance during Large-Volume Injections in Subcutaneous Tissue of Minipigs.",
+        "pubdate": "2020 Nov 30",
+        "source": "Pharm Res",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      },
+      {
+        "pmid": "32888065",
+        "title": "Tissue Resistance during Large-Volume Injections in Subcutaneous Tissue of Minipigs.",
+        "pubdate": "2020 Sep 4",
+        "source": "Pharm Res",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      },
+      {
+        "pmid": "27390260",
+        "title": "Life-cycle and cost of goods assessment of fed-batch and perfusion-based manufacturing processes for mAbs.",
+        "pubdate": "2016 Sep",
+        "source": "Biotechnol Prog",
+        "pmcid": "PMC5082523",
+        "has_pmc": true,
+        "access_note": "PMC full-text link present (typically open-access deposit)"
+      },
+      {
+        "pmid": "25537343",
+        "title": "Measuring tissue back-pressure--in vivo injection forces during subcutaneous injection.",
+        "pubdate": "2015 Jul",
+        "source": "Pharm Res",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      },
+      {
+        "pmid": "24877984",
+        "title": "Closing in on the K edge: coronary CT angiography at 100, 80, and 70 kV-initial comparison of a second- versus a third-generation dual-source CT system.",
+        "pubdate": "2014 Nov",
+        "source": "Radiology",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      },
+      {
+        "pmid": "24560966",
+        "title": "Rheological characterization and injection forces of concentrated protein formulations: an alternative predictive model for non-Newtonian solutions.",
+        "pubdate": "2014 Jul",
+        "source": "Eur J Pharm Biopharm",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "NO PMC link; NOT in free full text[filter] results \u2014 abstract-only for this OA workflow. Publisher full text paywalled for typical users; do not fabricate table values from abstract.",
+        "classic_tag": "Allmendinger et al. 2014 EJPB rheology + injection forces (often cited classic)"
+      },
+      {
+        "pmid": "24123410",
+        "title": "Enantiopurity determination of the enantiomers of the triple reuptake inhibitor indatraline.",
+        "pubdate": "2013 Dec",
+        "source": "Chirality",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      },
+      {
+        "pmid": "23395554",
+        "title": "Spontaneous intracranial hypotension from calcified thoracic disc protrusions causing CSF leak successfully treated with targeted epidural blood patch.",
+        "pubdate": "2013 Jul-Aug",
+        "source": "Clin Imaging",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      },
+      {
+        "pmid": "20421799",
+        "title": "Quantitative whole heart stress perfusion CT imaging as noninvasive assessment of hemodynamics in coronary artery stenosis: preliminary animal experience.",
+        "pubdate": "2010 Jun",
+        "source": "Invest Radiol",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      }
+    ],
+    "broader_rheology_count": 17,
+    "broader_rows": [
+      {
+        "pmid": "41935636",
+        "title": "Reaching new heights? Maximum subcutaneous injection volumes from a technical and clinical development strategy perspective.",
+        "pubdate": "2026 Jul",
+        "source": "Adv Drug Deliv Rev",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      },
+      {
+        "pmid": "39758252",
+        "title": "An oncolytic HAdV-5 with reduced surface charge combines diminished toxicity and improved tumor targeting.",
+        "pubdate": "2024 Dec 19",
+        "source": "Mol Ther Oncol",
+        "pmcid": "PMC11699628",
+        "has_pmc": true,
+        "access_note": "PMC full-text link present (typically open-access deposit)"
+      },
+      {
+        "pmid": "37992868",
+        "title": "Filling Unit Operation for Biological Drug Products: Challenges and Considerations.",
+        "pubdate": "2024 Feb",
+        "source": "J Pharm Sci",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      },
+      {
+        "pmid": "36165932",
+        "title": "Reduced Iodinated Contrast Media Administration in Coronary CT Angiography on a Clinical Photon-Counting Detector CT System: A Phantom Study Using a Dynamic Circulation Model.",
+        "pubdate": "2023 Feb 1",
+        "source": "Invest Radiol",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      },
+      {
+        "pmid": "34102300",
+        "title": "Intraocular pressure and injection forces during intravitreal injection into enucleated porcine eyes.",
+        "pubdate": "2021 Sep",
+        "source": "Eur J Pharm Biopharm",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      },
+      {
+        "pmid": "33333826",
+        "title": "EGFR-Binding Peptides: From Computational Design towards Tumor-Targeting of Adeno-Associated Virus Capsids.",
+        "pubdate": "2020 Dec 15",
+        "source": "Int J Mol Sci",
+        "pmcid": "PMC7765298",
+        "has_pmc": true,
+        "access_note": "PMC full-text link present (typically open-access deposit)"
+      },
+      {
+        "pmid": "33258013",
+        "title": "Correction to: Tissue Resistance during Large-Volume Injections in Subcutaneous Tissue of Minipigs.",
+        "pubdate": "2020 Nov 30",
+        "source": "Pharm Res",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      },
+      {
+        "pmid": "32888065",
+        "title": "Tissue Resistance during Large-Volume Injections in Subcutaneous Tissue of Minipigs.",
+        "pubdate": "2020 Sep 4",
+        "source": "Pharm Res",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      },
+      {
+        "pmid": "27390260",
+        "title": "Life-cycle and cost of goods assessment of fed-batch and perfusion-based manufacturing processes for mAbs.",
+        "pubdate": "2016 Sep",
+        "source": "Biotechnol Prog",
+        "pmcid": "PMC5082523",
+        "has_pmc": true,
+        "access_note": "PMC full-text link present (typically open-access deposit)"
+      },
+      {
+        "pmid": "26149748",
+        "title": "Sterile Filtration of Highly Concentrated Protein Formulations: Impact of Protein Concentration, Formulation Composition, and Filter Material.",
+        "pubdate": "2015 Oct",
+        "source": "J Pharm Sci",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      },
+      {
+        "pmid": "25537343",
+        "title": "Measuring tissue back-pressure--in vivo injection forces during subcutaneous injection.",
+        "pubdate": "2015 Jul",
+        "source": "Pharm Res",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      },
+      {
+        "pmid": "25077704",
+        "title": "High-throughput viscosity measurement using capillary electrophoresis instrumentation and its application to protein formulation.",
+        "pubdate": "2014 Oct",
+        "source": "J Pharm Biomed Anal",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      },
+      {
+        "pmid": "24877984",
+        "title": "Closing in on the K edge: coronary CT angiography at 100, 80, and 70 kV-initial comparison of a second- versus a third-generation dual-source CT system.",
+        "pubdate": "2014 Nov",
+        "source": "Radiology",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      },
+      {
+        "pmid": "24560966",
+        "title": "Rheological characterization and injection forces of concentrated protein formulations: an alternative predictive model for non-Newtonian solutions.",
+        "pubdate": "2014 Jul",
+        "source": "Eur J Pharm Biopharm",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "NO PMC link; NOT in free full text[filter] results \u2014 abstract-only for this OA workflow. Publisher full text paywalled for typical users; do not fabricate table values from abstract.",
+        "classic_tag": "Allmendinger et al. 2014 EJPB rheology + injection forces (often cited classic)"
+      },
+      {
+        "pmid": "24123410",
+        "title": "Enantiopurity determination of the enantiomers of the triple reuptake inhibitor indatraline.",
+        "pubdate": "2013 Dec",
+        "source": "Chirality",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      },
+      {
+        "pmid": "23395554",
+        "title": "Spontaneous intracranial hypotension from calcified thoracic disc protrusions causing CSF leak successfully treated with targeted epidural blood patch.",
+        "pubdate": "2013 Jul-Aug",
+        "source": "Clin Imaging",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      },
+      {
+        "pmid": "20421799",
+        "title": "Quantitative whole heart stress perfusion CT imaging as noninvasive assessment of hemodynamics in coronary artery stenosis: preliminary animal experience.",
+        "pubdate": "2010 Jun",
+        "source": "Invest Radiol",
+        "pmcid": null,
+        "has_pmc": false,
+        "access_note": "No PMC link via elink \u2014 often abstract-only / paywalled publisher full text (not free full text on PubMed)"
+      }
+    ]
+  },
+  "unique_free_full_text_pmids": [
+    "41863023",
+    "41821033",
+    "32378675",
+    "40428693",
+    "39369766",
+    "34723096",
+    "21553165",
+    "41860823",
+    "42272978",
+    "40925691",
+    "36149647",
+    "38596590",
+    "40483284",
+    "37754414",
+    "37376156",
+    "32653597",
+    "22915910",
+    "39758252",
+    "41081304",
+    "40868739",
+    "32854439",
+    "23072273",
+    "33333826",
+    "27390260"
+  ],
+  "unique_count": 24,
+  "top10_promising_for_human_review": [
+    {
+      "pmid": "41863023",
+      "title": "The effect of syringe design and cannula dimensions on time-force curve in intravitreal injection across different drug viscosities: area under the curve and peak injection force.",
+      "pubdate": "2026 Mar 20",
+      "source": "Int J Retina Vitreous",
+      "authors": "Ackermann BC, Junker N, Friedrich M, J\u00f8rstad \u00d8K, Moe MC, Augustin VA et al.",
+      "doi": "10.1186/s40942-026-00833-2",
+      "pmcid": "PMC13063457",
+      "has_pmc_fulltext_link": true,
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41863023/",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13063457/",
+      "queries": [
+        "q1_injection_force_viscosity_needle"
+      ],
+      "relevance_score_heuristic": 9.2,
+      "friction_corrected_force_claim": "UNKNOWN_FROM_TITLE_ONLY \u2014 requires full-text review; no claim asserted from search metadata"
+    },
+    {
+      "pmid": "41821033",
+      "title": "Guiding syringe selection for intravitreal injections: injectability and stability analysis of compounded pegcetacoplan (SYFOVRE) and the broader implications for high-viscosity ophthalmic therapies.",
+      "pubdate": "2026 Mar 12",
+      "source": "Int J Retina Vitreous",
+      "authors": "Felfeli T, Lane NM, Mandelcorn ED",
+      "doi": "10.1186/s40942-026-00832-3",
+      "pmcid": "PMC13147785",
+      "has_pmc_fulltext_link": true,
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41821033/",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13147785/",
+      "queries": [
+        "q1_injection_force_viscosity_needle"
+      ],
+      "relevance_score_heuristic": 6.2,
+      "friction_corrected_force_claim": "UNKNOWN_FROM_TITLE_ONLY \u2014 requires full-text review; no claim asserted from search metadata"
+    },
+    {
+      "pmid": "32378675",
+      "title": "[Research on Gliding and Discharge Performance of Suspended Injection from Syringe -Effect of Diameter Ratio of Suspending Particle against Needle Hole on Needle Passageability].",
+      "pubdate": "2020",
+      "source": "Yakugaku Zasshi",
+      "authors": "Niwa T, Morisaki M, Kondo K, Nakashima A",
+      "doi": "10.1248/yakushi.19-00254",
+      "pmcid": null,
+      "has_pmc_fulltext_link": false,
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32378675/",
+      "pmc_url": null,
+      "queries": [
+        "q1_injection_force_viscosity_needle"
+      ],
+      "relevance_score_heuristic": 5.7,
+      "friction_corrected_force_claim": "UNKNOWN_FROM_TITLE_ONLY \u2014 requires full-text review; no claim asserted from search metadata"
+    },
+    {
+      "pmid": "40428693",
+      "title": "Microfluidic Chip for Quantitatively Assessing Hemorheological Parameters.",
+      "pubdate": "2025 May 8",
+      "source": "Micromachines (Basel)",
+      "authors": "Kang YJ",
+      "doi": "10.3390/mi16050567",
+      "pmcid": "PMC12113853",
+      "has_pmc_fulltext_link": true,
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40428693/",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12113853/",
+      "queries": [
+        "q4_hagen_poiseuille_syringe"
+      ],
+      "relevance_score_heuristic": 5.7,
+      "friction_corrected_force_claim": "UNKNOWN_FROM_TITLE_ONLY \u2014 requires full-text review; no claim asserted from search metadata"
+    },
+    {
+      "pmid": "39369766",
+      "title": "The effect of temperature-dependent drug viscosity on needle-free jet injection.",
+      "pubdate": "2024 Dec 5",
+      "source": "Int J Pharm",
+      "authors": "William McKeage J, Janet Full H, Zheng Hao Tan A, James Taberner A",
+      "doi": "10.1016/j.ijpharm.2024.124777",
+      "pmcid": null,
+      "has_pmc_fulltext_link": false,
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39369766/",
+      "pmc_url": null,
+      "queries": [
+        "q2_glycerol_needle_force"
+      ],
+      "relevance_score_heuristic": 5.2,
+      "friction_corrected_force_claim": "UNKNOWN_FROM_TITLE_ONLY \u2014 requires full-text review; no claim asserted from search metadata"
+    },
+    {
+      "pmid": "34723096",
+      "title": "A microfluidic approach to studying the injection flow of concentrated albumin solutions.",
+      "pubdate": "2021",
+      "source": "SN Appl Sci",
+      "authors": "Lanzaro A",
+      "doi": "10.1007/s42452-021-04767-2",
+      "pmcid": "PMC8550001",
+      "has_pmc_fulltext_link": true,
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34723096/",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8550001/",
+      "queries": [
+        "q1_injection_force_viscosity_needle"
+      ],
+      "relevance_score_heuristic": 4.2,
+      "friction_corrected_force_claim": "UNKNOWN_FROM_TITLE_ONLY \u2014 requires full-text review; no claim asserted from search metadata"
+    },
+    {
+      "pmid": "21553165",
+      "title": "Injectability evaluation: an open issue.",
+      "pubdate": "2011 Jun",
+      "source": "AAPS PharmSciTech",
+      "authors": "Cilurzo F, Selmin F, Minghetti P, Adami M, Bertoni E, Lauria S et al.",
+      "doi": "10.1208/s12249-011-9625-y",
+      "pmcid": "PMC3134656",
+      "has_pmc_fulltext_link": true,
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/21553165/",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3134656/",
+      "queries": [
+        "q1_injection_force_viscosity_needle"
+      ],
+      "relevance_score_heuristic": 4.2,
+      "friction_corrected_force_claim": "UNKNOWN_FROM_TITLE_ONLY \u2014 requires full-text review; no claim asserted from search metadata"
+    },
+    {
+      "pmid": "41860823",
+      "title": "A theoretical and experimental model of flow characteristics in subretinal injections.",
+      "pubdate": "2026",
+      "source": "PLoS One",
+      "authors": "Ladha R, Merveille B, Wyns R, Scheid B, Willermain F, de Smet MD",
+      "doi": "10.1371/journal.pone.0344836",
+      "pmcid": "PMC13004354",
+      "has_pmc_fulltext_link": true,
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41860823/",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13004354/",
+      "queries": [
+        "q4_hagen_poiseuille_syringe"
+      ],
+      "relevance_score_heuristic": 3.7,
+      "friction_corrected_force_claim": "UNKNOWN_FROM_TITLE_ONLY \u2014 requires full-text review; no claim asserted from search metadata"
+    },
+    {
+      "pmid": "42272978",
+      "title": "Feasibility and pharmacokinetic evaluation of a needle-free injector for delivering high concentration antibody formulations.",
+      "pubdate": "2026 May",
+      "source": "Bioeng Transl Med",
+      "authors": "Josowitz A, Manoj AS, Laiacona D, Pelletier M, Molano D, Jennings S et al.",
+      "doi": "10.1002/btm2.70063",
+      "pmcid": "PMC13247403",
+      "has_pmc_fulltext_link": true,
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42272978/",
+      "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13247403/",
+      "queries": [
+        "q1_injection_force_viscosity_needle"
+      ],
+      "relevance_score_heuristic": 3.2,
+      "friction_corrected_force_claim": "UNKNOWN_FROM_TITLE_ONLY \u2014 requires full-text review; no claim asserted from search metadata"
+    },
+    {
+      "pmid": "40925691",
+      "title": "A numerical investigation of the kinematic and fluid dynamic behaviour of an intramuscular autoinjector designed for optimising injection efficiency.",
+      "pubdate": "2025 Oct",
+      "source": "Med Eng Phys",
+      "authors": "Sivarasu S, Magubane N, Mbanefo C, Ngoepe M",
+      "doi": "10.1016/j.medengphy.2025.104407",
+      "pmcid": null,
+      "has_pmc_fulltext_link": false,
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40925691/",
+      "pmc_url": null,
+      "queries": [
+        "q1_injection_force_viscosity_needle"
+      ],
+      "relevance_score_heuristic": 2.7,
+      "friction_corrected_force_claim": "UNKNOWN_FROM_TITLE_ONLY \u2014 requires full-text review; no claim asserted from search metadata"
+    }
+  ],
+  "classic_allmendinger_2014_pmid": {
+    "pmid": "24560966",
+    "title": "Rheological characterization and injection forces of concentrated protein formulations: an alternative predictive model for non-Newtonian solutions.",
+    "in_free_full_text_query3": false,
+    "has_pmc_via_elink": false,
+    "access": "abstract-only / paywalled (not free full text on PubMed; no PMC deposit found via elink)",
+    "note": "Confirmed present in unfiltered Allmendinger+injection search; absent from free full text filter."
+  },
+  "allmendinger_force_related_access": [
+    {
+      "pmid": "41935636",
+      "title": "Reaching new heights? Maximum subcutaneous injection volumes from a technical and clinical development strategy perspective.",
+      "pubdate": "2026 Jul",
+      "source": "Adv Drug Deliv Rev",
+      "pmcid": null,
+      "access": "abstract-only / no PMC (likely paywalled)"
+    },
+    {
+      "pmid": "34102300",
+      "title": "Intraocular pressure and injection forces during intravitreal injection into enucleated porcine eyes.",
+      "pubdate": "2021 Sep",
+      "source": "Eur J Pharm Biopharm",
+      "pmcid": null,
+      "access": "abstract-only / no PMC (likely paywalled)"
+    },
+    {
+      "pmid": "33258013",
+      "title": "Correction to: Tissue Resistance during Large-Volume Injections in Subcutaneous Tissue of Minipigs.",
+      "pubdate": "2020 Nov 30",
+      "source": "Pharm Res",
+      "pmcid": null,
+      "access": "abstract-only / no PMC (likely paywalled)"
+    },
+    {
+      "pmid": "32888065",
+      "title": "Tissue Resistance during Large-Volume Injections in Subcutaneous Tissue of Minipigs.",
+      "pubdate": "2020 Sep 4",
+      "source": "Pharm Res",
+      "pmcid": null,
+      "access": "abstract-only / no PMC (likely paywalled)"
+    },
+    {
+      "pmid": "25537343",
+      "title": "Measuring tissue back-pressure--in vivo injection forces during subcutaneous injection.",
+      "pubdate": "2015 Jul",
+      "source": "Pharm Res",
+      "pmcid": null,
+      "access": "abstract-only / no PMC (likely paywalled)"
+    },
+    {
+      "pmid": "24560966",
+      "title": "Rheological characterization and injection forces of concentrated protein formulations: an alternative predictive model for non-Newtonian solutions.",
+      "pubdate": "2014 Jul",
+      "source": "Eur J Pharm Biopharm",
+      "pmcid": null,
+      "access": "abstract-only / no PMC (likely paywalled)"
+    }
+  ]
+}

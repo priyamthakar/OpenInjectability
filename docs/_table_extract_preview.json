@@ -1,0 +1,1945 @@
+[
+  {
+    "file": "PMC11717134.xml",
+    "pmcid": "PMC11717134",
+    "title": "In Vitro Analysis of Pressure Resistance in the Paul Glaucoma Implant and Ahmed ClearPath 250 With and Without Polypropylene Thread Inside the Tube",
+    "doi": "10.1167/tvst.14.1.2",
+    "n_tables": 4,
+    "tables": [
+      {
+        "label": "Table 1.",
+        "caption": "Comparison of Measured Tube Pressures Under Various Conditions",
+        "n_rows": 9,
+        "scores": {
+          "viscosity": true,
+          "needle_d": false,
+          "length": false,
+          "barrel": false,
+          "flow": false,
+          "force_pressure": true,
+          "has_numeric_force": false,
+          "has_numeric_visc": false,
+          "has_gauge": false,
+          "has_needle_id_mm": false,
+          "core_hit_count": 2
+        },
+        "rows": [
+          [
+            "",
+            "Pressure",
+            "P Value *",
+            "Pressure",
+            "P Value *",
+            "P Value (PGI vs. ACP) **"
+          ],
+          [
+            "Flow, µL/Min",
+            "PGI (−)",
+            "PGI (+)",
+            "PGI (−) vs. (+)",
+            "ACP (−)",
+            "ACP (+4)",
+            "ACP (+3)",
+            "ACP (−) vs. (+4)",
+            "ACP (−) vs. (+3)",
+            "ACP (+4) v.s (+3)",
+            "PGI (−) vs. ACP (−)",
+            "PGI (+) vs. ACP (+4)",
+            "PGI (+) vs. ACP (+3)"
+          ],
+          [
+            "1.0",
+            "0.7 ± 0.4",
+            "7.5 ± 0.5",
+            "0.0004",
+            "0.6 ± 0.2",
+            "2.2 ± 0.8",
+            "3.3 ± 0.7",
+            "0.02",
+            "0.003",
+            "0.03",
+            "0.9",
+            "<0.0001",
+            "0.003"
+          ],
+          [
+            "1.5",
+            "0.8 ± 0.4",
+            "11.2 ± 0.9",
+            "0.0002",
+            "0.8 ± 0.3",
+            "2.4 ± 0.8",
+            "3.9 ± 0.5",
+            "0.008",
+            "0.0006",
+            "0.02",
+            "0.9",
+            "<0.0001",
+            "0.003"
+          ],
+          [
+            "2.0",
+            "1.0 ± 0.4",
+            "17.1 ± 2.7",
+            "0.002",
+            "0.9 ± 0.3",
+            "2.5 ± 0.8",
+            "4.3 ± 0.4",
+            "0.006",
+            "0.0006",
+            "0.02",
+            "0.8",
+            "0.001",
+            "0.004"
+          ],
+          [
+            "2.5",
+            "1.3 ± 0.5",
+            "21.0 ± 4.0",
+            "0.003",
+            "1.0 ± 0.3",
+            "2.6 ± 0.8",
+            "4.6 ± 0.5",
+            "0.01",
+            "0.0008",
+            "0.03",
+            "0.4",
+            "0.002",
+            "0.004"
+          ],
+          [
+            "3.0",
+            "1.6 ± 0.5",
+            "26.0 ± 4.9",
+            "0.002",
+            "1.0 ± 0.3",
+            "2.8 ± 1.0",
+            "5.2 ± 0.7",
+            "0.02",
+            "0.002",
+            "0.04",
+            "0.1",
+            "0.002",
+            "0.003"
+          ],
+          [
+            "4.0",
+            "1.9 ± 0.6",
+            "33.8 ± 6.4",
+            "0.002",
+            "1.1 ± 0.3",
+            "3.0 ± 1.1",
+            "5.9 ± 0.9",
+            "0.01",
+            "0.003",
+            "0.04",
+            "0.047",
+            "0.002",
+            "0.003"
+          ],
+          [
+            "5.0",
+            "2.3 ± 0.5",
+            "43.8 ± 8.7",
+            "0.003",
+            "1.1 ± 0.3",
+            "3.1 ± 1.1",
+            "6.4 ± 0.8",
+            "0.02",
+            "0.002",
+            "0.03",
+            "0.01",
+            "0.002",
+            "0.003"
+          ]
+        ]
+      },
+      {
+        "label": "Table 2.",
+        "caption": "Remaining Lumen Area of the Tube (ΔA) Calculated Based on the Measured Tube Lumen Area (A) and the Cross-Sectional Area of Threads (A′).",
+        "n_rows": 4,
+        "scores": {
+          "viscosity": true,
+          "needle_d": false,
+          "length": false,
+          "barrel": false,
+          "flow": false,
+          "force_pressure": false,
+          "has_numeric_force": false,
+          "has_numeric_visc": false,
+          "has_gauge": false,
+          "has_needle_id_mm": false,
+          "core_hit_count": 1
+        },
+        "rows": [
+          [
+            "GDD",
+            "Lumen (A)",
+            "Thread (A')",
+            "ΔA = A − A'"
+          ],
+          [
+            "PGI + thread 6-0",
+            "1.0 ± 0.06",
+            "0.8",
+            "0.2 ± 0.06"
+          ],
+          [
+            "ACP + thread 4-0",
+            "8.3 ± 0.12",
+            "4.3",
+            "4.0 ± 0.12"
+          ],
+          [
+            "ACP + thread 3-0",
+            "8.3 ± 0.12",
+            "5.2",
+            "3.1 ± 0.12"
+          ]
+        ]
+      },
+      {
+        "label": "Table 3.",
+        "caption": "Theoretically Estimated Tube Pressures Using the Hagen-Poiseuille Equation",
+        "n_rows": 8,
+        "scores": {
+          "viscosity": true,
+          "needle_d": false,
+          "length": false,
+          "barrel": false,
+          "flow": false,
+          "force_pressure": true,
+          "has_numeric_force": false,
+          "has_numeric_visc": false,
+          "has_gauge": false,
+          "has_needle_id_mm": false,
+          "core_hit_count": 2
+        },
+        "rows": [
+          [
+            "Flow, µL/Min",
+            "PGI (−)",
+            "PGI (+)",
+            "ACP (−)",
+            "ACP (+4)",
+            "ACP (+3)"
+          ],
+          [
+            "1.0",
+            "0.9 ± 0.1",
+            "5.8 ± 3.2",
+            "0.02 ± 0.000",
+            "0.19 ± 0.02",
+            "0.44 ± 0.05"
+          ],
+          [
+            "1.5",
+            "1.3 ± 0.2",
+            "8.7 ± 4.8",
+            "0.02 ± 0.001",
+            "0.29 ± 0.02",
+            "0.66 ± 0.07"
+          ],
+          [
+            "2.0",
+            "1.7 ± 0.2",
+            "11.6 ± 6.4",
+            "0.03 ± 0.001",
+            "0.38 ± 0.03",
+            "0.88 ± 0.10"
+          ],
+          [
+            "2.5",
+            "2.1 ± 0.3",
+            "14.5 ± 8.0",
+            "0.04 ± 0.001",
+            "0.48 ± 0.04",
+            "1.10 ± 0.12"
+          ],
+          [
+            "3.0",
+            "2.6 ± 0.3",
+            "17.4 ± 9.6",
+            "0.04 ± 0.001",
+            "0.57 ± 0.05",
+            "1.31 ± 0.14"
+          ],
+          [
+            "4.0",
+            "3.4 ± 0.4",
+            "23.2 ± 12.9",
+            "0.06 ± 0.002",
+            "0.76 ± 0.06",
+            "1.75 ± 0.19"
+          ],
+          [
+            "5.0",
+            "4.3 ± 0.6",
+            "29.0 ± 16.1",
+            "0.07 ± 0.002",
+            "0.95 ± 0.08",
+            "2.19 ± 0.24"
+          ]
+        ]
+      },
+      {
+        "label": "Table 4.",
+        "caption": "Difference in Pressure Values Between Experimental and Theoretical Results",
+        "n_rows": 8,
+        "scores": {
+          "viscosity": true,
+          "needle_d": false,
+          "length": true,
+          "barrel": false,
+          "flow": false,
+          "force_pressure": true,
+          "has_numeric_force": false,
+          "has_numeric_visc": false,
+          "has_gauge": false,
+          "has_needle_id_mm": false,
+          "core_hit_count": 3
+        },
+        "rows": [
+          [
+            "Flow, µL/Min",
+            "PGI (−)",
+            "PGI (+)",
+            "ACP (−)",
+            "ACP (+4)",
+            "ACP (+3)"
+          ],
+          [
+            "1.0",
+            "0.2",
+            "1.7",
+            "0.6",
+            "2.0",
+            "2.9"
+          ],
+          [
+            "1.5",
+            "0.1",
+            "2.5",
+            "0.8",
+            "2.2",
+            "3.3"
+          ],
+          [
+            "2.0",
+            "0.0",
+            "5.5",
+            "0.8",
+            "2.1",
+            "3.4"
+          ],
+          [
+            "2.5",
+            "0.0",
+            "6.5",
+            "0.9",
+            "2.1",
+            "3.5"
+          ],
+          [
+            "3.0",
+            "0.1",
+            "8.6",
+            "0.9",
+            "2.3",
+            "3.9"
+          ],
+          [
+            "4.0",
+            "0.0",
+            "10.6",
+            "1.0",
+            "2.2",
+            "4.1"
+          ],
+          [
+            "5.0",
+            "−0.2",
+            "14.8",
+            "1.0",
+            "2.1",
+            "4.2"
+          ]
+        ]
+      }
+    ],
+    "body_mentions": {
+      "viscosity": true,
+      "needle": true,
+      "barrel": false,
+      "glide_force": false,
+      "hagen": true,
+      "friction": false,
+      "newtonian": false
+    }
+  },
+  {
+    "file": "PMC12113853.xml",
+    "pmcid": "PMC12113853",
+    "title": "Microfluidic Chip for Quantitatively Assessing Hemorheological Parameters",
+    "doi": "10.3390/mi16050567",
+    "n_tables": 1,
+    "tables": [
+      {
+        "label": "Table 1",
+        "caption": "Numerical value of each variable for calculating X esr and ESR.",
+        "n_rows": 7,
+        "scores": {
+          "viscosity": false,
+          "needle_d": false,
+          "length": true,
+          "barrel": false,
+          "flow": false,
+          "force_pressure": false,
+          "has_numeric_force": false,
+          "has_numeric_visc": false,
+          "has_gauge": false,
+          "has_needle_id_mm": false,
+          "core_hit_count": 1
+        },
+        "rows": [
+          [
+            "Variables",
+            "Value",
+            "Unit"
+          ],
+          [
+            "t 0",
+            "881",
+            "s"
+          ],
+          [
+            "t 1",
+            "265",
+            "s"
+          ],
+          [
+            "Q sp",
+            "5.0",
+            "mL/h"
+          ],
+          [
+            "A ds",
+            "17.9 × 10 −6",
+            "m 2"
+          ],
+          [
+            "X esr",
+            "20.51",
+            "mm"
+          ],
+          [
+            "ESR",
+            "83.81",
+            "mm/h"
+          ]
+        ]
+      }
+    ],
+    "body_mentions": {
+      "viscosity": true,
+      "needle": true,
+      "barrel": false,
+      "glide_force": false,
+      "hagen": true,
+      "friction": false,
+      "newtonian": true
+    }
+  },
+  {
+    "file": "PMC12843089.xml",
+    "pmcid": "PMC12843089",
+    "title": "Beyond Strict Physics: Using Poiseuille’s Law as a Practical Framework to Optimize and Personalize Cementoplasty",
+    "doi": "10.3390/jpm16010041",
+    "n_tables": 2,
+    "tables": [
+      {
+        "label": "Table 1",
+        "caption": "Relationship between the relative flow rate, with other factors being equal, as a function of trocar width (gauge) and length (cm).",
+        "n_rows": 8,
+        "scores": {
+          "viscosity": true,
+          "needle_d": true,
+          "length": true,
+          "barrel": false,
+          "flow": true,
+          "force_pressure": true,
+          "has_numeric_force": false,
+          "has_numeric_visc": false,
+          "has_gauge": true,
+          "has_needle_id_mm": false,
+          "core_hit_count": 5
+        },
+        "rows": [
+          [
+            "Trocar Width (Gauge)",
+            "Trocar Length (cm)",
+            "Internal Radius (mm)",
+            "Relative Flow Rate (r 4 /L) Compared to 13 G (15 cm)"
+          ],
+          [
+            "8 G",
+            "10",
+            "1.19",
+            "11.19"
+          ],
+          [
+            "8 G",
+            "15",
+            "1.19",
+            "7.46"
+          ],
+          [
+            "11 G",
+            "10",
+            "1.00",
+            "5.58"
+          ],
+          [
+            "11 G",
+            "15",
+            "1.00",
+            "3.72"
+          ],
+          [
+            "13 G",
+            "10",
+            "0.72",
+            "1.50"
+          ],
+          [
+            "13 G",
+            "15",
+            "0.72",
+            "1.00 *"
+          ],
+          [
+            "18 G",
+            "9",
+            "0.41",
+            "0.18"
+          ]
+        ]
+      },
+      {
+        "label": "",
+        "caption": "",
+        "n_rows": 9,
+        "scores": {
+          "viscosity": true,
+          "needle_d": false,
+          "length": true,
+          "barrel": false,
+          "flow": true,
+          "force_pressure": true,
+          "has_numeric_force": false,
+          "has_numeric_visc": false,
+          "has_gauge": false,
+          "has_needle_id_mm": false,
+          "core_hit_count": 4
+        },
+        "rows": [
+          [
+            "ΔP",
+            "Pressure difference (Pa)"
+          ],
+          [
+            "L",
+            "Length (m)"
+          ],
+          [
+            "MMA",
+            "Methyl methacrylate"
+          ],
+          [
+            "Pa",
+            "Pascal (unit of pressure)"
+          ],
+          [
+            "Pa.s",
+            "Pascal-second (unit of dynamic viscosity)"
+          ],
+          [
+            "PMMA",
+            "PolyMethylMethAcrylate"
+          ],
+          [
+            "Q",
+            "Volume flow rate (m 3 /s)"
+          ],
+          [
+            "r",
+            "Radius (m)"
+          ],
+          [
+            "η",
+            "Dynamic viscosity (Pa·s)"
+          ]
+        ]
+      }
+    ],
+    "body_mentions": {
+      "viscosity": true,
+      "needle": true,
+      "barrel": false,
+      "glide_force": true,
+      "hagen": true,
+      "friction": false,
+      "newtonian": true
+    }
+  },
+  {
+    "file": "PMC13004354.xml",
+    "pmcid": "PMC13004354",
+    "title": "A theoretical and experimental model of flow characteristics in subretinal injections",
+    "doi": "10.1371/journal.pone.0344836",
+    "n_tables": 3,
+    "tables": [
+      {
+        "label": "Table 1",
+        "caption": "The hydrodynamic resistance ( R hyd ), internal diameter (D), and length (L) of each part of the injection system of interest.",
+        "n_rows": 5,
+        "scores": {
+          "viscosity": false,
+          "needle_d": false,
+          "length": true,
+          "barrel": false,
+          "flow": false,
+          "force_pressure": false,
+          "has_numeric_force": false,
+          "has_numeric_visc": false,
+          "has_gauge": false,
+          "has_needle_id_mm": false,
+          "core_hit_count": 1
+        },
+        "rows": [
+          [
+            "",
+            "D ´10 −3 [m]",
+            "L ´10 −3 [m]",
+            "R hyd ´10 12 [Pa.s/m 3 ]"
+          ],
+          [
+            "Distal Polyamide section of Model 3219 Polytip Cannula MedOne Surgical Inc., Sarasota, FL, USA)",
+            "0.071",
+            "5",
+            "8.02"
+          ],
+          [
+            "Distal Polyamide section of Model 3255 Polytip Cannula MedOne Surgical Inc., Sarasota, FL, USA)",
+            "0.071",
+            "2",
+            "3.21"
+          ],
+          [
+            "Proximal needle section of Model 3219/3255 Polytip Cannula MedOne Surgical Inc., Sarasota, FL, USA)",
+            "0.26",
+            "35",
+            "0.31"
+          ],
+          [
+            "5 cm short extension tube (Model 3223 Extension Tube MedOne Surgical Inc., Sarasota, FL, USA)",
+            "0.5",
+            "150",
+            "0.10"
+          ]
+        ]
+      },
+      {
+        "label": "Table 2",
+        "caption": "Flow rate Q (µl/sec) of a water solution (1mPa.s) at different injection pressure settings using different commercially available subretinal injection cannulas and cannula lengths in baseline conditions (BC).",
+        "n_rows": 4,
+        "scores": {
+          "viscosity": true,
+          "needle_d": false,
+          "length": true,
+          "barrel": false,
+          "flow": true,
+          "force_pressure": true,
+          "has_numeric_force": false,
+          "has_numeric_visc": true,
+          "has_gauge": true,
+          "has_needle_id_mm": true,
+          "core_hit_count": 4
+        },
+        "rows": [
+          [
+            "",
+            "6 psi",
+            "8 psi",
+            "10 psi",
+            "12 psi",
+            "14 psi",
+            "16 psi",
+            "18 psi",
+            "20 psi"
+          ],
+          [
+            "Subretinal injection cannula with 5 mm length/ 41g polyamide tip (Model 3219, MedOne Surgical Inc.)",
+            "0.82",
+            "2.45",
+            "4.09",
+            "5.73",
+            "7.36",
+            "9.00",
+            "10.64",
+            "12.27"
+          ],
+          [
+            "Subretinal injection cannula with 2 mm length/ 41g polyamide tip (Model 3255, MedOne Surgical Inc.)",
+            "1.91",
+            "5.72",
+            "9.53",
+            "13.34",
+            "17.16",
+            "20.97",
+            "24.78",
+            "28.60"
+          ],
+          [
+            "Subretinal injection cannula with 0.6 mm length/51g metal tip (Model 3263, MedOne Surgical Inc.)",
+            "0.17",
+            "0.51",
+            "0.86",
+            "1.20",
+            "1.54",
+            "1.89",
+            "2.23",
+            "2.57"
+          ]
+        ]
+      },
+      {
+        "label": "Table 3",
+        "caption": "Residual flow duration (seconds + /- sd) after injection at different injection pressure settings (psi) using the Polytip Cannula Model 3219 from MedOne Surgical Inc.",
+        "n_rows": 9,
+        "scores": {
+          "viscosity": false,
+          "needle_d": false,
+          "length": true,
+          "barrel": false,
+          "flow": false,
+          "force_pressure": true,
+          "has_numeric_force": false,
+          "has_numeric_visc": false,
+          "has_gauge": false,
+          "has_needle_id_mm": false,
+          "core_hit_count": 2
+        },
+        "rows": [
+          [
+            "",
+            "Base Conditions (BC)",
+            "Environmental pressure at 45 mm Hg (MP1)",
+            "VFI length reduction of ¾ (MP2)",
+            "“Lock-and-load” (MP3)"
+          ],
+          [
+            "6 psi",
+            "27.7 + /- 0.47",
+            "–",
+            "–",
+            "–"
+          ],
+          [
+            "8 psi",
+            "34.7 + /-0.5",
+            "35.5 + /-1.1",
+            "39.7 + /-1",
+            "58.5 + /-0.5"
+          ],
+          [
+            "10 psi",
+            "39 + /- 1.41",
+            "–",
+            "–",
+            "–"
+          ],
+          [
+            "12 psi",
+            "42.3 + /- 0.47",
+            "–",
+            "–",
+            "–"
+          ],
+          [
+            "14 psi",
+            "45 + /-0.8",
+            "41.7 + /-0.7",
+            "44.7 + /-0.8",
+            "64.3 + /-1.5"
+          ],
+          [
+            "16 psi",
+            "43 + /- 0.82",
+            "–",
+            "–",
+            "–"
+          ],
+          [
+            "18 psi",
+            "45.7 + /- 0.47",
+            "–",
+            "–",
+            "–"
+          ],
+          [
+            "20 psi",
+            "47.3 + /-0.5",
+            "44.5 + /-1.1",
+            "47.5 + /-1.1",
+            "74.3 + /-1"
+          ]
+        ]
+      }
+    ],
+    "body_mentions": {
+      "viscosity": true,
+      "needle": true,
+      "barrel": true,
+      "glide_force": false,
+      "hagen": true,
+      "friction": true,
+      "newtonian": false
+    }
+  },
+  {
+    "file": "PMC7491461.xml",
+    "pmcid": "PMC7491461",
+    "title": "Comparison of Strategies in Development and Manufacturing of Low Viscosity, Ultra-High Concentration Formulation for IgG1 Antibody",
+    "doi": "10.1016/j.xphs.2020.09.014",
+    "n_tables": 6,
+    "tables": [
+      {
+        "label": "Table 1",
+        "caption": "Commercialized High Dose Antibody Formulations (>100 mg Dose) Which are Administered as Two Injections for Single Therapeutic Dose.",
+        "n_rows": 6,
+        "scores": {
+          "viscosity": false,
+          "needle_d": false,
+          "length": false,
+          "barrel": false,
+          "flow": false,
+          "force_pressure": false,
+          "has_numeric_force": false,
+          "has_numeric_visc": false,
+          "has_gauge": false,
+          "has_needle_id_mm": false,
+          "core_hit_count": 0
+        },
+        "rows": [
+          [
+            "Therapeutic Protein",
+            "Brand Name",
+            "Single Therapeutic Dose",
+            "Concentration",
+            "Injection Volume",
+            "Number of Injections for Single Dose"
+          ],
+          [
+            "certolizumab-pegol",
+            "Cimzia®",
+            "400 mg",
+            "200 mg/mL",
+            "1.0 mL",
+            "two"
+          ],
+          [
+            "secukinumab",
+            "Cosentyx®",
+            "300 mg",
+            "150 mg/mL",
+            "1.0 mL",
+            "two"
+          ],
+          [
+            "erenumab",
+            "Aimovig®",
+            "140 mg",
+            "70 mg/mL",
+            "1.0 mL",
+            "two"
+          ],
+          [
+            "galcanezumab-gnlm",
+            "Emgality®",
+            "240 mg",
+            "120 mg/mL",
+            "1.0 mL",
+            "two"
+          ],
+          [
+            "romosozumab",
+            "Evenity®",
+            "210 mg",
+            "90 mg/mL",
+            "1.17 mL",
+            "two"
+          ]
+        ]
+      },
+      {
+        "label": "Table 2",
+        "caption": "Impact of Viscosity Modifying Agents on pH, Osmolality, Viscosity, Injection Forces and Accelerated (25 °C/60% RH) Stability of IgG1 DS Formulation at ~200 mg/mL Concentration up to 6 Months.",
+        "n_rows": 10,
+        "scores": {
+          "viscosity": true,
+          "needle_d": false,
+          "length": true,
+          "barrel": false,
+          "flow": false,
+          "force_pressure": true,
+          "has_numeric_force": false,
+          "has_numeric_visc": false,
+          "has_gauge": false,
+          "has_needle_id_mm": false,
+          "core_hit_count": 3
+        },
+        "rows": [
+          [
+            "Excipients Used as Viscosity Modifiers (and their Concentration in mg/mL)",
+            "pH",
+            "Osmolality (mOsmols/kg)",
+            "Viscosity in cps at 25 °C",
+            "Injection Forces (N)",
+            "% High Molecular Weight Impurities",
+            "% Monomer",
+            "% Low Molecular Weight Impurities"
+          ],
+          [
+            "Glide Force",
+            "Break-Loose Force",
+            "Day 0",
+            "3 Month",
+            "6 Month",
+            "Day 0",
+            "3 Month",
+            "6 Month",
+            "Day 0",
+            "3 Month",
+            "6 Month"
+          ],
+          [
+            "IgG1 Drug Substance at ~200 mg/mL (NIL)",
+            "6.07",
+            "70",
+            "21.9",
+            "9.5",
+            "5.5",
+            "0.4",
+            "1.9",
+            "2.0",
+            "99.4",
+            "96.4",
+            "93.8",
+            "0.2",
+            "1.7",
+            "4.2"
+          ],
+          [
+            "Arginine HCl (54.7 mg/mL)",
+            "6.03",
+            "285",
+            "16.7",
+            "3.8",
+            "3.0",
+            "0.6",
+            "1.0",
+            "1.3",
+            "99.4",
+            "93.3",
+            "90.0",
+            "0.0",
+            "5.7",
+            "8.7"
+          ],
+          [
+            "Ammonium chloride (13.9 mg/mL)",
+            "6.06",
+            "300",
+            "13.4",
+            "4.5",
+            "2.3",
+            "0.7",
+            "1.4",
+            "1.4",
+            "99.4",
+            "92.8",
+            "84.8",
+            "0.0",
+            "5.8",
+            "13.7"
+          ],
+          [
+            "Sodium chloride (15.2 mg/mL)",
+            "6.07",
+            "303",
+            "15.0",
+            "5.4",
+            "2.7",
+            "0.7",
+            "1.1",
+            "1.4",
+            "99.2",
+            "93.5",
+            "87.7",
+            "0.1",
+            "5.4",
+            "11.0"
+          ],
+          [
+            "Magnesium chloride (25 mg/mL)",
+            "6.07",
+            "285",
+            "19.9",
+            "5.3",
+            "2.5",
+            "1.3",
+            "1.1",
+            "1.2",
+            "98.7",
+            "93.7",
+            "88.0",
+            "0.0",
+            "3.9",
+            "10.7"
+          ],
+          [
+            "Calcium chloride (14.4 mg/mL)",
+            "6.14",
+            "380",
+            "11.1",
+            "4.8",
+            "2.6",
+            "1.7",
+            "2.0",
+            "2.1",
+            "98.2",
+            "96.5",
+            "94.0",
+            "0.1",
+            "1.6",
+            "3.9"
+          ],
+          [
+            "Glycine (9.8 mg/mL)",
+            "6.27",
+            "291",
+            "13.6",
+            "4.2",
+            "5.0",
+            "0.7",
+            "1.7",
+            "1.4",
+            "99.3",
+            "96.3",
+            "95.1",
+            "0.1",
+            "2.0",
+            "3.5"
+          ],
+          [
+            "Proline (15 mg/mL)",
+            "6.20",
+            "320",
+            "11.3",
+            "5.7",
+            "5.1",
+            "0.6",
+            "1.3",
+            "1.4",
+            "99.3",
+            "97.0",
+            "94.7",
+            "0.1",
+            "1.8",
+            "3.9"
+          ]
+        ]
+      },
+      {
+        "label": "Table 3",
+        "caption": "Formulation Composition for IgG1 and Percentage Recovery From Spray Drying and Spray Freeze Drying.",
+        "n_rows": 6,
+        "scores": {
+          "viscosity": false,
+          "needle_d": false,
+          "length": true,
+          "barrel": false,
+          "flow": false,
+          "force_pressure": false,
+          "has_numeric_force": false,
+          "has_numeric_visc": false,
+          "has_gauge": false,
+          "has_needle_id_mm": false,
+          "core_hit_count": 1
+        },
+        "rows": [
+          [
+            "% Recovery Calculations"
+          ],
+          [
+            "Parameter",
+            "Spray Drying (SPD)",
+            "Spray Freeze Drying (SFD)"
+          ],
+          [
+            "Volume processed in mL",
+            "270",
+            "275.0"
+          ],
+          [
+            "a Total solids input in mg",
+            "5373.5",
+            "5472.5"
+          ],
+          [
+            "Total solids obtained in mg",
+            "4988.2",
+            "4660.7"
+          ],
+          [
+            "% Recovery",
+            "92.8%",
+            "85.2%"
+          ]
+        ]
+      },
+      {
+        "label": "Table 4",
+        "caption": "Comparative Stability of Formulations from Different Manufacturing Processes (Tangential Flow Filtration, Spray Drying and Spray Freeze Drying) at Accelerated Conditions (25 °C/60% RH) up to 6 Months and Impact of Processing Conditions, Excipient Change on Charge Variants, Oxidation, Deamidation and Sub-Visible Particles at Real Time Conditions up to 18 Months.",
+        "n_rows": 26,
+        "scores": {
+          "viscosity": true,
+          "needle_d": false,
+          "length": true,
+          "barrel": false,
+          "flow": false,
+          "force_pressure": true,
+          "has_numeric_force": false,
+          "has_numeric_visc": false,
+          "has_gauge": false,
+          "has_needle_id_mm": false,
+          "core_hit_count": 3
+        },
+        "rows": [
+          [
+            "Stability Indicating Parameters",
+            "Time Point",
+            "IgG1 at 200 mg/mL Without Viscosity Modifier (Control)",
+            "IgG1 at 200 mg/mL With Proline From Tangential Flow Filtration (TFF)",
+            "IgG1 at 200 mg/mL in 30% PG From Spray Freeze Drying (SFD)",
+            "IgG1 at 200 mg/mL in 30% PG From Spray Drying (SPD)"
+          ],
+          [
+            "Purity by SE HPLC (25 °C/60% RH)",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "% High Molecular Weight (HMW) impurities",
+            "Day 0",
+            "0.7",
+            "0.6",
+            "0.5",
+            "0.5"
+          ],
+          [
+            "6 month",
+            "3.6",
+            "1.8",
+            "3.3",
+            "6.8"
+          ],
+          [
+            "% Monomer",
+            "Day 0",
+            "99.0",
+            "99.3",
+            "98.7",
+            "99"
+          ],
+          [
+            "6 month",
+            "92.7",
+            "94.5",
+            "91.9",
+            "86.5"
+          ],
+          [
+            "% Low Molecular Weight (LMW) impurities",
+            "Day 0",
+            "0.3",
+            "0.1",
+            "0.8",
+            "0.5"
+          ],
+          [
+            "6 month",
+            "3.8",
+            "3.7",
+            "4.8",
+            "6.7"
+          ],
+          [
+            "Charge Variants by CEX HPLC (5°C)",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "% Acidic variants",
+            "18th month",
+            "25.6",
+            "26.7",
+            "24.6",
+            "25.8"
+          ],
+          [
+            "% Main Form",
+            "68.1",
+            "66.7",
+            "68.6",
+            "67.5"
+          ],
+          [
+            "% Basic Variants",
+            "6.3",
+            "6.8",
+            "6.9",
+            "6.7"
+          ],
+          [
+            "a Oxidized species LC-MS-MS % Abundance (5°C)",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "HC Met 255 HC-Met-ox-255",
+            "18th month",
+            "2.2 (±0.3)",
+            "2.1 (±0.4)",
+            "2.2 (±0.4)",
+            "2.4 (±0.2)"
+          ],
+          [
+            "HC Met 431 HC-Met-ox-431",
+            "1.8 (±0.1)",
+            "1.7 (±0.1)",
+            "1.7 (±0.3)",
+            "1.8 (±0.3)"
+          ],
+          [
+            "a Deamidation species LC-MS-MS peptide mapping % Abundance (5°C)",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "LC-Asn-30: LC-deamid-30",
+            "18th month",
+            "1.0 (±0.1)",
+            "1.0 (±0.1)",
+            "1.0 (±0.2)",
+            "1.2 (±0.2)"
+          ],
+          [
+            "HC-Asn-55: HC-deamid-55",
+            "4.6 (±0.3)",
+            "4.7 (±0.2)",
+            "3.9 (±0.2)",
+            "3.7 (±0.5)"
+          ],
+          [
+            "HC-Asp-102: HC-isoAsp-102",
+            "11.1 (±0.1)",
+            "11.3 (±0.4)",
+            "10.2 (±0.8)",
+            "13.8 (±1.2)"
+          ],
+          [
+            "HC-Asp-283: HC-isoAsp-283",
+            "1.0 (±0.1)",
+            "1.3 (±0.2)",
+            "1.1 (±0.3)",
+            "1.1 (±0.2)"
+          ],
+          [
+            "HC-Asn-387,392,393:HC-deamid-387,392,393",
+            "1.1 (±0.1)",
+            "1.0 (±0.1)",
+            "1.4 (±0.4)",
+            "1.0 (±0.3)"
+          ],
+          [
+            "b Sub-visible particle analysis by micro flow imaging (MFI) (5°C)",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "≥ 2 μm particles per mL",
+            "18th month",
+            "8569",
+            "10,565",
+            "10,932",
+            "13,588"
+          ],
+          [
+            "≥ 5 μm particles per mL",
+            "3100",
+            "4764",
+            "5784",
+            "7536"
+          ],
+          [
+            "≥ 10 μm particles per mL",
+            "707",
+            "910",
+            "1185",
+            "1403"
+          ],
+          [
+            "≥ 25 μm particles per mL",
+            "86",
+            "92",
+            "103",
+            "137"
+          ]
+        ]
+      },
+      {
+        "label": "Table 5",
+        "caption": "Comparison of Wavelength at Zero Intensity, Spectra Minima and Broad Shoulder for IgG1 DS From Different Manufacturing Processes.",
+        "n_rows": 7,
+        "scores": {
+          "viscosity": true,
+          "needle_d": false,
+          "length": true,
+          "barrel": false,
+          "flow": false,
+          "force_pressure": true,
+          "has_numeric_force": false,
+          "has_numeric_visc": false,
+          "has_gauge": false,
+          "has_needle_id_mm": false,
+          "core_hit_count": 3
+        },
+        "rows": [
+          [
+            "Description of Formulation",
+            "Wavelength in nm"
+          ],
+          [
+            "Zero Intensity",
+            "Spectra Minima",
+            "Broad Shoulder"
+          ],
+          [
+            "IgG1 DS at 200 mg/mL (Control)",
+            "209.2",
+            "217.3",
+            "227.2"
+          ],
+          [
+            "IgG1 Lyophilized (Control)",
+            "209.4",
+            "218.2",
+            "227.7"
+          ],
+          [
+            "IgG1 Spray Freeze Dried",
+            "209.6",
+            "217.4",
+            "227.5"
+          ],
+          [
+            "IgG1 Spray Dried",
+            "209.8",
+            "217.3",
+            "228.1"
+          ],
+          [
+            "IgG1 from TFF",
+            "209.6",
+            "215.5",
+            "228.1"
+          ]
+        ]
+      },
+      {
+        "label": "Table 6",
+        "caption": "Secondary Structure Analysis of Ultra-High Concentration IgG1 DS Manufactured From Different Manufacturing Techniques Using Circular Dichroism (CD).",
+        "n_rows": 6,
+        "scores": {
+          "viscosity": false,
+          "needle_d": false,
+          "length": true,
+          "barrel": false,
+          "flow": false,
+          "force_pressure": false,
+          "has_numeric_force": false,
+          "has_numeric_visc": false,
+          "has_gauge": false,
+          "has_needle_id_mm": false,
+          "core_hit_count": 1
+        },
+        "rows": [
+          [
+            "Secondary Structural Components",
+            "IgG1 Control DS",
+            "IgG1 Lyo Reconstituted in Water for Injection",
+            "IgG1 SFD Reconstituted in 30% Propylene Glycol",
+            "IgG1 SPD Reconstituted in 30% Propylene Glycol",
+            "IgG1 TFF With Proline"
+          ],
+          [
+            "α-Helix",
+            "5.8%",
+            "5.3%",
+            "5.5%",
+            "5.2%",
+            "5.9%"
+          ],
+          [
+            "β-sheet: Antiparallel",
+            "42.2%",
+            "42.3%",
+            "42.8%",
+            "42.7%",
+            "42.4%"
+          ],
+          [
+            "β-sheet: Parallel",
+            "6.1%",
+            "5.8%",
+            "5.9%",
+            "5.9%",
+            "5.5%"
+          ],
+          [
+            "β turn",
+            "14.3%",
+            "15.0%",
+            "14.5%",
+            "14.8%",
+            "15.9%"
+          ],
+          [
+            "Random Coil",
+            "33.5%",
+            "33.6%",
+            "32.9%",
+            "33.9%",
+            "34.6%"
+          ]
+        ]
+      }
+    ],
+    "body_mentions": {
+      "viscosity": true,
+      "needle": true,
+      "barrel": true,
+      "glide_force": true,
+      "hagen": false,
+      "friction": true,
+      "newtonian": false
+    }
+  },
+  {
+    "file": "PMC7952281.xml",
+    "pmcid": "PMC7952281",
+    "title": "Container Closure and Delivery Considerations for Intravitreal Drug Administration",
+    "doi": "10.1208/s12249-021-01949-4",
+    "n_tables": 5,
+    "tables": [
+      {
+        "label": "Table I",
+        "caption": "List of Approved IVT Implants in the USA",
+        "n_rows": 5,
+        "scores": {
+          "viscosity": true,
+          "needle_d": true,
+          "length": true,
+          "barrel": false,
+          "flow": false,
+          "force_pressure": true,
+          "has_numeric_force": false,
+          "has_numeric_visc": false,
+          "has_gauge": true,
+          "has_needle_id_mm": false,
+          "core_hit_count": 4
+        },
+        "rows": [
+          [
+            "Product name",
+            "Molecule",
+            "Owner/company",
+            "Dose/duration",
+            "Needle gauge",
+            "Dimensions",
+            "References"
+          ],
+          [
+            "ILUVIEN ® ocular implant",
+            "Fluocinolone acetonide",
+            "Alimera Sciences, Inc.",
+            "0.19 mg",
+            "25 gauge",
+            "3.5 mm × 0.37 mm",
+            "( 7 )"
+          ],
+          [
+            "OZURDEX ® ocular implant",
+            "Dexamethasone",
+            "Allergan, Inc.",
+            "0.7 mg",
+            "22 gauge",
+            "0.46 mm × 6 mm",
+            "( 8 , 9 )"
+          ],
+          [
+            "RETISERT ® ocular implant",
+            "Fluocinolone acetonide",
+            "Bausch & Lomb Inc.",
+            "0.59 mg/30 months",
+            "NA (sutured)",
+            "3 mm × 2 mm × 5 mm",
+            "( 10 )"
+          ],
+          [
+            "YUTIQ ™ implant",
+            "Fluocinolone acetonide",
+            "EyePoint Pharmaceuticals US, Inc.",
+            "0.18 mg",
+            "25 gauge",
+            "3.5 mm × 0.37 mm",
+            "( 11 )"
+          ]
+        ]
+      },
+      {
+        "label": "Table II",
+        "caption": "Approved IVT Liquid/Suspension Drug Product Formulations",
+        "n_rows": 10,
+        "scores": {
+          "viscosity": false,
+          "needle_d": true,
+          "length": true,
+          "barrel": true,
+          "flow": false,
+          "force_pressure": false,
+          "has_numeric_force": false,
+          "has_numeric_visc": false,
+          "has_gauge": true,
+          "has_needle_id_mm": true,
+          "core_hit_count": 3
+        },
+        "rows": [
+          [
+            "Product name",
+            "Molecule",
+            "Manufacturer",
+            "Formulation/composition",
+            "Primary container closure",
+            "Needle gauge",
+            "Reference"
+          ],
+          [
+            "LUCENTIS ® injection solution",
+            "Ranibizumab",
+            "Genentech, Inc.",
+            "6 mg/mL or 10 mg/mL LUCENTIS® aqueous solution with 10 mM histidine HCl, 10% α, α-trehalose dihydrate, 0.01% polysorbate 20, pH 5.5",
+            "Vial",
+            "30G",
+            "( 12 )"
+          ],
+          [
+            "LUCENTIS ® pre-filled syringe",
+            "Ranibizumab",
+            "Genentech, Inc.",
+            "6 mg/mL or 10 mg/mL LUCENTIS® (0.5 mg dose prefilled syringe) aqueous solution with 10 mM histidine HCl, 10% α, α-trehalose dihydrate, 0.01% polysorbate 20, pH 5.5",
+            "Pre-filled syringe",
+            "30G",
+            "( 12 )"
+          ],
+          [
+            "EYLEA ® injection solution",
+            "Aflibercept",
+            "Regeneron Pharmaceuticals, Inc.",
+            "40 mg/mL in 10 mM sodium phosphate, 40 mM sodium chloride, 0.03% polysorbate 20, and 5% sucrose, pH 6.2",
+            "Vial",
+            "30G",
+            "( 13 )"
+          ],
+          [
+            "EYLEA® pre-filled syringe",
+            "Aflibercept",
+            "Regeneron Pharmaceuticals, Inc.",
+            "40 mg/mL in 10 mM sodium phosphate, 40 mM sodium chloride, 0.03% polysorbate 20, and 5% sucrose, pH 6.2",
+            "Pre-filled syringe",
+            "30G",
+            "( 13 )"
+          ],
+          [
+            "BEOVU ® injection solution",
+            "Brolucizumab-dbll",
+            "Novartis AG",
+            "6 mg brolucizumab-dbll, polysorbate 80 (0.02%), sodium citrate (10 mM), sucrose (5.8%), and Water for Injection, USP and with a pH of approximately 7.2",
+            "Vial",
+            "30G",
+            "( 14 )"
+          ],
+          [
+            "MACUGEN ® pre-filled syringe",
+            "Pegaptanib sodium",
+            "Gilead Sciences, Inc.",
+            "3.47 mg/mL pegaptanib sodium chloride, monobasic sodium phosphate monohydrate, dibasic sodium phosphate heptahydrate, hydrochloric acid, and/or sodium hydroxide",
+            "Pre-filled syringe",
+            "30G",
+            "( 15 )"
+          ],
+          [
+            "JETREA ® injection solution",
+            "Ocriplasmin",
+            "Oxurion NV",
+            "0.5 mg ocriplasmin in 0.2 mL citric-buffered solution (2.5 mg/mL)",
+            "Vial",
+            "30G",
+            "( 16 )"
+          ],
+          [
+            "TRIESENCE ®",
+            "Triamcinolone acetonide",
+            "Alcon Laboratories, Inc.",
+            "40 mg of triamcinolone acetonide, with sodium chloride for isotonicity, 0.5% (w/v) carboxymethylcellulose sodium and 0.015% polysorbate 80",
+            "Vial",
+            "27G",
+            "( 17 )"
+          ],
+          [
+            "TRIVARIS®",
+            "Triamcinolone acetonide",
+            "Allergan, Inc.",
+            "8 mg triamcinolone acetonide in 0.1 mL (8% suspension) in a vehicle containing w/w percents of 2.3% sodium hyaluronate; 0.63% sodium chloride; 0.3% sodium phosphate, dibasic; 0.04% sodium phosphate, monobasic; and water for injection, pH 7.0 to 7.4",
+            "Vial",
+            "27G",
+            "( 18 )"
+          ]
+        ]
+      },
+      {
+        "label": "Table III",
+        "caption": "Needle Gauge Dimensions from ISO 9626:2016 Standards (Minimum inner diameters)",
+        "n_rows": 3,
+        "scores": {
+          "viscosity": false,
+          "needle_d": true,
+          "length": true,
+          "barrel": false,
+          "flow": false,
+          "force_pressure": false,
+          "has_numeric_force": false,
+          "has_numeric_visc": false,
+          "has_gauge": true,
+          "has_needle_id_mm": false,
+          "core_hit_count": 2
+        },
+        "rows": [
+          [
+            "Needle gauge",
+            "Regular-wall inner diameter (mm)",
+            "Thin-wall inner diameter (mm)",
+            "Extra-thin-wall inner diameter (mm)",
+            "Ultra-thin-wall inner diameter (mm)"
+          ],
+          [
+            "30",
+            "0.133",
+            "0.165",
+            "0.190",
+            "0.240"
+          ],
+          [
+            "32",
+            "0.089",
+            "0.105",
+            "0.125",
+            "0.146"
+          ]
+        ]
+      },
+      {
+        "label": "Table IV",
+        "caption": "Material Compatibility for Nitrogen Dioxide Sterilization Process",
+        "n_rows": 2,
+        "scores": {
+          "viscosity": true,
+          "needle_d": false,
+          "length": false,
+          "barrel": false,
+          "flow": false,
+          "force_pressure": true,
+          "has_numeric_force": false,
+          "has_numeric_visc": false,
+          "has_gauge": false,
+          "has_needle_id_mm": false,
+          "core_hit_count": 2
+        },
+        "rows": [
+          [
+            "Compatible",
+            "Not compatible"
+          ],
+          [
+            "Stainless steel, polyethylene, polyetherimide, anodized aluminum, polypropylene, polycarbonate, gold (plating), PET/PETG, cyclic olefins, glass/ ceramic, polystyrene, PVC a , fluoropolymers, polysulfones, silicone a , Viton (gaskets), Hypalon",
+            "Polyurethane, thermoplastic elastomers (TPE), nylon, polyester, polyolefin, Delrin (polyacetal), PSU, PEI, cellulose-based (some paper), polyester or styrene label stock"
+          ]
+        ]
+      },
+      {
+        "label": "Table V",
+        "caption": "Clinical Investigation of Therapeutics for Reduced IVT Dosing Frequency",
+        "n_rows": 8,
+        "scores": {
+          "viscosity": false,
+          "needle_d": false,
+          "length": false,
+          "barrel": false,
+          "flow": false,
+          "force_pressure": false,
+          "has_numeric_force": false,
+          "has_numeric_visc": false,
+          "has_gauge": false,
+          "has_needle_id_mm": false,
+          "core_hit_count": 0
+        },
+        "rows": [
+          [
+            "Technology",
+            "Sponsor",
+            "Mechanism of action",
+            "Latest phase"
+          ],
+          [
+            "Bioresorbable hydrogel containing tyrosine kinase inhibitor",
+            "Ocular Therapeutix",
+            "Tyrosine kinase inhibitor",
+            "Phase I"
+          ],
+          [
+            "Anti-VEGF mAb conjugated to a phosphorylcholine-based biopolymer",
+            "Kodiak Sciences",
+            "Anti-VEGF",
+            "Phase III"
+          ],
+          [
+            "Bispecific antibody angiopoietin-2/VEGF-A (Faricimab)",
+            "Roche",
+            "Anti-VEGF Anti-Ang-2",
+            "Phase III"
+          ],
+          [
+            "Sunitinib malate microparticle depot",
+            "Graybug Vision",
+            "Anti-VEGF",
+            "Phase IIa/Phase IIb"
+          ],
+          [
+            "ADVM-022 IVT gene therapy",
+            "Adverum Biotechnologies",
+            "Anti-VEGF",
+            "Phase II"
+          ],
+          [
+            "Fusion protein aflibercept—high dose",
+            "Regeneron Pharmaceuticals",
+            "Anti-VEGF",
+            "Phase II/III"
+          ],
+          [
+            "Port delivery system",
+            "Roche",
+            "Anti-VEGF",
+            "Phase III"
+          ]
+        ]
+      }
+    ],
+    "body_mentions": {
+      "viscosity": true,
+      "needle": true,
+      "barrel": true,
+      "glide_force": true,
+      "hagen": true,
+      "friction": true,
+      "newtonian": true
+    }
+  },
+  {
+    "file": "PMC8550001.xml",
+    "pmcid": "PMC8550001",
+    "title": "A microfluidic approach to studying the injection flow of concentrated albumin solutions",
+    "doi": "10.1007/s42452-021-04767-2",
+    "n_tables": 1,
+    "tables": [
+      {
+        "label": "Table 1",
+        "caption": "The details of “syringe-on-chip” flow geometries",
+        "n_rows": 3,
+        "scores": {
+          "viscosity": true,
+          "needle_d": false,
+          "length": true,
+          "barrel": true,
+          "flow": false,
+          "force_pressure": true,
+          "has_numeric_force": false,
+          "has_numeric_visc": false,
+          "has_gauge": true,
+          "has_needle_id_mm": false,
+          "core_hit_count": 4
+        },
+        "rows": [
+          [
+            "Flow cell",
+            "\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$w_{u}$$\\end{document} w u \\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$[\\upmu m]$$\\end{document} [ μ m ]",
+            "\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$w_{d}$$\\end{document} w d \\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$[\\upmu m]$$\\end{document} [ μ m ]",
+            "h \\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$[\\upmu m]$$\\end{document} [ μ m ]",
+            "\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\alpha$$\\end{document} α",
+            "\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\beta$$\\end{document} β",
+            "\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\varepsilon _{H}$$\\end{document} ε H"
+          ],
+          [
+            "26G",
+            "800",
+            "47",
+            "50",
+            "20",
+            "17.02",
+            "2.83"
+          ],
+          [
+            "27G",
+            "800",
+            "38",
+            "50",
+            "20",
+            "21.05",
+            "3.05"
+          ]
+        ]
+      }
+    ],
+    "body_mentions": {
+      "viscosity": true,
+      "needle": true,
+      "barrel": true,
+      "glide_force": true,
+      "hagen": true,
+      "friction": true,
+      "newtonian": true
+    }
+  },
+  {
+    "file": "PMC9085397.xml",
+    "pmcid": "PMC9085397",
+    "title": "A simple capillary viscometer based on the ideal gas law",
+    "doi": "10.1039/c8ra06006a",
+    "n_tables": 1,
+    "tables": [
+      {
+        "label": "",
+        "caption": "Initial values and information provided for the experiment",
+        "n_rows": 6,
+        "scores": {
+          "viscosity": true,
+          "needle_d": false,
+          "length": true,
+          "barrel": false,
+          "flow": false,
+          "force_pressure": false,
+          "has_numeric_force": false,
+          "has_numeric_visc": true,
+          "has_gauge": false,
+          "has_needle_id_mm": false,
+          "core_hit_count": 2
+        },
+        "rows": [
+          [
+            "",
+            "Temp. (°C)",
+            "Known viscosity (10 −3 Pa s)",
+            "P 0 (Pa)",
+            "(mm 3 )",
+            "L initial (mm)",
+            "L m (mm)",
+            "r m (mm)",
+            "L c (mm)",
+            "r c (mm)"
+          ],
+          [
+            "Water",
+            "24 °C",
+            "0.9107",
+            "10 1325",
+            "307.1",
+            "245",
+            "8",
+            "0.2023",
+            "216",
+            "0.254"
+          ],
+          [
+            "Acetone",
+            "25 °C",
+            "0.31"
+          ],
+          [
+            "2% fat milk",
+            "20 °C",
+            "1.6"
+          ],
+          [
+            "Glycerin 30%",
+            "25 °C",
+            "2.5748"
+          ],
+          [
+            "Glycerin 40%",
+            "26 °C",
+            "4.1971",
+            "296.0",
+            "200",
+            "206"
+          ]
+        ]
+      }
+    ],
+    "body_mentions": {
+      "viscosity": true,
+      "needle": true,
+      "barrel": false,
+      "glide_force": false,
+      "hagen": true,
+      "friction": false,
+      "newtonian": true
+    }
+  }
+]

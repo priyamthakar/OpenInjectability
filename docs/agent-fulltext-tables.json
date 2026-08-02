@@ -1,0 +1,504 @@
+{
+  "generated": "2026-08-02",
+  "source": "EuropePMC fullTextXML",
+  "endpoint_template": "https://www.ebi.ac.uk/europepmc/webservices/rest/{PMCID}/fullTextXML",
+  "phase_d_row_requirements": [
+    "newtonian fluid with measured dynamic viscosity and temperature",
+    "traceable needle inner diameter (not gauge-only) and length",
+    "barrel inner diameter",
+    "volume and flow rate or injection time",
+    "measured fluid-side force or pressure (friction-separated or pressure transducer converted via measured barrel area)",
+    "no invented or estimated geometry/force; no undocumented gauge-to-ID conversion"
+  ],
+  "summary": {
+    "papers_screened": 8,
+    "priority_pmcids": [
+      "PMC8550001",
+      "PMC7491461",
+      "PMC7952281",
+      "PMC11717134",
+      "PMC12113853",
+      "PMC13004354",
+      "PMC9085397"
+    ],
+    "expanded_from_candidates": ["PMC12843089"],
+    "usable_phase_d_rows": 0,
+    "usable_rows": [],
+    "verdict": "No complete Phase-D validation row could be built from published numbers alone."
+  },
+  "papers": [
+    {
+      "pmcid": "PMC8550001",
+      "doi": "10.1007/s42452-021-04767-2",
+      "title": "A microfluidic approach to studying the injection flow of concentrated albumin solutions",
+      "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8550001/fullTextXML",
+      "fetch_status": "ok",
+      "n_tables": 1,
+      "tables": [
+        {
+          "label": "Table 1",
+          "caption": "The details of “syringe-on-chip” flow geometries",
+          "rows": [
+            ["Flow cell", "w_c (μm)", "w_t (μm)", "d (μm)", "L_c (μm)", "H (aspect)", "ε_H"],
+            ["26G", "800", "47", "50", "20", "17.02", "2.83"],
+            ["27G", "800", "38", "50", "20", "21.05", "3.05"]
+          ],
+          "note": "XML math markup simplified to plain headers from article context; numeric cells as published. Labels 26G/27G are planar microfluidic contraction analogues, not clinical needles.",
+          "score": {
+            "viscosity": false,
+            "needle_d_measured": false,
+            "needle_length": false,
+            "barrel": false,
+            "flow": false,
+            "force_or_pressure": false,
+            "core_hits_in_table": ["geometry_only_microfluidic"]
+          }
+        }
+      ],
+      "method_quotes_relevant": [
+        "microfluidic “syringe-on-chip” contraction device which shares some similarities with the geometry of syringes used in SC self-injection",
+        "real syringes have axisymmetric instead of planar abrupt geometries",
+        "plunger diameter is 4.5 mm and the needle is a 26G or 27G [66] — used only as analogy for labeling microcontractions",
+        "Nexus 6000 high force syringe pump ... 1-mL glass syringe (SGE Analytical, ID = 4.5 mm)",
+        "ΔP_tube = 128 μ L Q / (π ID^4) is estimated by means of the Hagen–Poiseuille law"
+      ],
+      "phase_d_decision": "REJECT",
+      "missing_fields": [
+        "clinical needle inner diameter (published geometry is planar microfluidic channel widths, not circular needle ID)",
+        "needle length as clinical cannula (L_tube referenced for pressure correction but device is chip)",
+        "barrel ID of an injection syringe under test (pump syringe ID=4.5 mm is driver, not the validated delivery geometry)",
+        "volume + injection time as clinical delivery scenario",
+        "plunger fluid-resistance force F_f; paper reports channel pressure drops / extensional contribution",
+        "row-level paired viscosity + force table for a single Newtonian validation panel"
+      ],
+      "reason": "Microfluidic analogue of syringe contraction; not a Phase-D clinical needle+barrel force panel. No complete published row of μ, measured circular needle d, L, barrel Db, Q, and fluid-only force."
+    },
+    {
+      "pmcid": "PMC7491461",
+      "doi": "10.1016/j.xphs.2020.09.014",
+      "title": "Comparison of Strategies in Development and Manufacturing of Low Viscosity, Ultra-High Concentration Formulation for IgG1 Antibody",
+      "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7491461/fullTextXML",
+      "fetch_status": "ok",
+      "n_tables": 6,
+      "tables_of_interest": [
+        {
+          "label": "Table 2",
+          "caption": "Impact of Viscosity Modifying Agents on pH, Osmolality, Viscosity, Injection Forces and Accelerated (25 °C/60% RH) Stability of IgG1 DS Formulation at ~200 mg/mL Concentration up to 6 Months.",
+          "header_note": "Injection Forces (N) sub-headers: Glide Force, Break-Loose Force",
+          "data_rows_published": [
+            {
+              "excipient": "IgG1 Drug Substance at ~200 mg/mL (NIL)",
+              "pH": "6.07",
+              "osmolality_mOsmols_kg": "70",
+              "viscosity_cps_25C": "21.9",
+              "glide_force_N": "9.5",
+              "break_loose_force_N": "5.5"
+            },
+            {
+              "excipient": "Arginine HCl (54.7 mg/mL)",
+              "pH": "6.03",
+              "osmolality_mOsmols_kg": "285",
+              "viscosity_cps_25C": "16.7",
+              "glide_force_N": "3.8",
+              "break_loose_force_N": "3.0"
+            },
+            {
+              "excipient": "Ammonium chloride (13.9 mg/mL)",
+              "pH": "6.06",
+              "osmolality_mOsmols_kg": "300",
+              "viscosity_cps_25C": "13.4",
+              "glide_force_N": "4.5",
+              "break_loose_force_N": "2.3"
+            },
+            {
+              "excipient": "Sodium chloride (15.2 mg/mL)",
+              "pH": "6.07",
+              "osmolality_mOsmols_kg": "303",
+              "viscosity_cps_25C": "15.0",
+              "glide_force_N": "5.4",
+              "break_loose_force_N": "2.7"
+            },
+            {
+              "excipient": "Magnesium chloride (25 mg/mL)",
+              "pH": "6.07",
+              "osmolality_mOsmols_kg": "285",
+              "viscosity_cps_25C": "19.9",
+              "glide_force_N": "5.3",
+              "break_loose_force_N": "2.5"
+            },
+            {
+              "excipient": "Calcium chloride (14.4 mg/mL)",
+              "pH": "6.14",
+              "osmolality_mOsmols_kg": "380",
+              "viscosity_cps_25C": "11.1",
+              "glide_force_N": "4.8",
+              "break_loose_force_N": "2.6"
+            },
+            {
+              "excipient": "Glycine (9.8 mg/mL)",
+              "pH": "6.27",
+              "osmolality_mOsmols_kg": "291",
+              "viscosity_cps_25C": "13.6",
+              "glide_force_N": "4.2",
+              "break_loose_force_N": "5.0"
+            },
+            {
+              "excipient": "Proline (15 mg/mL)",
+              "pH": "6.20",
+              "osmolality_mOsmols_kg": "320",
+              "viscosity_cps_25C": "11.3",
+              "glide_force_N": "5.7",
+              "break_loose_force_N": "5.1"
+            }
+          ],
+          "score": {
+            "viscosity": true,
+            "needle_d_measured": false,
+            "needle_length": true,
+            "barrel": false,
+            "flow": true,
+            "force_or_pressure": true,
+            "force_is_fluid_only": false
+          }
+        }
+      ],
+      "method_quotes_relevant": [
+        "Viscosity of the formulations was estimated using a rolling ball and capillary based micro-viscometer (model: Lovis 2000 M/ME, Anton Paar GmbH Austria) having temperature controller.",
+        "IgG1 samples were filled into EZ Fill™ 1 mL USP type 1 glass syringes with 27 Gauge, thin wall staked needle having ½ inch length and 3 bevels (make: Nuova Ompi, Italy; P/N: 7600001.7439)",
+        "The friction test was performed in compression mode with preload of 0.5 N at speed of 21 mm/min, followed by test speed or extension rate of 100 mm/min up to length of 26 mm.",
+        "Universal Testing Machine (UTM) (model: UTM LS-1; make: Lloyds, USA) having a 20 N load cell."
+      ],
+      "phase_d_decision": "REJECT",
+      "missing_fields": [
+        "needle_id_mm (only 27 Gauge thin wall stated; no measured ID in paper; gauge→ID conversion forbidden by protocol)",
+        "barrel_id_mm (1 mL EZ Fill stated; inner diameter not published)",
+        "newtonian_evidence (IgG1 high-concentration protein; Newtonian not established)",
+        "fluid-only force (published Glide Force and Break-Loose Force are total friction-inclusive UTM forces)",
+        "volume_ml as delivered aliquot with consistent Q (extension rate given; fill volume not paired as Phase-D volume/time row)"
+      ],
+      "reason": "Nearest miss for viscosity+force table, but measurand is total glide/break-loose force (includes stopper–barrel friction), needle is gauge-only, barrel ID absent, protein formulation not documented Newtonian."
+    },
+    {
+      "pmcid": "PMC7952281",
+      "doi": "10.1208/s12249-021-01949-4",
+      "title": "Container Closure and Delivery Considerations for Intravitreal Drug Administration",
+      "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7952281/fullTextXML",
+      "fetch_status": "ok",
+      "n_tables": 5,
+      "tables_of_interest": [
+        {
+          "label": "Table III",
+          "caption": "Needle Gauge Dimensions from ISO 9626:2016 Standards (Minimum inner diameters)",
+          "rows": [
+            ["Needle gauge", "Regular-wall inner diameter (mm)", "Thin-wall inner diameter (mm)", "Extra-thin-wall inner diameter (mm)", "Ultra-thin-wall inner diameter (mm)"],
+            ["30", "0.133", "0.165", "0.190", "0.240"],
+            ["32", "0.089", "0.105", "0.125", "0.146"]
+          ],
+          "score": {
+            "viscosity": false,
+            "needle_d_measured": false,
+            "needle_length": false,
+            "barrel": false,
+            "flow": false,
+            "force_or_pressure": false,
+            "note": "ISO minimum ID reference table only; not paired with experimental viscosity/force"
+          }
+        },
+        {
+          "label": "Table I",
+          "caption": "List of Approved IVT Implants in the USA",
+          "score_note": "Product catalog; needle gauge labels; no viscosity/force panel"
+        },
+        {
+          "label": "Table II",
+          "caption": "Approved IVT Liquid/Suspension Drug Product Formulations",
+          "score_note": "Formulation/container catalog; gauge labels; no experimental force/viscosity rows"
+        }
+      ],
+      "method_quotes_relevant": [
+        "Hagen Poiseuille (Eq. 2) can be derived for estimation of syringe glide force which considers dimensions of the syringe, needle, flow rate, and viscosity of the fluid.",
+        "F_friction is the frictional force between the plunger and syringe barrel",
+        "International Standards Organization (ISO) 9626:2016, provides needle dimension details, as mentioned in Table III"
+      ],
+      "phase_d_decision": "REJECT",
+      "missing_fields": [
+        "experimental viscosity values for tested fluids",
+        "measured needle ID and length for an experiment",
+        "barrel ID for an experiment",
+        "flow rate / volume / time experimental panel",
+        "measured fluid-only force or pressure panel"
+      ],
+      "reason": "Review/educational article with ISO gauge minima and product tables; no experimental Phase-D dataset."
+    },
+    {
+      "pmcid": "PMC11717134",
+      "doi": "10.1167/tvst.14.1.2",
+      "title": "In Vitro Analysis of Pressure Resistance in the Paul Glaucoma Implant and Ahmed ClearPath With and Without Polypropylene Thread Restriction",
+      "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11717134/fullTextXML",
+      "fetch_status": "ok",
+      "n_tables": 4,
+      "tables_of_interest": [
+        {
+          "label": "Table 1.",
+          "caption": "Comparison of Measured Tube Pressures Under Various Conditions",
+          "rows_excerpt": [
+            ["Flow, µL/Min", "PGI (−)", "PGI (+)", "...", "ACP (−)", "ACP (+4)", "ACP (+3)", "..."],
+            ["1.0", "0.7 ± 0.4", "7.5 ± 0.5", "...", "0.6 ± 0.2", "2.2 ± 0.8", "3.3 ± 0.7", "..."],
+            ["5.0", "2.3 ± 0.5", "43.8 ± 8.7", "...", "1.1 ± 0.3", "3.1 ± 1.1", "6.4 ± 0.8", "..."]
+          ],
+          "units_context": "Pressures reported in mm Hg (from body text); flow in µL/min; fluid is 0.9% physiological saline",
+          "score": {
+            "viscosity": false,
+            "needle_d_measured": false,
+            "needle_length": false,
+            "barrel": false,
+            "flow": true,
+            "force_or_pressure": true
+          }
+        },
+        {
+          "label": "Table 2.",
+          "caption": "Remaining Lumen Area of the Tube (ΔA) Calculated Based on the Measured Tube Lumen Area (A) and the Cross-Sectional Area of Threads (A′).",
+          "rows": [
+            ["GDD", "Lumen (A)", "Thread (A')", "ΔA = A − A'"],
+            ["PGI + thread 6-0", "1.0 ± 0.06", "0.8", "0.2 ± 0.06"],
+            ["ACP + thread 4-0", "8.3 ± 0.12", "4.3", "4.0 ± 0.12"],
+            ["ACP + thread 3-0", "8.3 ± 0.12", "5.2", "3.1 ± 0.12"]
+          ]
+        },
+        {
+          "label": "Table 3.",
+          "caption": "Theoretically Estimated Tube Pressures Using the Hagen-Poiseuille Equation",
+          "rows_excerpt": [
+            ["Flow, µL/Min", "PGI (−)", "PGI (+)", "ACP (−)", "ACP (+4)", "ACP (+3)"],
+            ["1.0", "0.9 ± 0.1", "5.8 ± 3.2", "0.02 ± 0.000", "0.19 ± 0.02", "0.44 ± 0.05"],
+            ["5.0", "4.3 ± 0.6", "29.0 ± 16.1", "0.07 ± 0.002", "0.95 ± 0.08", "2.19 ± 0.24"]
+          ]
+        }
+      ],
+      "method_quotes_relevant": [
+        "infusion of 0.9% physiological saline from 1-mL syringes (Terumo Corporation, Tokyo, Japan) connected to a syringe pump (SP101i, KD Scientific, Holliston, MA)",
+        "Each GDD was then subjected to physiological saline flow at rates of 1.0, 1.5, 2.0, 2.5, 3.0, 4.0, and 5.0 µL/min",
+        "ΔP = 8 μ L Q / (π r^4) — Hagen–Poiseuille for tube pressure resistance",
+        "A 21G 1.5-inch needle ... connect the PGI, and a 19G 1.5-inch needle ... connect the ACP — connection hardware, not the resistance element under test"
+      ],
+      "phase_d_decision": "REJECT",
+      "missing_fields": [
+        "published numeric viscosity value and temperature for saline used in HP calculations (not tabulated)",
+        "needle_id_mm / needle_length_mm of a delivery needle as the resistance element (device is glaucoma drainage tube lumen)",
+        "barrel_id_mm for converting pressure to plunger force",
+        "fluid-side plunger force F_f (paper reports tube pressure in mm Hg)",
+        "OpenInjectability target geometry class (clinical syringe needle + barrel)"
+      ],
+      "reason": "Interesting HP tube-pressure comparison, but glaucoma implant lumens with saline—not a syringe-needle Phase-D force row; viscosity not published as a measured table value; no barrel ID / plunger force."
+    },
+    {
+      "pmcid": "PMC12113853",
+      "doi": "10.3390/mi16050567",
+      "title": "Microfluidic Chip for Quantitatively Assessing Hemorheological Parameters",
+      "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12113853/fullTextXML",
+      "fetch_status": "ok",
+      "n_tables": 1,
+      "tables": [
+        {
+          "label": "Table 1",
+          "caption": "Numerical value of each variable for calculating X esr and ESR.",
+          "rows": [
+            ["Variables", "Value", "Unit"],
+            ["t0", "881", "s"],
+            ["t1", "265", "s"],
+            ["Qsp", "5.0", "mL/h"],
+            ["Ads", "17.9 × 10−6", "m2"],
+            ["Xesr", "20.51", "mm"],
+            ["ESR", "83.81", "mm/h"]
+          ],
+          "score": {
+            "viscosity": false,
+            "needle_d_measured": false,
+            "needle_length": false,
+            "barrel": false,
+            "flow": true,
+            "force_or_pressure": false
+          }
+        }
+      ],
+      "method_quotes_relevant": [
+        "blood viscosity is acquired with the Hagen–Poiseuille law",
+        "Tygon tubing (inner diameter = 250 μm, length = 300 mm) ... (inner diameter = 700 μm, and length = 200 mm)",
+        "μ_gly values for glycerol solutions reported in body text for chip calibration (blood/glycerol rheology context)"
+      ],
+      "phase_d_decision": "REJECT",
+      "missing_fields": [
+        "syringe needle ID/length as delivery device under test",
+        "barrel ID",
+        "injection force or plunger pressure for a needle delivery scenario",
+        "Newtonian syringe-injection validation panel (blood is non-Newtonian)"
+      ],
+      "reason": "Microfluidic blood viscosity/RBC sedimentation chip; not syringe injection force tables."
+    },
+    {
+      "pmcid": "PMC13004354",
+      "doi": "10.1371/journal.pone.0344836",
+      "title": "A theoretical and experimental model of flow characteristics in subretinal injections",
+      "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13004354/fullTextXML",
+      "fetch_status": "ok",
+      "n_tables": 3,
+      "tables_of_interest": [
+        {
+          "label": "Table 1",
+          "caption": "The hydrodynamic resistance ( R hyd ), internal diameter (D), and length (L) of each part of the injection system of interest.",
+          "rows": [
+            ["Component", "D ×10−3 [m]", "L ×10−3 [m]", "Rhyd ×10^12 [Pa.s/m^3]"],
+            ["Distal Polyamide section of Model 3219 Polytip Cannula MedOne Surgical Inc., Sarasota, FL, USA)", "0.071", "5", "8.02"],
+            ["Distal Polyamide section of Model 3255 Polytip Cannula MedOne Surgical Inc., Sarasota, FL, USA)", "0.071", "2", "3.21"],
+            ["Proximal needle section of Model 3219/3255 Polytip Cannula MedOne Surgical Inc., Sarasota, FL, USA)", "0.26", "35", "0.31"],
+            ["5 cm short extension tube (Model 3223 Extension Tube MedOne Surgical Inc., Sarasota, FL, USA)", "0.5", "150", "0.10"]
+          ],
+          "score": {
+            "viscosity": false,
+            "needle_d_measured": true,
+            "needle_length": true,
+            "barrel": false,
+            "flow": false,
+            "force_or_pressure": false
+          }
+        },
+        {
+          "label": "Table 2",
+          "caption": "Flow rate Q (µl/sec) of a water solution (1mPa.s) at different injection pressure settings using different commercially available subretinal injection cannulas and cannula lengths in baseline conditions",
+          "rows": [
+            ["", "6 psi", "8 psi", "10 psi", "12 psi", "14 psi", "16 psi", "18 psi", "20 psi"],
+            ["Subretinal injection cannula with 5 mm length/ 41g polyamide tip (Model 3219, MedOne Surgical Inc.)", "0.82", "2.45", "4.09", "5.73", "7.36", "9.00", "10.64", "12.27"],
+            ["Subretinal injection cannula with 2 mm length/ 41g polyamide tip (Model 3255, MedOne Surgical Inc.)", "1.91", "5.72", "9.53", "13.34", "17.16", "20.97", "24.78", "28.60"],
+            ["Subretinal injection cannula with 0.6 mm length/51g metal tip (Model 3263, MedOne Surgical Inc.)", "0.17", "0.51", "0.86", "1.20", "1.54", "1.89", "2.23", "2.57"]
+          ],
+          "score": {
+            "viscosity": true,
+            "needle_d_measured": true,
+            "needle_length": true,
+            "barrel": false,
+            "flow": true,
+            "force_or_pressure": true,
+            "force_is_fluid_only": false,
+            "note": "Caption states water solution 1 mPa.s; pressures are vitrectomy machine injection pressure settings (psi), not friction-free fluid ΔP alone"
+          }
+        },
+        {
+          "label": "Table 3",
+          "caption": "Residual flow duration (seconds + /- sd) after injection at different injection pressure settings (psi) using the Polytip Cannula Model 3219 from MedOne Surgical Inc.",
+          "score_note": "Residual flow timing; not force/viscosity validation rows"
+        }
+      ],
+      "method_quotes_relevant": [
+        "Water with μ = 0.001 Pa·s was used for the analysis.",
+        "Q = (ΔP − Pam) / Rhyd,eff  ... based on Hagen-Poiseuille",
+        "ΔP = P − Pmin where Pmin is the minimum air pressure necessary to overcome the static friction force between the piston and cylinder",
+        "1mL syringe (Model 3275 Microdose Injector, MedOne Surgical Inc.) ... internal diameter D and length L of each component were obtained either from either the manufacturer’s specifications or direct measurements",
+        "colored solution, which has a viscosity comparable to water"
+      ],
+      "phase_d_decision": "REJECT",
+      "missing_fields": [
+        "barrel_id_mm (1 mL Microdose Injector stated; barrel ID not published in tables)",
+        "plunger fluid-resistance force F_f (machine air pressure psi settings; friction Pmin acknowledged but not published as subtracted force panel)",
+        "independent experimental fluid-only force/pressure paired with measured Q for single circular needle (Table 2 Q is model network output; multi-segment Rhyd sum)",
+        "viscosity temperature for the stated 1 mPa·s water value",
+        "simple single-needle geometry matching OpenInjectability schema (series network of VFI tubing + extension + multi-section cannula)"
+      ],
+      "reason": "Strongest geometry+viscosity+pressure candidate in the set (water μ stated; cannula D and L tabulated), but multi-segment ophthalmic injection network with air-driven piston friction, no barrel ID, and no Phase-D fluid-only force row."
+    },
+    {
+      "pmcid": "PMC9085397",
+      "doi": "10.1039/c8ra06006a",
+      "title": "A simple capillary viscometer based on the ideal gas law",
+      "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9085397/fullTextXML",
+      "fetch_status": "ok",
+      "n_tables": 1,
+      "tables": [
+        {
+          "label": "(unlabeled table)",
+          "caption": "Initial values and information provided for the experiment",
+          "rows_as_published": [
+            ["", "Temp. (°C)", "Known viscosity (10−3 Pa s)", "P0 (Pa)", "V (mm3)", "Linitial (mm)", "Lm (mm)", "rm (mm)", "Lc (mm)", "rc (mm)"],
+            ["Water", "24 °C", "0.9107", "101325", "307.1", "245", "8", "0.2023", "216", "0.254"],
+            ["Acetone", "25 °C", "0.31", "", "", "", "", "", "", ""],
+            ["2% fat milk", "20 °C", "1.6", "", "", "", "", "", "", ""],
+            ["Glycerin 30%", "25 °C", "2.5748", "", "", "", "", "", "", ""],
+            ["Glycerin 40%", "26 °C", "4.1971", "", "296.0", "200", "206", "", "", ""]
+          ],
+          "score": {
+            "viscosity": true,
+            "needle_d_measured": false,
+            "needle_length": true,
+            "barrel": false,
+            "flow": false,
+            "force_or_pressure": false
+          }
+        }
+      ],
+      "phase_d_decision": "REJECT",
+      "missing_fields": [
+        "syringe needle delivery geometry under injection force test",
+        "barrel ID",
+        "injection force or delivery pressure as Phase-D output",
+        "flow rate / injection time for plunger delivery"
+      ],
+      "reason": "Capillary viscometer method paper (measures μ); not syringe injection force validation."
+    },
+    {
+      "pmcid": "PMC12843089",
+      "doi": "10.3390/jpm16010041",
+      "title": "Beyond Strict Physics: Using Poiseuille’s Law as a Practical Framework to Optimize and Personalize Cementoplasty",
+      "fulltext_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12843089/fullTextXML",
+      "fetch_status": "ok",
+      "n_tables": 2,
+      "tables_of_interest": [
+        {
+          "label": "Table 1",
+          "caption": "Relationship between the relative flow rate, with other factors being equal, as a function of trocar width (gauge) and length (cm).",
+          "rows": [
+            ["Trocar Width (Gauge)", "Trocar Length (cm)", "Internal Radius (mm)", "Relative Flow Rate (r^4/L) Compared to 13 G (15 cm)"],
+            ["8 G", "10", "1.19", "11.19"],
+            ["8 G", "15", "1.19", "7.46"],
+            ["11 G", "10", "1.00", "5.58"],
+            ["11 G", "15", "1.00", "3.72"],
+            ["13 G", "10", "0.72", "1.50"],
+            ["13 G", "15", "0.72", "1.00 *"],
+            ["18 G", "9", "0.41", "0.18"]
+          ],
+          "score": {
+            "viscosity": false,
+            "needle_d_measured": false,
+            "needle_length": true,
+            "barrel": false,
+            "flow": false,
+            "force_or_pressure": false,
+            "note": "Theoretical relative flow factors; radii from manufacturer specs per abstract/methods; cement explicitly non-Newtonian"
+          }
+        }
+      ],
+      "method_quotes_relevant": [
+        "bone cement is a non-Newtonian, shear-thinning, and polymerizing material that does not comply with this law in any predictive or quantitative sense",
+        "theoretical calculations based on the r^4/L component of Poiseuille’s equation, using manufacturer-specified internal radii"
+      ],
+      "phase_d_decision": "REJECT",
+      "missing_fields": [
+        "measured viscosity of a Newtonian fluid",
+        "experimental force/pressure panel",
+        "barrel ID",
+        "independent measured needle ID (manufacturer radius used for educational ratios only)",
+        "Newtonian evidence (authors state cement is non-Newtonian)"
+      ],
+      "reason": "Educational relative-flow table for cementoplasty trocars; explicitly non-quantitative for non-Newtonian cement; no experimental Phase-D rows.",
+      "expanded_from": "docs/pubmed-scrape-candidates.json (Hagen + Newtonian flags)"
+    }
+  ],
+  "scoring_legend": {
+    "viscosity": "Table or paired caption states measured/known dynamic viscosity with numbers usable for a row",
+    "needle_d_measured": "Published measured circular inner diameter of the delivery needle/cannula (not gauge label alone)",
+    "needle_length": "Published needle/cannula length",
+    "barrel": "Published syringe barrel inner diameter",
+    "flow": "Published flow rate or extension rate / injection time with volume",
+    "force_or_pressure": "Published force or pressure values",
+    "force_is_fluid_only": "Force/pressure is friction-separated fluid hydrodynamic component only"
+  }
+}
