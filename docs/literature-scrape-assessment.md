@@ -17,7 +17,44 @@ From [validation-protocol-lock.md](validation-protocol-lock.md):
 - Development fixtures must not be reused as the “experimental” set
 - No invented numbers; no silent correction factors
 
-## What was searched
+## PubMed / PMC scrape (2026-08-02, no fabrication)
+
+**Yes, PubMed can be searched programmatically** (and we did):
+
+| Channel | What we used | Artifact |
+|---|---|---|
+| EuropePMC REST | Open-access title/abstract + full-text XML | `scripts/pubmed_scrape_probe.py`, `scripts/pubmed_scrape_narrow.py`, `docs/pubmed-scrape-probe.json`, `docs/pubmed-scrape-candidates.json` |
+| NCBI E-utilities | PubMed free-full-text filter | `scripts/pubmed_esearch.py`, `docs/pubmed-esearch.json` |
+
+### Hit counts (real API results)
+
+| Query theme | Hits |
+|---|---:|
+| OA: (glide force OR injection force OR injectability) + viscosity + needle | **319** |
+| OA: glycerol/glycerin/newtonian + injection/glide force + needle/syringe | **15** |
+| OA: Hagen–Poiseuille + injection/glide force + syringe | **6** |
+| OA: friction + glide/injection force + viscosity + needle | **0** |
+| PubMed free full text: injection/glide force + viscosity + glycerol/newtonian | **4** |
+
+### Full-text XML screen (15 OA candidates)
+
+Automated flags on EuropePMC fullTextXML (needle ID, barrel, flow, friction, Hagen, Newtonian):
+
+- **Almost all** are hydrogel / in-situ gel / cement / dental / cancer injectables — wrong product class for Phase D.
+- **Zero** papers in this OA panel published a complete machine-readable panel of  
+  \(\mu\), measured needle \(d\), \(L\), barrel \(D_b\), \(Q\) or \(t\), and **fluid-only** force/pressure.
+- Near-miss example: PMC8550001 (*microfluidic* BSA “syringe-on-chip”) — microfluidic geometry, not a clinical needle+barrel validation panel; not usable as Phase D rows without overclaiming.
+- PubMed free-full-text glycerol/newtonian filter returned only 4 PMIDs, all gels/microfluidics, not friction-corrected needle fluid resistance.
+
+### What PubMed scrape *can* and *cannot* do
+
+| Can | Cannot |
+|---|---|
+| Find open-access papers and PMC full text legally | Invent missing needle ID / friction-free force |
+| Cite DOI/PMCID and quote published tables when complete | Treat total glide force as \(F_f\) |
+| Feed a future literature registry of *candidates* | Unlock `independently_validated` without the protocol bar |
+
+## What was searched (earlier web pass)
 
 Public / open sources reviewed (representative):
 
@@ -61,6 +98,7 @@ result “total injection force.”
 - Did **not** treat internal hand-calculated fixtures as experimental validation.
 - Did **not** set `validation_status` to `independently_validated`.
 - Did **not** scrape private or behind-login lab repositories.
+- Did **not** digitize incomplete figures as if they were measured fluid-only forces.
 
 ## Minimal dataset that *would* unblock Phase D
 

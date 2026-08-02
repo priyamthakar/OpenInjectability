@@ -1,0 +1,40 @@
+{
+  "term": "(\"injection force\"[Title/Abstract] OR \"glide force\"[Title/Abstract]) AND viscosity AND (glycerol OR glycerin OR newtonian) AND free full text[Filter]",
+  "count": "4",
+  "ids": [
+    "38142949",
+    "37504451",
+    "37111684",
+    "34723096"
+  ],
+  "rows": [
+    {
+      "pmid": "38142949",
+      "title": "Formulation optimization and evaluation of oromucosal in situ gel loaded with silver nanoparticles prepared by green biosynthesis.",
+      "pubdate": "2024 Feb 1",
+      "source": "Eur J Pharm Sci",
+      "elocationid": "doi: 10.1016/j.ejps.2023.106683"
+    },
+    {
+      "pmid": "37504451",
+      "title": "Moxifloxacin HCl-Incorporated Aqueous-Induced Nitrocellulose-Based In Situ Gel for Periodontal Pocket Delivery.",
+      "pubdate": "2023 Jul 13",
+      "source": "Gels",
+      "elocationid": "doi: 10.3390/gels9070572"
+    },
+    {
+      "pmid": "37111684",
+      "title": "Levofloxacin HCl-Incorporated Zein-Based Solvent Removal Phase Inversion In Situ Forming Gel for Periodontitis Treatment.",
+      "pubdate": "2023 Apr 10",
+      "source": "Pharmaceutics",
+      "elocationid": "doi: 10.3390/pharmaceutics15041199"
+    },
+    {
+      "pmid": "34723096",
+      "title": "A microfluidic approach to studying the injection flow of concentrated albumin solutions.",
+      "pubdate": "2021",
+      "source": "SN Appl Sci",
+      "elocationid": "doi: 10.1007/s42452-021-04767-2"
+    }
+  ]
+}

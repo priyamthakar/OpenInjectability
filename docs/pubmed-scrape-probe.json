@@ -1,0 +1,483 @@
+{
+  "queries": [
+    {
+      "query": "TITLE_ABS:(\"glide force\" OR \"injection force\" OR injectability) AND viscosity AND needle AND OPEN_ACCESS:y",
+      "hitCount": 319,
+      "hits": [
+        {
+          "pmid": "41821033",
+          "pmcid": "PMC13147785",
+          "doi": "10.1186/s40942-026-00832-3",
+          "year": "2026",
+          "title": "Guiding syringe selection for intravitreal injections: injectability and stability analysis of compounded pegcetacoplan (SYFOVRE) and the broader implications for high-viscosity ophthalmic therapies.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "PURPOSE: SYFOVRE, the brand name of pegcetacoplan and the first FDA-approved treatment for geographic atrophy arising from dry age-related macular degeneration, is currently available only in vial format. Consequently, it is often compounded and transferred into syringes. This study aims to identify the optimal syringe type for both storage and intravitreal injection (IVI) of medium- and high-viscosity formulations such as SYFOVRE. METHODS: SYFOVRE was prepared in four syringe types and stored u"
+        },
+        {
+          "pmid": "42076102",
+          "pmcid": "PMC13119207",
+          "doi": "10.3390/pharmaceutics18040450",
+          "year": "2026",
+          "title": "Recent Advances in Particle Design for High-Concentration Protein Suspension Injectables.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "Subcutaneous administration has become an increasingly important route for delivering protein therapeutics, driven by patient convenience and the growing use of self-administration devices. However, conventional subcutaneous injection systems are typically limited to injection volumes of approximately 1-2 mL, posing significant formulation challenges for protein drugs requiring high therapeutic doses. Monoclonal antibodies (mAbs), for example, often require concentrations exceeding 100 mg/mL to "
+        },
+        {
+          "pmid": "41863023",
+          "pmcid": "PMC13063457",
+          "doi": "10.1186/s40942-026-00833-2",
+          "year": "2026",
+          "title": "The effect of syringe design and cannula dimensions on time-force curve in intravitreal injection across different drug viscosities: area under the curve and peak injection force.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "BACKGROUND: New intravitreal medications can offer longer treatment duration by using higher drug concentrations, which, in turn, increase viscosity. There is also a trend toward having smaller-gauge cannulas, which require a higher injection force. While the ophthalmologist cannot control viscosity, the choice of syringe may affect the force needed to administer the drug. This study compared two standard 1-ml syringes (BD Plastipak\u2122 and Braun Injekt\u00ae-F) with a syringe featuring a reduced plunge"
+        },
+        {
+          "pmid": "41277089",
+          "pmcid": "PMC12862716",
+          "doi": "10.1002/adma.202516429",
+          "year": "2026",
+          "title": "High-Concentration Antibody Formulation via Solvent-Based Dehydration.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "Although subcutaneous (SC) delivery is the preferred administration route for immunotherapies and other biologics for improved patient compliance and lower healthcare costs, it necessitates high-concentration antibody formulations. However, high-concentration antibody solutions face significant instabilities and prohibitively high viscosities. Other approaches for high-concentration formulations have been developed, including non-aqueous solutions, which can be irritating or painful, and antibod"
+        },
+        {
+          "pmid": "42052200",
+          "pmcid": "PMC13112422",
+          "doi": "10.1093/asjof/ojag045",
+          "year": "2026",
+          "title": "Peptide Hydrogel Enhances Adipocyte Viability and Reduces Inflammatory Response in Fat Grafting: A Preclinical Study.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "Y",
+          "license": "cc by-nc",
+          "abstract": "<h4>Background</h4>Fat grafting is gaining traction in regenerative and aesthetic medicine because of ease of adipose tissue harvesting and potential applications in autologous soft tissue reconstructions. A key challenge remains the limited viability of lipoaspirate-derived adipocytes following the procedures of harvesting, processing, and implantation, which leads to suboptimal outcomes in graft survival.<h4>Objectives</h4>The aim of this study was to evaluate whether a hydrogel composed of th"
+        },
+        {
+          "pmid": "42222794",
+          "pmcid": "PMC13216992",
+          "doi": "10.1021/acsomega.6c00586",
+          "year": "2026",
+          "title": "Characterization of Thermoresponsive Methylcellulose-Based Injectable Hydrogels Incorporating 58S Bioactive Glass for Non-Load-Bearing Bone Regeneration.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "Bone fractures represent a significant global public health challenge, particularly in aging populations. Despite extensive research, injectable systems that balance bioactivity with precise handling properties remain scarce. In this study, a novel triple-polymeric blend of methylcellulose, xanthan gum, and pullulan was developed using design of experiments (DoE) to create a multifunctional bioactive carrier for 58S Bioglass. This synergistic matrix was designed for minimally invasive applicatio"
+        },
+        {
+          "pmid": "41030784",
+          "pmcid": "PMC12477851",
+          "doi": "10.1016/j.bbrep.2025.102268",
+          "year": "2025",
+          "title": "Development of injectable cuttlebone derived nanohydroxyapatite hydrogel for osteoblast cell encapsulation.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "N",
+          "license": "cc by-nc-nd",
+          "abstract": "This study focused on creating bioactive, injectable hydrogels for bone regeneration, utilizing cuttlebone derived nanohydroxyapatite (CB-nHA) and quercetin (QT), a natural flavonoid, to enhance their capacity. It explored how different ratios of CB-nHA and chitosan/collagen, along with QT, in calcium carbonate (CaCO<sub>3</sub>-QT) microcapsules influenced the injectability and osteoconductive properties of thermosensitive chitosan/collagen hydrogels. The hydrogels were prepared with varying co"
+        },
+        {
+          "pmid": "40868347",
+          "pmcid": "PMC12383378",
+          "doi": "10.3390/bioengineering12080834",
+          "year": "2025",
+          "title": "The Effects of Calcium Phosphate Bone Cement Preparation Parameters on Injectability and Compressive Strength for Minimally Invasive Surgery.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "Compared with biocompatibility, osteoconductivity, and mechanical properties, the poor injectability of calcium phosphate bone cements (CPCs) is always ignored, which actually hinders the development of CPC clinical transfer in minimally invasive orthopedic surgeries. Moreover, currently, CPC preparation in the clinic is labor-intensive and requires well-trained technicists, which might also result in the unstable quality of CPCs. In this work, we focused on three research objectives: (i) introd"
+        },
+        {
+          "pmid": "42095956",
+          "pmcid": "PMC13152925",
+          "doi": "10.1007/s10544-026-00815-z",
+          "year": "2026",
+          "title": "Injectable, electrosprayed RGD-coupled alginate hydrogel microcapsules enable enhanced viability and sustained release of mesenchymal stem cells.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "The clinical translation of mesenchymal stem cell (MSC) therapies remains limited due to rapid cell clearance and stress-induced viability loss during injection. These limitations emphasize the need to develop delivery systems allowing MSCs to persist in the tissue and exert their biological effect. Cell microencapsulation within alginate (Alg) biomaterials is a promising strategy, where arginine-glycine-aspartic acid (RGD)-coupled alginate (RAlg) hydrogels have recently demonstrated improved bi"
+        },
+        {
+          "pmid": "42222828",
+          "pmcid": "PMC13216943",
+          "doi": "10.1021/acsomega.6c02412",
+          "year": "2026",
+          "title": "Injectable Silk Fibroin-Puerarin Hydrogels with Tunable Supramolecular Organization as a Potential Platform for Tissue Engineering.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "Injectable supramolecular hydrogels represent an emerging class of biomaterials with significant potential for minimally invasive tissue engineering and drug delivery applications. In this study, the effects of varying puerarin (PUE, 1-5%) contents, a bioactive isoflavonoid capable of gelation, on the physicochemical and in vitro biological properties of silk fibroin (SF) were systematically evaluated. Hydrogel formation was driven by hydrogen-bonding interactions between SF and PUE, as confirme"
+        },
+        {
+          "pmid": "38667695",
+          "pmcid": "PMC11049332",
+          "doi": "10.3390/gels10040276",
+          "year": "2024",
+          "title": "Comprehensive Evaluation of Injectability Attributes in OxiFree\u2122 Dermal Fillers: MaiLi<sup>\u00ae</sup> Product Variants and Clinical Case Reports.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "Dermal filler injectability is a critical factor for commercial product adoption by medical aesthetic professionals and for successful clinical administration. We have previously reported (in vitro and ex vivo) cross-linked hyaluronic acid (HA)-based dermal filler benchmarking in terms of manual and automated injectability requirements. To further enhance the function-oriented product characterization workflows and the clinical relevance of dermal filler injectability assessments, the aim of thi"
+        },
+        {
+          "pmid": "41892541",
+          "pmcid": "PMC13025416",
+          "doi": "10.3390/gels12030220",
+          "year": "2026",
+          "title": "Solvent Removal Salicylic Acid-Loaded Myristic Acid-Based In Situ Forming Gel.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "This study aimed to develop a solvent removal-based in situ forming gel (ISG) loaded with salicylic acid (SAL) using myristic acid (MYR) as a matrix-forming agent. SAL-loaded MYR-based ISGs were prepared using N-methyl-2-pyrrolidone (NMP) or dimethyl sulfoxide (DMSO) as solvents and evaluated for physicochemical properties, matrix formation behavior, mechanical characteristics, and in vitro drug release. Increasing MYR content influenced viscosity, gel formation kinetics, and depot integrity, re"
+        },
+        {
+          "pmid": "41892516",
+          "pmcid": "PMC13025340",
+          "doi": "10.3390/gels12030193",
+          "year": "2026",
+          "title": "Thermosensitive Chitosan/Gelatin Hydrogels in Traditional Chinese Veterinary Medicine: A Prospective Review on Modernizing Acupoint Embedding.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "Thermosensitive hydrogels have emerged as promising intelligent biomaterials for minimally invasive delivery and targeted therapy. Chitosan/gelatin thermosensitive hydrogels, integrating the biocompatibility, biodegradability, and antibacterial activity of chitosan with the excellent adhesive properties of gelatin, exhibit unique injectability, temperature-responsive gelation, and tunable physicochemical properties. This review systematically summarizes the key performance parameters of chitosan"
+        },
+        {
+          "pmid": "41970253",
+          "pmcid": "PMC13068834",
+          "doi": "10.1016/j.mtbio.2026.103051",
+          "year": "2026",
+          "title": "The mechanistic study of injectable hydrogel loaded with BMSC-exosomes in regulating the TGF-\u03b2/MMP axis to inhibit experimental myopia model.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "Pathological myopia involves reduced collagen deposition and scleral thinning, leading to axial elongation-a process exacerbated by chronic inflammation that disrupts scleral extracellular matrix homeostasis. To address this, we developed an injectable microgel system based on methacrylated alginate (AlgMA) loaded with BMSC-derived exosomes for preventing myopia progression. The photocrosslinkable AlgMA hydrogel exhibited a compressive modulus of \u223c10\u202fkPa, providing mechanical support for scleral"
+        },
+        {
+          "pmid": "41599523",
+          "pmcid": "PMC12845769",
+          "doi": "10.3390/polym18020227",
+          "year": "2026",
+          "title": "Study on Enhanced Oil Recovery of Nanofluid-Polymer Binary Flooding Technology in Medium-High Permeability Reservoirs.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "This study investigates the application of nanofluid (iNanoW)-polymer binary flooding system to enhance oil recovery efficiency in medium-to-high permeability reservoirs. Traditional polymer flooding technologies still have the potential for further improvement in these types of reservoirs. Therefore, this study combines iNanoW with the polymer flooding system to examine its effects on the rheological properties, injectability, interfacial performance, sweep volume, and recovery factor of the po"
+        },
+        {
+          "pmid": "42111760",
+          "pmcid": "PMC13156761",
+          "doi": "10.1016/j.mtbio.2026.103128",
+          "year": "2026",
+          "title": "Injectable and viscoelastic click alginate hydrogels for spatio-temporal T cell administration in vivo.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "T cell therapies have shown limited success in solid tumors, mainly due to the difficulty of T cells to penetrate the tumor tissue. Here, we develop injectable and viscoelastic click alginate hydrogels for local and sustained delivery of T cells, with the goal to improve T cell administration, viability, proliferation, and persistence <i>in vivo</i>. Oxidized alginate (Alg), functionalized with norbornene and tetrazine for inverse electron demand Diels-Alder covalent click crosslinking, at varyi"
+        },
+        {
+          "pmid": "41038615",
+          "pmcid": "PMC12557206",
+          "doi": "10.1021/acsami.5c14232",
+          "year": "2025",
+          "title": "A Biocompatible and Self-Healable 3D-Printed Bidirectional Hydrogel Actuator with Needle Injectability.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "Multifunctional hydrogels are highly desirable for emerging material applications, particularly for biocompatible hydrogel actuators. However, integrating toughness, self-healing, and reversible bidirectional actuation into a biocompatible actuator remains challenging. Herein, a 3D-printable and biocompatible bilayer hydrogel actuator with reversible bidirectional actuation is developed using a new poly(<i>N</i>-isopropylacrylamide)-gelatin methacryloyl (PNIPAM-GelMA; \"PNG\") hydrogel as the acti"
+        },
+        {
+          "pmid": "41440638",
+          "pmcid": "PMC12733886",
+          "doi": "10.3390/jfb16120461",
+          "year": "2025",
+          "title": "Cationic Surface Modification Combined with Collagen Enhances the Stability and Delivery of Magnetosomes for Tumor Hyperthermia.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "Magnetosomes (MTS), membrane-enclosed magnetic nanoparticles naturally biomineralized by magnetotactic bacteria, are promising materials for tumor hyperthermia owing to their good biocompatibility and heating efficiency. However, their application is limited by poor suspension stability and low injectability at high concentrations. This study aimed to enhance magnetosome stability and delivery performance through surface cationization combined with collagen matrix stabilization. The resulting ca"
+        },
+        {
+          "pmid": "42005348",
+          "pmcid": "PMC13084712",
+          "doi": "10.1016/j.ijpx.2026.100529",
+          "year": "2026",
+          "title": "Development of an injectable thermosensitive hydrogel depot system for controlled and sustained subcutaneous drug delivery.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "N",
+          "license": "cc by-nc",
+          "abstract": "Arthritis conditions are widely treated with oral nonsteroidal anti-inflammatory drugs, yet long-term therapy is often limited by gastrointestinal toxicity and variable systemic exposure. To overcome these issues, an injectable thermosensitive chitosan/\u03b2-cyclodextrin-<i>graft</i>-poly(N-isopropylacrylamide) hydrogel was developed as a subcutaneous depot for sustained diclofenac sodium delivery. The hydrogel was synthesized via free-radical polymerization using glutaraldehyde as a crosslinker. FT"
+        },
+        {
+          "pmid": "41002528",
+          "pmcid": "PMC12469832",
+          "doi": "10.3390/gels11090754",
+          "year": "2025",
+          "title": "Viscoelastic Properties and Enzymatic Degradation of Crosslinked Hyaluronic Acid for Deep Dermal Filler Use.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "Crosslinked hyaluronic acid dermal fillers are widely used for non-permanent aesthetic enhancement, offering safe and effective solutions for facial volume restoration. Specific formulations are designed for targeted facial regions, with highly crosslinked hydrogels often recommended for volumizing areas such as the jawline, chin, and cheeks due to their structural properties. While elasticity and viscosity are commonly evaluated, broader comparative analyses remain limited. In this study, we as"
+        },
+        {
+          "pmid": "40868739",
+          "pmcid": "PMC12385344",
+          "doi": "10.3390/gels11080607",
+          "year": "2025",
+          "title": "Chitosan-Glycerol Injectable Hydrogel for Intratumoral Delivery of Macromolecules.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "Intratumoral injections of macromolecules, such as biologics and immunotherapeutics, show promise in overcoming dose-limiting side effects associated with systemic injections and improve treatment efficacy. However, the retention of injectates in the tumor microenvironment is a major underappreciated challenge. High interstitial pressures and dense tumor architectures create shear forces that rapidly expel low-viscosity solutions post-injection. Injectable hydrogels may address these concerns by"
+        },
+        {
+          "pmid": "40642058",
+          "pmcid": "PMC12241799",
+          "doi": "10.34133/research.0776",
+          "year": "2025",
+          "title": "Machine Learning-Assisted Development of Injectable, Mechanically Robust, and Energy Metabolism-Modulating Brushite Cements.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "In orthopedic minimally invasive surgeries (MIS) such as percutaneous vertebroplasty (PVP) and percutaneous kyphoplasty (PKP), calcium phosphate cements (CPCs) are an attractive alternative to bioinert polymethyl methacrylate (PMMA) due to their superior biocompatibility and osteoconductivity. However, the mechanical strength and injectability of CPCs often remain insufficient for load-bearing applications, limiting their broader use in these critical procedures. To address this challenge, we in"
+        },
+        {
+          "pmid": "41590037",
+          "pmcid": "PMC12841097",
+          "doi": "10.3390/gels12010011",
+          "year": "2025",
+          "title": "Recent Advances in Injectable Hydrogels for Biomedical and Aesthetic Applications: Focus on Rheological Characteristics.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "Injectable hydrogels (IHs) have gained considerable interest in biomedical and aesthetic applications due to their minimally invasive delivery, selective localization, and sustained release of bioactive agents. They exhibit flowability during administration and undergo in situ gelation under physiological conditions. These behaviors are influenced by their tunable structural, physical, mechanical, and viscoelastic properties, modulating performance. Rheological parameters, including viscosity (<"
+        },
+        {
+          "pmid": "41155990",
+          "pmcid": "PMC12567530",
+          "doi": "10.3390/pharmaceutics17101355",
+          "year": "2025",
+          "title": "Injectable In Situ Thermoreversible Gel Depot System of Lidocaine Nanoemulsion for Prolonged Anesthetic Activity in Dental and Operative Procedures.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "<b>Background/Objectives:</b> Lidocaine hydrochloride (LD-HCl) is the most commonly used local anesthetic in dentistry, often administered with epinephrine to extend its duration and reduce systemic absorption. However, its relatively short duration of action, the need for repeated injections, and the unpleasant taste may limit patient compliance and procedural efficiency. This study aimed to develop and evaluate a novel injectable nanoemulsion-based in situ gel depot system of LD to provide pro"
+        },
+        {
+          "pmid": "39681827",
+          "pmcid": "PMC11837236",
+          "doi": "10.1111/jocd.16730",
+          "year": "2025",
+          "title": "Preparation and Characterization of Injectable Augmentation Gels Containing Polycaprolactone and Hyaluronic Acid.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "<h4>Background</h4>Injectable augmentation gels are widely used in the treatment of soft tissue. The composition of these gels has to be continuously improved due to the limitations of the currently available formulations.<h4>Aims</h4>This study focuses on the development of an innovative injectable gel designed to address current trends and specific needs within the field.<h4>Methods</h4>The current study utilized a safer hyaluronic acid (HA) gel carrier, created with a less toxic cross-linker,"
+        }
+      ]
+    },
+    {
+      "query": "TITLE_ABS:(\"dynamic glide force\") AND OPEN_ACCESS:y",
+      "hitCount": 0,
+      "hits": []
+    },
+    {
+      "query": "TITLE_ABS:(\"Hagen-Poiseuille\") AND (syringe OR needle) AND viscosity AND OPEN_ACCESS:y",
+      "hitCount": 7,
+      "hits": [
+        {
+          "pmid": "41860823",
+          "pmcid": "PMC13004354",
+          "doi": "10.1371/journal.pone.0344836",
+          "year": "2026",
+          "title": "A theoretical and experimental model of flow characteristics in subretinal injections.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "Subretinal injections (SI) are used to deliver gene therapies for inherited retinal diseases, yet the optimal injection parameters remain undefined. This study used theoretical and experimental models to quantify the relationship between injection pressure, flow dynamics, and residual flow. A theoretical model (TM) was developed based on the Hagen-Poiseuille law and the theory of a jet immersed in the same liquid. An experimental model (EM) was constructed to allow for measuring flow and residua"
+        },
+        {
+          "pmid": "40428693",
+          "pmcid": "PMC12113853",
+          "doi": "10.3390/mi16050567",
+          "year": "2025",
+          "title": "Microfluidic Chip for Quantitatively Assessing Hemorheological Parameters.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "The biomechanical properties of blood are regarded as promising biomarkers for monitoring early-stage abnormalities and disease progression. To detect any changes in blood, it is necessary to measure as many rheological properties as possible. Herein, a novel method is proposed for measuring multiple rheological properties of blood using a microfluidic chip. The syringe pump turns off for 5 min to induce RBC (red blood cell) sedimentation in the driving syringe. RBC aggregation is determined by "
+        },
+        {
+          "pmid": "36149647",
+          "pmcid": "PMC9520513",
+          "doi": "10.1167/tvst.11.9.20",
+          "year": "2022",
+          "title": "A Multi-Lumen Glaucoma Stent With Titratable Pressure-Lowering Effect: A Proof of Concept Study.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "N",
+          "license": "cc by-nc-nd",
+          "abstract": "<h4>Purpose</h4>To explore the feasibility of a glaucoma stent with a titratable pressure-lowering effect.<h4>Methods</h4>This was an in vitro study. We created a resin stent with a micro-precision three-dimensional printer. It represented a cylinder with one primary and two secondary lumina. The inner opening of each secondary lumen was sealed with a membrane. We used a surgical eye model to simulate implantation of the stent and a laser procedure analogous to argon laser trabeculoplasty (ALT) "
+        },
+        {
+          "pmid": "35546843",
+          "pmcid": "PMC9085397",
+          "doi": "10.1039/c8ra06006a",
+          "year": "2018",
+          "title": "A simple capillary viscometer based on the ideal gas law.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "N",
+          "license": "cc by-nc",
+          "abstract": "We report a simple, inexpensive and user-friendly capillary viscometer based on the measurement of pressure drop in capillary tubing using the principle of ideal gas law. Viscosity is an important physical property of a fluid that provides molecular information of the fluid's behavior under flow conditions. Measuring viscosity, however, generally requires relatively large fluid volume samples and is expensive with commercial viscometers. Microfluidic viscometers at different levels of complexity"
+        },
+        {
+          "pmid": "30301138",
+          "pmcid": "PMC6315380",
+          "doi": "10.3390/membranes8040090",
+          "year": "2018",
+          "title": "Significance of Brownian Motion for Nanoparticle and Virus Capture in Nanocellulose-Based Filter Paper.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "Pressure-dependent breakthrough of nanobioparticles in filtration was observed and it was related to depend on both convective forces due to flow and diffusion as a result of Brownian motion. The aim of this work was to investigate the significance of Brownian motion on nanoparticle and virus capture in a nanocellulose-based virus removal filter paper through theoretical modeling and filtration experiments. Local flow velocities in the pores of the filter paper were modeled through two different"
+        },
+        {
+          "pmid": "24409189",
+          "pmcid": "PMC3872826",
+          "doi": "10.3389/fpls.2013.00531",
+          "year": "2013",
+          "title": "Hydrodynamics of steady state phloem transport with radial leakage of solute.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "Long-distance phloem transport occurs under a pressure gradient generated by the osmotic exchange of water associated with solute exchange in source and sink regions. But these exchanges also occur along the pathway, and yet their physiological role has almost been ignored in mathematical models of phloem transport. Here we present a steady state model for transport phloem which allows solute leakage, based on the Navier-Stokes and convection-diffusion equations which describe fluid motion rigor"
+        },
+        {
+          "pmid": "18421156",
+          "pmcid": "PMC2394822",
+          "doi": "10.1107/s0909049508001842",
+          "year": "2008",
+          "title": "Protein crystallization in a 100 nl solution with new stirring equipment.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "To investigate quantitatively the effects of stirring on protein crystallization, a new stirring system which can agitate a protein solution, approximately 100 nl, by providing Hagen-Poiseuille flow has been successfully developed. In addition, this new stirring system provides flow with a well defined pattern and velocity. Using this system, hen egg-white lysozyme was crystallized in 100-200 nl solutions while being stirred. The optimum stirring conditions for lysozyme crystals have been explor"
+        }
+      ]
+    },
+    {
+      "query": "TITLE_ABS:(glycerol) AND (\"injection force\" OR \"glide force\") AND needle AND OPEN_ACCESS:y",
+      "hitCount": 6,
+      "hits": [
+        {
+          "pmid": "40585531",
+          "pmcid": "PMC12202143",
+          "doi": "10.1093/rb/rbaf047",
+          "year": "2025",
+          "title": "Development of a mechanical adaptable, moisture retention capable, injectable and adhesive organohydrogel for nucleus pulposus repairing.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "Developing mechanical adaptable injectable gel with nucleus pulposus (NP) repairing capability for minimally invasive treatment of intervertebral disc degeneration (IDD) is of great importance in medical practice. In current work, inspired by the outcomes of polyvinyl alcohol and glycerol based injectable organohydrogel (GPG) in IDD control and the great potential of animal glue in tissue adhesion, a novel injectable and self-crosslinking adhesive organohydrogel GPG-AG was fabricated. The mechan"
+        },
+        {
+          "pmid": "37224104",
+          "pmcid": "PMC11468836",
+          "doi": "10.1002/adhm.202300914",
+          "year": "2023",
+          "title": "Ready-To-Use and Rapidly Biodegradable Magnesium Phosphate Bone Cement: In Vivo Evaluation in Sheep.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "In clinical practice, hydroxyapatite (HA) cements for bone defect treatment are frequently prepared by mixing a powder component and a liquid component shortly before implantation in the operation theater, which is time-consuming and error-prone. In addition, HA cements are only slightly resorbed, that is, cement residues can still be found in the bone years after implantation. Here, these challenges are addressed by a prefabricated magnesium phosphate cement paste based on glycerol, which is re"
+        },
+        {
+          "pmid": "38835638",
+          "pmcid": "PMC11148844",
+          "doi": "10.1055/a-2161-2100",
+          "year": "2023",
+          "title": "Development of a hybrid hydrogel for submucosal injection in endoscopic resection of gastrointestinal neoplasm: From laboratory to clinical trial.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "Y",
+          "license": "cc by-nc-nd",
+          "abstract": "<b>Background and study aims</b> Submucosal injection solution is essential for successful endoscopic resection of the early gastrointestinal tumor. We evaluated a new endoscopic hydrogel for submucosal injection and its clinical feasibility. <b>Patients and methods</b> A hydrogel (AceGel) containing 0.4% sodium alginate and 2% calcium lactate was developed for ex vivo and animal studies. Subsequently, a prospective, single-arm study was conducted to assess its feasibility and safety in humans. "
+        },
+        {
+          "pmid": "37504451",
+          "pmcid": "PMC10378842",
+          "doi": "10.3390/gels9070572",
+          "year": "2023",
+          "title": "Moxifloxacin HCl-Incorporated Aqueous-Induced Nitrocellulose-Based In Situ Gel for Periodontal Pocket Delivery.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "A drug delivery system based on an aqueous-induced in situ forming gel (ISG) consists of solubilizing the drug within an organic solution of a polymer using a biocompatible organic solvent. Upon contact with an aqueous medium, the solvent diffuses out and the polymer, designed to be insoluble in water, solidifies and transforms into gel. Nitrocellulose (Nc), an aqueous insoluble nitrated ester of cellulose, should be a promising polymer for an ISG using water induction of its solution to gel sta"
+        },
+        {
+          "pmid": "37111684",
+          "pmcid": "PMC10143341",
+          "doi": "10.3390/pharmaceutics15041199",
+          "year": "2023",
+          "title": "Levofloxacin HCl-Incorporated Zein-Based Solvent Removal Phase Inversion In Situ Forming Gel for Periodontitis Treatment.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "Zein is composed of nonpolar amino acids and is a water-insoluble protein used as the matrix-forming agent of localized in situ forming gel (ISG). Therefore, this study prepared solvent removal phase inversion zein-based ISG formulations to load levofloxacin HCl (Lv) for periodontitis treatment using dimethyl sulfoxide (DMSO) and glycerol formal (GF) as the solvents. Their physicochemical properties were determined, including viscosity, injectability, gel formation, and drug release. The topogra"
+        },
+        {
+          "pmid": "34449632",
+          "pmcid": "PMC8395841",
+          "doi": "10.3390/jfb12030046",
+          "year": "2021",
+          "title": "Formulation and Characterization of a New Injectable Bone Substitute Composed PVA/Borax/CaCO<sub>3</sub> and Demineralized Bone Matrix.",
+          "isOpenAccess": "Y",
+          "hasPDF": "Y",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "The occurrence of bone-related disorders and diseases has dramatically increased in recent years around the world. Demineralized bone matrix (DBM) has been widely used as a bone implant due to its osteoinduction and bioactivity. However, the use of DBM is limited because it is a particulate material, which makes it difficult to manipulate and implant with precision. In addition, these particles are susceptible to migration to other sites. To address this situation, DBM is commonly incorporated i"
+        }
+      ]
+    }
+  ]
+}

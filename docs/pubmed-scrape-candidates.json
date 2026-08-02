@@ -1,0 +1,636 @@
+{
+  "queries": {
+    "glycerol_newtonian_force": {
+      "hitCount": 15,
+      "hits": [
+        {
+          "pmid": "40868739",
+          "pmcid": "PMC12385344",
+          "doi": "10.3390/gels11080607",
+          "year": "2025",
+          "title": "Chitosan-Glycerol Injectable Hydrogel for Intratumoral Delivery of Macromolecules.",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "Intratumoral injections of macromolecules, such as biologics and immunotherapeutics, show promise in overcoming dose-limiting side effects associated with systemic injections and improve treatment efficacy. However, the retention of injectates in the tumor microenvironment is a major underappreciated challenge. High interstitial pressures and dense tumor architectures create shear forces that rapidly expel low-viscosity solutions post-injection. Injectable hydrogels may address these concerns by providing a viscoelastic delivery vehicle that shields loaded therapies from rapid expulsion from the tumor. A chitosan-glycerol hydrogel was thus developed and characterized with the goal of improving the injection retention of loaded therapeutics. The gelation parameters and mechanical properties"
+        },
+        {
+          "pmid": "41155990",
+          "pmcid": "PMC12567530",
+          "doi": "10.3390/pharmaceutics17101355",
+          "year": "2025",
+          "title": "Injectable In Situ Thermoreversible Gel Depot System of Lidocaine Nanoemulsion for Prolonged Anesthetic Activity in Dental and Operative Procedures.",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "<b>Background/Objectives:</b> Lidocaine hydrochloride (LD-HCl) is the most commonly used local anesthetic in dentistry, often administered with epinephrine to extend its duration and reduce systemic absorption. However, its relatively short duration of action, the need for repeated injections, and the unpleasant taste may limit patient compliance and procedural efficiency. This study aimed to develop and evaluate a novel injectable nanoemulsion-based in situ gel depot system of LD to provide prolonged anesthetic activity. <b>Methods:</b> LD-loaded nanoemulsions were formulated by high-shear homogenization followed by probe sonication, employing Miglyol 812 N (oil phase), a combination of Tween 80 and soy lecithin (surfactant-co-surfactant), glycerin, and deionized water (aqueous phase). Th"
+        },
+        {
+          "pmid": "41590534",
+          "pmcid": "PMC12843089",
+          "doi": "10.3390/jpm16010041",
+          "year": "2026",
+          "title": "Beyond Strict Physics: Using Poiseuille's Law as a Practical Framework to Optimize and Personalize Cementoplasty.",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "<b>Background/Objectives:</b> Poiseuille's law describes the influence of radius, length, viscosity, and pressure on the flow of Newtonian fluids. Although bone cement is a non-Newtonian, shear-thinning, and polymerizing material that does not comply with this law in any predictive or quantitative sense, its qualitative principles may offer a didactic framework for understanding factors that affect injectability during cementoplasty. The objective of this Technical Note is to provide an educational and conceptual interpretation of Poiseuille's law as it relates to trocar selection, cement behavior, and procedural planning. <b>Methods:</b> This work presents theoretical calculations based on the r<sup>4</sup>/L component of Poiseuille's equation, using manufacturer-specified internal radii "
+        },
+        {
+          "pmid": "40483284",
+          "pmcid": "PMC12507947",
+          "doi": "10.1007/s13346-025-01892-y",
+          "year": "2025",
+          "title": "Development of an in-situ forming implant system for levodopa and carbidopa for the treatment of parkinson's disease.",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "Long-acting injectables have gained attraction as a system for treating chronic conditions due to their increased efficacy, safety, and patient compliance. Currently, patients with Parkinsons need to administer oral medications multiple times a day which imposes the significant risk of non-compliance. This study aimed to design an in-situ implant-forming system for controlled delivery of levodopa and carbidopa for up to 1 week which will reduce the need for multiple dosing. The combination of poly-lactic-co-glycolic acid (PLGA <sub>50:50</sub>) and Eudragit L-100 was used to prepare the implants and the formulation was optimized to achieve a controlled release over 7 days. The optimized formulation containing 26% PLGA and 6% Eudragit L 100 displayed a favorable release profile and injectab"
+        },
+        {
+          "pmid": "37111684",
+          "pmcid": "PMC10143341",
+          "doi": "10.3390/pharmaceutics15041199",
+          "year": "2023",
+          "title": "Levofloxacin HCl-Incorporated Zein-Based Solvent Removal Phase Inversion In Situ Forming Gel for Periodontitis Treatment.",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "Zein is composed of nonpolar amino acids and is a water-insoluble protein used as the matrix-forming agent of localized in situ forming gel (ISG). Therefore, this study prepared solvent removal phase inversion zein-based ISG formulations to load levofloxacin HCl (Lv) for periodontitis treatment using dimethyl sulfoxide (DMSO) and glycerol formal (GF) as the solvents. Their physicochemical properties were determined, including viscosity, injectability, gel formation, and drug release. The topography of dried remnants after drug release was revealed using a scanning electron microscope and X-ray computed microtomography (\u03bcCT) to investigate their 3D structure and % porosity. The antimicrobial activities were tested against <i>Staphylococcus aureus</i> (ATCC 6538), <i>Escherichia coli</i> ATC"
+        },
+        {
+          "pmid": "41582151",
+          "pmcid": "PMC12915010",
+          "doi": "10.1186/s12951-026-04063-4",
+          "year": "2026",
+          "title": "Hydrogel microspheres loaded with sinomenine and Drynaria rhizome enhance the treatment of rheumatoid arthritis via immune regulation and promoting bone repair.",
+          "hasSuppl": "Y",
+          "license": "cc by-nc-nd",
+          "abstract": "Rheumatoid arthritis (RA) is an autoimmune disease characterized by chronic synovial inflammation, cartilage destruction, and bone loss. Current therapeutic approaches are often limited by short drug half-life, insufficient local drug release, and substantial systemic side effects.In this study, we developed a composite thermosensitive hydrogel system that integrates in situ gelation, sustained drug release, and multitarget therapeutic effects for localized precision treatment of RA.The system consists of a thermosensitive hydrogel matrix composed of hydroxypropyl methylcellulose (HPMC), hyaluronic acid (HA), and glycerol, in which gelatin methacryloyl (GelMA) hydrogel microspheres are embedded. The microspheres efficiently encapsulate Drynaria rhizome-derived extracellular vesicles (DR-EV"
+        },
+        {
+          "pmid": "37504462",
+          "pmcid": "PMC10379822",
+          "doi": "10.3390/gels9070583",
+          "year": "2023",
+          "title": "Levofloxacin HCl-Loaded Eudragit L-Based Solvent Exchange-Induced In Situ Forming Gel Using Monopropylene Glycol as a Solvent for Periodontitis Treatment.",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "Solvent exchange-induced in situ forming gel (ISG) is currently an appealing dosage form for periodontitis treatment via localized injection into the periodontal pocket. This study aims to apply Eudragit L and Eudragit S as matrix components of ISG by using monopropylene glycol as a solvent for loading levofloxacin HCl for periodontitis treatment. The influence of Eudragit concentration was investigated in terms of apparent viscosity, rheological behavior, injectability, gel-forming behavior, and mechanical properties. Eudragit L-based formulation presented less viscosity, was easier to inject, and could form more gel than Eudragit S-based ISG. Levofloxacin HCl-loading diminished the viscosity of Eudragit L-based formulation but did not significantly change the gel formation ability. Highe"
+        },
+        {
+          "pmid": "37504451",
+          "pmcid": "PMC10378842",
+          "doi": "10.3390/gels9070572",
+          "year": "2023",
+          "title": "Moxifloxacin HCl-Incorporated Aqueous-Induced Nitrocellulose-Based In Situ Gel for Periodontal Pocket Delivery.",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "A drug delivery system based on an aqueous-induced in situ forming gel (ISG) consists of solubilizing the drug within an organic solution of a polymer using a biocompatible organic solvent. Upon contact with an aqueous medium, the solvent diffuses out and the polymer, designed to be insoluble in water, solidifies and transforms into gel. Nitrocellulose (Nc), an aqueous insoluble nitrated ester of cellulose, should be a promising polymer for an ISG using water induction of its solution to gel state via phase inversion. The aim of this investigation was to develop and evaluate a moxifloxacin HCl (Mx)-incorporated aqueous-induced Nc-based ISG for periodontitis treatment. The effects of different solvents (<i>N</i>-methyl pyrrolidone (NMP), DMSO, 2-pyrrolidone (Py), and glycerol formal (Gf)) o"
+        },
+        {
+          "pmid": "34723096",
+          "pmcid": "PMC8550001",
+          "doi": "10.1007/s42452-021-04767-2",
+          "year": "2021",
+          "title": "A microfluidic approach to studying the injection flow of concentrated albumin solutions.",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "<h4>Abstract</h4>Subcutaneous injection by means of prefilled syringes allows patients to self-administrate high-concentration (100 g/L or more) protein-based drugs. Although the shear flow of concentrated globulins or monoclonal antibodies has been intensively studied and related to the injection force proper of SC processes, very small attention has been paid to the extensional behavior of this category of complex fluids. This work focuses on the flow of concentrated bovine serum albumin (BSA) solutions through a microfluidic \"syringe-on-chip\" contraction device which shares some similarities with the geometry of syringes used in SC self-injection. By comparing the velocity and pressure measurements in complex flow with rheometric shear measurements obtained by means of the \"Rheo-chip\" d"
+        },
+        {
+          "pmid": "36135239",
+          "pmcid": "PMC9498735",
+          "doi": "10.3390/gels8090526",
+          "year": "2022",
+          "title": "Imatinib Mesylate-Loaded Rosin/Cinnamon Oil-Based In Situ Forming Gel against Colorectal Cancer Cells.",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "Localized delivery systems have been typically designed to enhance drug concentration at a target site and minimize systemic drug toxicity. A rosin/cinnamon oil (CO) in situ forming gel (ISG) was developed for the sustainable delivery of imatinib mesylate (IM) against colorectal cancer cells. CO has been claimed to express a potent anticancer effect against various cancer cells, as well as a synergistic effect with IM on colorectal cancer cells; however, poor aqueous solubility limits its application. The effect of rosin with the adding CO was assessed on physicochemical properties and in vitro drug release from developed IM-loaded rosin/CO-based ISG. Moreover, in vitro cytotoxicity tests were conducted against two colorectal cancer cells. All formulations exhibited Newtonian flow behavior"
+        },
+        {
+          "pmid": "35628172",
+          "pmcid": "PMC9140455",
+          "doi": "10.3390/ijms23105370",
+          "year": "2022",
+          "title": "Hydroxyapatite-Integrated, Heparin- and Glycerol-Functionalized Chitosan-Based Injectable Hydrogels with Improved Mechanical and Proangiogenic Performance.",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "The investigation of natural bioactive injectable composites to induce angiogenesis during bone regeneration has been a part of recent minimally invasive regenerative medicine strategies. Our previous study involved the development of in situ-forming injectable composite hydrogels (Chitosan/Hydroxyapatite/Heparin) for bone regeneration. These hydrogels offered facile rheology, injectability, and gelation at 37 \u00b0C, as well as promising pro-angiogenic abilities. In the current study, these hydrogels were modified using glycerol as an additive and a pre-sterile production strategy to enhance their mechanical strength. These modifications allowed a further pH increment during neutralisation with maintained solution homogeneity. The synergetic effect of the pH increment and further hydrogen bon"
+        },
+        {
+          "pmid": "35415072",
+          "pmcid": "PMC8980713",
+          "doi": "10.1016/j.jot.2022.03.006",
+          "year": "2022",
+          "title": "Injectable hydrogel with nucleus pulposus-matched viscoelastic property prevents intervertebral disc degeneration.",
+          "hasSuppl": "Y",
+          "license": "cc by-nc-nd",
+          "abstract": "<h4>Background/objective</h4>Intervertebral disc (IVD) degeneration (IVDD) that greatly affected by regional biomechanical environment is a major cause of low back pain. Injectable hydrogels have been commonly studied for treatment of IVDD due to their capability of mimicking extracellular matrix structure to support cellular behavior and clinical prospects in minimally invasive treatment. However, most hydrogels suffer from complicated chemistry, potential uncertainty and toxicity from in-situ gelation, and mismatch with IVD mechanical environment that limit their therapeutic effects or clinical translation in IVDD or intervertebral disc defect repair. For IVD lesion repair, the study aims to develop a novel hydrogel with shear-thinning enabled injectability, high bio-safety, and mechanic"
+        },
+        {
+          "pmid": "34449632",
+          "pmcid": "PMC8395841",
+          "doi": "10.3390/jfb12030046",
+          "year": "2021",
+          "title": "Formulation and Characterization of a New Injectable Bone Substitute Composed PVA/Borax/CaCO<sub>3</sub> and Demineralized Bone Matrix.",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "The occurrence of bone-related disorders and diseases has dramatically increased in recent years around the world. Demineralized bone matrix (DBM) has been widely used as a bone implant due to its osteoinduction and bioactivity. However, the use of DBM is limited because it is a particulate material, which makes it difficult to manipulate and implant with precision. In addition, these particles are susceptible to migration to other sites. To address this situation, DBM is commonly incorporated into a variety of carriers. An injectable scaffold has advantages over bone grafts or preformed scaffolds, such as the ability to flow and fill a bone defect. The aim of this research was to develop a DBM carrier with such viscoelastic properties in order to obtain an injectable bone substitute (IBS)"
+        },
+        {
+          "pmid": "36581951",
+          "pmcid": "PMC9801553",
+          "doi": "10.1186/s40824-022-00330-1",
+          "year": "2022",
+          "title": "Periosteum-inspired in situ CaP generated nanocomposite hydrogels with strong bone adhesion and superior stretchability for accelerated distraction osteogenesis.",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "<h4>Background</h4>Distraction osteogenesis (DO) is an efficacious but lengthy procedure to reconstruct segmental bone defects under the principle of tension-stress, during which the periosteum-mediated mechanical stimulation plays a pivotal role. Inspired by the dynamic process of DO and the mechanical stimulation of periosteum, a new design of bionic periosteum was developed to simulate the mechanical transduction of natural periosteum for the application in DO procedure.<h4>Methods</h4>In this study, an injectable organic-inorganic hybrid hydrogel was developed based on a novel combination of the PEGylated poly (glycerol sebacate) (PEGS) polymer network and in situ formed CaP nanoparticles (ICPNs). Rat bone marrow mesenchymal stem cells (rBMSCs) and human umbilical vein endothelial cell"
+        },
+        {
+          "pmid": "23507729",
+          "pmcid": "PMC3548246",
+          "doi": "10.4161/biom.1.1.16735",
+          "year": "2011",
+          "title": "Premixed calcium silicate cement for endodontic applications: injectability, setting time and radiopacity.",
+          "hasSuppl": "N",
+          "license": "cc by-nc",
+          "abstract": "Calcium silicate-based materials (also called MTA) are increasingly being used in endodontic applications. However, the handling properties of MTA are not optimal when it comes to injectability and cohesion. Premixing the cements using glycerol avoids these issues. However, there is a lack of data on the effect of common cement variables on important properties of premixed cements for endodontic applications. In this study, the effects of liquid-to-powder ratio, amount of radiopacifier and amount of calcium sulfate (added to control the setting time) were screened using a statistical model. In the second part of the study, the liquid-to-powder ratio was optimized for cements containing three different amounts of radiopacifier. Finally, the effect of using glycerol rather than water was eva"
+        }
+      ]
+    },
+    "hagen_poiseuille_force": {
+      "hitCount": 6,
+      "hits": [
+        {
+          "pmid": "41860823",
+          "pmcid": "PMC13004354",
+          "doi": "10.1371/journal.pone.0344836",
+          "year": "2026",
+          "title": "A theoretical and experimental model of flow characteristics in subretinal injections.",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "Subretinal injections (SI) are used to deliver gene therapies for inherited retinal diseases, yet the optimal injection parameters remain undefined. This study used theoretical and experimental models to quantify the relationship between injection pressure, flow dynamics, and residual flow. A theoretical model (TM) was developed based on the Hagen-Poiseuille law and the theory of a jet immersed in the same liquid. An experimental model (EM) was constructed to allow for measuring flow and residual flow across injection pressures ranging from 0 to 20 psi. We assessed the effects of ambient pressure, injection system tubing length, and syringe priming technique. A minimum pressure of 6 psi was required to generate a detectable flow in the EM. Jet speed increased with the square root of inject"
+        },
+        {
+          "pmid": "40428693",
+          "pmcid": "PMC12113853",
+          "doi": "10.3390/mi16050567",
+          "year": "2025",
+          "title": "Microfluidic Chip for Quantitatively Assessing Hemorheological Parameters.",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "The biomechanical properties of blood are regarded as promising biomarkers for monitoring early-stage abnormalities and disease progression. To detect any changes in blood, it is necessary to measure as many rheological properties as possible. Herein, a novel method is proposed for measuring multiple rheological properties of blood using a microfluidic chip. The syringe pump turns off for 5 min to induce RBC (red blood cell) sedimentation in the driving syringe. RBC aggregation is determined by analyzing the time-lapse blood image intensity at stasis: <i>I</i>(<i>t</i>) = <i>I</i><sub>1</sub> exp (-<i>k</i><sub>1</sub><i>t</i>) + <i>I</i><sub>2</sub> exp (-<i>k</i><sub>2</sub><i>t</i>). RBC-rich blood and RBC-depleted blood are sequentially infused into the microfluidic chip. Based on bloo"
+        },
+        {
+          "pmid": "39774608",
+          "pmcid": "PMC11717134",
+          "doi": "10.1167/tvst.14.1.2",
+          "year": "2025",
+          "title": "In Vitro Analysis of Pressure Resistance in the Paul Glaucoma Implant and Ahmed ClearPath 250 With and Without Polypropylene Thread Inside the Tube.",
+          "hasSuppl": "N",
+          "license": "cc by",
+          "abstract": "<h4>Purpose</h4>Pressure resistance characteristics of the Paul glaucoma implant (PGI) and Ahmed ClearPath 250 (ACP), with and without the insertion of polypropylene thread in their tubes, were evaluated.<h4>Methods</h4>The in vitro flow pressure was evaluated at varying flow rates, both with and without threads (6-0 for PGI and 4-0 or 3-0 for ACP). Cross-sectional areas of the tube lumen and thread were measured to calculate pressure resistance using the Hagen-Poiseuille equation.<h4>Results</h4>For the PGI without the thread, the pressure remained relatively low and constant across all flow rates. In contrast, with the insertion of a 6-0 thread, there was a significant increase in pressure resistance, with the pressure increasing from 7.5\u00a0mm\u00a0Hg at 1 \u00b5L/min to 43.8 mm\u00a0Hg at 5 \u00b5L/min. For "
+        },
+        {
+          "pmid": "36149647",
+          "pmcid": "PMC9520513",
+          "doi": "10.1167/tvst.11.9.20",
+          "year": "2022",
+          "title": "A Multi-Lumen Glaucoma Stent With Titratable Pressure-Lowering Effect: A Proof of Concept Study.",
+          "hasSuppl": "N",
+          "license": "cc by-nc-nd",
+          "abstract": "<h4>Purpose</h4>To explore the feasibility of a glaucoma stent with a titratable pressure-lowering effect.<h4>Methods</h4>This was an in vitro study. We created a resin stent with a micro-precision three-dimensional printer. It represented a cylinder with one primary and two secondary lumina. The inner opening of each secondary lumen was sealed with a membrane. We used a surgical eye model to simulate implantation of the stent and a laser procedure analogous to argon laser trabeculoplasty (ALT) to ablate each membrane. To study the fluid dynamics, we used a high-precision syringe pump and measured the steady-state pressure for one, two, and three lumina in parallel at flow rates of 2.5, 5.0, and 10.0\u00a0\u00b5L/min.<h4>Results</h4>The stent could be implanted into the eye model and visualized in t"
+        },
+        {
+          "pmid": "30301138",
+          "pmcid": "PMC6315380",
+          "doi": "10.3390/membranes8040090",
+          "year": "2018",
+          "title": "Significance of Brownian Motion for Nanoparticle and Virus Capture in Nanocellulose-Based Filter Paper.",
+          "hasSuppl": "Y",
+          "license": "cc by",
+          "abstract": "Pressure-dependent breakthrough of nanobioparticles in filtration was observed and it was related to depend on both convective forces due to flow and diffusion as a result of Brownian motion. The aim of this work was to investigate the significance of Brownian motion on nanoparticle and virus capture in a nanocellulose-based virus removal filter paper through theoretical modeling and filtration experiments. Local flow velocities in the pores of the filter paper were modeled through two different approaches (i.e., with the Hagen\u207bPoiseuille equation) and by evaluating the superficial linear flow velocity through the filter. Simulations by solving the Langevin equation for 5 nm gold particles and 28 nm \u03a6X174 bacteriophages showed that hydrodynamic constraint is favored for larger particles. F"
+        },
+        {
+          "pmid": "35546843",
+          "pmcid": "PMC9085397",
+          "doi": "10.1039/c8ra06006a",
+          "year": "2018",
+          "title": "A simple capillary viscometer based on the ideal gas law.",
+          "hasSuppl": "N",
+          "license": "cc by-nc",
+          "abstract": "We report a simple, inexpensive and user-friendly capillary viscometer based on the measurement of pressure drop in capillary tubing using the principle of ideal gas law. Viscosity is an important physical property of a fluid that provides molecular information of the fluid's behavior under flow conditions. Measuring viscosity, however, generally requires relatively large fluid volume samples and is expensive with commercial viscometers. Microfluidic viscometers at different levels of complexity can measure fluids at different flow rates with a small sample volume but the cost of commercially available microfluidic viscometers is still high. The reported capillary viscometer is cost-effective, uses small amounts of sample fluid and can measure viscosity under various shear rates. According"
+        }
+      ]
+    },
+    "friction_subtract_hydrodynamic": {
+      "hitCount": 0,
+      "hits": []
+    }
+  },
+  "fulltext_screens": [
+    {
+      "pmcid": "PMC12385344",
+      "title": "Chitosan-Glycerol Injectable Hydrogel for Intratumoral Delivery of Macromolecules.",
+      "doi": "10.3390/gels11080607",
+      "flags": {
+        "mentions_newtonian": false,
+        "mentions_glycerol": true,
+        "mentions_viscosity": true,
+        "mentions_needle_id": false,
+        "mentions_barrel": false,
+        "mentions_flow_rate": false,
+        "mentions_friction": false,
+        "mentions_hagen": false,
+        "has_table_like": true
+      },
+      "xml_bytes": 121730,
+      "error": false,
+      "snippets": [
+        "ssures and dense tumor architectures create shear forces that rapidly expel low-viscosity solutions post-injection. Injectable hydrogels may address these concerns by pr",
+        "ume ratios on hydrogel gelation utilizing chitosan of average 70 DDA and 100 cP viscosity. (<bold>B</bold>) Effect of varied chitosan physiochemical factors on hydrogel ",
+        "an is a polydisperse, natural polysaccharide, it does not exist at a single MW. Viscosity is often used as a surrogate for MW as it is easily measured and increases pred",
+        "ly with MW [<xref rid=\"B46-gels-11-00607\" ref-type=\"bibr\">46</xref>]. Thus, the viscosity in centipoise (cP) of a 1% chitosan in 1% acetic acid is reported as the number",
+        " to the right of the \u2018/\u2019. Increasing viscosity reflects an increase in MW.</p><p>Studies exploring the effect of chitosan MW o",
+        "id=\"gels-11-00607-f003\" ref-type=\"fig\">Figure 3</xref>B). The negative slope of viscosity values as shear rate increases indicates shear-thinning behavior of the hydroge",
+        "ype=\"fig\">Figure 3</xref>C). The chitosan\u2013glycerol hydrogel demonstrated higher viscosity values at low shear rates compared than other literature-based chitosan hydroge",
+        "tory amplitude sweep performed from shear strains of 0.1\u2013500%; (<bold>C</bold>) viscosity sweep performed over shear rates of 0.1\u201310 Hz. Data are represented as the mean",
+        "l Chitosan (Halle, Germany). The following varieties of chitosan, listed as DDA/viscosity, were purchased: 70/10 (PN 24201), 70/100 (PN 24204), 70/1000 (PN 24207), 80/10",
+        " each chitosan solution concentration. Degree of deacetylation (70, 80, 95) and viscosity (5, 100, 2000) combinations were also tested due to their status as the main bi",
+        "cillatory frequency sweeps were performed from 0.1 to 100 Hz at a strain of 1%. Viscosity measurements were then obtained through a rotational continuous flow experiment",
+        "The correlation of molecule weight of chitosan oligomers with the corresponding viscosity and antibacterial activity. Carbohydr. Res. 2023;530:108860. doi: 10.1016/j.car"
+      ]
+    },
+    {
+      "pmcid": "PMC12567530",
+      "title": "Injectable In Situ Thermoreversible Gel Depot System of Lidocaine Nanoemulsion for Prolonged Anesthetic Activity in Dental and Operative Procedures.",
+      "doi": "10.3390/pharmaceutics17101355",
+      "flags": {
+        "mentions_newtonian": true,
+        "mentions_glycerol": true,
+        "mentions_viscosity": true,
+        "mentions_needle_id": false,
+        "mentions_barrel": false,
+        "mentions_flow_rate": true,
+        "mentions_friction": false,
+        "mentions_hagen": false,
+        "has_table_like": true
+      },
+      "xml_bytes": 209619,
+      "error": false,
+      "snippets": [
+        "cal applications. However, these systems often suffer from slower onset, higher viscosity, and reduced injectability, which may hinder their use in fine infiltration or ",
+        "egy. LD-loaded nanoemulsions offer rapid onset, improving permeation, and lower viscosity, thermoreversible gelation by poloxamer offers localized retention and sustaine",
+        " the aqueous phase, consisting of Tween 80 and glycerin incorporated to improve viscosity, ensure isotonicity, and enhance the stability of the formulation, was heated t",
+        "/sec><sec id=\"sec2dot6dot5-pharmaceutics-17-01355\" disp-level=\"3\"><title>2.6.5. Viscosity</title><p>An Atago viscometer (Visco-895, Tokyo, Japan) was used to test the vi",
+        "/sec><sec id=\"sec2dot8dot2-pharmaceutics-17-01355\" disp-level=\"3\"><title>2.8.2. Viscosity</title><p>The viscosity of the LD-loaded thermosensitive nanoemulgel was determ",
+        "rred into the viscometer cup, ensuring the absence of air bubbles. The apparent viscosity, expressed in cP, was recorded over a range of controlled shear rates by varyin",
+        "ing was allowed to reach equilibrium before data acquisition, and a flow curve (viscosity vs. shear rate) was constructed to assess the pseudoplastic nature of the formu",
+        " (%), pH, transmittance (%), phase separation, flocculation, precipitation, and viscosity were monitored [<xref rid=\"B30-pharmaceutics-17-01355\" ref-type=\"bibr\">30</xref",
+        "led time points, samples were withdrawn and examined for visual appearance, pH, viscosity, and drug content.</p></sec><sec id=\"sec2dot11-pharmaceutics-17-01355\" disp-lev",
+        "ations, and Miglyol<sup>\u00ae</sup> 829 (C8/C10 caprylic/capric triglycerides, high viscosity) is rarely utilized in parenteral formulations. Hence, Miglyol 812 N was chosen",
+        "1355\" ref-type=\"bibr\">42</xref>]. Castor oil was deprioritized because its high viscosity and ricinoleate content complicate emulsification and can increase the PDI [<xr",
+        "rmation on electrostatic stabilization, thereby preventing droplet aggregation. Viscosity (cP) influences rheological behavior, directly affecting flow properties and ea"
+      ]
+    },
+    {
+      "pmcid": "PMC12843089",
+      "title": "Beyond Strict Physics: Using Poiseuille's Law as a Practical Framework to Optimize and Personalize Cementoplasty.",
+      "doi": "10.3390/jpm16010041",
+      "flags": {
+        "mentions_newtonian": true,
+        "mentions_glycerol": false,
+        "mentions_viscosity": true,
+        "mentions_needle_id": false,
+        "mentions_barrel": false,
+        "mentions_flow_rate": true,
+        "mentions_friction": false,
+        "mentions_hagen": true,
+        "has_table_like": true
+      },
+      "xml_bytes": 74221,
+      "error": false,
+      "snippets": [
+        "/Objectives:</bold> Poiseuille\u2019s law describes the influence of radius, length, viscosity, and pressure on the flow of Newtonian fluids. Although bone cement is a non-Ne",
+        "ed as r<sup>4</sup>/L ratios normalized to a 13-gauge, 15 cm trocar. Conceptual viscosity profiles illustrate qualitative differences among cements over time. A represen",
+        "sup>), whereas increasing trocar length proportionally reduces flow. Conceptual viscosity curves demonstrate the rapid rise in viscosity during polymerization and highli",
+        "The clinical example illustrates how trocar choice, access planning, and cement viscosity are adapted to lesion morphology and cortical integrity. <bold>Conclusions:</bo",
+        "ramework to illustrate general relationships between equipment characteristics, viscosity evolution, and resistance during injection, without offering clinical guidance ",
+        "</bold> bone cements, cementoplasty, vertebroplasty, injections, intralesional, viscosity, pressure, interventional radiology, personalized medicine</p></sec></abstract>",
+        "ptual framework to illustrate qualitative relationships between radius, length, viscosity, and pressure, and not as a quantitative or predictive model of bone cement beh",
+        "riables: the pressure gradient, the tube radius, the tube length, and the fluid viscosity [<xref rid=\"B2-jpm-16-00041\" ref-type=\"bibr\">2</xref>]. Although bone cement is",
+        "o illustrate general qualitative relationships between trocar diameter, length, viscosity, and injection pressure. This conceptual approach does not guide procedural dec",
+        "ical integrity, bone microarchitecture, venous drainage patterns, and real-time viscosity changes. In recent years, vertebroplasty has become one of the most frequent mi",
+        "nt selection and injection strategy. Prevention relies on a combination of high-viscosity cement when appropriate, controlled and incremental pressurization, real-time i",
+        "fficacy.</p><p>For a tube of radius r (m), length L (m), and a fluid of dynamic viscosity \u03b7 (Pa.s), Poiseuille\u2019s law formulates the volume flow rate Q (m<sup>3</sup>/s) "
+      ]
+    },
+    {
+      "pmcid": "PMC12507947",
+      "title": "Development of an in-situ forming implant system for levodopa and carbidopa for the treatment of parkinson's disease.",
+      "doi": "10.1007/s13346-025-01892-y",
+      "flags": {
+        "mentions_newtonian": true,
+        "mentions_glycerol": false,
+        "mentions_viscosity": true,
+        "mentions_needle_id": false,
+        "mentions_barrel": false,
+        "mentions_flow_rate": false,
+        "mentions_friction": false,
+        "mentions_hagen": false,
+        "has_table_like": true
+      },
+      "xml_bytes": 163109,
+      "error": false,
+      "snippets": [
+        "Eudragit L 100 displayed a favorable release profile and injectability with low viscosity. The optimized formulation in vitro release study revealed an initial burst of ",
+        "ase with a correlation coefficient of 0.91 for levodopa and 0.90 for carbidopa. Viscosity analysis showed the Newtonian behavior of the formulation. Syringeability analy",
+        "ivery of drugs with the added advantage of easy administration due to their low viscosity.</p><p id=\"Par9\">In this study, we have used Poly (lactide-co-glycolide) (PLGA)",
+        " combining polymers with diverse physicochemical properties such as solubility, viscosity, and glass transition temperature can help in altering the release profile of t",
+        "on gave an optimum release profile. The optimized formulation was evaluated for viscosity, syringe ability, and in-vitro and ex-vivo drug release. To prove the biocompat",
+        "itro drug release. The optimized formulation P5 was further evaluated for FTIR, Viscosity, Syringeability, ex-vivo release, in-vitro degradation, biocompatibility, and i",
+        " 450 cm <sup>-1</sup> with 16 scans per sample.</p></sec><sec id=\"Sec11\"><title>Viscosity measurement</title><p id=\"Par20\">For evaluating the rheological behaviour of th",
+        "30 mm with a 0.5 gap [<xref ref-type=\"bibr\" rid=\"CR33\">33</xref>]. The observed viscosity was plotted against the shear rate (1/s).</p></sec><sec id=\"Sec12\"><title>Syrin",
+        "armful for the IM route. Also, the addition of PEG-400 helps in maintaining the viscosity. DMAC and PEG-400 are miscible with each other [<xref ref-type=\"bibr\" rid=\"CR44",
+        "p>-1</sup> and NH peak at 1122 cm<sup>-1</sup>.</p></sec><sec id=\"Sec25\"><title>Viscosity measurement</title><p id=\"Par56\">Viscosity measurement of the blank formulation",
+        "arried out at different shear rates to evaluate the impact of shear rate on the viscosity of the sample. Both the samples showed no major difference in the viscosity whe",
+        "w. Where polymer solution, as well as formulation, were freely flowing with low viscosity also called Newtonian behavior [<xref ref-type=\"bibr\" rid=\"CR56\">56</xref>, <xr"
+      ]
+    },
+    {
+      "pmcid": "PMC10143341",
+      "title": "Levofloxacin HCl-Incorporated Zein-Based Solvent Removal Phase Inversion In Situ Forming Gel for Periodontitis Treatment.",
+      "doi": "10.3390/pharmaceutics15041199",
+      "flags": {
+        "mentions_newtonian": true,
+        "mentions_glycerol": true,
+        "mentions_viscosity": true,
+        "mentions_needle_id": false,
+        "mentions_barrel": true,
+        "mentions_flow_rate": false,
+        "mentions_friction": false,
+        "mentions_hagen": false,
+        "has_table_like": true
+      },
+      "xml_bytes": 177050,
+      "error": false,
+      "snippets": [
+        "F) as the solvents. Their physicochemical properties were determined, including viscosity, injectability, gel formation, and drug release. The topography of dried remnan",
+        "ing zein concentration or using GF as the solvent notably enhanced the apparent viscosity and injection force of the zein ISG. However, its gel formation slowed due to t",
+        "over 7 days. Lv-loaded 20% zein ISG using GF as a solvent exhibited appropriate viscosity, Newtonian flow, acceptable gel formation and injectability, and prolonged Lv r",
+        "teristics of prepared Lv-loaded ISG formulations were investigated via apparent viscosity, rheology behavior, injectability, matrix formation behavior, matrix morphology",
+        "f>.</p></sec><sec id=\"sec2dot3-pharmaceutics-15-01199\"><title>2.3. Rheology and Viscosity Characterization</title><p>The viscosity values were measured every 15 sec at d",
+        "lts and Discussion</title><sec id=\"sec3dot1-pharmaceutics-15-01199\"><title>3.1. Viscosity and Rheological Behavior</title><p>The effect of zein concentrations on the app",
+        "arent viscosity of ISG formulations is presented in <xref rid=\"pharmaceutics-15-01199-f002\" ref",
+        "\"fig\">Figure 2</xref>a. Increasing the zein concentration enhanced the apparent viscosity of the ISG formulations. The viscosities of the ISG formulations for Lv20ZD, Lv",
+        "94 \u00b1 6.08 cP, respectively. Moreover, using DMSO as a solvent resulted in lower viscosity due to the solvent being less viscous and zein more freely dissolving than in G",
+        "F. Ordinally, a good solvent for dissolving the substance could diminish the viscosity of the mixture because the domination of substance\u2013solvent interaction is over ",
+        "xref rid=\"B41-pharmaceutics-15-01199\" ref-type=\"bibr\">41</xref>]. The intrinsic viscosity of bleached shellac in NMP was higher than that in DMSO and PYR, respectively; ",
+        "er/solvent interaction is normally outstanding for diluted polymeric solutions; viscosity increases with enhancing solvent power. On the other hand, with a higher polyme"
+      ]
+    },
+    {
+      "pmcid": "PMC12915010",
+      "title": "Hydrogel microspheres loaded with sinomenine and Drynaria rhizome enhance the treatment of rheumatoid arthritis via immune regulation and promoting bone repair.",
+      "doi": "10.1186/s12951-026-04063-4",
+      "flags": {
+        "mentions_newtonian": false,
+        "mentions_glycerol": true,
+        "mentions_viscosity": true,
+        "mentions_needle_id": false,
+        "mentions_barrel": false,
+        "mentions_flow_rate": true,
+        "mentions_friction": false,
+        "mentions_hagen": false,
+        "has_table_like": true
+      },
+      "xml_bytes": 113664,
+      "error": false,
+      "snippets": [
+        "duce cytotoxicity or systemic toxicity. At 26 \u00b0C, the mixture remained as a low-viscosity liquid, facilitating injectability, while at 36 \u00b0C it rapidly transformed into "
+      ]
+    },
+    {
+      "pmcid": "PMC10379822",
+      "title": "Levofloxacin HCl-Loaded Eudragit L-Based Solvent Exchange-Induced In Situ Forming Gel Using Monopropylene Glycol as a Solvent for Periodontitis Treatment.",
+      "doi": "10.3390/gels9070583",
+      "flags": {
+        "mentions_newtonian": true,
+        "mentions_glycerol": true,
+        "mentions_viscosity": true,
+        "mentions_needle_id": false,
+        "mentions_barrel": true,
+        "mentions_flow_rate": false,
+        "mentions_friction": false,
+        "mentions_hagen": false,
+        "has_table_like": true
+      },
+      "xml_bytes": 251612,
+      "error": false,
+      "snippets": [
+        ". The influence of Eudragit concentration was investigated in terms of apparent viscosity, rheological behavior, injectability, gel-forming behavior, and mechanical prop",
+        "erties. Eudragit L-based formulation presented less viscosity, was easier to inject, and could form more gel than Eudragit S-based ISG. Levof",
+        "loxacin HCl-loading diminished the viscosity of Eudragit L-based formulation but did not significantly change the gel format",
+        "ion ability. Higher polymer loading increased viscosity, force-work of injectability, and hardness. SEM photographs and \u00b5CT images reve",
+        " in monopropylene glycol (LLM15) was a promising ISG because of its appropriate viscosity (3674.54 \u00b1 188.03 cP) with Newtonian flow, acceptable gel formation and injecta",
+        "agit L concentration in dimethyl sulfoxide (DMSO) has been shown to enhance the viscosity of its solution, and these polymeric solutions exhibited the potential to be de",
+        " been loaded with levofloxacin HCl. This investigation encompasses the apparent viscosity, rheology behavior, injectability, gel forming behavior, mechanical properties,",
+        "=\"sec2dot1dot1-gels-09-00583\" disp-level=\"3\"><title>2.1.1. Physical Appearance, Viscosity and Rheology, Injectability, Contact Angle, and Mechanical Properties </title><",
+        "t yellowish color was observed in highly concentrated Eudragit L solutions. The viscosity of LM5, LM10, LM15, LM20, SM5, and SM10 formulations were 183.54 \u00b1 2.00 cP, 820",
+        ", respectively. The increasing Eudragit concentration resulted in high apparent viscosity of the ISG formulations (<xref rid=\"gels-09-00583-f003\" ref-type=\"fig\">Figure 3",
+        "</xref>A). Eudragit L ISG presented significantly less viscosity than Eudragit S ISG (<italic>p</italic> &lt; 0.05). The Eudragit S formulations",
+        " with polymer concentrations higher than 10% were excluded from viscosity measurement since they were too viscous for measuring. Because of the dominant "
+      ]
+    },
+    {
+      "pmcid": "PMC10378842",
+      "title": "Moxifloxacin HCl-Incorporated Aqueous-Induced Nitrocellulose-Based In Situ Gel for Periodontal Pocket Delivery.",
+      "doi": "10.3390/gels9070572",
+      "flags": {
+        "mentions_newtonian": true,
+        "mentions_glycerol": true,
+        "mentions_viscosity": true,
+        "mentions_needle_id": false,
+        "mentions_barrel": true,
+        "mentions_flow_rate": false,
+        "mentions_friction": false,
+        "mentions_hagen": true,
+        "has_table_like": true
+      },
+      "xml_bytes": 185162,
+      "error": false,
+      "snippets": [
+        "e physicochemical and bioactivity properties of the ISGs were investigated. The viscosity and injection force of the ISGs varied depending on the solvent used, with Gf r",
+        "d NMP as the solvents are the most promising formulations. They exhibited a low viscosity, ease of injection, and rapid transformation into a gel upon aqueous induction,",
+        "type=\"bibr\">3</xref>]. Moreover, there is a corresponding increase in intrinsic viscosity with higher levels of nitration [<xref rid=\"B4-gels-09-00572\" ref-type=\"bibr\">4",
+        "s a gelling agent in combination with hydroxypropyl methylcellulose (HPMC) as a viscosity-enhancing agent for ocular infection treatment [<xref rid=\"B24-gels-09-00572\" r",
+        "olutions varied depending on the solvents used and correlated directly with the viscosity results.</p><sec id=\"sec2dot1-gels-09-00572\"><title>2.1. Viscosity, Rheological",
+        "type=\"fig\">Figure 3</xref>A illustrates the impact of different solvents on the viscosity of Nc solutions and Mx-loaded Nc solutions. When NMP was used as the solvent, t",
+        "he viscosity of both solutions was lower compared to DMSO, Py, and Gf. Notably, when Gf was ",
+        " the solvent for drug-free and drug-loaded Nc solutions, a significantly higher viscosity (<italic toggle=\"yes\">p</italic> &lt; 0.01) was observed. The viscosities of DM",
+        "s, respectively. Hence, the choice of solvent had an influence on the resulting viscosity of the prepared ISGs. Typically, a solvent with good affinity for dissolving th",
+        "e compound can reduce the solution\u2019s viscosity because the substance\u2013solvent interaction dominates over substance\u2013substance in",
+        "9-00572\" ref-type=\"bibr\">41</xref>]. The addition of Mx evidently increased the viscosity of all ISG solutions due to the replacement of solvent by dissolved drug molecu",
+        "on within the Nc molecule, the more it provoked a remarkable enhancement in the viscosity of these formulations. Due to their Newtonian flow behaviors, physicians and de"
+      ]
+    },
+    {
+      "pmcid": "PMC8550001",
+      "title": "A microfluidic approach to studying the injection flow of concentrated albumin solutions.",
+      "doi": "10.1007/s42452-021-04767-2",
+      "flags": {
+        "mentions_newtonian": true,
+        "mentions_glycerol": false,
+        "mentions_viscosity": true,
+        "mentions_needle_id": true,
+        "mentions_barrel": true,
+        "mentions_flow_rate": true,
+        "mentions_friction": true,
+        "mentions_hagen": true,
+        "has_table_like": true
+      },
+      "xml_bytes": 350286,
+      "error": false,
+      "snippets": [
+        "s obtained by means of the \u201cRheo-chip\u201d device, it is shown that the extensional viscosity plays an important role in the injection process of protinaceous drugs.</p></se",
+        "yringe on chip\u201d is Newtonian-like.</p></list-item><list-item><p>The extensional viscosity of concentrated protein solutions should also be considered when computing inje",
+        " large values of protein concentrations typically translate into large solution viscosity (up to 1 Pa s [<xref ref-type=\"bibr\" rid=\"CR2\">2</xref>, <xref ref-type=\"bibr\" ",
+        "ncentrated mAbs through syringes by assuming either Newtonian or shear-thinning viscosity [<xref ref-type=\"bibr\" rid=\"CR1\">1</xref>, <xref ref-type=\"bibr\" rid=\"CR7\">7</x",
+        "C injection, one must characterize not only the shear, but also the extensional viscosity of concentrated protein solutions. While there is a large amount of works which",
+        " focus on bulk shear viscosity [<xref ref-type=\"bibr\" rid=\"CR29\">29</xref>, <xref ref-type=\"bibr\" rid=\"CR36\">3",
+        "al behavior of this category of complex fluids.</p><p id=\"Par4\">The extensional viscosity of complex fluids is directly related to the amount of deformation underwent by",
+        "natives></inline-formula> are expected to have a similar shear and extensional viscosity with respect to that of mAbs-based biopharmaceuticals [<xref ref-type=\"bibr\" ri",
+        " 26-G, 27-G and 30-G syringe needles. From the first geometry, the steady shear viscosity <inline-formula id=\"IEq21\"><alternatives><tex-math id=\"M41\"><?equation-image-na",
+        "ear flow measurements, so that the relative importance of shear and extensional viscosity in the overall injection force can be assessed.</p></sec><sec id=\"Sec2\"><title>",
+        "_2021_4767_Fig1_HTML.gif?></graphic></fig></p></sec><sec id=\"Sec5\"><title>Shear viscosity measurements</title><p id=\"Par9\">The steady shear viscosities of the model prot",
+        " by White [<xref ref-type=\"bibr\" rid=\"CR64\">64</xref>]. The corresponding shear viscosity is<disp-formula id=\"Equ2\"><label>2</label><alternatives><tex-math id=\"M77\"><?eq"
+      ]
+    },
+    {
+      "pmcid": "PMC9498735",
+      "title": "Imatinib Mesylate-Loaded Rosin/Cinnamon Oil-Based In Situ Forming Gel against Colorectal Cancer Cells.",
+      "doi": "10.3390/gels8090526",
+      "flags": {
+        "mentions_newtonian": true,
+        "mentions_glycerol": true,
+        "mentions_viscosity": true,
+        "mentions_needle_id": false,
+        "mentions_barrel": true,
+        "mentions_flow_rate": true,
+        "mentions_friction": false,
+        "mentions_hagen": false,
+        "has_table_like": true
+      },
+      "xml_bytes": 166690,
+      "error": false,
+      "snippets": [
+        "olorectal cancer cells. All formulations exhibited Newtonian flow behavior with viscosity less than 266.9 cP with easier injectability. The adding of CO decreased the ha",
+        "n><p>Relationship between the shear stress and shear rates (<bold>a</bold>) and viscosity (<bold>b</bold>) of IM-loaded rosin/CO-based ISG formulations at 25 \u00b0C. The dat",
+        "</xref>b shows the effect of rosin and CO concentrations of ISG formulations on viscosity. Increasing the rosin concentration enhanced the viscosity of the ISG formulati",
+        "rmulations for IMR35, IMR45 and IMR55 were 19, 49 and 179 cP, respectively. The viscosity of the ISG systems notably increased as the CO concentration increased from 2.5",
+        " to 10% (IM-RC2.5, IM-RC5 and IM-RC10). It was found that the viscosity values of the CO-added ISG formulations significantly increased (<italic>p</ita",
+        "lic> &lt; 0.05) compared to IMR55. These prepared ISG systems showed a viscosity value of less than that of 5% doxycycline hyclate-loaded rosin/lime-peel-oil-ba",
+        "xref>]. Additionally, the solvent exchange-induced ISG system presented a lower viscosity than the hydrogel-based injectable ISG system [<xref rid=\"B47-gels-08-00526\" re",
+        "f-type=\"bibr\">47</xref>]. In this study, the viscosity of all prepared ISG systems was appropriate for injection because of a viscosit",
+        "[<xref rid=\"B48-gels-08-00526\" ref-type=\"bibr\">48</xref>]. Typically, the lower viscosity of polymeric solution is attained when a solvent with a high potential to disso",
+        "lve that polymer is used. In addition, the viscosity value was lower than other injectable thermo-responsive in situ forming gel sys",
+        "tems, such as carbopol\u2013poloxamer gels whose viscosity values are in the range of 19,000\u201336,000 mPas at 4 \u00b0C [<xref rid=\"B49-gels-08-0",
+        "el the formulations through the needles also increased due to their rather high viscosity values [<xref rid=\"B52-gels-08-00526\" ref-type=\"bibr\">52</xref>]. These injecta"
+      ]
+    },
+    {
+      "pmcid": "PMC9140455",
+      "title": "Hydroxyapatite-Integrated, Heparin- and Glycerol-Functionalized Chitosan-Based Injectable Hydrogels with Improved Mechanical and Proangiogenic Performance.",
+      "doi": "10.3390/ijms23105370",
+      "flags": {
+        "mentions_newtonian": false,
+        "mentions_glycerol": true,
+        "mentions_viscosity": true,
+        "mentions_needle_id": false,
+        "mentions_barrel": false,
+        "mentions_flow_rate": true,
+        "mentions_friction": false,
+        "mentions_hagen": false,
+        "has_table_like": true
+      },
+      "xml_bytes": 133434,
+      "error": false,
+      "snippets": []
+    },
+    {
+      "pmcid": "PMC8980713",
+      "title": "Injectable hydrogel with nucleus pulposus-matched viscoelastic property prevents intervertebral disc degeneration.",
+      "doi": "10.1016/j.jot.2022.03.006",
+      "flags": {
+        "mentions_newtonian": false,
+        "mentions_glycerol": true,
+        "mentions_viscosity": true,
+        "mentions_needle_id": true,
+        "mentions_barrel": false,
+        "mentions_flow_rate": true,
+        "mentions_friction": false,
+        "mentions_hagen": false,
+        "has_table_like": true
+      },
+      "xml_bytes": 122889,
+      "error": false,
+      "snippets": []
+    },
+    {
+      "pmcid": "PMC8395841",
+      "title": "Formulation and Characterization of a New Injectable Bone Substitute Composed PVA/Borax/CaCO<sub>3</sub> and Demineralized Bone Matrix.",
+      "doi": "10.3390/jfb12030046",
+      "flags": {
+        "mentions_newtonian": false,
+        "mentions_glycerol": true,
+        "mentions_viscosity": true,
+        "mentions_needle_id": false,
+        "mentions_barrel": false,
+        "mentions_flow_rate": true,
+        "mentions_friction": false,
+        "mentions_hagen": false,
+        "has_table_like": true
+      },
+      "xml_bytes": 151369,
+      "error": false,
+      "snippets": [
+        "cause Formulation 3 presented a low percentage of injectability and a very high injection force, it was excluded from this research. The injection behavior of formulations 1 ("
+      ]
+    },
+    {
+      "pmcid": "PMC9801553",
+      "title": "Periosteum-inspired in situ CaP generated nanocomposite hydrogels with strong bone adhesion and superior stretchability for accelerated distraction osteogenesis.",
+      "doi": "10.1186/s40824-022-00330-1",
+      "flags": {
+        "mentions_newtonian": false,
+        "mentions_glycerol": true,
+        "mentions_viscosity": true,
+        "mentions_needle_id": false,
+        "mentions_barrel": false,
+        "mentions_flow_rate": true,
+        "mentions_friction": false,
+        "mentions_hagen": false,
+        "has_table_like": true
+      },
+      "xml_bytes": 141028,
+      "error": false,
+      "snippets": []
+    },
+    {
+      "pmcid": "PMC3548246",
+      "title": "Premixed calcium silicate cement for endodontic applications: injectability, setting time and radiopacity.",
+      "doi": "10.4161/biom.1.1.16735",
+      "flags": {
+        "mentions_newtonian": false,
+        "mentions_glycerol": true,
+        "mentions_viscosity": true,
+        "mentions_needle_id": false,
+        "mentions_barrel": false,
+        "mentions_flow_rate": false,
+        "mentions_friction": false,
+        "mentions_hagen": false,
+        "has_table_like": true
+      },
+      "xml_bytes": 48088,
+      "error": false,
+      "snippets": []
+    }
+  ]
+}
