@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.0 — 2026-08-01
+## 0.1.0 — 2026-08-02
 
 ### Added
 
@@ -15,7 +15,13 @@
 - Construction-time runtime type validation and claims-to-evidence `VALIDATION.md`.
 - Experimental panel comparison pipeline (`validate-experimental`) with hashed reports;
   report status is never `independently_validated`.
+- Literature glycerol comparison panel (Allmendinger 2014, figure-digitized with caveats).
 - CI matrix for Python 3.10–3.13 with pytest, ruff, mypy, build, and wheel smoke.
+
+### Published
+
+- **PyPI:** https://pypi.org/project/openinjectability/0.1.0/  
+  `python -m pip install openinjectability`
 
 ### Scientific boundary
 

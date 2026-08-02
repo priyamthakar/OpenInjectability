@@ -2,7 +2,7 @@
 
 **Current status:** `internal_validation` with
 `experimental_validation_pending`
-**Version:** 0.1.0
+**Version:** 0.1.0 (alpha on [PyPI](https://pypi.org/project/openinjectability/0.1.0/))
 **Updated:** 2026-08-02
 
 These checks verify implementation behavior. They do not demonstrate agreement with an

@@ -45,5 +45,13 @@ no default ceiling is shipped.
 
 ## Validation
 
-See [VALIDATION.md](../VALIDATION.md). Independent experimental validation remains
-pending.
+See [VALIDATION.md](../VALIDATION.md) and [phase-status.md](phase-status.md).
+
+| Layer | Status |
+|---|---|
+| Algebraic / unit / internal fixtures | Covered by the test suite |
+| Literature comparison (digitized Allmendinger 2014 glycerol) | Report-only `experimental_comparison` |
+| Independent experimental validation | **Pending** |
+
+Package release **0.1.0** is on [PyPI](https://pypi.org/project/openinjectability/0.1.0/)
+as **alpha**. Do not describe it as an experimentally validated device model.

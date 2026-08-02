@@ -32,3 +32,9 @@ time −1 (fixed volume), flow +1.
 
 Until an independent experimental validation report is published, treat results as
 internally verified model outputs with `experimental_validation_pending`.
+
+A literature `experimental_comparison` (e.g. Allmendinger 2014 glycerol panel via
+`validate-experimental`) may support engineering confidence but is **not**
+independent lab validation and does not change package status.
+
+Install from PyPI: `pip install openinjectability` — still alpha.

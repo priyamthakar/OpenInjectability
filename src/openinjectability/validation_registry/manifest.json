@@ -4,5 +4,6 @@
   "model": "newtonian_hagen_poiseuille_v1",
   "equation_status": "internal_validation",
   "experimental_status": "experimental_validation_pending",
-  "updated": "2026-08-01"
+  "updated": "2026-08-02",
+  "distribution": "https://pypi.org/project/openinjectability/0.1.0/"
 }

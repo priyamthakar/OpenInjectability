@@ -29,7 +29,10 @@
 
 ## Related artifacts
 
+- Doc index: [`README.md`](README.md)
 - Handoff: [`HANDOFF.md`](../HANDOFF.md)
 - Work tracker: [`project.md`](../project.md)
 - Protocol: [`validation-protocol-lock.md`](validation-protocol-lock.md)
+- PyPI status: [`pypi-publish-blocker.md`](pypi-publish-blocker.md)
 - Digitized literature panel report: [`../validation/experimental/reports/allmendinger2014_digitized/`](../validation/experimental/reports/allmendinger2014_digitized/)
+- Public package: https://pypi.org/project/openinjectability/0.1.0/

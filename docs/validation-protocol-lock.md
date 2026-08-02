@@ -8,6 +8,12 @@ dataset has been accepted yet**.
 dataset met the fluid-resistance-only measurand bar; scrape alone does **not**
 unlock independent validation.
 
+**2026-08-02 later:** Allmendinger 2014 PDFs were ingested; a **digitized**
+glycerol panel supports report-only `experimental_comparison` (see
+[pdf-ingestion-2026-08-02.md](pdf-ingestion-2026-08-02.md)). Package
+`validation_status` is still pending. Alpha **0.1.0** is on
+[PyPI](https://pypi.org/project/openinjectability/0.1.0/).
+
 ## Scope
 
 Compare **predicted fluid-resistance force** from OpenInjectability v0.1

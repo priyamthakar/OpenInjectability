@@ -76,12 +76,16 @@ openinjectability validate-experimental `
 
 Panel schema and rules: [validation/experimental/README.md](validation/experimental/README.md).
 
-Documentation: [docs/scientific-basis.md](docs/scientific-basis.md),
-[docs/input-schema.md](docs/input-schema.md),
-[docs/interpretation.md](docs/interpretation.md),
-[docs/roadmap.md](docs/roadmap.md), [docs/phase-status.md](docs/phase-status.md),
+Documentation index: [docs/README.md](docs/README.md) — also
+[scientific basis](docs/scientific-basis.md),
+[input schema](docs/input-schema.md),
+[interpretation](docs/interpretation.md),
+[roadmap](docs/roadmap.md),
+[phase status](docs/phase-status.md),
 [VALIDATION.md](VALIDATION.md),
-[PROJECT_SPECIFICATION.md](PROJECT_SPECIFICATION.md), [project.md](project.md).
+[PROJECT_SPECIFICATION.md](PROJECT_SPECIFICATION.md),
+[project.md](project.md),
+[HANDOFF.md](HANDOFF.md).
 
 ## Backend engine API
 

@@ -35,3 +35,5 @@ YAML or JSON (`--config`) may set:
 Effective configuration is always serialized with results.
 
 CLI: `openinjectability schema --format json` prints the machine-readable schema.
+
+Install: `pip install openinjectability` ([PyPI](https://pypi.org/project/openinjectability/)).

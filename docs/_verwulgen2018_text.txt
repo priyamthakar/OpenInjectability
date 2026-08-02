@@ -1,0 +1,2236 @@
+---PAGE 1---
+This item is the archived peer-reviewed author-version of:
+Assessment of forces in intradermal injection devices : hydrodynamic versus human factors
+Reference:
+Verw ulgen Stijn, Beyers Koen, Van Mulder Timothi, Peeters Thomas, Truijen Steven, Dams Francis, Vankerckhoven Vanessa.- Assessment of forces in
+intradermal injection devices : hydrodynamic versus human factors
+Pharmaceutical research / American Association of Pharmaceutical Scientists - ISSN 0724-8741 - 35:6(2018), 120 
+Full text (Publisher's DOI): https://doi.org/10.1007/S11095-018-2397-2 
+To cite this reference: https://hdl.handle.net/10067/1506390151162165141
+Institutional repository IRUA
+
+---PAGE 2---
+ 
+1 
+Assessment of forces in intradermal injection devices: hydrodynamic 
+1 
+versus human factors 
+2 
+Running head: Forces in ID injections: hydrodynamic vs human factors  
+3 
+Stijn Verwulgen1,2,*, Koen Beyers2,6, Timothi Van Mulder2,3,4, Thomas Peeters1, 
+4 
+Steven Truijen5, Francis Dams1, Vanessa Vankerckhoven2,4 
+5 
+Corresponding author: 
+6 
+Stijn Verwulgen 
+7 
+1Department of Product Development, Faculty of Design Sciences, University of 
+8 
+Antwerp, Antwerp, Belgium 
+9 
+2Novosanis, Wijnegem, Belgium 
+10 
+3 Department of Nursing and Midwifery, University of Antwerp, Wilrijk, Belgium 
+11 
+4 Vaccine & Infectious Disease Institute, University of Antwerp, Wilrijk, Belgium 
+12 
+5 Department Rehabilitation Sciences and Physiotherapy, University of Antwerp, 
+13 
+Wilrijk, Belgium 
+14 
+6 Voxdale, Wijnegem, Belgium 
+15 
+ 
+16 
+* Corresponding author: 
+17 
+Stijn.verwulgen@uantwerpen.be 
+18 
+Universiteit Antwerpen 
+19 
+Campus Mutsaard 
+20 
+Ambtmanstraat 1, 2000 Antwerpen 
+21 
+Tel: +32 (0)3 205 61 87 
+22 
+ 
+ 
+23 
+
+---PAGE 3---
+ 
+2 
+Abstract 
+24 
+Purpose. The force that has to be exerted on the plunger for administering a given 
+25 
+amount of fluid in a given time, has an important influence on comfort for the subject 
+26 
+and usability for the administrator in intradermal drug delivery. The purpose of this 
+27 
+study is to model those forces that are subject-independent, by linking needle and 
+28 
+syringe geometry to the force required for ejecting a given fluid at a given ejection 
+29 
+rate.  
+30 
+Material and methods. We extend the well-known Hagen-Poiseuille formula to 
+31 
+predict pressure drop induced by a fluid passing through a cylindrical body. The 
+32 
+model investigates the relation between the pressure drop in needles and the theoretic 
+33 
+Hagen-Poiseuille prediction and is validated in fifteen needles from 26G up to 33G 
+34 
+suited for intradermal drug delivery. We also provide a method to assess forces 
+35 
+exerted by operators in real world conditions. 
+36 
+Results. The model is highly linear in each individual needle with R-square values 
+37 
+ranging from 75% up to 99.9%. Ten out of fifteen needles exhibit R-square values 
+38 
+above 99%. A proof-of-concept for force assessment is provided by logging forces in 
+39 
+operators in real life conditions.  
+40 
+Conclusions. The force assessment method and the model can be used to pinpoint 
+41 
+needle geometry for intradermal injection devices, tuning comfort for subjects and 
+42 
+usability for operators.  
+43 
+ 
+44 
+Keywords: needle geometry; human factors; flow rate model; injection force; 
+45 
+injection devices 
+46 
+Abbreviations: intramuscularly (IM), intradermal (ID), subcutaneously (SC) 
+47 
+ 
+ 
+48 
+Stijn Verwulgen! 27/2/18 10:17
+Deleted: Needle and syringe geometry 
+directly relates to the
+Stijn Verwulgen! 27/2/18 10:16
+Deleted: that can be administered at a given 
+Stijn Verwulgen! 27/2/18 10:16
+Deleted:  and with a given force. This 
+Stijn Verwulgen! 27/2/18 09:46
+Deleted: both patient 
+Stijn Verwulgen! 27/2/18 10:13
+Deleted: establish a method to 
+Stijn Verwulgen! 12/3/18 19:49
+Deleted: inking
+Stijn Verwulgen! 27/2/18 10:09
+Deleted: predict the 
+Stijn Verwulgen! 27/2/18 10:12
+Deleted: through a given needle in relation 
+to the injection rate
+Stijn Verwulgen! 27/2/18 10:24
+Deleted: that can be used in-vivo
+Stijn Verwulgen! 27/2/18 10:24
+Deleted: .
+Stijn Verwulgen! 27/2/18 10:25
+Deleted: -vivo
+Stijn Verwulgen! 27/2/18 10:28
+Deleted:  with optimized 
+
+---PAGE 4---
+ 
+3 
+Introduction 
+63 
+The skin represents the largest organ of the human body (1). It consists of three 
+64 
+layers: the epidermis, preventing chemicals and micro-organisms entering the body, 
+65 
+the dermis playing a role in immunological surveillance, and the hypodermis or sub-
+66 
+cutis that consists mainly of subcutaneous fat providing insulation, restoring trauma 
+67 
+and providing energy reserve (2-4). The skin is considered of particular interest for 
+68 
+drug delivery due to its unique immunogenic properties and enhanced 
+69 
+pharmacokinetics. To date vaccines are mainly administered intramuscularly (IM) 
+70 
+with syringe and needle. Literature reports non-inferior immunogenic responses upon 
+71 
+intradermal (ID) delivery (5, 6). Comparison of ID and SC administration in type 1 
+72 
+diabetes showed a significant reduction of pain and superior pharmacokinetics. A 
+73 
+more than 40% reduction in onset and 24% reduction in offset time could support 
+74 
+closed loop therapy based on ID insulin administration (11, 12).  
+75 
+Traditionally, ID injections are mainly achieved via the Mantoux technique: a 
+76 
+hypodermic needle is inserted almost parallel, at 5-10 degrees, into the subject’s skin 
+77 
+to assure that the needle outlet is located in the dermal zone (13). This requires 
+78 
+training (14) and it is hard to exclude false-negative injections without bleeding and 
+79 
+bruising (15) and is considered to be painful by the patient.  
+80 
+Micro-needle arrays are considered to be a promising technology for ID and trans-
+81 
+dermal drug delivery (16) (17), but are inherently vulnerable to damage caused by 
+82 
+insertion forces or forces for drug injection which might run up to 20N or more (18). 
+83 
+This can result in a high failure rate in micro needle based drug administration (19).  
+84 
+Single needle-syringe systems can reduce failure rate, enhance repeatability of 
+85 
+intradermal drug delivery and omit regulatory challenges faced by micro needle 
+86 
+arrays. Single needle-syringe systems can facilitate testing and approval as an add-on 
+87 
+Vanessa Vankerckhoven! 12/3/18 14:56
+Deleted: A dose sparing effect has been 
+addressed when ID delivery is used compared 
+to IM delivery, e.g. an indication of 80% dose 
+sparing in rabies vaccination (7) (8). Elderly 
+vaccination has been demonstrated to be non-
+inferior for ID compared to IM delivery (5, 6, 
+9). Insulin was originally administered IM (10) 
+and currently injected subcutaneously (SC). 
+Stijn Verwulgen! 27/2/18 10:39
+Deleted: Currently
+Stijn Verwulgen! 27/2/18 10:32
+Deleted: but 
+Vanessa Vankerckhoven! 12/3/18 14:58
+Deleted: . Micro-needles
+Vanessa Vankerckhoven! 12/3/18 14:58
+Deleted: . Insertion forces for micro-needle 
+arrays 
+
+---PAGE 5---
+ 
+4 
+to existing vaccination technology (20). Adaptors that standardize ID injections offer 
+101 
+the advantage to administer various drugs intra-dermally with a single types of 
+102 
+standard tuberculin syringe (21, 22). Solutions have been launched in the life-science 
+103 
+market to perform ID injections perpendicular to the subject’s skin (23) (24) (16, 20), 
+104 
+(25) (7). Perpendicular ID injections are promising new solutions since they allow 
+105 
+targeting the dermis more precise and standardized, compared to the Mantoux 
+106 
+technique, independent of the user’s training experience. Also, single needle-syringe 
+107 
+perpendicular ID delivery systems may drastically reduce pain compared to IM 
+108 
+injections and decrease anxiety due to the short needle length (26). However the 
+109 
+design of medical products is a complex process that requires many iterations linking 
+110 
+usability factors with design requirements (27). In particular, the optimization of 
+111 
+single needle perpendicular ID injections requires optimization for usability for the 
+112 
+operator and comfort for the subject. 
+113 
+A major usability factor is the force exerted by the operator to perform the injection 
+114 
+(28). Injection rate, duration, volume to be injected and drug viscosity are parameters 
+115 
+that directly relate to that force and hence usability of injection devices (29, 30) (31). 
+116 
+These parameters also relate to comfort and acceptance of ID devices in subjects. In 
+117 
+fact, pain merely relies on infusion rate, rather than on the total injected volume. 
+118 
+Virtually painless injected volumes are possible up to 1ml at injection rates of 
+119 
+0.1ml/min (32). On the other hand, subjects do not want to hold an auto injector on 
+120 
+place for more than 15 seconds (33). Long injection times might also lead to 
+121 
+hazardous situations. Evaluation in patients using an epinephrine auto injector 
+122 
+revealed that only 16% of observed injections where performed along the 
+123 
+manufacturer’s instructions and 76% of failures are due to the patient’s inability to 
+124 
+hold the device in place to receive the required amount of substance (34).  
+125 
+Stijn Verwulgen! 27/2/18 10:40
+Deleted: standardize the Mantoux technique 
+or to 
+Stijn Verwulgen! 27/2/18 11:27
+Deleted: S
+Stijn Verwulgen! 27/2/18 10:41
+Deleted: The 
+Vanessa Vankerckhoven! 12/3/18 14:59
+Deleted: with single needle and 
+perpendicular to the skin, needs 
+Stijn Verwulgen! 27/2/18 11:25
+Deleted: Adaptors that standardize ID 
+injections offer the advantage to administer 
+various drugs intra-dermally with a single type 
+of standard tuberculin syringe (21, 22). To 
+exploit all potential advantages of 
+perpendicular ID drug delivery, new adaptors 
+for single needle-syringe systems should be 
+developed (20, 24). Activation and 
+deactivation steps should be optimized for 
+usability (26) in new ID injection devices. 
+Stijn Verwulgen! 27/2/18 10:44
+Deleted: nother 
+Stijn Verwulgen! 27/2/18 10:51
+Deleted: corresponding forces 
+Vanessa Vankerckhoven! 12/3/18 14:53
+Deleted: s
+Stijn Verwulgen! 27/2/18 11:16
+Deleted: greatly influence 
+Vanessa Vankerckhoven! 12/3/18 15:01
+Deleted: For example
+Vanessa Vankerckhoven! 12/3/18 15:01
+Deleted: For example, e
+Stijn Verwulgen! 27/2/18 13:05
+Formatted: Font:Times
+Stijn Verwulgen! 27/2/18 13:05
+Formatted: Font:Times
+Stijn Verwulgen! 27/2/18 13:05
+Formatted: Font:Times
+
+---PAGE 6---
+ 
+5 
+There is a current the need to support the design of ID injection devices that are 
+148 
+placed perpendicular to the subject’s skin, for optimized efficacy, usability and safety.  
+149 
+These desired outcomes depend on various parameters and constraints.  
+150 
+Firstly, on one hand, the needle should be thin and sharp enough, not to induce pain or 
+151 
+inaccuracies when perforating the subject’s skin. At the same time, a sharp bevel 
+152 
+results in a big outlet, increasing the risk of leakage, either exterior or into the 
+153 
+subcutis. Also, the thinner the needle, the more force is to be exerted by operators for 
+154 
+administering at the same rate. Secondly, on the other hand, the needle diameter 
+155 
+should be big enough, to reduce injection time and forces required for injection. At 
+156 
+the same time, a bigger diameter results in a bigger outlet, with similar risk on 
+157 
+leakage. Bigger diameters thus result in smaller bevels, enhancing risk for pain when 
+158 
+the needle perforates and inserts the subject’s skin. Also, pain might increase with 
+159 
+higher flow rate and higher viscosity. Thirdly, the length of the needle is bound to 
+160 
+similar trade-offs. A fourth type of constraint is induced by new and promising 
+161 
+applications in cell therapy. Therapeutic cells are preferably administered ID (35). As 
+162 
+these drugs are highly viscous and their efficacy is generally highly sensitive to shear 
+163 
+stresses, it is desirable to tune injection forces, ensuring functionality by controlling 
+164 
+shear stress and optimizing usability by controlling injection forces.  
+165 
+ 
+166 
+Probably, the four type of constraints will conflict in the design of new ID injection 
+167 
+devices, and therefore be subject to trade-off.  
+168 
+These potential conflicting specifications merely depend on geometrical and 
+169 
+mechanical specifications of needle and syringe, rather than on the physical and 
+170 
+physiological characteristics of subjects’ skin. Thus the question arises how to acquire 
+171 
+forces require to inject a given substance at a given injection rate in function of needle 
+172 
+Stijn Verwulgen! 27/2/18 13:06
+Formatted: Line spacing:  double
+Stijn Verwulgen! 27/2/18 13:05
+Formatted: Font:Times
+Stijn Verwulgen! 27/2/18 13:05
+Formatted: Font:Times
+Stijn Verwulgen! 27/2/18 13:05
+Formatted: Font:Times
+Stijn Verwulgen! 27/2/18 13:05
+Formatted: Font:Times
+Stijn Verwulgen! 27/2/18 13:05
+Formatted: Font:Times
+Stijn Verwulgen! 27/2/18 13:05
+Formatted: Font:Times
+Stijn Verwulgen! 27/2/18 13:15
+Formatted: Left, Tabs:Not at  0,99 cm + 
+1,98 cm +  2,96 cm +  3,95 cm +  4,94 cm
++  5,93 cm +  6,91 cm +  7,9 cm +  8,89
+cm +  9,88 cm +  10,86 cm +  11,85 cm
+Stijn Verwulgen! 27/2/18 13:05
+Formatted: Font:Times
+
+---PAGE 7---
+ 
+6 
+and syringe geometry. These data would allow tuning geometrical and physical 
+173 
+needle-syringe parameters in single needle perpendicular ID injection devices, 
+174 
+controlling injection rate, injection time and forces in function of intended 
+175 
+application, usage and target group.  
+176 
+We provide a model for the injection force of ID injection devices in function of 
+177 
+syringe and needle geometry and drug viscosity. We also provide a method to assess 
+178 
+actual forces in operators of site. Our model allows controlling injection rate and 
+179 
+injection time. This can be used to optimize the usability in the design of new single 
+180 
+needle ID injection devices. 
+181 
+ 
+182 
+Materials and methods 
+183 
+We provide a model for the hydrodynamic force from the fluid going through the 
+184 
+syringe and needle. The model is constructed from hydrodynamic considerations and 
+185 
+evaluated in 15 commercially available needles suited for intradermal injection, 
+186 
+mounted in a commercially available 1ml syringe in a series of controlled 
+187 
+experiments.  
+188 
+The friction force can be measured in a power bench or syringe pump. We also 
+189 
+present a method to assess the actual total force exerted by operators of site. This is 
+190 
+achieved by coupling force resistive sensors to a micro controller platform. 
+191 
+Consequently, subject-specific tissue back-pressure and needle insertion force can be 
+192 
+assessed by subtracting the hydrodynamic and friction forces from the total force 
+193 
+measured.  
+194 
+1. Hydrodynamic model  
+195 
+We construct a model that links needle geometry, flow rate 𝑄, dynamic viscosity 𝜇, 
+196 
+specific mass of a liquid 𝜌 and injection force.  
+197 
+Stijn Verwulgen! 27/2/18 13:05
+Formatted: Font:Times
+Stijn Verwulgen! 27/2/18 15:10
+Formatted: Font:Times
+Stijn Verwulgen! 27/2/18 15:10
+Formatted: Font:Times
+Stijn Verwulgen! 27/2/18 15:10
+Formatted: Font:Times
+Stijn Verwulgen! 27/2/18 11:08
+Deleted: 
+... [1]
+Stijn Verwulgen! 27/2/18 11:01
+Deleted: a 
+Stijn Verwulgen! 12/3/18 20:12
+Deleted: , together with
+Stijn Verwulgen! 27/2/18 14:18
+Deleted: validate that 
+Stijn Verwulgen! 27/2/18 14:52
+Deleted: The total force for ID drug 
+administration consists of four components: 1) 
+the force of the needle penetrating the 
+subject’s skin (18), 2) force from tissue back-
+pressure due to injection of substance (29), 3) 
+force from internal mechanics, e.g. in a 
+classical syringe this only consists of friction 
+between the plunger and housing and 4) 
+hydrodynamic force from the fluid going 
+through the syringe and needle. 
+Stijn Verwulgen! 27/2/18 14:24
+Deleted: to assess the hydrodynamic force
+Stijn Verwulgen! 27/2/18 14:27
+Deleted: in-vivo
+
+---PAGE 8---
+ 
+7 
+Both syringe and needle are modeled as cylindrical bodies. Let A be the area of a 
+215 
+cross-section of a cylindrical body, 𝑃 the corresponding perimeter and 𝐷! = 
+! !
+!  the 
+216 
+hydraulic diameter of that cross-section. The velocity of a liquid flowing through that 
+217 
+body in function of location is denoted 𝑣. The average velocity of the liquid through a 
+218 
+cross-section is 𝑣= 
+! ∙!"
+!
+. Further 𝑣!"# denotes the maximal velocity in a cross-
+219 
+section. The body we consider is vertically oriented in the gravity field with 𝑧 the 
+220 
+vertical coordinate and 𝑔 the gravity constant. The Reynolds number (dimensionless) 
+221 
+of the flow is 𝑅𝑒= 
+!"!!
+! . Let 𝑑! be the internal diameter of the needle, 𝑙! the length 
+222 
+of needle, 𝑣! be the velocity of the fluid in the needle in function of location and let 
+223 
+𝑣! be the average velocity of the fluid in the needle. Concerning the syringe, let 𝑑!be 
+224 
+the internal diameter of the syringe, which is taken to be equal to the diameter of the 
+225 
+plunger in the syringe, and let 𝑣! be the average velocity of the plunger in the syringe. 
+226 
+The considered fluid is incompressible. The following energy conservation between 2 
+227 
+cross-sections of a flow channel per unit of time holds when there are no transversal 
+228 
+pressure gradients in the cross-section: 
+229 
+−𝛥𝑝∙𝑄= 𝜌𝑔𝛥𝑧∙𝑄+  𝛥
+1
+2 𝜌𝑣! 𝑣∙ 𝑑𝐴+ ℎ𝑒𝑎𝑡 𝑙𝑜𝑠𝑠𝑒𝑠 (1) 
+Mechanical components of this energy conservation law are already given in terms of 
+230 
+syringe, needle and fluid characteristics. Heat losses have to be further elaborated. 
+231 
+The term on the left side of (1) is the work exerted by the pressure on the liquid 
+232 
+flowing in and out of the control volume. On the right hand side of (1), the first term 
+233 
+is the increase in potential gravitational energy whereas the second term is the 
+234 
+increase of kinetic energy of the liquid flowing through the control volume. The third 
+235 
+term is the mechanical energy dissipated into heat. The kinetic energy correction 
+236 
+factor 𝛼 (see e.g. (36)) is defined as  
+237 
+
+---PAGE 9---
+ 
+8 
+𝛼=
+!
+! 𝜌𝑣!  ∙𝑣 𝑑𝐴
+!
+! 𝜌𝑣!𝑄
+  
+With the definition and after dividing by the flow rate Q, equation (1) turns into:  
+238 
+−𝛥𝑝= 𝜌𝑔𝛥𝑧+  𝛥 (𝛼∙1
+2 𝜌𝑣!) + ℎ𝑒𝑎𝑡 𝑙𝑜𝑠𝑠𝑒𝑠 (2) 
+We further assume that the liquid in the syringe and needle is Newtonian with laminar 
+239 
+flow and without wall slips or hampering. For water injections (μ = 1mPas) at 0.85 
+240 
+14μl/s and a 0.26 mm needle, the Reynolds number is 70. ,At 100μl/s and in a 0.13 
+241 
+mm needle the Reynolds number mounts to 1000. For more viscous liquids or drugs 
+242 
+in this window of flow rates and needle diameters the Reynolds numbers will even be 
+243 
+lower, which is well below 2000 which supports that our model is well in the laminar 
+244 
+flow area. For such flow in a long cylindrical body, the velocity profile over a cross-
+245 
+section is parabolic:  
+246 
+𝑣= 𝑣!"# 1 −
+!
+!
+!
+. For parabolic velocity profiles in a circular cross-section, we 
+247 
+have 
+248 
+ 𝛼= 2 and  𝑣= 
+!
+! 𝑣!"#. 
+249 
+Starting from equation (2) for the syringe/needle geometry, the pressure drop from the 
+250 
+plunger to the exit section of the needle can be rewritten as 
+251 
+−𝛥𝑝= 𝜌𝑔𝛥𝑧+  𝛥 (𝜌𝑣
+!) + ℎ𝑒𝑎𝑡 𝑙𝑜𝑠𝑠𝑒𝑠(3) 
+252 
+The gravimetric term is for 100mm height difference of the order of 1000Pa and is 
+253 
+neglected. The kinetic term at the syringe plunger (𝑣! limited to 100mm/s) is less than 
+254 
+100Pa and is neglected too. Thus equation (2) becomes 
+255 
+𝛥𝑝=  𝜌𝑣!
+! + ℎ𝑒𝑎𝑡 𝑙𝑜𝑠𝑠𝑒𝑠 4 . 
+256 
+The heat losses or viscous friction losses are composed of 1) the localized entrance 
+257 
+losses at the transition from the syringe to the needle and 2) the distributed tube losses 
+258 
+Stijn Verwulgen! 12/3/18 20:49
+Formatted: Font color: Auto
+
+---PAGE 10---
+ 
+9 
+in the needle:  
+259 
+heat/friction losses = 𝛥𝑝!"#$%"&! !"## + 𝛥𝑝!"#$ !"## 5  
+260 
+Tube losses are given by the Darcy Weisbach equation (37): 
+261 
+𝛥𝑝!"#$ !"## =  𝑓 ∙
+!
+!! ∙ 
+!
+! 𝜌𝑣!
+! 6 , 
+262 
+with 𝑓 the Darcy friction factor (dimensionless). For laminar flow of a Newtonian 
+263 
+liquid without wall slip it can be shown that 𝑓=
+!"
+!". Applying this to a needle with 
+264 
+circular cross-section, equation (6) turns into the well-known Hagen –Poiseuille 
+265 
+equation to model pressure required to eject fluid through a cylindrical needle (33, 
+266 
+38): 
+267 
+𝛥𝑝!"#$ !"## =  
+!"# !"
+!!!! 𝑄 (7) 
+268 
+The entrance losses in  5  are caused by a contracted flow in the entrance zone of the 
+269 
+needle. Therefore, the flow requires temporarily a higher kinetic energy than the first 
+270 
+term of (4), which is the kinetic energy downstream of this entrance zone. This excess 
+271 
+kinetic energy is not completely recovered downstream of the entrance zone and this 
+272 
+leads to a pressure drop, which is quadratic with the flowrate and is given by: 
+273 
+𝛥𝑝!"#$%"&! !"##   = 𝑘!  ∙ 
+!
+! 𝜌𝑣!
+!, 
+274 
+with 𝑘! the entrance loss coefficient (dimensionless) of the liquid flowing from the 
+275 
+syringe into the needle.  For circular cross-sections like a syringe needle geometry, 
+276 
+these entrance losses are described analytically (39) and for Re > 10 they compare to 
+277 
+empirical work (40). Calculated values for 𝑘! range from 0.3 for Re =2000 till 0.5 for 
+278 
+Re = 100. Empirical numbers are 2 to 3 times larger (40). As the calculations do not 
+279 
+take asymmetric or oscillating solutions into account, 𝑘!is expected to be between 0,5 
+280 
+and 1,5. We set use  𝑘! = 1. For circular cross-sections and laminar flow where the 
+281 
+kinetic correction factor 𝑎 equals to 2, the entrance loss amounts to 25% up to 75% of 
+282 
+Stijn Verwulgen! 12/3/18 20:43
+Deleted: is 
+
+---PAGE 11---
+ 
+10
+the kinetic energy in the flow. The cited values for 𝑘! assume that the flow channel is 
+284 
+longer than the distance over which the entrance effect takes place. For Re>50, the 
+285 
+ratio between the length L of the entrance effect and the diameter d of the flow 
+286 
+channel is (39):  
+287 
+𝐿/𝑑
+= (0.05456Re −0.5640 + 0.8476 exp − 0.05869Re  )  
+This shows that the entrance effect is expected to be in the order of  5 to 50 diameters 
+288 
+for respectively Re= 100 and Re = 1000, which is well below the length of the 
+289 
+needles under study in this article. 
+290 
+The entrance losses in  5  is given by: 
+291 
+𝛥𝑝!"#$%"&! !"##   = 𝑘!  ∙ 
+!
+! 𝜌𝑣!
+! 8 , 
+292 
+with 𝑘! the entrance loss coefficient (dimensionless) of the liquid flowing from the 
+293 
+syringe into the needle. Since we have an incompressible fluid,  
+294 
+𝑣! ∙
+!!!!
+! = 𝑣! ∙
+!!!!
+! , 
+295 
+thus the force 𝐹! on the plunger to overcome the pressure drop  4  is given by: 
+296 
+𝐹!     = 
+! !!!!!"
+!!!
+𝑣!   +     2 + 𝑘! ∙ 
+!
+! 𝜌
+!"!!
+!!!! 𝑣!
+!    9  . 
+297 
+The total force 𝐹!"# to be exerted on the plunger to eject the liquid from the syringe is 
+298 
+composed of friction of the plunger when moving in the syringe, denoted 𝐹!"#$, and 
+299 
+force to overcome pressure drop (9):  
+300 
+𝐹!"#     = 𝐹!"#$ +
+! !!!!!"
+!!!
+𝑣!   +     2 + 𝑘! ∙ 
+!
+! 𝜌
+!"!!
+!!!! 𝑣!
+!    10  
+301 
+It will be verified experimentally how well the model by formulas 9  and (10) can 
+302 
+predict the force on the plunger 𝐹!"# as a function of plunger velocity 𝑣! for 
+303 
+commercially available needles suited for intra dermal injections, by controlling for 
+304 
+the variables 𝑣!, 𝑑!, 𝑑!, 𝑙!, 𝜌 and 𝜇.  
+305 
+Stijn Verwulgen! 12/3/18 21:26
+Formatted: Font:12 pt, English (UK)
+Stijn Verwulgen! 12/3/18 21:37
+Formatted: Font:Italic
+Stijn Verwulgen! 12/3/18 21:37
+Formatted: Font:Italic
+Stijn Verwulgen! 12/3/18 21:03
+Formatted: English (US)
+
+---PAGE 12---
+ 
+11
+2. Controlled experiment  
+306 
+A syringe adaptor was developed to administer fluid ID in a standardized way 
+307 
+perpendicular to the skin. The adaptor is used in this study to control needle 
+308 
+geometry. The adaptor is a particular realization of a platform (41), on which a realm 
+309 
+of syringes with different dimensions and working principles can be built with needle 
+310 
+dimensions varying between 26 and 34 G and protruding part of the needle, from the 
+311 
+foot of the device ranging from 0.8mm up to 4mm, injecting a pre-defined fixed 
+312 
+volume between 0.05cc and 0.3cc. The basic configuration consists of a housing with 
+313 
+a needle suited for intradermal drug delivery, an activation mechanism and a skin 
+314 
+penetration mechanism.  
+315 
+Fifteen commercially available needles (BD, EXEL, HSW and TSK) were selected to 
+316 
+cover a variety of inner diameters 𝑑!and lengths 𝑙! and implemented in the housing. 
+317 
+A regular syringe of 1 ml was used in the housing (HSW Soft-Ject Low Dead Space 
+318 
+Luer Lock ). The syringe’s inner diameter was assessed with a calliper with an 
+319 
+accuracy of 0.02 mm. Each total needle length was assessed with the same calliper. 
+320 
+Bevel length was assessed by an optical microscope as a tolerance measure for needle 
+321 
+length, denoted z in Figure 1, right.  
+322 
+Stijn Verwulgen! 27/2/18 15:31
+Formatted: Font:Times
+Stijn Verwulgen! 27/2/18 15:31
+Formatted: Font:Times
+Stijn Verwulgen! 27/2/18 15:31
+Deleted: protruding needle length 
+
+---PAGE 13---
+ 
+12
+ 
+324 
+Figure 1: bevel measured with optical microscope (left) and geometrical definition of 
+325 
+bevel subtracted from total length in needle length assessment. 
+326 
+Needle diameter 𝑑!was assessed through an optical microscope too. Needle types and 
+327 
+geometric specifications as provided by manufactures as well as assessed values are 
+328 
+displayed in Table I. 
+329 
+The housing with needle and syringe was mounted to a force gauge (Electromatic 
+330 
+ESM301) by dedicated designed and 3D printed support parts. Injection speed 𝑣!was 
+331 
+controlled in the power bench. The power bench ensures a constant displacement and 
+332 
+thereby returns applied force as a dependent variable. This force has an accuracy of 
+333 
+0.2% according to the manufacturer’s specifications, any eventual resulting error is 
+334 
+neglected. Friction force of plunger moving in the syringe 𝐹!"#$ was assessed by 
+335 
+moving the plunger in the syringe in an empty syringe at various speeds in the power 
+336 
+bench. The same syringe and plunger was used in all experiments to minimize inter-
+337 
+syringe effects. 
+338 
+
+---PAGE 14---
+ 
+13
+Force due to pressure drop through the needle was assessed by subtracting friction 
+339 
+force from force assessed while ejecting fluid at the power bench.  
+340 
+For the evaluation of the hydrodynamic model, in total 95 tests were performed, each 
+341 
+test with 5 repetitions. In 90 tests, water was used as a liquid. Temperature varied 
+342 
+between 15.4°C and 18.5°C. Viscosity was corrected for temperature. Five tests were 
+343 
+performed on a water-glycerol mixture with viscosities of respectively 1.1 / 1.5 / 2.1 / 
+344 
+2.9 / 4.3 mPas. In these five tests, a 32G-13mm length needle was used (number 14 in 
+345 
+Table I).  
+346 
+All experiments were preformed using a syringe with a diameter ds = 4.67 mm and 
+347 
+velocities 𝑣! were set at 50, 125, 175, 200, 250 and 350 mm/min. Measured needle 
+348 
+dimensions in Table I were used. In total, 15 types of needles were tested 5 times at 
+349 
+these 6 flow rates. Results were analysed in SPSS. 
+350 
+Dynamic viscosity was tuned by water-glycerol mixture. Newtonian behavior was 
+351 
+controlled by Rheosense measuring device (Benelux Scientific). In all experiments, 
+352 
+temperature was logged to control for eventual viscosity changes. Water-glycerol 
+353 
+mixtures were tested at the same temperature (±20°C) as those of the lab during the 
+354 
+experiments. The vaccine HBVAXPRO (Sanofi-Pasteur) was tested to compare its 
+355 
+behaviour to that of water-glycerol mixtures. All measurements were repeated five 
+356 
+times in different shear rates: 2000, 5000, 10000, 15000 and 20000 /s. 
+357 
+3. In vivo force assessment 
+358 
+The effect of the needle gauge on force exerted by operators using the VAX-IDTM 
+359 
+syringe adaptor was assessed. The user scenario comprises the following steps: the 
+360 
+operator fills the syringe by pulling up liquid from a vial; locks the prefilled syringe 
+361 
+without needle in the housing; places the device on the receiver’s skin thereby 
+362 
+activating the injection mechanism and penetrating the skin; and injects the fluid by a 
+363 
+
+---PAGE 15---
+ 
+14
+standard injection mechanism, that is by pushing the plunger, narrowing the syringe’s 
+364 
+reservoir and thus ejecting the fluid. In a pilot pre-clinical test, only operators are 
+365 
+considered. Forces were assessed in 10 voluntary participants. Participants were asked 
+366 
+to eject different volumes of demineralized water by pushing on the plunger of the 
+367 
+syringe mounted in the housing of the syringe adaptor. No further instructions were 
+368 
+given on how to perform the ejection. Fluid was ejected freely in the air without any 
+369 
+injection in animal or human tissue, neither artificial substrate. The housing was 
+370 
+equipped with a 26G and a 32G needle. A force -resistance sensor FSR-402 from 
+371 
+Interlink was mounted on top of the plunger. It has a sensitive diameter of 13 mm and 
+372 
+a sensing range from 0.2 N to 20 N with an accuracy of 0.1 N. A connection part was 
+373 
+designed and 3D printed for solid mounting the sensor onto the top of the plunger and 
+374 
+for distributing force exerted by the operator for stable and repeatable measurements. 
+375 
+The set-up was wired to an Arduino microcontroller for read-out by a regular PC.  
+376 
+ 
+377 
+Results 
+378 
+Needle and syringe parameters  
+379 
+The inner diameter of the syringe was 4.67mm +/- 0.03 mm. Results of all needle 
+380 
+measurement are compared with given specifications in Table I. 
+381 
+Table I: Tested needles measured and manufacturer’s parameters 
+382 
+Needle 
+# 
+Brand 
+Gauge 
+Spec. 
+diam. 
+(mm) 
+Spec. 
+length 
+(mm) 
+Measured 
+Diam. (mm) 
+Measured 
+length (mm) 
+Bevel 
+length 
+(mm) 
+1 
+BD 
+26G 
+0.26 
+10 
+0.269 
+15.651 
+1.49 
+Stijn Verwulgen! 27/2/18 15:29
+Formatted Table
+
+---PAGE 16---
+ 
+15
+2 
+BD 
+26G 
+0.26 
+13 
+0.262 
+18.857 
+1.98 
+3 
+BD 
+26G 
+0.26 
+16 
+0.256 
+22.290 
+1.90 
+4 
+EXEL 
+27G 
+0.21 
+13 
+0.2160 
+19.424 
+1.81 
+5 
+HSW 
+FINE 
+27G 
+0.21 
+30 
+0.212 
+38.482 
+1.74 
+6 
+HSW 
+FINE 
+27G 
+0.21 
+40 
+0.208 
+44.411 
+1.77 
+7 
+HSW 
+FINE 
+27G 
+0.21 
+42 
+0.213 
+48.139 
+1.99 
+8 
+HSW 
+FINE 
+27G 
+0.21 
+50 
+0.210 
+56.369 
+1.95 
+9 
+EXEL 
+28G 
+0.184 
+20 
+0.203 
+27.130 
+1.39 
+10 
+EXEL 
+30G 
+0.159 
+13 
+0.158 
+0.157* 
+22.299 
+1.39 
+11 
+EXEL 
+30G 
+0.159 
+25 
+0.155 
+33.952 
+1.15 
+12 
+TSK 
+31G 
+0.133 
+13 
+0.138 
+18.635 
+1.15 
+13 
+TSK 
+32G 
+0.108 
+10 
+0.128 
+17.923 
+1.21 
+14 
+TSK 
+32G 
+0.108 
+13 
+0.127 
+0.130* 
+18.534 
+1.05 
+15 
+TSK 
+33G 
+0.108 
+13 
+0.104 
+0.105* 
+18.794 
+0.88 
+
+---PAGE 17---
+ 
+16
+ *cross check measurement with electron microscope 
+383 
+The needle length of all evaluated needles was larger than the provided length 
+384 
+specifications: needles are prolonged internally in the needle hub, from 5 up to 10 
+385 
+mm.  
+386 
+Specifications were converted from Inch to mm. Most measured inner diameters of 
+387 
+the needles correspond to the given specifications, except for the 32G and 28G 
+388 
+needles that have larger actual diameters. The 32G-1mm needle has a diameter of 
+389 
+0.127 mm with optical measurement what is just in the specified tolerance limit 
+390 
+(0.108 mm +/- 0.019 mm). 
+391 
+Re-assessment with electron microscope yields 0.130mm what falls outside that 
+392 
+tolerance limit. For the 28G needle the measured diameter is just within the tolerance 
+393 
+limits. In Figure 2, a measurement of needle diameter is displayed for optical and 
+394 
+electron microscope. Due to relative long bevels it was impossible to take a sharp 
+395 
+image of the entire needle hole, perpendicular to the needle. However detailed partial 
+396 
+electron-microscope images (Figure 2, right) indicate that inner wall might have high 
+397 
+roughness and might be substantially non-cylindrically shaped. 
+398 
+ 
+399 
+Figure 2: optical assessment of needle diameter (left) and assessment with electron-
+400 
+microscope (middle and right) for a 33G-13 mm length needle 
+401 
+
+---PAGE 18---
+ 
+17
+Friction force of plunger moving in the syringe 𝐹!"#$ was found to increase with 
+402 
+increasing speed, although not linear. Table II shows results of average friction forces 
+403 
+under 10 repeated measurements. 
+404 
+Table II: friction force of plunger moving in the syringe at different speeds, controlled 
+405 
+by the power bench. 
+406 
+Injection speed 
+(mm/min) 
+Friction force (SD) in Newton 
+50 
+0.561 (0.0722) 
+125 
+0.766 (0.0932) 
+175 
+0.829 (0.111) 
+200 
+0.852 (0.115) 
+250 
+0.902 (0.148) 
+350 
+1.014 (0.154) 
+ 
+407 
+Viscosity: 
+408 
+Both water and water-glycerol mixtures demonstrate Newtonian behaviour., i.e. 
+409 
+viscosity remains substantially constant when changing the shear rate. HBVAXPRO 
+410 
+exhibits non-Newtonian behaviour by shear thinning: the viscosity drops by 
+411 
+increasing shear rate. Consequently, the actual hydrodynamic forces could be smaller 
+412 
+than the forces provide by our model. Results are displayed in Figure 3. 
+413 
+Stijn Verwulgen! 27/2/18 15:34
+Deleted: -N
+Stijn Verwulgen! 27/2/18 15:54
+Formatted: English (UK), Check spelling
+and grammar
+
+---PAGE 19---
+ 
+18
+ 
+415 
+Figure 3: Viscosity in function of shear rate 
+416 
+Evaluation of the proposed hydrodynamic model 
+417 
+The force measurements on the syringe plunger in the test bench are compared to 
+418 
+results obtained from formula (10) after controlling for 𝑑!, 𝑑!., 𝑣! , 𝑙!, 𝜌 and 𝜇. 
+419 
+Based on (39) we propose 𝑘! = 1 for the entrance loss coefficient. However, since the 
+420 
+entrance loss 𝑘! depends on the specific needle’s hub geometry, we also evaluate our 
+421 
+model for best fit for 𝑘! for any individual needle.  
+422 
+ In Figure 4 below, a regression of 90 data points (dotted line) is shown between the 
+423 
+measured forces 𝐹!"# − 𝐹!"#$ on the vertical axis and the forces calculated using 
+424 
+formula (9) on the horizontal axis.  
+425 
+Stijn Verwulgen! 27/2/18 16:18
+Formatted: Caption, Centered
+Vanessa Vankerckhoven! 12/3/18 14:49
+Formatted: Font:Italic, English (US)
+Stijn Verwulgen! 27/2/18 15:55
+Deleted: In total 95 tests were performed, 
+each test with 5 repetitions. In 90 tests, water 
+was used as a liquid. Temperature varied 
+between 15.4°C and 18.5°C. Viscosity was 
+corrected for temperature. Five tests were 
+performed on a water-glycerol mixture with 
+viscosities of respectively 1.1 / 1.5 / 2.1 / 2.9 / 
+4.3 mPas. In these five tests, a 32G-13mm 
+length needle was used (number 14 in Table I). 
+... [2]
+Stijn Verwulgen! 27/2/18 16:19
+Deleted: these 
+
+---PAGE 20---
+ 
+19
+ 
+437 
+Figure 4: Measured forces on the vertical axis versus predicted forces on the 
+438 
+horizontal axis. Both units at horizontal and vertical axis are Newton (N). 
+439 
+A regression line was calculated yielding  
+440 
+𝐹!"# − 𝐹!"#$ = 0.91 𝐹! + 0.020𝑁 , 
+441 
+with R2  =95.5% significant at the 0.001 level and the intercept of 0.020N is in a 95% 
+442 
+confidence interval around 0 (t-distribution). The intercept is thus not significantly 
+443 
+different from 0 (significance level p = 0.70 ). 
+444 
+The correlation coefficients for the individual needle’s regression lines are even much 
+445 
+closer to 1 (Figure 5 and Table III).  
+446 
+y = 0.9113x + 0.0198
+R² = 0.9552
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Plunger Force ‐ Friction Force (measured) (N)
+Plunger Force (calculated using  formula (9)) (N)
+Syringe ‐ Needle ‐ Water ‐ System : all data points
+
+---PAGE 21---
+ 
+20
+ 
+447 
+ 
+448 
+y = 0.6992x + 0.0327
+R² = 0.9454
+y = 0.6293x + 0.0308
+R² = 0.8093
+y = 0.8137x ‐ 0.0303
+R² = 0.9833
+0
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+0.35
+0.4
+0
+0.05
+0.1
+0.15
+0.2
+0.25
+0.3
+0.35
+0.4
+0.45
+0.5
+Plunger Force ‐ Friction Force (measured) (N)
+Plunger Force (calculated according to equation (9)) (N)
+Syringe ‐ Needle ‐ Water ‐ System : all 26G Needles 
+ 1 : 26G ‐ 15.7mm
+ 2 : 26G ‐ 18.9mm
+ 3 : 26G ‐ 22.3mm
+y = 0.5656x + 0.1541
+R² = 0.9732
+y = 0.9264x ‐ 0.0563
+R² = 0.9836
+y = 0.9077x + 0.0429
+R² = 0.9986
+y = 1.0821x + 0.0077
+R² = 0.9992
+y = 1.2091x ‐ 0.0434
+R² = 0.999
+0
+0.5
+1
+1.5
+2
+2.5
+3
+3.5
+0
+0.5
+1
+1.5
+2
+2.5
+3
+Plunger Force ‐ Friction Force (measured) (N)
+Plunger Force (calculated using  formula (9)) (N)
+Syringe ‐Needle ‐ Water ‐ System
+for 27G needles
+ 4 : 27G ‐ 19.2mm
+ 5 : 27G ‐ 38.4mm
+ 6 : 27G ‐ 44.6mm
+ 7 : 27G ‐ 48.0mm
+ 8 : 27G ‐ 56.7mm
+
+---PAGE 22---
+ 
+21
+ 
+449 
+Figure 5: Measured forces Fexp-Ffric on the vertical axis versus predicted forces Fs on 
+450 
+the horizontal axis for all types of needle. Units on both axis are Newton (N). 
+451 
+Numbers 1-15 refer to needle numbers in Table I 
+452 
+Despite correlations of 10 needles are more than 99%, the slopes still vary from 0.55 
+453 
+to 1.21. This suggests that the assessment of individual needle geometry is prone to 
+454 
+error, whereas the formula (10) sufficiently models the behaviour for a given needle 
+455 
+with accurate geometrical parameters. This is supported by the result that each 
+456 
+individual intercept is in a 95% confidence interval around 0. Moreover, corrections 
+457 
+on individual diameters to explain slope variation, range between 0.000 and 0.032 
+458 
+mm. In 60% of all evaluated needle, these corrections are within a 10 micron 
+459 
+tolerance.  
+460 
+A disagreement between model and measurement can be observed at low plunger 
+461 
+force, see Figure 5, especially for 26G and 27G needles. This could possibly be 
+462 
+y = 0.9607x + 0.0227
+R² = 0.9991
+y = 0.7657x + 0.1659
+R² = 0.9981
+y = 0.9484x + 0.1175
+R² = 0.9996
+y = 0.6374x + 0.0879
+R² = 0.9976
+y = 1.1842x + 0.0651
+R² = 0.9989
+y = 1.0017x + 0.0505
+R² = 0.9998
+y = 0.5466x + 0.0018
+R² = 0.9967
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Plunger Force ‐ Friction Force (measured) (N)
+Plunger Force (calculated using  formula (9)) (N)
+Syringe ‐ Needle ‐ Water ‐ System 
+for 28G‐33G needles
+15 : 33G ‐ 18.8mm
+13 : 32G ‐ 17.9mm
+14 : 32G ‐ 18.5mm
+12 : 31G ‐ 18.6mm
+10 : 30G ‐ 22.3mm
+11 : 30G ‐ 34,0mm
+ 9 : 28G ‐ 27.1mm
+
+---PAGE 23---
+ 
+22
+contributed to enlargement of relative errors on force measurements. 
+463 
+Slope, intercept and correlations for individual needles with  𝑘! = 1 are displayed in 
+464 
+Table III. The correction on the inner diameter ∆𝑑! to achieve a slope of 1 is displayed 
+465 
+in the most right column. 
+466 
+Table III: Regression, slope a, intercept b and R2 with 𝐹!"# −𝐹!"#$ = 𝑎𝐹!+b, in 
+467 
+function of needle geometry, and correction on diameter to provide a slope of 1 
+468 
+Needle # 
+𝑑! 
+mm 
+𝑙! 
+mm 
+Slope  
+a 
+Intercept 
+b(N) 
+𝑅! 
+∆𝑑! 
+mm 
+1 
+0.270 
+15.7 
+0.70 
+0.033* 
+99.8%*** 
+0.024 
+2 
+0.262 
+18.9 
+0.63 
+0.031* 
+94.5%*** 
+0.032 
+3 
+0.256 
+22.3 
+0.81 
+-0.030* 
+80.9%*** 
+0.014 
+4 
+0.216 
+19.2 
+0.57 
+0.152 
+97.9%*** 
+0.032 
+5 
+0.212 
+38.4 
+0.93 
+-0.056* 
+97.3%*** 
+0.004 
+6 
+0.209 
+44.6 
+0.91 
+0.043* 
+98.4%*** 
+0.005 
+7 
+0.213 
+48.0 
+1.08 
+0.008* 
+99.8%*** 
+-0.004 
+8 
+0.210 
+56.7 
+1.21 
+-0.043* 
+99.9%*** 
+-0.010 
+9 
+0.203 
+27.1 
+0.55 
+0.002* 
+99.9%*** 
+0.030 
+10 
+0.157 
+22.3 
+1.18 
+0.650* 
+99.7%*** 
+-0.007 
+11 
+0.155 
+34.0 
+1.00 
+0.050* 
+99.9%*** 
+0.000 
+12 
+0.138 
+18.6 
+0.64 
+0.088* 
+100.0%*** 
+0.016 
+13 
+0.13 
+17.9 
+0.77 
+0.166 
+99.8%*** 
+0.009 
+14 
+0.130 
+18.5 
+0.95 
+0.118* 
+99.8%*** 
+0.002 
+
+---PAGE 24---
+ 
+23
+15 
+0.105 
+18.8 
+0.96 
+0.023* 
+100.0%*** 
+0.001 
+*** significant at the 0.001 level  
+       * within the 95% confidence interval 
+469 
+around 0 (t-distribution). 
+470 
+Finally we display the regression line for the 5 data points on the water glycol mixture 
+471 
+in Figure 6 with viscosities varying between 1.1 and 4.3 mPas. This line has a slope of 
+472 
+0.78, an intercept of 0.10N and an R2= 99.7%, which yields the same conclusions. 
+473 
+Note that for drugs, non-Newtonian behaviour such as shear thinning for 
+474 
+HBVAXPRO might influence results, yielding lower actual forces.  
+475 
+ 
+476 
+Figure 6: verification of the hydrodynamic model in varying viscosity. Units on both 
+477 
+axis are Newton (N) 
+478 
+ 
+479 
+Force assessment in human operators 
+480 
+y = 0.7799x + 0.1016
+R² = 0.9976
+0
+1
+2
+3
+4
+5
+6
+7
+0
+1
+2
+3
+4
+5
+6
+7
+8
+Plunger Force ‐ Friction Force (measured) (N)
+Plunger Force (calculated using formula (9)) (N)
+Syringe ‐ 32G Needle ‐ System : 
+5 data points water glycol mixture μ= 1.1 / 1.5 / 2.1 / 2.9 / 4.3 mPas 
+14 : 32G ‐ 18.5mm
+Stijn Verwulgen! 27/2/18 16:25
+Deleted: In vivo f
+
+---PAGE 25---
+ 
+24
+A total of 10 untrained volunteers were recruited and asked to eject 0.7ml of saline 
+482 
+solution with a 1mL SOFT-JECT Luer Lock syringe (Henke Sass Wolf) mounted in 
+483 
+the VAX-IDTM adaptor two times: once equipped with a 26G needle and once with a 
+484 
+32G needle. Ejection forces were logged using the FSR sensors coupled to the 
+485 
+arduino platform. Results are displayed in Figure 7. 
+486 
+ 
+487 
+ 
+488 
+ 
+489 
+Figure 7: Time logs of forces exerted by non-educated operators with a 26 and 32G 
+490 
+hypodermic needle respectively 
+491 
+-2 
+0 
+2 
+4 
+6 
+8 
+0,000 
+0,020 
+0,104 
+0,217 
+0,329 
+0,442 
+0,554 
+0,666 
+0,779 
+0,891 
+1,000 
+1,114 
+1,225 
+1,338 
+1,451 
+1,562 
+1,675 
+1,785 
+1,896 
+2,009 
+2,121 
+2,233 
+2,346 
+2,469 
+2,593 
+2,718 
+2,843 
+2,967 
+3,092 
+3,217 
+Forve (N) 
+Time (s) 
+Untrained: 26G 
+Subject 1 
+Subject 2 
+Subject 3 
+Subject 4 
+Subject 5 
+Subject 6 
+Subject 7 
+Subject 8 
+Subject 9 
+Subject 10 
+-10 
+-5 
+0 
+5 
+10 
+15 
+0 
+0,11 
+0,318 
+0,55 
+0,784 
+1,02 
+1,281 
+1,541 
+1,774 
+2,034 
+2,294 
+2,554 
+2,815 
+3,075 
+3,335 
+3,595 
+3,855 
+4,114 
+4,374 
+4,634 
+4,894 
+5,154 
+5,414 
+5,675 
+5,935 
+6,195 
+6,455 
+6,715 
+6,974 
+7,234 
+7,494 
+Force (N) 
+Time (s) 
+Untrained: 32G 
+Subject 1 
+Subject 2 
+Subject 3 
+Subject 4 
+Subject 5 
+Subject 6 
+Subject 7 
+Subject 8 
+Subject 9 
+Subject 10 
+Stijn Verwulgen! 27/2/18 16:26
+Deleted: non-educated 
+Stijn Verwulgen! 12/3/18 20:40
+Formatted: Centered, Space After:  10 pt,
+Widow/Orphan control, Adjust space
+between Latin and Asian text, Adjust
+space between Asian text and numbers,
+Tabs:Not at  0,99 cm +  1,98 cm +  2,96
+cm +  3,95 cm +  4,94 cm +  5,93 cm + 
+6,91 cm +  7,9 cm +  8,89 cm +  9,88 cm +
+ 10,86 cm +  11,85 cm
+
+---PAGE 26---
+ 
+25
+Discussion 
+493 
+Difficult target groups such as children or elderly can benefit from ID drug delivery 
+494 
+due to decreased pain, safety and ease of administration. In adults, a needle length of 
+495 
+1mm is most suited for ID injection at the forearm (42). The Mantoux technique can 
+496 
+target this depth by stretching the skin to insert a needle with upward tip in the 
+497 
+upmost dermal tissue. The Mantoux technique dates from 1910 and to date is still 
+498 
+used for e.g. tuberculin and/or HIV infection testing (43) by assessing the bleb 
+499 
+visually for antigen reaction. It requires trained medical staff to perform and is limited 
+500 
+in needle geometry: relatively large needles of 27 Gauge cause bruising and bleeding 
+501 
+but reduce leakage and larger blebs, thereby requiring more training. Relatively small 
+502 
+needles of 30 Gauge have more risk of leakage and administering less effective dose 
+503 
+(15). Current developments aim to standardize ID injection to enhance reliability with 
+504 
+solutions that inject substance perpendicular to the skin.  
+505 
+The total force for such ID drug administration consists of four components: 1) the 
+506 
+force of the needle penetrating the subject’s skin (18), 2) force from tissue back-
+507 
+pressure due to injection of substance (29), 3) force from internal mechanics, e.g. in a 
+508 
+classical syringe this only consists of friction between the plunger and housing and 4) 
+509 
+hydrodynamic force from the fluid going through the syringe and needle. By direct 
+510 
+acquisition of the third and fourth component and by assessing the actual total force 
+511 
+exerted by operators of site, an estimate of the sum of first and second component can 
+512 
+be obtained by subtracting the third and fourth component from the actual 
+513 
+measurement.  
+514 
+Needle dimensions for ID administration are subject to a trade-off. On one hand, thin 
+515 
+needles and blunt beveled needles are preferred for reliably targeting the dermis at 
+516 
+1mm depth without leakage exterior and into to the subcutis. Thin needles can induce 
+517 
+Stijn Verwulgen! 12/3/18 20:41
+Deleted: A
+Stijn Verwulgen! 27/2/18 16:47
+Deleted: 
+Vanessa Vankerckhoven! 12/3/18 15:22
+Deleted: -
+
+---PAGE 27---
+ 
+26
+the possibility of self-administration (44). On the other hand, needle diameter should 
+521 
+not be too small since higher force required to inject at the same rate might cause 
+522 
+discomfort in operators and/or pain in subjects. An upper limit of 30N for injection 
+523 
+force was recommended for manual injection into air (30). Also, the formulation of 
+524 
+drug and in particular dynamic viscosity relates to bigger needle dimensions (31). Too 
+525 
+high shear forces might also influence drug efficacy after administering through 
+526 
+microneedles (45).  
+527 
+Tapered microneedles are developed in a trade of between enhanced flow rate and 
+528 
+reduced infusion pain (46).  
+529 
+We provide a model for injection forces in cylindrically shaped syringes and needles. 
+530 
+Our model extends the well-known Hagen-Poiseuille law (38) and holds with R2 
+531 
+>99% in 10 out of 15 needles, with a minimum R2  of 75%. This is remarkable in the 
+532 
+light of potential perturbating parameters such as roughness or adhesive forces. We 
+533 
+present a method to obtain injection forces in vivo. Preliminary experiments indicate 
+534 
+that smaller needles result in bigger injection forces. The method needs to be tuned 
+535 
+for robustness and calibrated of-site. Once this tuning is done, we have a method to 
+536 
+link user requirements from subjects and operators to syringe and needle geometry, 
+537 
+and pinpoint needle dimensions for ID injection devices that are most suited for 
+538 
+operator and subject.  
+539 
+This might be achieved in three steps. Firstly, tissue back-pressure during ID injection 
+540 
+should be mapped. This can be done by measuring the force during injection and 
+541 
+simultaneously tracking the injection rate. The latter can be done by video recording 
+542 
+and visually assessing the plunger moving down. Tissue back-pressure is then the 
+543 
+difference between measured injection force and forces retrieved from injection rate 
+544 
+through our model. Secondly, preferred forces and injection times should be mapped. 
+545 
+Stijn Verwulgen! 27/2/18 16:55
+Deleted: is 
+
+---PAGE 28---
+ 
+27
+This can be done by inquiring both subjects and operators on what values they 
+547 
+consider comfortable. Thirdly, knowledge on tissue back pressure and the present 
+548 
+model could be used to select needles that are suitable for ID injections in function of 
+549 
+requirements for operator, subjects and intended applications.  
+550 
+Conclusions 
+551 
+Needle and syringe geometry directly relates to the amount of fluid that can be 
+552 
+administered at a given time and with a given force. The latter two parameters 
+553 
+drastically influence comfort of both subject and operator in intradermal drug 
+554 
+administration. In the current development of small needles suited for intradermal 
+555 
+administration, much effort has gone into the design of the needle’s shape. 
+556 
+We have presented a model to predict the force to eject a given fluid through a given 
+557 
+needle in function of injection rate. The first part of that force consists of the friction 
+558 
+between plunger and syringe. The second part consists of hydrodynamic forces 
+559 
+caused by the fluid going through the syringe and needle. The model extends the well-
+560 
+known Hagen-Poiseuille equation used to predict pressure drop induced by a fluid 
+561 
+passing through a cylindrical body. The model is highly linear in each individual 
+562 
+needle with R-square values ranging from 75% up to 99.9% and 2/3 of these values 
+563 
+above 99%. The model was shown to hold for a 1.00ml syringe equipped with needles 
+564 
+with inner diameters from 0.10mm up to 0.27mm and needle lengths from 10.0mm up 
+565 
+to 50.0 mm and for Newtonian fluids with viscosities from 1.0mPas up to 4.3mPas. 
+566 
+We have additionally presented a proof-of-concept for the system to log injection 
+567 
+forces in an in vivo setting. The system and the present model can be used to pinpoint 
+568 
+geometrical and physical needle-syringe parameters in single needle perpendicular ID 
+569 
+injection devices, controlling injection rate, viscosity, injection time and forces in 
+570 
+function of intended application, usage and target group.  
+571 
+Stijn Verwulgen! 27/2/18 16:57
+Deleted: that yields injection times and 
+forces that are comfortable for both subjects 
+and operators
+Stijn Verwulgen! 27/2/18 16:48
+Deleted: needle geometry for intradermal 
+injection devices. 
+
+---PAGE 29---
+ 
+28
+ 
+577 
+Conflict of interest 
+578 
+Authors KB, VVK and SV are co-founders of Novosanis. The other 
+579 
+authors report no potential conflict of interest.  
+580 
+ 
+581 
+References 
+582 
+1. 
+Slominski A, Wortsman J, Paus R, Elias PM, Tobin DJ, Feingold KR. Skin as 
+583 
+an endocrine organ: implications for its function. Drug Discovery Today: Disease 
+584 
+Mechanisms. 2008;5(2):e137-e44. 
+585 
+2. 
+Lambert PH, Laurent PE. Intradermal vaccine delivery: will new delivery 
+586 
+systems transform vaccine administration? Vaccine. 2008;26(26):3197-208. 
+587 
+3. 
+McGrath J, Uitto J. Anatomy and organization of human skin. Rook's 
+588 
+Textbook of Dermatology, Eighth Edition. 2010:1-53. 
+589 
+4. 
+Lai-Cheong JE, McGrath JA. Structure and function of skin, hair and nails. 
+590 
+Medicine. 2009;37(5):223-6. 
+591 
+5. 
+Young F, Marra F. A systematic review of intradermal influenza vaccines. 
+592 
+Vaccine. 2011;29(48):8788-801. 
+593 
+6. 
+Pileggi C, Lotito F, Bianco A, Nobile CG, Pavia M. Immunogenicity and 
+594 
+safety of intradermal influenza vaccine in immunocompromized patients: a 
+595 
+meta-analysis of randomized controlled trials. BMC infectious diseases. 
+596 
+2015;15:427. 
+597 
+7. 
+Vescovo P, Rettby N, Ramaniraka N, Liberman J, Hart K, Cachemaille A, et 
+598 
+al. Safety, tolerability and efficacy of intradermal rabies immunization with 
+599 
+DebioJect™. Vaccine. 2017;35(14):1782-8. 
+600 
+8. 
+Goswami A, Plun-Favreau J, Nicoloyannis N, Sampath G, Siddiqui MN, 
+601 
+Zinsou J-A. The real cost of rabies post-exposure treatments. Vaccine. 
+602 
+2005;23(23):2970-6. 
+603 
+9. 
+McElhaney JE, Dutz JP. Better influenza vaccines for older people: what 
+604 
+will it take? The Journal of infectious diseases. 2008;198(5):632-4. 
+605 
+10. 
+Rosenfeld L. Insulin: discovery and controversy. . Clinical chemistry, . 
+606 
+2002;48(12):2270-88. 
+607 
+11. 
+Guy R. Transdermal science and technology-an update. Drug Delivery 
+608 
+System. Drug Delivery System. 2007;22(4):442-9. 
+609 
+12. 
+Norman JJ, Brown MR, Raviele NA, Prausnitz MR, Felner EI. Faster 
+610 
+pharmacokinetics and increased patient acceptance of intradermal insulin 
+611 
+delivery using a single hollow microneedle in children and adolescents with type 
+612 
+1 diabetes. Pediatric diabetes. 2013;14(6):459-65. 
+613 
+13. 
+Hickling J, & Jones, R. . Intradermal delivery of vaccines: a review of the 
+614 
+literature and the potential for development for use in low-and middle-income 
+615 
+countries. . 2009. 
+616 
+14. 
+Tarnow K, King N. Intradermal injections: traditional bevel up versus 
+617 
+bevel down. Applied Nursing Research. 2004;17(4):275-82. 
+618 
+Stijn Verwulgen! 27/2/18 16:49
+Deleted: Thus it can be assured that a given 
+amount of fluid can be administered with 
+forces and times that are comfortable for both 
+subject and operator.
+
+---PAGE 30---
+ 
+29
+15. 
+Flynn PM, Shenep, J. L., Mao, L., Crawford, R., Williams, B. F., & Williams, B. 
+623 
+G. Influence of needle gauge in Mantoux skin testing. CHEST Journal. 
+624 
+1994;106(5):1463-5. 
+625 
+16. 
+Kim YC, Jarrahian C, Zehrung D, Mitragotri S, Prausnitz MR. Delivery 
+626 
+systems for intradermal vaccination. Current topics in microbiology and 
+627 
+immunology. 2012;351:77-112. 
+628 
+17. 
+Larrañeta E, Lutton REM, Woolfson AD, Donnelly RF. Microneedle arrays 
+629 
+as transdermal and intradermal drug delivery systems: Materials science, 
+630 
+manufacture and commercial development. Materials Science and Engineering: 
+631 
+R: Reports. 2016;104:1-32. 
+632 
+18. 
+Lhernould MS, Deleers M, Delchambre A. Hollow polymer microneedles 
+633 
+array resistance and insertion tests. International journal of pharmaceutics. 
+634 
+2015;480(1-2):152-7. 
+635 
+19. 
+Van Damme P, Oosterhuis-Kafeja F, Van der Wielen M, Almagor Y, Sharon 
+636 
+O, Levin Y. Safety and efficacy of a novel microneedle device for dose sparing 
+637 
+intradermal influenza vaccination in healthy adults. Vaccine. 2009;27(3):454-9. 
+638 
+20. 
+Hickling JK, Jones KR, Friede M, Zehrung D, Chen D, Kristensen D. 
+639 
+Intradermal delivery of vaccines: potential benefits and current challenges. 
+640 
+Bulletin of the World Health Organization. 2011;89(3):221-6. 
+641 
+21. 
+Norman JJ, Gupta J, Patel SR, Park S, Jarrahian C, Zehrung D, et al. 
+642 
+Reliability and accuracy of intradermal injection by Mantoux technique, 
+643 
+hypodermic needle adapter, and hollow microneedle in pigs. Drug delivery and 
+644 
+translational research. 2014;4(2):126-30. 
+645 
+22. 
+Tsals I. Usability evaluation of intradermal adapters (IDA). Vaccine. 2016. 
+646 
+23. 
+Laurent PE, Bonnet S, Alchas P, Regolini P, Mikszta JA, Pettis R, et al. 
+647 
+Evaluation of the clinical performance of a new intradermal vaccine 
+648 
+administration technique and associated delivery system. Vaccine. 
+649 
+2007;25(52):8833-42. 
+650 
+24. 
+Kis EE, Winter G, Myschik J. Devices for intradermal vaccination. Vaccine. 
+651 
+2012;30(3):523-38. 
+652 
+25. 
+Terumo. Innovating to Create Value through New Perspectives and 
+653 
+Synthesis. 2016. 
+654 
+26. 
+Van Mulder TJ, Verwulgen S, Beyers KC, Scheelen L, Elseviers MM, Van 
+655 
+Damme P, et al. Assessment of acceptability and usability of new delivery 
+656 
+prototype device for intradermal vaccination in healthy subjects. Human 
+657 
+vaccines & immunotherapeutics. 2014;10(12):3746-53. 
+658 
+27. 
+Pietzsch JB, Shluzas LA, Paté-Cornell ME, Yock PG, Linehan JH. Stage-gate 
+659 
+process for the development of medical devices. Journal of medical devices. 
+660 
+2009;3(2):021004. 
+661 
+28. 
+Cilurzo F, Selmin F, Minghetti P, Adami M, Bertoni E, Lauria S, et al. 
+662 
+Injectability evaluation: an open issue. AAPS PharmSciTech. 2011;12(2):604-9. 
+663 
+29. 
+Allmendinger A, Mueller R, Schwarb E, Chipperfield M, Huwyler J, Mahler 
+664 
+HC, et al. Measuring tissue back-pressure--in vivo injection forces during 
+665 
+subcutaneous injection. Pharmaceutical research. 2015;32(7):2229-40. 
+666 
+30. 
+Burckbuchler V, Mekhloufi G, Giteau AP, Grossiord JL, Huille S, Agnely F. 
+667 
+Rheological and syringeability properties of highly concentrated human 
+668 
+polyclonal immunoglobulin solutions. European journal of pharmaceutics and 
+669 
+biopharmaceutics : official journal of Arbeitsgemeinschaft fur Pharmazeutische 
+670 
+Verfahrenstechnik eV. 2010;76(3):351-6. 
+671 
+Koen Beyers! 13/3/18 21:22
+Formatted: Dutch
+
+---PAGE 31---
+ 
+30
+31. 
+Adler M. INJECTABLES-Challenges in the Development of Pre-filled 
+672 
+Syringes for Biologics from a Formulation Scientist's Point of View. American 
+673 
+Pharmaceutical Review. 2012;15(1):96. 
+674 
+32. 
+Gupta J, Park SS, Bondy B, Felner EI, Prausnitz MR. Infusion pressure and 
+675 
+pain during microneedle injection into skin of human subjects. Biomaterials. 
+676 
+2011;32(28):6823-31. 
+677 
+33. 
+Fry A. Injecting Highly Viscous Drugs. Pharmaceutical Technology. 
+678 
+2014;38(11). 
+679 
+34. 
+Bonds RS, Asawa A, Ghazi AI. Misuse of medical devices: a persistent 
+680 
+problem in self-management of asthma and allergic disease. Annals of Allergy, 
+681 
+Asthma & Immunology. 2015;114(1):74-6. e2. 
+682 
+35. 
+Leoni G, Lyness A, Ginty P, Schutte R, Pillai G, Sharma G, et al. Preclinical 
+683 
+development of an automated injection device for intradermal delivery of a cell-
+684 
+based therapy. Drug delivery and translational research. 2017;7(5):695-708. 
+685 
+36. 
+Sadri R, Floryan J. Accurate evaluation of the loss coefficient and the 
+686 
+entrance length of the inlet region of a channel. Journal of fluids engineering. 
+687 
+2002;124(3):685-93. 
+688 
+37. 
+Brown GO. The history of the Darcy-Weisbach equation for pipe flow 
+689 
+resistance.  Environmental and Water Resources History2003. p. 34-43. 
+690 
+38. 
+Sutera SP, Skalak R. The history of Poiseuille's law. Annual Review of 
+691 
+Fluid Mechanics. 1993;25(1):1-20. 
+692 
+39. 
+Santos RGd, Figueiredo JR. Laminar elliptic flow in the entrance region of 
+693 
+tubes. Journal of the Brazilian Society of Mechanical Sciences and Engineering. 
+694 
+2007;29(3):233-9. 
+695 
+40. 
+Idelchik I, Steinberg M, Malyavskaya G, Martynenko O. Handbook of 
+696 
+Hydraulic Resistance1994. 
+697 
+41. 
+Simpson TW, Maier JR, Mistree F. Product platform design: method and 
+698 
+application. Research in Engineering Design. 2001;13(1):2-22. 
+699 
+42. 
+Van Mulder T, de Koeijer M, Theeten H, Willems D, Van Damme P, 
+700 
+Demolder M, et al. High frequency ultrasound to assess skin thickness in healthy 
+701 
+adults. Vaccine. 2017;35(14):1810-5. 
+702 
+43. 
+Salgame P, Geadas C, Collins L, Jones-Lopez E, Ellner JJ. Latent 
+703 
+tuberculosis infection--Revisiting and revising concepts. Tuberculosis. 
+704 
+2015;95(4):373-84. 
+705 
+44. 
+Yamada S, Yamada Y, Tsukamoto Y, Tabata M, Irie J. A comparison study 
+706 
+of patient ratings and safety of 32-and 34-gauge insulin pen needles. Diabetology 
+707 
+International. 2016;7(3):259-65. 
+708 
+45. 
+Li M, Tian X, Schreyer DJ, Chen X. Effect of needle geometry on flow rate 
+709 
+and cell damage in the dispensing-based biofabrication process. Biotechnology 
+710 
+progress. 2011;27(6):1777-84. 
+711 
+46. 
+Martanto W, Baisch SM, Costner EA, Prausnitz MR, Smith MK. Fluid 
+712 
+dynamics in conically tapered microneedles. AIChE Journal. 2005;51(6):1599-
+713 
+607. 
+714 
+ 
+715 
+Koen Beyers! 13/3/18 21:22
+Formatted: Dutch

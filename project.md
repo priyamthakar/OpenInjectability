@@ -2,14 +2,14 @@
 
 **Prepared:** 2026-08-01  
 **Updated:** 2026-08-02  
-**Baseline:** v0.1.0 alpha — Phases A–C complete; D literature comparison pass only; E blocked  
-**Governance sources:** [PROJECT_GOAL.md](PROJECT_GOAL.md), [HANDOFF.md](HANDOFF.md), [PROJECT_SPECIFICATION.md](PROJECT_SPECIFICATION.md), [VALIDATION.md](VALIDATION.md), [docs/phase-status.md](docs/phase-status.md)
+**Baseline:** v0.1.0 alpha on [PyPI](https://pypi.org/project/openinjectability/0.1.0/) — Phases A–C complete; D literature comparison only; E alpha published  
+**Governance sources:** [PROJECT_GOAL.md](PROJECT_GOAL.md), [HANDOFF.md](HANDOFF.md), [PROJECT_SPECIFICATION.md](PROJECT_SPECIFICATION.md), [VALIDATION.md](VALIDATION.md), [docs/phase-status.md](docs/phase-status.md), [docs/README.md](docs/README.md)
 
 ## Grounding (verified 2026-08-02)
 
 - Package `0.1.0` alpha: Phases A–C closed; suite green with Ruff, `mypy --strict`, ≥87% branch coverage, wheel smoke, CI matrix 3.10–3.13.
 - Phase D: digitized Allmendinger 2014 literature panel produces `experimental_comparison` pass vs 20% criterion; package remains `experimental_validation_pending` — **not** `independently_validated`.
-- Phase E: public PyPI publish blocked on completed independent D + registry/signing credentials.
+- Phase E: **PyPI alpha published** (`pip install openinjectability==0.1.0` verified); “validated” marketing still blocked on true experimental D.
 - Governance: the result is always **predicted fluid-resistance force**, never total device force; non-Newtonian inputs fail closed; no invented validation claims.
 
 ## Phase flow

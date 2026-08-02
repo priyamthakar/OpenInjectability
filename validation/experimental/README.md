@@ -9,6 +9,9 @@ Do **not** treat empty templates or synthetic smoke-test rows as validation evid
 Digitized literature comparison is `experimental_comparison` only — never
 `independently_validated`.
 
+**Package distribution:** [openinjectability 0.1.0 on PyPI](https://pypi.org/project/openinjectability/0.1.0/)
+remains alpha with `experimental_validation_pending`.
+
 **Literature setup (geometry only):** [`literature_setup_verwulgen_2018.json`](literature_setup_verwulgen_2018.json)
 quotes measured needle/barrel IDs and empty-syringe friction from the free Verwulgen
 2018 author PDF. It is **not** a validation panel (no absolute fluid-only force table).

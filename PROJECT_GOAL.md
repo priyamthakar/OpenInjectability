@@ -46,10 +46,16 @@ The final product is complete when it provides:
 
 ## Immediate evidence-gated objective
 
-Harden the v0.1 Newtonian engine before release: reject malformed runtime types
-and duplicate scenario identities, make sensitivity perturbations preserve the
-flow/time contract, align validation claims with actual fixtures, and pass the
-full typing and Python 3.10-3.13 compatibility gates.
+**v0.1.0 alpha is complete and published** on
+[PyPI](https://pypi.org/project/openinjectability/0.1.0/): hardening, spec
+completion, release gates, literature comparison pipeline, and public install
+path.
+
+**Next evidence-gated objective:** obtain independently traceable Newtonian
+experimental rows (author SI tables or wet-lab friction-subtracted force) under
+[docs/validation-protocol-lock.md](docs/validation-protocol-lock.md), re-run
+`validate-experimental`, and only then consider advancing package
+`validation_status` beyond `experimental_validation_pending`.
 
 See [HANDOFF.md](HANDOFF.md) for the current engineering checkpoint and
 [VALIDATION.md](VALIDATION.md) for the present evidence boundary.
