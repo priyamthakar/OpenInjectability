@@ -1,6 +1,6 @@
 # Experimental comparison report
 
-- Generated (UTC): `2026-08-02T04:01:37+00:00`
+- Generated (UTC): `2026-08-02T04:04:17+00:00`
 - Package version: `0.1.0`
 - Input panel: `validation\experimental\panel_allmendinger2014_glycerol_digitized.json`
 - Input SHA-256: `f67c12f6ce53ec41233cb215f429f2f069b72746715a27c7fa910e15319e5b7a`

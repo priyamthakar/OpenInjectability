@@ -4,9 +4,21 @@ OpenInjectability is a transparent Python toolkit for estimating the pressure dr
 **predicted fluid-resistance force** for a declared Newtonian liquid flowing through a
 specified needle.
 
-The model is intentionally narrow. It excludes syringe friction, break-loose force,
-device losses, tissue backpressure, human factors, and non-Newtonian rheology. A needle
-gauge label is metadata only; a traceable needle inner diameter is required.
+## Scientific boundary
+
+The model is intentionally narrow:
+
+- **In scope:** idealized Hagen–Poiseuille needle-fluid resistance for **Newtonian**
+  liquids with traceable viscosity, needle ID/length, barrel ID, volume, and rate.
+- **Out of scope:** syringe friction, break-loose force, device drivetrain losses,
+  tissue backpressure, human factors, and non-Newtonian rheology.
+- A needle **gauge** label is metadata only; a **traceable needle inner diameter** is
+  required.
+- The result is always named **predicted fluid-resistance force**, never total device
+  force, “safe,” or “compliant.”
+
+Non-Newtonian or otherwise unsupported inputs **fail closed** (typed rejection; no
+fallback rheology model).
 
 ## Quick start
 
@@ -34,10 +46,26 @@ openinjectability assess-one --viscosity-value 35 --viscosity-temperature 25 `
   --barrel-source syringe --volume 2 --injection-time 15
 ```
 
+### Literature / experimental panel comparison
+
+Compare a panel JSON of measured fluid-side force (or pressure × barrel area) to the
+model. Report status is only `experimental_comparison` or `insufficient_data` — this
+command **never** claims `independently_validated` and does **not** advance package
+`validation_status`.
+
+```powershell
+openinjectability validate-experimental `
+  validation/experimental/panel_allmendinger2014_glycerol_digitized.json `
+  --out validation/experimental/reports/allmendinger2014_digitized
+```
+
+Panel schema and rules: [validation/experimental/README.md](validation/experimental/README.md).
+
 Documentation: [docs/scientific-basis.md](docs/scientific-basis.md),
 [docs/input-schema.md](docs/input-schema.md),
 [docs/interpretation.md](docs/interpretation.md),
-[docs/roadmap.md](docs/roadmap.md), [VALIDATION.md](VALIDATION.md),
+[docs/roadmap.md](docs/roadmap.md), [docs/phase-status.md](docs/phase-status.md),
+[VALIDATION.md](VALIDATION.md),
 [PROJECT_SPECIFICATION.md](PROJECT_SPECIFICATION.md), [project.md](project.md).
 
 ## Backend engine API
@@ -61,5 +89,19 @@ returned value remains the predicted fluid-resistance force, not total device fo
 
 ## Status
 
-Version 0.1.0 is an alpha implementation. Its equations and internal reference cases
-are tested; independent experimental validation is pending.
+**Version 0.1.0 is alpha.** Development status on PyPI classifiers is `3 - Alpha`.
+
+| Area | State |
+|---|---|
+| Phases A–C (hardening, spec completion, release gates) | Complete |
+| Equations / internal reference cases | `internal_validation` (unit-tested) |
+| Independent experimental validation | **Pending** — package `experimental_validation_pending` |
+| Literature comparison (Allmendinger 2014 digitized panel) | Report status `experimental_comparison` only; **not** `independently_validated` |
+| Public PyPI release (Phase E) | Blocked on independent D + credentials |
+
+- Do **not** describe this release as experimentally validated.
+- Digitized figures, geometry setups from papers, or exploratory literature comparisons
+  under `validation/experimental/` are **not** accepted independent experimental
+  validation evidence.
+- See [VALIDATION.md](VALIDATION.md) for the claims-to-evidence map and status
+  vocabulary, and [docs/phase-status.md](docs/phase-status.md) for phase tracking.

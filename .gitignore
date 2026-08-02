@@ -9,10 +9,13 @@ __pycache__/
 htmlcov/
 .coverage.*
 
-# Build artifacts
+# Build artifacts (wheels, sdists, eggs)
 build/
 dist/
 *.egg
+*.eggs/
+*.whl
+pip-wheel-metadata/
 
 # Local environments
 .venv/
@@ -25,15 +28,16 @@ Thumbs.db
 .idea/
 .vscode/
 
-# Local run outputs
-assessment.json
-assessment.md
-assessment.html
-assessment.pdf
-force-vs-needle.png
-audit.zip
-*.png
-!docs/**
+# Local run outputs (CLI smoke / ad-hoc assessments at repo root)
+/assessment.json
+/assessment.md
+/assessment.html
+/assessment.pdf
+/force-vs-needle.png
+/audit.zip
+
+# Ad-hoc plots under repo root only; keep docs and validation trees
+/*.png
 
 # Agent scrape temp downloads (do not commit)
 docs/_tmp_*/
@@ -49,3 +53,12 @@ docs/_verwulgen2018_author.pdf
 allmendinger2014.pdf
 verwulgen2018.pdf
 zhang2018.pdf
+
+# Explicitly keep experimental validation comparison reports (json/md/sha256)
+# even if broader ignore patterns are added later.
+!validation/experimental/reports/
+!validation/experimental/reports/**
+!validation/experimental/*.json
+!validation/experimental/README.md
+!validation/experimental/schema.json
+!validation/experimental/panel.template.json

@@ -4,12 +4,33 @@ This directory holds **real laboratory or literature rows** for comparing OpenIn
 **predicted fluid-resistance force** against independently measured fluid-side force (or
 pressure converted by barrel area).
 
-**Status of this tree:** infrastructure only. No experimental panel has been accepted.
+**Status of this tree:** pipeline infrastructure plus one **literature (digitized)** panel.
 Do **not** treat empty templates or synthetic smoke-test rows as validation evidence.
+Digitized literature comparison is `experimental_comparison` only — never
+`independently_validated`.
 
 **Literature setup (geometry only):** [`literature_setup_verwulgen_2018.json`](literature_setup_verwulgen_2018.json)
 quotes measured needle/barrel IDs and empty-syringe friction from the free Verwulgen
 2018 author PDF. It is **not** a validation panel (no absolute fluid-only force table).
+
+## Allmendinger 2014 glycerol panel (digitized)
+
+| Artifact | Path |
+|---|---|
+| Panel JSON (12 rows) | [`panel_allmendinger2014_glycerol_digitized.json`](panel_allmendinger2014_glycerol_digitized.json) |
+| Hashed comparison report | [`reports/allmendinger2014_digitized/`](reports/allmendinger2014_digitized/) |
+| Ingestion notes / caveats | [`docs/pdf-ingestion-2026-08-02.md`](../../docs/pdf-ingestion-2026-08-02.md) |
+
+- **Geometry / friction:** exact from Allmendinger 2014 Table 1 (Hypak 1 mL + Sterican 27G 1″).
+- **Forces:** mean glide from Fig. 3(A) / thesis Fig. 3.3(A) **digitized**, then minus Table 1 friction → fluid-only.
+- **Caveats:** approximate figure reading (~5–15% force uncertainty at low force); **not** author SI tables. Zhang 2018 and Verwulgen absolute forces excluded (see panel `meta.excluded_sources`).
+- **Report status:** `experimental_comparison` only; does **not** advance package `validation_status` or claim `independently_validated`.
+
+```bash
+openinjectability validate-experimental \
+  validation/experimental/panel_allmendinger2014_glycerol_digitized.json \
+  --out validation/experimental/reports/allmendinger2014_digitized
+```
 
 ## Never use development fixtures as experimental data
 

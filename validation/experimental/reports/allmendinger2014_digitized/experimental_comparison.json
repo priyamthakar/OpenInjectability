@@ -174,7 +174,7 @@
     "Does not advance package validation_status.",
     "tests/reference_data is not an experimental dataset."
   ],
-  "generated_at_utc": "2026-08-02T04:01:37+00:00",
+  "generated_at_utc": "2026-08-02T04:04:17+00:00",
   "input_panel_path": "validation\\experimental\\panel_allmendinger2014_glycerol_digitized.json",
   "input_panel_sha256": "f67c12f6ce53ec41233cb215f429f2f069b72746715a27c7fa910e15319e5b7a",
   "package_version": "0.1.0",

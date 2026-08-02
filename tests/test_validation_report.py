@@ -156,3 +156,56 @@ def test_template_panel_loads_as_empty() -> None:
     assert panel["rows"] == []
     summary = compute_summary([compare_row(r) for r in panel["rows"]])
     assert summary["status"] == REPORT_STATUS_INSUFFICIENT
+
+
+def test_allmendinger2014_digitized_panel_literature_comparison(
+    tmp_path: Path,
+) -> None:
+    """Regression: real digitized Allmendinger 2014 glycerol panel.
+
+    Literature-derived with digitization caveats. Report may be
+    experimental_comparison only — never independently_validated.
+    Package validation status remains experimental_validation_pending.
+    """
+
+    panel_path = (
+        Path(__file__).resolve().parents[1]
+        / "validation"
+        / "experimental"
+        / "panel_allmendinger2014_glycerol_digitized.json"
+    )
+    assert panel_path.is_file(), f"missing literature panel: {panel_path}"
+    panel = load_panel(panel_path)
+    assert len(panel["rows"]) >= 10
+
+    written = write_report(panel, tmp_path / "out", panel_path=panel_path)
+    summary = written["summary"]
+
+    assert summary["n"] >= 10
+    assert summary["median_abs_relative_error"] is not None
+    assert summary["median_abs_relative_error"] < 0.20
+    assert summary["status"] == REPORT_STATUS_COMPARISON
+    assert summary["status"] != FORBIDDEN_STATUS
+    assert summary["validation_claim"] == REPORT_STATUS_COMPARISON
+    assert summary["validation_claim"] != FORBIDDEN_STATUS
+    assert summary["contains_synthetic_smoke_test"] is False
+
+    report = json.loads(Path(written["json_path"]).read_text(encoding="utf-8"))
+    assert report["report_type"] == "experimental_comparison"
+    assert report["summary"]["status"] == REPORT_STATUS_COMPARISON
+    assert report["summary"]["status"] != FORBIDDEN_STATUS
+    assert report["summary"]["validation_claim"] != FORBIDDEN_STATUS
+    # status / validation_claim must never be the forbidden package claim
+    assert report["summary"]["status"] == "experimental_comparison"
+    assert report["summary"]["validation_claim"] == "experimental_comparison"
+    for comparison in report["comparisons"]:
+        if comparison.get("status") != "compared":
+            continue
+        assert comparison["assessment_validation_status"] == (
+            "internal_validation; experimental_validation_pending"
+        )
+        assert "experimental_validation_pending" in comparison[
+            "assessment_validation_status"
+        ]
+        assert FORBIDDEN_STATUS not in comparison["assessment_validation_status"]
+        assert comparison.get("is_synthetic_smoke_test") is False

@@ -1,14 +1,16 @@
 # OpenInjectability: full project plan
 
-**Prepared:** 2026-08-01
-**Baseline:** v0.1.0 alpha (commit `0add542`), 21 tests passing, 87% branch coverage
-**Governance sources:** [PROJECT_GOAL.md](PROJECT_GOAL.md), [HANDOFF.md](HANDOFF.md), [PROJECT_SPECIFICATION.md](PROJECT_SPECIFICATION.md), [VALIDATION.md](VALIDATION.md)
+**Prepared:** 2026-08-01  
+**Updated:** 2026-08-02  
+**Baseline:** v0.1.0 alpha — Phases A–C complete; D literature comparison pass only; E blocked  
+**Governance sources:** [PROJECT_GOAL.md](PROJECT_GOAL.md), [HANDOFF.md](HANDOFF.md), [PROJECT_SPECIFICATION.md](PROJECT_SPECIFICATION.md), [VALIDATION.md](VALIDATION.md), [docs/phase-status.md](docs/phase-status.md)
 
-## Grounding (verified 2026-08-01)
+## Grounding (verified 2026-08-02)
 
-- Baseline: v0.1.0 alpha, 21 tests pass, 87% branch coverage, Ruff clean, package builds.
-- `mypy --strict src` currently fails: 9 errors in [src/openinjectability/reporting.py](src/openinjectability/reporting.py) (lines 39, 123-126, 152), [src/openinjectability/plotting.py](src/openinjectability/plotting.py) (lines 34, 36), [src/openinjectability/cli.py](src/openinjectability/cli.py) (line 66).
-- Governance: the result is always **predicted fluid-resistance force**, never total device force; non-Newtonian inputs fail closed; no scientific broadening during hardening.
+- Package `0.1.0` alpha: Phases A–C closed; suite green with Ruff, `mypy --strict`, ≥87% branch coverage, wheel smoke, CI matrix 3.10–3.13.
+- Phase D: digitized Allmendinger 2014 literature panel produces `experimental_comparison` pass vs 20% criterion; package remains `experimental_validation_pending` — **not** `independently_validated`.
+- Phase E: public PyPI publish blocked on completed independent D + registry/signing credentials.
+- Governance: the result is always **predicted fluid-resistance force**, never total device force; non-Newtonian inputs fail closed; no invented validation claims.
 
 ## Phase flow
 
@@ -78,9 +80,17 @@ Items in [PROJECT_SPECIFICATION.md](PROJECT_SPECIFICATION.md) v0.1 scope but not
 - Reproduce without hidden correction factors; publish permitted fixtures + hashed validation report.
 - Only then may `validation_status` move beyond `internal_validation; experimental_validation_pending` — never to `independently_validated` without the published record.
 
+**Progress (2026-08-02):** literature comparison infrastructure shipped (`validate-experimental`);
+Allmendinger 2014 glycerol panel digitized (12 rows) with hashed report under
+`validation/experimental/reports/allmendinger2014_digitized/` — report status
+`experimental_comparison` **pass** vs median abs rel err ≤ 20%. Package status remains
+`experimental_validation_pending`; **not** `independently_validated` (digitization /
+friction-subtraction caveats). Independent lab-traceable panel still required.
+
 ## Phase E — M5 public release
 
 - Tagged, signed release; wheel + sdist published; documentation site/README finalized; fresh public-index install verified.
+- **Blocked:** independent Phase D incomplete; PyPI / registry signing credentials pending.
 
 ## Guardrails (apply to every phase)
 
@@ -98,5 +108,5 @@ Items in [PROJECT_SPECIFICATION.md](PROJECT_SPECIFICATION.md) v0.1 scope but not
 - [x] **A5** mypy --strict clean, typing config, CI matrix 3.10-3.13 with enforced gates and wheel smoke
 - [x] **B** v0.1 spec completion (config file, inverse calculation, multi-step sensitivity, warning codes, CLI completion, audit bundle, docs)
 - [x] **C** spec 14.5 release gates for v0.1.0
-- [~] **D** literature panel from Allmendinger 2014 (digitized Fig. 3A + Table 1); experimental_comparison pass; not independently_validated
-- [~] **E** public release — blocked on D + publish credentials; annotated tag v0.1.0 present
+- [~] **D** literature comparison pass (Allmendinger 2014 digitized Fig. 3A + Table 1; experimental_comparison pass vs 20% criterion); independent lab panel + `independently_validated` still open
+- [~] **E** public release — blocked on completed independent D + PyPI/registry credentials; annotated tag v0.1.0 may exist (not a public-index publish)
