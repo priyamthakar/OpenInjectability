@@ -34,3 +34,9 @@ force-vs-needle.png
 audit.zip
 *.png
 !docs/**
+
+# Agent scrape temp downloads (do not commit)
+docs/_tmp_*/
+docs/_tmp_*
+docs/_fulltext_xml/
+docs/_repo_deep_pull_raw.json
