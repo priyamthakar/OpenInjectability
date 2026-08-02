@@ -40,3 +40,12 @@ docs/_tmp_*/
 docs/_tmp_*
 docs/_fulltext_xml/
 docs/_repo_deep_pull_raw.json
+docs/pdf_extract/images/
+docs/_verwulgen2018_author.pdf
+
+# User-supplied literature PDFs (keep local; large binaries)
+/*.pdf
+/PhD_Thesis_*.pdf
+allmendinger2014.pdf
+verwulgen2018.pdf
+zhang2018.pdf

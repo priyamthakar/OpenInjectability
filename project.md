@@ -98,5 +98,5 @@ Items in [PROJECT_SPECIFICATION.md](PROJECT_SPECIFICATION.md) v0.1 scope but not
 - [x] **A5** mypy --strict clean, typing config, CI matrix 3.10-3.13 with enforced gates and wheel smoke
 - [x] **B** v0.1 spec completion (config file, inverse calculation, multi-step sensitivity, warning codes, CLI completion, audit bundle, docs)
 - [x] **C** spec 14.5 release gates for v0.1.0
-- [~] **D** pipeline ready (`validate-experimental`); blocked on absolute fluid-only force rows (Verwulgen setup only; see validation/experimental/)
+- [~] **D** literature panel from Allmendinger 2014 (digitized Fig. 3A + Table 1); experimental_comparison pass; not independently_validated
 - [~] **E** public release — blocked on D + publish credentials; annotated tag v0.1.0 present

@@ -1,0 +1,1485 @@
+---PAGE 1---
+Research paper
+Rheological characterization and injection forces of concentrated protein
+formulations: An alternative predictive model for non-Newtonian
+solutions
+Andrea Allmendinger a,b, Stefan Fischer a, Joerg Huwyler b, Hanns-Christian Mahler a, Edward Schwarb c,
+Isidro E. Zarraga d, Robert Mueller a,⇑
+a Late Stage Pharmaceutical and Processing Development, Pharmaceutical Development & Supplies, Pharma Technical Development Biologics EU,
+F. Hoffmann-La Roche Ltd, Basel, Switzerland
+b Division of Pharmaceutical Technology, Department of Pharmaceutical Sciences, University of Basel, Basel, Switzerland
+c Device Development, Pharma Technical Development Biologics EU, F. Hoffmann-La Roche Ltd, Basel, Switzerland
+d Late Stage Pharmaceutical Development, Genentech Inc., South San Francisco, CA, USA
+a r t i c l e
+i n f o
+Article history:
+Received 26 July 2013
+Accepted in revised form 30 January 2014
+Available online xxxx
+Keywords:
+Viscosity
+Rheology
+Non-Newtonian
+Shear-thinning behavior
+Injection forces
+Injection device
+High protein concentration
+Monoclonal antibody formulation
+Subcutaneous drug administration
+a b s t r a c t
+Development of injection devices for subcutaneous drug administration requires a detailed understand-
+ing of user capability and forces occurring during the drug administration process. Injection forces of con-
+centrated protein therapeutics are inﬂuenced by syringe properties (e.g., needle diameter) and injection
+speed, and are driven by solution properties such as rheology. In the present study, it is demonstrated
+that concentrated protein therapeutics may show signiﬁcantly reduced injection forces because of
+shear-thinning (non-Newtonian) behavior. A mathematical model was thus established to predict/corre-
+late injection forces of Newtonian and non-Newtonian solutions with viscosity data from plate/cone rhe-
+ometry. The model was veriﬁed experimentally by glide-force measurements of reference and surrogate
+solutions. Application of the suggested model was demonstrated for injection force measurements of
+concentrated protein solutions to determine viscosity data at high shear rates (3  104–1.6  105 s1).
+By combining these data with viscosity data obtained by different viscosity methods (plate/cone and cap-
+illary rheometry), a viscosity–shear rate proﬁle of the protein solution between 102 and 1.6  105 s1 was
+obtained, which was mathematically described by the Carreau model. Characterization of rheological
+properties allows to accurately predict injection forces for different syringe–needle combinations as well
+as injection rates, thus supporting the development of injection devices for combination products.
+ 2014 Elsevier B.V. All rights reserved.
+1. Introduction
+For subcutaneous drug administration, concentrated protein
+therapeutics are typically required to achieve clinical doses in the
+magnitude of milligram per kilogram bodyweight in a small volume
+(<1.5 mL) [1–3]. In contrast to dried dosage forms, liquid formula-
+tions can easily be provided in pre-ﬁlled syringes or injection de-
+vices and thus can offer convenience for the patient or healthcare
+provider. Advantages of these systems in comparison with vials
+are the ease of administration, the potential for self-administration,
+and the fewer handling steps by the patient or healthcare provider
+before administration [4,5]. However, the development of high-
+concentration protein formulations is accompanied by technical
+challenges such as concentration-dependent protein degradation
+(e.g., aggregation or precipitation) and increased solution viscosity
+[6–9]. The latter might lead to challenges during manufacturing
+(e.g., ultraﬁltration/diaﬁltration, sterile ﬁltration, ﬁlling) and drug
+administration [1–3]. More precisely, increased viscosity leads to
+higher injection forces potentially affecting the suitability of pre-
+ﬁlled syringes for self-administration and the energy required for
+injection – and thus design for autoinjectors. The ﬁrst limitation is
+of particular concern for patients with a functional impairment
+and dexterity limitation, such as patients suffering from rheumatoid
+arthritis [10]. To ensure complete and safe administration of the
+product, it is therefore important to characterize, control, and
+possibly minimize injection forces for pre-ﬁlled-syringe products.
+http://dx.doi.org/10.1016/j.ejpb.2014.01.009
+0939-6411/ 2014 Elsevier B.V. All rights reserved.
+⇑Corresponding author. Late Stage Pharmaceutical and Processing Development,
+Pharmaceutical Development & Supplies, Pharma Technical Development Biologics
+EU, F. Hoffmann-La Roche Ltd, Grenzacherstrasse 124, 4070 Basel, Switzerland.
+Tel.: +41 61 68 83027.
+E-mail address: robert.mueller.rm1@roche.com (R. Mueller).
+European Journal of Pharmaceutics and Biopharmaceutics xxx (2014) xxx–xxx
+Contents lists available at ScienceDirect
+European Journal of Pharmaceutics and Biopharmaceutics
+journal homepage: www.elsevier.com/locate/ejpb
+Please cite this article in press as: A. Allmendinger et al., Rheological characterization and injection forces of concentrated protein formulations: An alter-
+native predictive model for non-Newtonian solutions, Eur. J. Pharm. Biopharm. (2014), http://dx.doi.org/10.1016/j.ejpb.2014.01.009
+
+---PAGE 2---
+Moreover, the design of such devices must take the speciﬁc limita-
+tions of the targeted patient population into account.
+The estimation of injection forces based on rheological data was
+recently described. Burckbuchler et al. have studied the injection
+behavior of a concentrated human polyclonal immunoglobulin solu-
+tion by applying the Hagen–Poiseuille’s law to calculate injection
+forces [11]. They used viscosity data from a plate/cone viscosimeter
+assuming Newtonian behavior of the immunoglobulin solutions.
+Overcashier et al. have added the contribution of the friction be-
+tween stopper and syringe barrel to the hydrodynamic force model
+[5]. The frictional forces are dependent on contact area between
+stopper and syringe barrel, thickness and viscosity of the lubricant
+layer (silicone oil), and injection speed [12].
+A previously published study reported that concentrated protein
+solutions can show shear-thinning behavior leading to reduced vis-
+cosity with increasing shear rate [13]. In order to correctly predict
+injection forces from viscosity data of concentrated protein solu-
+tions, a new model is needed which considers both Newtonian and
+Non-Newtonian ﬂow behavior. Rathore et al. extended the existing
+model to predict injection forces for shear-thinning behavior
+[12,13]. The authors used viscosity data at the shear rate occurring
+at the needle wall, which is described by the Weissenberg–Rabi-
+nowitsch–Mooney equation for non-Newtonian solutions [14–16].
+The aim of the present project was to study the viscosity and
+injection behavior of highly concentrated protein solutions in com-
+parison with Newtonian liquids (glycerol/water solutions). To de-
+scribe the experimental data, an alternative mathematical model
+to predict injection forces of non-Newtonian liquids was developed.
+This model allows to use/correlate viscosity data from plate/cone
+rheometry. The model was veriﬁed by experimental data using
+plate/cone viscosity data of Carbopol gels as a model substance for
+non-Newtonian behavior and glycerol/water mixtures as a surro-
+gate solution for Newtonian behavior. In the following, the model
+was further discussed and compared to the approach based on the
+Weissenberg–Rabinowitsch–Mooney equation using the shear rate
+at the needle wall. Application of the established model was demon-
+strated for the measured injection forces of a concentrated protein
+formulation of a monoclonal antibody mAb1 to obtain viscosity data
+at high shear rates (3  104–1.6  105 s1). These viscosity data
+were combined with rheological data obtained by plate/cone and
+capillary rheometry resulting in a rheological proﬁle of the protein
+solutions between 102 and 1.6  105 s1.
+2. Materials and methods
+2.1. Materials
+2.1.1. Monoclonal antibodies
+The puriﬁed monoclonal antibodies mAb1 (IgG1, pI 8.4; esti-
+mated Mw 145.5 kD) and mAb2 (IgG1, pI 9.4; estimated Mw
+148 kD) were provided by F. Hoffmann-La Roche Ltd. (Basel,
+Switzerland). mAb1 was formulated in a 5 mM
+L-histidine/L-
+histidine–HCl buffer (Ajinomoto, Louvain-la-Neuve, Belgium) pH
+6.0 with 0.06% polysorbate 20 (Sigma–Aldrich Chemie GmbH, Stein-
+heim, Germany) at protein concentrations of 120, 170, 210, and
+225 mg/mL, respectively.
+2.1.2. Commercial protein therapeutics
+The commercial protein therapeutics (CPT) CPT 1 (IgG2, 60 mg/
+mL), CPT 2 (IgG1, 100 mg/mL), CPT 3 (fusion protein, 50 mg/mL),
+CPT 4 (IgG1, 180 mg/mL), CPT 5 (IgG1, 50 mg/mL), and CPT 10 (pegy-
+lated Fab fragment, 200 mg/mL) were purchased as pre-ﬁlled syrin-
+ges. The commercial products CPT 6 (IgG1, 100 mg/mL), CPT 7
+(fusion protein, 50 mg/mL), CPT 8 (IgG1, 100 mg/mL), and CPT 9
+(IgG1, 125 mg/mL) were purchased as lyophilisates. All therapeutics,
+except CPT 8, are currently approved on the EU market. The
+commercial proteins contained different pharmaceutical excipients
+which are listed as follows:
+ Sodium acetate/phosphate/citrate/histidine/TRIS buffer.
+ Polysorbate 20 or 80.
+ Sorbitol, mannitol, glycine, sucrose.
+ Arginine–HCl, NaCl.
+ Methionine.
+The products were stored at 2–8 C and were used before the
+expiry date.
+2.1.3. Carbopol gels
+Carbopol 981 NF (BF Goodrich, Düsseldorf, Germany) gels were
+manufactured in a melamine-coated mortar with pistil by dissolu-
+tion of the powder in water to achieve concentrations of 0.2–0.8%
+(w/w). The gel-forming process was initiated by addition of 1 N so-
+dium hydroxide solution (Merck, Darmstadt, Germany) until a pH
+of 7.0 ± 0.1 was reached. The gel was centrifuged at 2000 rpm for
+2 min to remove potential air bubbles.
+2.1.4. Glycerol/water solutions
+Glycerol/water solutions were produced by dilution of glycerol
+99.5% (Acros Organics, Morris Planes, NJ, USA) with water for injec-
+tion to concentrations between 45% and 80% (w/w).
+2.1.5. Syringes and needles
+For measuring the injection force of the commercial protein prod-
+ucts, the samples were drawn up into a 1 mL Plastipak™syringe (BD,
+Madrid, Spain) and a Microlance™3 27G 3
+=
+400 needle (BD, Drogheda,
+Ireland) or a Sterican 25G 100 needle (B. Braun, Melsungen, Germany)
+was attached. For all other injection force measurements, 1 mLHypak
+SCF™Luer CCT pre-ﬁllable glass syringes (BD, Le pont-de-ClaixCedex,
+France) were used in combination with Sterican 27G 100 needles (B.
+Braun, Melsungen, Germany). Filling of the glass syringes and stopper
+setting were done manually, ensuring that there was no air space
+between the stopper and contents of the syringe.
+2.2. Methods
+2.2.1. Injection force measurements
+Fig. 1 shows the experimental set-up of the injection force mea-
+surements. All force measurements were performed on a material
+testing instrument with a 500 N force sensor (Zwick GmbH & Co.KG,
+Ulm, Germany). The samples were equilibrated to controlled room
+temperature for at least 1 h before starting the measurement. The
+syringes were emptied by pushing down the plunger at a constant
+speed corresponding to a volumetric ﬂow of 0.05 mL, 0.1 mL, and
+0.2 mL/s (protein formulations and glycerol/water solutions) or
+0.004 mL
+and
+0.008 mL/s
+(Carbopol
+gels
+and
+glycerol/water
+solutions). The counteracting force was measured as a function of
+distance and the maximal force of the plateau as representative for
+glide force at the end of injection was read off from the force–travel
+distance graph and deﬁned as glide force as shown in Fig. S-1 in the
+Supporting information. The temperature was 25 ± 0.5 C.
+Table 1 summarizes the syringe and needle dimensions used for
+the calculations. Syringe inner diameter and needle length were
+measured with a digimatic caliper CD-15CXR (Mitutoyo America
+Corporation, Chicago, IL). The inner needle diameter and the fric-
+tional forces between stopper and syringe barrel were determined
+for each syringe–needle set-up and injection speed as follows:
+Representative syringe samples were either left empty or ﬁlled with
+either 45% or 60% (w/w) glycerol/water solution. At the desired vol-
+umetric ﬂow, the maximal force of the plateau was read off from the
+force–travel distance graph representative for glide force at the end
+of injection (N = 3). The linear regression of the glide force as a
+2
+A. Allmendinger et al. / European Journal of Pharmaceutics and Biopharmaceutics xxx (2014) xxx–xxx
+Please cite this article in press as: A. Allmendinger et al., Rheological characterization and injection forces of concentrated protein formulations: An alter-
+native predictive model for non-Newtonian solutions, Eur. J. Pharm. Biopharm. (2014), http://dx.doi.org/10.1016/j.ejpb.2014.01.009
+
+---PAGE 3---
+function of viscosity gives the needle diameter from the slope and
+the frictional force as the intercept using the Hagen–Poiseuille’s
+law [5]. The frictional force represents the sliding friction as well
+as the contribution from the compression of the plunger which is
+in equilibrium in the gliding force plateau. The instrumental set-
+up does not account for static friction which is relevant at the begin-
+ning of injection and has to be overcome by the break loose force.
+2.2.2. Viscosity measurements
+2.2.2.1. Plate/cone rheometry. Dynamic viscosity was measured on a
+MCR 301 plate and cone rheometer (Anton Paar AG Switzerland,
+Zoﬁngen, Switzerland) between shear rates of 102 and maximal
+4  104 s1 at a ﬁxed temperature between 5 and 25 C. The rhe-
+ometer was equipped with a measuring cone with an angle of
+0.5 and a diameter of 25 mm (Anton Paar AG Switzerland,
+Zoﬁngen, Switzerland) using 80 lL of sample.
+2.2.2.2. Micro-capillary viscosimeter. Viscosity at an apparent shear
+rate between 103 and 105 s1 was measured on a micro-capillary
+rheometer m-VROC™3.0 (RheoSense Inc., San Ramon, CA) at 25 C.
+The viscosimeter was equipped with a RD05-100-116 ﬂow cell
+with 50 lm cell depth. The samples were ﬁlled into a 10 mL Ham-
+ilton syringe (not containing any air bubbles) which was mounted
+on the viscosimeter. Depending on the viscosity of the sample and
+the shear rate, a few microliters up to a few milliliters of sample
+were required for one measurement at a deﬁned shear rate.
+3. Results and discussion
+3.1. Injection forces of concentrated protein therapeutics
+In a ﬁrst study, the injection forces of different commercial pro-
+tein solutions (CPT 1–CPT 10) were measured and correlated with
+viscosity data. A standardized set-up was chosen consisting of a
+1 mL plastic syringe with an attached 27G 3
+=
+400 needle. For the product
+CPT 10, a 25G 100 needle instead of a 27G 3
+=
+400 needle was used as the
+glide force exceeded the technical limit of the instrumental set-up
+(50 N) at the chosen test speed. An injection rate of 1 mL/10 s
+was chosen as this is an injection rate which is appropriate for the
+end-user [10] and commonly used for testing. Fig. 2 shows the rela-
+tionship between glide force and dynamic viscosity (2  103 s1) of
+the concentrated protein solutions. Glide forces of the products were
+compared to glide forces calculated based on the modiﬁed Hagen–
+Poiseuille’s equation [5] which served as a control for Newtonian
+ﬂow behavior. All products (except CPT 9 and CPT 10) showed good
+agreement with the calculated values based on the Newtonian mod-
+el. Consequently, all tested products exhibited apparent Newtonian
+behavior except for CPT 9 and 10, which showed a signiﬁcant reduc-
+tion in glide force in our set-up.
+In a second set of experiments, injection force of the mAb1 for-
+mulation was determined for protein concentrations between
+120 mg/mL and 225 mg/mL. Fig. 3(B) shows the glide force of
+mAb1 as a function of dynamic viscosity (2  103 s1) and protein
+concentration for three different injection rates (0.5 mL/10 s, 1 mL/
+10 s, and 2 mL/10 s). When comparing the measured glide forces to
+glide forces calculated according to the Newtonian model [5], the
+concentrated mAb1 solutions showed a progressively higher
+deviation from the Newtonian model with increasing protein
+concentration and injection rate.
+Data
+on protein
+integrity and
+particle
+load
+(visible and
+sub-visible) before and after injection are given for a worst case sce-
+nario (injection rate 2 mL/10 s) for mAb1 225 mg/mL in the Support-
+ing information (Fig. S-3) [42–44]. The data show no difference
+before and after injection force experiments indicating that the pro-
+tein integrity of mAb1 is not affected by shear stress during injection.
+In addition, injection forces of different concentrations of glyc-
+erol/water solutions were analyzed for the same viscosity range as
+that obtained for the mAb1 formulations. The glycerol/water solu-
+tions, used as control samples for Newtonian behavior (Fig. 3(A)),
+ﬁtted well with the Newtonian model. Therefore, it can be ex-
+cluded that the observed deviation of the mAb1 formulations from
+the Newtonian model is caused by sample heating during viscous
+ﬂow through the needle.
+In summary, mAb1, CPT 9, and CPT 10 showed lower injection
+forces than expected from the linear viscosity–glide force correla-
+tion (Figs. 2 and 3(B)). We speculate that this observation could be
+shear-thinning behavior occurring at high shear rates. Therefore,
+we studied the viscosity proﬁle as a function of shear rate of the dif-
+ferent protein solutions. Fig. 4(A) shows the viscosity proﬁle of
+mAb1 (225 mg/mL). Fig. 4(B) and (C) shows the viscosity proﬁles
+of the commercial products CPT 4 and CPT 10 which showed appar-
+ent Newtonian and non-Newtonian behavior during glide-force
+Fig. 1. Schematic description of experimental set-up of injection force measure-
+ments. A constant speed m was applied by the material testing instrument (1) which
+measured the counteracting force (F). (2) plunger, (3) stopper, (4) syringe
+(Rsyringe = inner radius of syringe), (5) needle (Rneedle = inner radius of needle and
+l = length of needle).
+Table 1
+Needle and syringe dimensions.
+Frictional force (N)
+Syringe inner
+radius (mm)
+1 mL Hypak SCF™Luer CCT pre-
+ﬁllable glass syringe
+1.62 (0.5 mL/10 s)
+4.3
+3.60 (1 mL/10 s)
+6.73 (2 mL/10 s)
+1 mL Plastipak™syringe
+1.26 (1 mL/10 s)
+3.2
+Needle inner
+diameter (lm)
+Needle length
+(mm)
+Microlance™3 27G 3
+=
+400 needle
+237
+20.9
+Sterican 27G 100 needle
+217
+27.1
+Sterican 25G 100 needle
+276
+27.1
+A. Allmendinger et al. / European Journal of Pharmaceutics and Biopharmaceutics xxx (2014) xxx–xxx
+3
+Please cite this article in press as: A. Allmendinger et al., Rheological characterization and injection forces of concentrated protein formulations: An alter-
+native predictive model for non-Newtonian solutions, Eur. J. Pharm. Biopharm. (2014), http://dx.doi.org/10.1016/j.ejpb.2014.01.009
+
+---PAGE 4---
+measurements,
+respectively.
+As
+expected,
+constant
+viscosity
+regardless of the shear rate was found for CPT 4 at all temperatures
+tested (5–25 C), indicating Newtonian behavior of the CPT 4 formu-
+lation at these shear rates. In contrast, rheological proﬁles of mAb1
+and CPT 10 showed shear-rate dependent viscosity revealing
+shear-thinning behavior with increasing shear rate and decreasing
+temperature.
+Simulated injections using a 27G needle (needle diameter
+0.21 mm) with injection rates between 0.5 mL and 2.0 mL/10 s
+produce needle shear rates between 3.3  104 and 1.3  105 s1
+(calculation of shear rate based on Eq. (5) for a Newtonian formu-
+lation with a power law index of n = 1). This exceeds the shear
+rates applied during standard plate/cone rheometry measurements
+by more than one magnitude. Thus, a capillary rheometer was
+additionally used to obtain viscosity data at an apparent shear rate
+between 104 and 105–106 s1 depending on sample viscosity.
+Fig. 4(D) shows the viscosity proﬁle of mAb1 as a function of the
+apparent shear rate at 25 C obtained by the capillary rheometer
+for different protein concentrations (120–225 mg/mL). Shear-rate
+dependent viscosity was found with shear-thinning behavior at
+increasing shear rate and increasing protein concentration. These
+ﬁndings are consistent with the glide-force measurements where
+a deviation from Newtonian behavior was observed with increas-
+ing injection rate (shear rate), as well as with increasing protein
+concentration.
+Due to the direct evidence of shear-thinning behavior during
+rheological characterization studies by plate/cone and capillary
+rheometry measurements, we conclude that concentrated protein
+therapeutics can show reduced injection forces compared to New-
+tonian ﬂuids due to shear-thinning behavior. Therefore, the correct
+prediction of glide forces from rheological characterization data re-
+quires a sophisticated mathematical model which considers the
+non-Newtonian behavior of the solution.
+3.2. Mathematical model to predict the glide force of non-Newtonian
+liquids from plate/cone viscosity data
+In the following section, a mathematical model was developed
+based on hydrodynamic equations [5,11,24–26] in order to correlate
+glide forces with viscosity data obtained by plate/cone rheometry.
+Injection of a liquid through a needle results in a counteracting force
+which is described by the Hagen–Poiseuille’s law (Eq. (1)) [5,11]. En-
+try losses and the conical symmetry of the syringe are considered to
+be negligible (see Fig. 1).
+F ¼
+8 @V
+@t  l  R2
+syringe
+R4
+needle
+ g þ Ffriction;f
+@V
+@t
+ð Þ
+ð1Þ
+Eq. (1) describes the glide force F (N) as a function of dynamic
+viscosity g (Pa s), volumetric ﬂow rate @V/@t (m3/s), length of needle
+l (m), inner syringe radius Rsyringe (m), and inner needle radius Rneedle
+(m). Besides hydrodynamic forces, frictional forces between stopper
+and syringe barrel are considered (Ffriction (N)) [5] and were deter-
+mined as described in Section 2. Eq. (1) is valid for laminar ﬂow
+in a tube which is deﬁned by a Reynolds number Re  2300
+[17–23]. For all tested set-ups, the Reynolds number was equal or
+smaller than 1312 and was calculated for the worst case as follows:
+Re ¼
+2@V
+@tq
+pRneedleg ¼ 1312 with oV/ot = 2 mL/10 s, density q25C = 1 g/
+mL, Rneedle(27G 100) = 0.109 mm, and g25C = 0.89 mPa s.
+10
+20
+30
+40
+50
+60
+0
+4
+8
+12
+70
+80
+90
+100
+110
+0
+2
+4
+6
+8
+10
+12
+14
+16
+Glide force [N]
+Dynamic viscosity [mPa s] at 2000 s-1
+Newtonian model
+27G needle  
+25G needle  
+Fig. 2. Glide force of commercial protein therapeutics determined at a volumetric
+ﬂow of 1 mL/10 s (25 C) as a function of dynamic viscosity (2  103 s1, 25 C). CPT
+1 (N), CPT 2 (j), CPT 3 (d), CPT 4 (), CPT 5 (J), CPT 6 (s), CPT 7 (h), CPT 8 (e), CPT
+9 (D), CPT 10 (). Mean values and standard deviation are reported (N = 3). The
+dashed lines represent glide forces calculated based on the Hagen–Poiseuille’s
+model [5]. These served as a control for Newtonian ﬂow behavior.
+0
+0
+0
+50
+100
+150
+200
+250
+300
+ 0.5 mL/10s     
+ 1 mL/10s     
+ 2 mL/10s     
+ Newtonian model  
+Glide force [N]
+Dynamic viscosity [mPa s] at 2000 s-1
+Dynamic viscosity [mPa s] at 2000 s-1
+Glycerol concentration [%]
+0
+0
+0
+50
+100
+150
+200
+250
+300
+ 0.5 mL/10s     
+ 1 mL/10s     
+ 2 mL/10s     
+ Newtonian model 
+Glide force [N]
+ Protein concentration [mg/mL]
+10
+20
+30
+40
+50
+45
+60
+70
+80
+10
+20
+30
+40
+50
+120
+170
+210
+225
+(a)
+(b)
+Fig. 3. Glide forces as a function of viscosity determined at 2  103 s1 (25 C)
+compared to glide forces calculated based on the Hagen–Poiseuille’s equation (solid
+lines). The glide forces were measured at a volumetric ﬂow of 0.5 mL/10 s (triangle),
+1 mL/10 s (square), and 2 mL/10 s (circle). Mean values and standard deviation are
+reported (N = 3). (A) Different concentrations of glycerol/water solutions which
+serve as a control for Newtonian ﬂow behavior. (B) Different concentrations of
+mAb1. The dotted lines are presented to guide the eye.
+4
+A. Allmendinger et al. / European Journal of Pharmaceutics and Biopharmaceutics xxx (2014) xxx–xxx
+Please cite this article in press as: A. Allmendinger et al., Rheological characterization and injection forces of concentrated protein formulations: An alter-
+native predictive model for non-Newtonian solutions, Eur. J. Pharm. Biopharm. (2014), http://dx.doi.org/10.1016/j.ejpb.2014.01.009
+
+---PAGE 5---
+The Hagen–Poiseuille’s law requires a deﬁned viscosity for the
+correct prediction of the glide force. However, the viscosity of a
+non-Newtonian solution is dependent on the shear rate.
+The most commonly used equation to describe the viscosity–
+shear rate relationship of non-Newtonian ﬂuids is the Ostwald–
+de Waele equation (Eq. (2)) [24,25].
+g ¼ K  _cn1
+ð2Þ
+The viscosity is described as a product of the ﬂow consistency index K
+(Pa sn), and the shear rate _c (s1) to the power of n (power law index;
+dimensionless). Double log transformation of Eq. (2) results in a lin-
+ear viscosity–shear rate proﬁle of the sample. From this proﬁle, K
+and n were obtained as intercept (logK) and slope (n  1), which is
+shown in Fig. 6 further below. n < 1 represents shear thinning behav-
+ior, n = 1 Newtonian behavior, and n > 1 shear thickening behavior.
+Based on the knowledge of the power law index n, the shear
+rate proﬁle of non-Newtonian ﬂuids in a needle is derived in the
+following.
+The velocity m of a non-Newtonian ﬂuid ﬂowing through the
+needle can be expressed in terms of the average velocity maverage
+applied to the system during injection and the variable distance r
+between the center of the needle (r = 0) and the needle wall
+(r = Rneedle) [26]:
+m ¼ maverage  3n þ 1
+n þ 1
+
+
+1 
+r
+Rneedle
+
+nþ1
+n
+"
+#
+ð3Þ
+Differentiation of Eq. (3) gives the shear rate _c dependent on the
+power law index n:
+_c ¼  dv
+dr ¼ maverage  3n þ 1
+n
+
+
+R
+ðnþ1Þ
+n
+needle  r
+1
+n
+ð4Þ
+The velocity and shear rate proﬁle according to Eqs. (3) and (4)
+are shown in Fig. 5(A) and (B), respectively. Here, n = 1 represents a
+Newtonian ﬂuid, and n = 0.4 and n = 0.8 represent two examples of
+non-Newtonian liquids. For Newtonian ﬂuids, the velocity proﬁle is
+a parabola where the maximum velocity is 2m at the center of the
+tube (r = 0) and zero velocity at the tube wall (r = Rneedle = 1). Max-
+imum velocity of a non-Newtonian solution at the same volumetric
+ﬂow is thereby smaller than that of a Newtonian solution (see
+Fig. 5(A)). The maximum shear rate occurs at the wall of the tube,
+and zero shear rate occurs at the center of the pipe as presented in
+Fig. 5(B) for a 27G needle and a volumetric ﬂow of 1 mL/10 s. How-
+ever, the shear rate is not only a function of the distance r between
+the center and needle wall, but it is also dependent on the rheolog-
+ical properties of the solution. The shear rate of a Newtonian
+solution increases linearly from the center of the needle (_c ¼ 0)
+102
+103
+104
+0.0
+40
+60
+80
+100
+120
+140
+160
+Dynamic viscosity [mPa s]
+Shear rate [s-1]
+Shear rate [s-1]
+mAb1 at 225 mg/mL
+102
+103
+104
+0.0
+10
+15
+20
+Dynamic viscosity [mPa s]
+CPT 4 (180 mg/mL)
+102
+103
+104
+0.0
+80
+100
+120
+140
+160
+180
+200
+220
+240
+Dynamic viscosity [mPas]
+Shear rate [s-1]
+4.104
+CPT 10 (200 mg/mL)
+103
+104
+105
+106
+0
+10
+20
+30
+40
+50
+ 225 mg/mL
+ 210 mg/mL
+ 170 mg/mL
+ 120 mg/mL
+Dynamic viscosity [mPa s]
+Apparent shear rate [s-1]
+mAb1 (25°C)
+(a)
+(b)
+(c)
+(d)
+Fig. 4. Dynamic viscosity as a function of shear rate measured on a plate/cone rheometer at 5 C (black), 10 C (dark gray), 20 C (light gray), and 25 C (white): (A) mAb1 at
+225 mg/mL (d), (B) CPT 4 (), and (C) CPT 10 (N). For mAb1, the dynamic viscosity was additionally measured on a micro-capillary viscosimeter at 25 C and is presented for
+120, 170, 210, and 225 mg/mL as a function of shear rate (D). The dashed and dotted lines are presented to guide the eye. The hatched region indicates that the sample would
+be ejected from the measuring gap.
+A. Allmendinger et al. / European Journal of Pharmaceutics and Biopharmaceutics xxx (2014) xxx–xxx
+5
+Please cite this article in press as: A. Allmendinger et al., Rheological characterization and injection forces of concentrated protein formulations: An alter-
+native predictive model for non-Newtonian solutions, Eur. J. Pharm. Biopharm. (2014), http://dx.doi.org/10.1016/j.ejpb.2014.01.009
+
+---PAGE 6---
+to the needle wall. In contrast, the shear rate of a non-Newtonian
+solution is initially smaller than the shear rate of a Newtonian
+solution, but subsequently exceeds the Newtonian shear rate as
+the needle wall is approached (Fig. 5(B)).
+Because the viscosity of a non-Newtonian solution is shear-rate
+dependent, it changes continuously over the needle cross-section
+in response to the varying shear rate and is therefore a function
+of the distance r between the center and the needle wall. As the
+Hagen–Poiseuille’s law (Eq. (1)) requires a deﬁned viscosity to pre-
+dict the glide force during injection, we deﬁned an average shear
+rate (here termed ‘effective shear rate’) from the shear rate proﬁle
+in the needle. The appropriate viscosity at the effective shear rate
+was then obtained from the viscosity–shear rate proﬁle of the
+sample.
+The effective shear rate c is derived by integration of Eq. (4)
+over the tube cross-section divided by the circular area of the nee-
+dle. The average velocity is expressed as a fraction of volumetric
+ﬂow and needle cross-section maverage ¼
+@V
+@t
+pRneedle:
+c ¼
+1
+pR2
+needle
+Z R
+0
+2pr  _cðrÞdr ¼ 2@V=@t
+pR3
+needle
+3n þ 1
+2n þ 1
+ð5Þ
+To eventually predict the glide force based on the viscosity–shear
+rate proﬁle, Eq. (5) is inserted into Eq. (2) to calculate the viscosity
+at the effective shear rate. This viscosity is then used in the Hagen–
+Poiseuille equation (Eq. (1)) to predict the glide force. As a result,
+combination of Eq. (1), (2), and (5) gives:
+F ¼ 2nþ2p1n  l  R2
+syringe  K 
+@V
+@t
+
+n
+ Rð3nþ1Þ
+needle
+
+3n þ 1
+2n þ 1
+
+n1
+þ Ffriction; f
+@V
+@t
+ð Þ
+ð6Þ
+Eq. (6) describes the glide force of a non-Newtonian ﬂuid based on
+the viscosity–shear rate proﬁle from plate/cone rheometry depen-
+dent on the syringe/needle dimensions, volumetric ﬂow, and
+rheological properties of the solution.
+Dynamic viscosity is highly dependent on temperature. This
+relation is predictable and can be described and quantiﬁed by
+the Arrhenius equation. Application to monoclonal antibodies
+was recently reported by Zarraga et al. [40]. Control experiments
+of the present study conﬁrm these ﬁndings and are shown in the
+Supporting information for mAb1 at protein concentration of
+120, 170, 210, and 225 mg/mL (Fig. S-2).
+In
+the
+current
+set-up,
+temperature
+dependence
+was
+not
+considered as injection force experiments as well as viscosity mea-
+surements were performed at 25 C. An increase in temperature
+during injection however was excluded by control measurements
+(glycerol water solutions) as these measurements showed a linear
+increase in injection forces with increasing injection rate and
+viscosity following the Hagen–Poiseuille’s
+law. This will be
+discussed further below in context to Fig. 3(A) (injection forces of
+concentrated protein therapeutics).
+3.3. Model veriﬁcation using Carbopol gels as a surrogate for
+non-Newtonian liquids
+The suitability of Eq. (6) to predict the glide force of non-New-
+tonian liquids was experimentally veriﬁed using Carbopol 981 NF
+gels. Carbopol was chosen as it is highly water soluble, and concen-
+trations can be achieved exhibiting shear thinning behavior at a
+shear rate below 104 s1. This is the typical shear-rate range of
+plate/cone viscosity measurements. Furthermore, such concentra-
+tions have a viscosity in the range of concentrated protein products
+(1–100 mPa s) at 104 s1.
+Fig. 6 shows the dynamic viscosity of the Carbopol gels at con-
+centrations of 0.2%, 0.4%, 0.6%, and 0.8% (w/w) as a function of the
+shear rate measured by plate/cone rheometry. The Carbopol prep-
+arations showed shear-thinning behavior with a viscosity between
+437 mPa s (0.2% w/w) and 1126 mPa s (0.8% w/w) at a shear rate of
+102 s1 and 41 mPa s (0.2% w/w) and 99 mPa s (0.8% w/w) at
+104 s1. From these viscosity–shear rate proﬁles (double-logarith-
+mized diagram), the consistency index K and the power law index
+n were determined from the linear ﬁt as intercept (K) and slope
+(n  1), respectively (see Eq. (2)). Table 2 summarizes the values
+of K and n for the different Carbopol concentrations. The consis-
+tency index increased with the Carbopol concentration from 5.4
+(0.2% w/w) to 15.3 Pa sn (0.8% w/w). The power law index n re-
+mained
+constant
+with
+increasing
+Carbopol
+concentration
+(n = 0.46) as indicated by the parallel viscosity proﬁles (Fig. 6).
+To summarize, Eq. (2) (Ostwald–de Waele law) is suitable to ﬁt
+the viscosity–shear rate proﬁle of the Carbopol gels. This allows to
+determine the consistency index K and the power law index n of
+the solutions needed to predict the glide forces.
+In a next step, the glide forces of the Carbopol samples were
+compared to predicted values using several approaches (Fig. 7B
+and D). Glide forces were determined at two injection rates (0.04
+and 0.08 mL/10 s). The injection rates corresponded to shear rates
+in the range of those obtained during plate/cone viscosity mea-
+surements (102–104 s1). Two injection rates were chosen repre-
+senting a shear rate range where the slope of the viscosity proﬁle
+changes only minor (few mPa s) with an increase in shear rate
+(0.008 mL/s), and an injection speed (0.004 mL/s) where viscosity
+is changing over few 100 mPa s as shown in Fig. 6 (continuous
+log–log plot).
+0
+1
+0
+1
+2
+ν/νaverage
+ n=1.0
+ n=0.8
+ n=0.4
+r/Rneedle
+0.00
+0.02
+0.04
+0.06
+0.08
+0.10
+0.0
+5.0x104
+1.0x105
+1.5x105
+ Shear rate [s-1]
+ n=1.0
+ n=0.8
+ n=0.4
+ r [mm]
+Needle wall
+Needle center
+(a)
+(b)
+Fig. 5. Velocity and shear rate proﬁles for a Newtonian (n = 1) and for two non-
+Newtonian ﬂuids (n = 0.4; n = 0.8). (A) Normalized velocity proﬁle based on Eq. (3)
+(m = velocity, maverage = average velocity, r = distance between needle center (r = 0)
+and needle wall (r = Rneedle)). (B) Shear rate proﬁle in a 27G needle (Rneedle = 0.109 -
+mm) for an injection rate of 1 mL/10 s as a function of r based on Eq. (4).
+6
+A. Allmendinger et al. / European Journal of Pharmaceutics and Biopharmaceutics xxx (2014) xxx–xxx
+Please cite this article in press as: A. Allmendinger et al., Rheological characterization and injection forces of concentrated protein formulations: An alter-
+native predictive model for non-Newtonian solutions, Eur. J. Pharm. Biopharm. (2014), http://dx.doi.org/10.1016/j.ejpb.2014.01.009
+
+---PAGE 7---
+Different concentrations of glycerol/water solutions served as a
+control for Newtonian ﬂow behavior and warming effects. Fig. 7(A)
+compares the measured and the predicted glide forces of the glyc-
+erol/water solutions by applying Eq. (1) (Hagen–Poiseuille’s law).
+The good agreement (minimum to maximum deviation = 0.0–
+2.5 N) conﬁrms the suitability of the Hagen–Poiseuille’s equation
+to predict glide forces for Newtonian ﬂuids. Furthermore, warming
+of the solutions was excluded at these shear rates as the samples
+did not show any deviation from Newtonian behavior.
+Fig. 7(B) and (C) shows the application of the Hagen–Poiseuille’s
+law (Eq. (1)) to non-Newtonian ﬂuids. As pointed out, Eq. (1) re-
+quires a deﬁned viscosity for the prediction of the glide force. In
+a ﬁrst attempt, viscosity of the Carbopol samples was read off
+the viscosity–shear rate proﬁle (Fig. 6) at a shear rate of 102 and
+103 s1 and was used for the prediction of the glide force by
+Eq. (1). Fig. 7(B) shows that the measured glide forces were overes-
+timated by the model with increasing deviation at higher glide
+forces and lower shear rate.
+In Fig. 7(C), the viscosity corresponding to the shear rate at the
+needle wall _cwall was used for the prediction of the glide force by
+Eq.
+(1)
+(_cwall ¼ 645
+and
+1.29  103 s1
+for
+0.04 mL/10 s
+and
+0.08 mL/10 s, respectively). The shear rate at the wall is described
+by the Weissenberg–Rabinowitsch–Mooney equation (Eq. (7)) [14–
+16] and was recently used for description of injection forces/vis-
+cosity data [13] as discussed in detail further below. This corre-
+sponds to Eq. (4) solved for the boundary condition r = Rneedle:
+_cwall ¼ @V=@t
+pR3
+needle
+ð3n þ 1Þ
+n
+ð7Þ
+Fig. 7(C) shows that the measured glide forces for the different
+Carbopol concentrations were underestimated by this model. The
+deviation increased with increasing glide force. This indicates that
+the selected shear rates (102 and 103 s1 in Fig. 7(B), and _cwall in
+Fig. 7(C)) did not correspond to the correct shear rate for prediction
+of glide forces based on viscosity data obtained by plate/cone
+rheometry.
+In the previous section, the glide force of a non-Newtonian solu-
+tion was described (Eq. (6)) by deﬁnition of the effective shear rate
+(Eq. (5)). Thereby, the effective shear rate is smaller than the shear
+rate at the wall by the factor of [1 + (2n)1]. Fig. 7(D) shows the
+application of Eq. (6) and compares the measured and predicted
+glide forces of the Carbopol samples. The correlation plot indicates
+good agreement between our model and the measured values of
+the glide force (range: 1.5 N to 35 N) with a deviation ranging
+from 0.1 N to 2.4 N.
+The advantage of our proposed model is that the derivation of
+the effective shear rate allows to predict glide forces based on vis-
+cosity obtained by plate/cone rheometry. The shear rate during
+plate/cone viscosity measurements remains constant across the
+gap of the conical measuring device [22]. Our data conﬁrmed that
+this shear rate corresponded to the effective shear rate during
+injection through a needle, deﬁned as an average shear rate over
+the needle cross-section.
+Another approach to predict glide forces involves the use of vis-
+cosity data obtained by a capillary rheometer. This approach is less
+complex because the principle of operation is the same as for the
+injection force measurements. A liquid ﬂows through a tube in line
+with gravity or applied pressure, and the shear rate in the tube is a
+function of distance between the center of the tube and the tube
+wall. Therefore, the only prerequisite to predict glide forces based
+on viscosity data obtained by capillary rheometry is to use the
+equivalent shear rates. This can be the shear rate at the wall (de-
+scribed by the Weissenberg–Rabinowitsch–Mooney equation),
+the apparent shear rate which is the shear rate at the wall for a
+Newtonian solution, or the effective shear rate. The latter is an-
+other advantage of the suggested model as viscosity data from dif-
+ferent
+viscosity
+methods,
+such
+as
+plate/cone
+and
+capillary
+rheometry, can be used to predict the glide force of a solution.
+An advantage of capillary viscosimeters over typical plate/cone
+instrumentations is the possibility of measuring at higher shear
+rates (>4  104 s1). However, a limitation is the large sample vol-
+umes required (in the milliliter range depending on sample viscos-
+ity)
+while
+measuring
+at
+only
+one
+speciﬁc
+shear
+rate
+per
+experiment. An advantage of plate/cone rheometry is that it is an
+established method which is widely used for characterization of
+protein viscosity [6,11,27,28]. Moreover, viscosity measurements
+require only small sample volumes (80 lL) and a large range of
+shear rates (<1 s1 up to maximal 4  104 s1) can be measured
+in a single experiment.
+In summary, the suggested model to predict glide forces of non-
+Newtonian solutions was experimentally veriﬁed by Carbopol gels.
+Deﬁnition of the effective shear rate allows to predict glide forces
+and correlate them to viscosity data obtained by plate/cone
+rheometry.
+3.4. Rheological characterization of concentrated protein therapeutics
+using the model
+Generation of viscosity–shear rate proﬁles from force measure-
+ments was recently reported by Rathore et al. The authors used
+force measurements which were performed on a mechanical test-
+ing system (Instron 5564) by applying the Weissenberg–Rabi-
+nowitsch–Mooney
+equation
+(Eq.
+(7))
+[13].
+Viscosity
+was
+presented as a function of the apparent shear rate which is the
+shear rate at the wall for Newtonian solutions.
+The advantage of using force measurements is to obtain viscos-
+ity data at high shear rates (105–106 s1). However, application of
+our model (Eq. (6)) offers the possibility to obtain viscosity data
+from glide force measurements/capillary viscosimeters which can
+102
+103
+104
+102
+103
+Dynamic viscosity [mPa s]
+Shear rate [s-1]
+ 0.8%
+ 0.6%
+ 0.4%
+ 0.2%
+ Linear fit
+Fig. 6. Dynamic viscosity of Carbopol 981 gels as a function of shear rate at 25 C:
+0.2% (d), 0.4% (D), 0.6% (j), 0.8% (s). The linear ﬁt was used to determine the
+consistency index K and the power law index n from the intercept and the slope
+(n  1), respectively. R2 of the linear ﬁts, K, and n are summarized in Table 2.
+Table 2
+Rheological parameters of Carbopol gels (25 C). (cCarbopol = Carbopol concentration;
+K = consistency index; n = power law index).
+cCarbopol (w/w) (%)
+K (Pa sn)
+n (dimensionless)
+R2 (Fig. 6)
+0.2
+5.4
+0.46
+1.0
+0.4
+9.5
+0.46
+0.999
+0.6
+12.5
+0.46
+0.999
+0.8
+15.4
+0.46
+0.999
+A. Allmendinger et al. / European Journal of Pharmaceutics and Biopharmaceutics xxx (2014) xxx–xxx
+7
+Please cite this article in press as: A. Allmendinger et al., Rheological characterization and injection forces of concentrated protein formulations: An alter-
+native predictive model for non-Newtonian solutions, Eur. J. Pharm. Biopharm. (2014), http://dx.doi.org/10.1016/j.ejpb.2014.01.009
+
+---PAGE 8---
+be combined with viscosity data from plate/cone rheometry to
+produce a single shear-rate proﬁle. This approach allows to gener-
+ate a broad viscosity proﬁle over several shear rate decades.
+The approach of calculating viscosity data from glide force
+measurements was applied to the mAb1 solutions. Viscosity of
+the mAb1 samples was determined from the glide force measure-
+ments (Fig. 3(B)) by applying Eq. (1). To deﬁne the corresponding
+effective shear rate of the mAb1 solutions, the power law index n
+of the different mAb1 concentrations was determined based on
+the following equation:
+logg ¼ ðn  1Þ  log C þ ðn  1Þ  log @V
+@t
+
+
+ð8Þ
+With C ¼ 2K1nð3n þ 1Þ
+pR3
+needleð2n þ 1Þ
+Eq. (8) is obtained by insertion of Eq. (5) into Eq. (2), followed by
+taking the logarithm. Fig. 8(A) shows the application of Eq. (8) to
+the experimental data of mAb1 and displays the viscosity (logg)
+as a function of injection rate (logoV/ot). The power law indices
+were determined from the slope (n  1) of the linear viscosity pro-
+ﬁles (R2 = 0.972  0.999). For the mAb1 solutions, the power law in-
+dex decreased with increasing protein concentrations indicating an
+increase in shear thinning properties. For the lowest protein con-
+centration (120 mg/mL) tested, a power law index of 0.84 was
+found and n = 0.57 for the 225 mg/mL solution. Table 3 summarizes
+the
+power
+law
+indices
+and
+correlation
+coefﬁcients
+for
+all
+concentrations.
+After determination of the power law indices, the effective shear
+rate was calculated by Eq. (5). This allows the generation of the vis-
+cosity–shear rate proﬁle for the mAb1 formulations shown in
+Fig. 8(B). The dynamic viscosity is presented as a function of the
+effective shear rate with viscosity data from the plate/cone rheome-
+ter (shear-rate range: <1 s1–104 s1), the capillary viscosimeter
+(shear-rate range dependent on ﬂow cell and viscosity: e.g.,
+2  103–1.5  105 s1 for a 10 mPa s sample), and the glide force
+measurements (shear-rate range: variable due to injection rate
+and syringe–needle set-up; presented: 3  104–1.6  105 s1). The
+viscosity of the mAb1 solutions increased with increasing protein
+concentration. The different protein solutions showed a Newtonian
+plateau at low shear rates which is known from polymer chemistry
+as the zero shear-rate plateau [22,27]. Between 8  103 and 1.6 
+105 s1, the mAb1 solutions showed shear-thinning behavior
+depending on the protein concentration. This is known as the power
+law region of a sample. The 225 mg/mL solution, for example, shows
+a viscosity of 46 mPa s at the low shear-rate plateau followed by a
+decrease in viscosity to 21.5 mPa s at 1.6  105 s1. With lower
+protein concentrations, the beginning of the power law region is
+shifted to higher shear rates. Additionally, the shear-thinning prop-
+erties are diminishing with almost no shear-thinning behavior at
+120 mg/mL.
+The rheological proﬁle of the mAb1 solutions resembles the
+rheological behavior of various polymers such as polyacrylamide
+Fig. 7. Correlation between measured and predicted glide forces at two injection rates (0.04 and 0.08 mL/10 s). (A) Different concentrations of glycerol/water solutions
+(Newtonian ﬂuid) correlated with glide force calculated according to Hagen–Poiseuille’s law (Eq. (1)). (B)–(D) Glide forces of Carbopol gels (non-Newtonian ﬂuids) correlated
+with glide forces calculated according to (B) Eq. (1) using the measured viscosity at a shear rate of 102 and 103 s1, (C) Eq. (1) using the measured viscosity at the shear rate at
+the wall _cwall (Eq. (7)), and (D) Eq. (6) which was based on the effective shear rate c (Eq. (5)). The mean values and standard deviation are reported (N = 3).
+8
+A. Allmendinger et al. / European Journal of Pharmaceutics and Biopharmaceutics xxx (2014) xxx–xxx
+Please cite this article in press as: A. Allmendinger et al., Rheological characterization and injection forces of concentrated protein formulations: An alter-
+native predictive model for non-Newtonian solutions, Eur. J. Pharm. Biopharm. (2014), http://dx.doi.org/10.1016/j.ejpb.2014.01.009
+
+---PAGE 9---
+or xanthan gum solutions, for example [28–32]. This is character-
+ized by a Newtonian plateau with the zero shear rate viscosity g0
+followed by the power law region and converging to a secondary
+plateau (inﬁnite shear rate viscosity g1) [33], which was not yet
+reached for the mAb1 solutions at the measured shear rates. This
+three-step behavior can be described mathematically by the
+Carreau-model (Eq. (9)).
+g ¼ g1 þ ðg0  g1Þ  ð1 þ C2 _c2Þ
+n1
+2
+ð9Þ
+The shear thinning region is deﬁned by a modiﬁed power law term
+in Eq. (9) containing the factor ð1 þ C2 _c2Þ
+n1
+2
+similar to Eq. (2)
+(Ostwald–de Waele equation) which was used to generate the mod-
+el. However, the difference is that the Ostwald–de Waele equation
+breaks down in the region of the ﬁrst Newtonian plateau [33]. In
+contrast, the Carreau model includes the Newtonian plateau (g0)
+and extends the power law by the factor +1 giving the sigmoidal
+shape to the shear thinning region. C (s) is a time constant reﬂect-
+ing the critical shear rate _ccrit ¼ C1 marking the end of the zero
+shear-rate plateau and the onset of the shear thinning region
+[33,34].
+Fitting of Eq. (9) to the viscosity–shear rate proﬁles of the differ-
+ent concentrations of mAb1 using the software Origin 7.5 (OriginLab
+Corporation, MA, USA) is shown in Fig. 8(B). Here, g0 was deﬁned as
+the viscosity at 2  103 s1, n was already determined as described
+above, and g1 was set to the minimal viscosity possible (1 mPa s)
+corresponding to the viscosity of water. _ccrit ¼ C1 was set as a
+variable parameter. Table 3 lists the values for the different protein
+concentrations. The quality of the ﬁttings is indicated by the corre-
+lation coefﬁcients which were 0.939 and 0.984 for the protein con-
+centrations of 210 mg/mL and 225 mg/mL, respectively. The
+coefﬁcients imply that the Carreau model allows to describe the
+rheological behavior of the mAb1 solutions at high protein concen-
+trations. For the lower protein concentrations however, only a poor
+ﬁt was obtained (R2 = 0.219 and 0.817 for 120 mg/mL and 170 mg/
+mL, respectively). The assumption for application of the Carreau
+model is that the data points for determination of the power law in-
+dex n by Eq. (8) are in the exponentially decreasing power law re-
+gion. At lower protein concentration however, the power law
+region shifts to higher shear rates limiting the shear-thinning region
+to a few data points for the tested shear-rate range (Fig. 8(B)). Addi-
+tionally, for the 120 mg/mL for example, viscosity data obtained by
+the glide-force measurements were in the shear-rate region close to
+the Newtonian plateau where the Ostwald–de Waele equation
+breaks down. Therefore, the shear-thinning behavior cannot be
+accurately described by the Carreau model at the tested shear-rate
+range for the protein concentrations of 120 mg/mL (i.e., at lower
+protein concentrations).
+The Carreau model describes the rheological proﬁle of a solu-
+tion acting at high shear rates like a Newtonian ﬂuid with a vis-
+cosity of g1 and like a Newtonian ﬂuid with a viscosity of g0 at
+low shear rates connected by a shear-thinning region. The origin
+of shear-thinning behavior characterized by a power law index <1
+can be manifold. In the literature, dissociation of aggregates or
+polymeric
+entanglements,
+deformation
+or
+degradation,
+and
+alignment/orientation of three-dimensional structures to the ﬂow
+ﬁeld are described for polymers [22]. For the Carbopol gels, it is
+suggested
+that
+the
+shear-thinning
+properties
+originate
+from
+deformation of the three-dimensional network of the polymer
+[35].
+Moreover,
+the
+power
+law
+index
+was
+found
+to
+be
+constant with increasing Carbopol concentrations (Table 2). This
+indicates that the shear-thinning properties are independent of
+polymer concentration suggesting a consistent microstructure
+(e.g., similar physical entanglement) with increasing polymer
+concentrations.
+For the mAb1 solutions in contrast, the power law index was
+found to decrease with increasing protein concentrations. This
+indicates an increase in shear-thinning properties with increasing
+protein concentration implying an increase in the microstructural
+-1.5
+-1.0
+-0.5
+0
+1
+2
+log Dynamic viscosity [mPa s]
+log Injection rate [mL/s]
+102
+103
+104
+105
+106
+0
+10
+20
+30
+40
+50
+Dynamic viscosity [mPa s]
+Effective shear rate [s-1]
+(a)
+(b)
+Fig. 8. mAb1 at 120 mg/mL (), 170 mg/mL (j), 210 mg/mL (N), and 225 mg/mL
+(d). (A) Dynamic viscosity (logg) obtained by force measurements as a function of
+injection rate (log dV/dt). The power law indices n were determined from the slope
+(n  1) of the linear ﬁt (solid line) based on Eq. (8) and are summarized with the
+corresponding correlation coefﬁcients in Table 3. (B) Viscosity proﬁle of different
+concentrations of mAb1 as a function of the effective shear rate (25 C). The
+viscosity was measured using a plate/cone rheometer (gray, ﬁlled symbols), the
+capillary viscosimeter mVROC (empty symbols), and glide force experiments (black
+symbols). The viscosity proﬁle was modeled by the Carreau model (solid line) based
+on Eq. (9) and the corresponding ﬁtting parameters are summarized in Table 3.
+Table 3
+Rheological parameters of mAb1 (25 C). (cprotein = protein concentration; g = dynamic viscosity at 2  103 s1; n = power law index; C = time constant).
+cprotein (mg/mL)
+g (mPa s)
+n (dimensionless)
+C1 (103 s)
+R2 (Fig. 8(A))
+R2 (Fig. 8(B))
+120
+4.4
+0.84
+33 ± 10
+0.996
+0.219
+170
+13.1
+0.82
+57 ± 67
+0.972
+0.817
+210
+26.3
+0.68
+41 ± 5
+0.999
+0.939
+225
+46.0
+0.57
+31 ± 2
+0.981
+0.984
+A. Allmendinger et al. / European Journal of Pharmaceutics and Biopharmaceutics xxx (2014) xxx–xxx
+9
+Please cite this article in press as: A. Allmendinger et al., Rheological characterization and injection forces of concentrated protein formulations: An alter-
+native predictive model for non-Newtonian solutions, Eur. J. Pharm. Biopharm. (2014), http://dx.doi.org/10.1016/j.ejpb.2014.01.009
+
+---PAGE 10---
+arrangements. The formation of these microstructural arrange-
+ments/oligomeric networks/clusters was recently proposed for a
+monoclonal antibody solution at high(er) protein concentrations
+[6,9,36–41]. The strength of the microstructure formed can
+increase rapidly with concentration [40]. The disruption or defor-
+mation of these self-associating mAb networks (e.g., held together
+by weak non-covalent attractive forces) might be a possible
+explanation for the shear-thinning behavior of concentrated mAb
+solutions. We use the phrase ‘‘self-associating mAb clusters’’ in
+accordance with e.g., Zarraga et al. [40], Yadav et al. [36]. These
+mAb self-associations responsible for increasing the viscosity are
+reversible, and unlikely to be physical entanglements or long range
+elasticity such as observed in polymer systems (e.g., the mAb solu-
+tions have low G0/G00, data not shown). Instead, the mAb clusters
+are likely to be governed by colloidal interactions with electrostatic
+and hydrophobic attractive wells that are rendered anisotropic by
+the mAb shape and heterogeneous surface charge distribution
+[37–41]. The timescales for association and dissociation depend
+on the intricate balance of colloidal, Brownian, and shear forces.
+Experiments of increasing and decreasing shear rates show that
+the viscosity response to changes in shear rate occur in the order
+of seconds, implying a relatively fast relaxation time (under negli-
+gible instrument inertia and comparing with Newtonian viscosity
+controls). The substantial reduction in viscosity at shear rates of
+around 1  103 s1 or higher also points to a very fast relaxation
+time. This suggests that the mAb clusters are unable to form to full
+extent due to the competing fast timescale associated with shear-
+ing motion.
+Referring to the rheological proﬁle, this implies that at low
+shear rates, the self-associating networks are not inﬂuenced by
+the shear stress showing a Newtonian plateau. With increasing
+shear rate, dissociation and/or alignment of the clusters may occur
+which manifests in the shear-thinning region and eventually in the
+second Newtonian plateau with an optimally oriented microstruc-
+ture or deformation of the clusters. This has been observed through
+the anisotropic normal stresses measured in a related study [40]. A
+detailed understanding of the relationship between shear-thinning
+behavior of a mAb formulation indicated by the power law index
+and the occurrence of mAb clustering with increasing protein con-
+centration is subject of ongoing research.
+4. Conclusion
+Determination of injection forces of several highly concentrated
+protein formulations revealed a signiﬁcant reduction in injection
+forces compared to Newtonian ﬂuids due to shear-thinning behav-
+ior. In order to correctly predict injection forces from rheological
+data, different mathematical models considering Newtonian and
+non-Newtonian ﬂow behavior were compared and the assump-
+tions, advantages, and limitations were discussed.
+The suggested model was used to determine viscosity data at
+high shear rates (3  104–1.6  105 s1) from injection force mea-
+surements of concentrated protein solutions. These data could be
+directly combined to viscosity data from rotational plate/cone
+and capillary rheometry. The rheological proﬁle with a shear rate
+between 102 and 1.6  105 s1 was described mathematically by
+the Carreau model. Knowledge of the rheological characterization
+data allows to accurately predict injection forces for different syr-
+inge–needle combinations as well as a large range of injection
+rates. The added value is that by use of this model viscosity data
+from different measuring systems can be combined meaning that
+we can now characterize viscosity at a much higher shear rate than
+what can be measured with commercial available instruments up
+to date. This is highly relevant for the design of devices for combi-
+nation products (e.g., autoinjectors or injection pumps) to assess
+the limits and robustness during evaluation, planning and design
+phases of development. Moreover, consideration of shear-thinning
+behavior may extend the viscosity/concentration limit due to con-
+sequent reduction in injection forces while maintaining the overall
+user requirements.
+Acknowledgments
+The authors thank Martin Vogt for the help with the material
+testing instrument and Fred Lim from Genentech Inc., South San
+Francisco (CA, USA) for the helpful discussions.
+Appendix A. Supplementary data
+Supplementary data associated with this article can be found, in
+the online version, at http://dx.doi.org/10.1016/j.ejpb.2014.01.009.
+References
+[1] S.J.
+Shire,
+Formulation
+and
+manufacturability
+of
+biologics,
+Curr.
+Opin.
+Biotechnol. 20 (2009) 708–714.
+[2] S.J. Shire, Z. Shahrokh, J. Liu, Challenges in the development of high protein
+concentration formulations, J. Pharm. Sci. 93 (2004) 1390–1402.
+[3] N.W. Warne, Development of high concentration protein biopharmaceuticals:
+the use of platform approaches in formulation development, Eur. J. Pharm.
+Biopharm. 78 (2011) 208–212.
+[4] M. Adler, Challenges in the development of pre-ﬁlled syringes for biologics
+from a formulation scientist’s point of view, Am. Pharm. Rev. 15 (2012).
+[5] D.E. Overcashier,
+E.K.
+Chan,
+C.C.
+Hsu,
+Technical considerations
+in
+the
+development of preﬁlled syringes for protein products, Am. Pharm. Rev. 9
+(2004) 77–83.
+[6] S. Kanai, J. Liu, T.W. Patapoff, S.J. Shire, Reversible self-association of a
+concentrated monoclonal antibody solution mediated by Fab–Fab interaction
+that impacts solution viscosity, J. Pharm. Sci. 97 (2008) 4219–4227.
+[7] S.
+Yadav,
+J.
+Liu,
+S.J.
+Shire,
+D.S.
+Kalonia,
+Speciﬁc
+interactions
+in
+high
+concentration antibody solutions resulting in high viscosity, J. Pharm. Sci. 99
+(2010) 1152–1168.
+[8] A.
+Saluja,
+D.S.
+Kalonia,
+Nature
+and
+consequences
+of
+protein–protein
+interactions in high protein concentration solutions, Int. J. Pharm. 358 (2008)
+1–15.
+[9] J. Liu, M.D. Nguyen, J.D. Andya, S.J. Shire, Reversible self-association increases
+the viscosity of a concentrated monoclonal antibody in aqueous solution, J.
+Pharm. Sci. 94 (2005) 1928–1940.
+[10] A. Sheikhzadeh, J. Yoon, D. Formosa, B. Domanska, D. Morgan, M. Schiff, The
+effect of a new syringe design on the ability of rheumatoid arthritis patients to
+inject a biological medication, Appl. Ergon. 43 (2012) 368–375.
+[11] V. Burckbuchler, G. Mekhlouﬁ, A.P. Giteau, J.L. Grossiord, S. Huille, F. Agnely,
+Rheological and syringeability properties of highly concentrated human
+polyclonal immunoglobulin solutions, Eur. J. Pharm. Biopharm. 76 (2010)
+351–356.
+[12] N. Rathore, P. Pranay, B. Eu, W. Ji, E. Walls, Variability in syringe components
+and its impact on functionality of delivery systems, PDA J. Pharm. Sci. Technol.
+65 (2011) 468–480.
+[13] N. Rathore, P. Pranay, J. Bernacki, B. Eu, W. Ji, E. Walls, Characterization of
+protein rheology and delivery forces for combination products, J. Pharm. Sci.
+101 (2012) 4472–4480.
+[14] K. Weissenberg, Über die Viskosität und Elastizität von Solen, Z. Phys. Chem.
+(1929).
+[15] B. Rabinowitsch, Über die Viskosität und Elastizität von Solen, Z. Phys. Chem.
+145 (1929).
+[16] R. Eisenschitz, B. Rabinowitsch, K. Weissenberg, Mitteilung der deutschen
+Materialprüfungsanstalten, Sonderheft 8 (1929) 91.
+[17] G.H.L. Hagen, Über die Bewegung des Wassers in engen zylindrischen Röhren.,
+Poggendorf‘s Annalen der Physik und Chemie 46 (1939) 423–442 (reprinted
+1933, see Schiller).
+[18] J.L.M. Poiseuille, Recherches expérimentales sur le mouvement des liquides
+dans les tubes de très petits diamètres, C.R. Acad. Sci. 11 (1840) 1041–1048.
+[19] L. Schiller, Drei Klassiker der Strömungslehre: Hagen, Poiseuille, Hagenbach,
+Akad. Verlagsgesellschaft, Leipzig, ed., 1933.
+[20] O. Reynolds, An experimental investigation of the circumstances which
+determine whether the motion of water shall be direct or sinuous, and of
+the law of resistance in parallel channels, Philos. Trans. 174 (1883) 935–982.
+[21] O. Reynolds, On the dynamical theory of incompressible viscous ﬂuids and the
+determination of the criterion, Philos. Trans. (1895).
+[22] T.G. Mezger, Das Rheologie Handbuch, third ed., Vincentz Network, Hannover,
+2010.
+[23] C.W. Macosko, Rheology: Principles, Measurements, and Applications, ﬁrst ed.,
+Wiley-VCH, New York, 1994.
+[24] F.W. Ostwald, Über die Geschwindigkeits-Funktion der Viskosität in dispersen
+Systemen, Kolloid Z. 36 (1925).
+10
+A. Allmendinger et al. / European Journal of Pharmaceutics and Biopharmaceutics xxx (2014) xxx–xxx
+Please cite this article in press as: A. Allmendinger et al., Rheological characterization and injection forces of concentrated protein formulations: An alter-
+native predictive model for non-Newtonian solutions, Eur. J. Pharm. Biopharm. (2014), http://dx.doi.org/10.1016/j.ejpb.2014.01.009
+
+---PAGE 11---
+[25] A. De Waele, Viscometry and plastometry, Oil Color Chem. Assoc. J. (1923).
+[26] R.T. Toledo, Fundamental of Food Process Engineering, third ed., Springer
+Science & Business Media, New York, 2007.
+[27] S.M. Loveday, L.K. Creamer, H. Singh, M.A. Rao, Phase and rheological behavior
+of high-concentration colloidal hard-sphere and protein dispersions, J. Food
+Sci. 72 (2007) R101–R107.
+[28] A.S. Cavadas, F.T. Pinho, J.B.L.M. Campos, Laminar non-Newtonian impinging
+jet ﬂow conﬁned by sloping plane walls, J. Non-Newton. Fluid. 169 (2012) 1–
+14.
+[29] C.A. Hieber, H.H. Chiang, Shear-rate-dependence modeling of polymer melt
+viscosity, Polym. Eng. Sci. 32 (1992) 931–938.
+[30] I. Wagstaff, C.E. Chaffey, Shear thinning and thickening rheology – 1.
+Concentrated acrylic dispersions, J. Colloid Interface Sci. 59 (1977) 53–62.
+[31] Y. Xia, P.T. Callaghan, Study of shear thinning in high polymer-solution using
+dynamic NMR microscopy, Macromolecules 24 (1991) 4777–4786.
+[32] M.M. Cross, Relation between viscoelasticity and shear-thinning behavior in
+liquids, Rheol. Acta 18 (1979) 609–614.
+[33] N. Phan-Thien, Understanding Viscoelasticity: Basics in Rheology, ﬁrst ed.,
+Springer Verlag Berlin Heidelberg, Heidelberg, 2002.
+[34] R. Byron Bird, P.J. Carreau, A nonlinear viscoelastic model for polymer
+solutions and melts, Chem. Eng. Sci. 23 (1968) 427–434.
+[35] M.T. Hernandez, J. Pellicer, J. Delegido, M. Dolz, Rheological characterization of
+easy-to-disperse (ETD) Carbopol hydrogels, J. Disper. Sci. Technol. 19 (1998)
+31–42.
+[36] S. Yadav, T.M. Laue, D.S. Kalonia, S.N. Singh, S.J. Shire, The inﬂuence of charge
+distribution on self-association and viscosity behavior of monoclonal antibody
+solutions, Mol. Pharm. 9 (2012) 791–802.
+[37] A. Chaudhri, I.E. Zarraga, T.J. Kamerzell, J.P. Brandt, T.W. Patapoff, S.J. Shire, G.A.
+Voth,
+Coarse-grained
+modeling
+of
+the
+self-association
+of
+therapeutic
+monoclonal antibodies, J. Phys. Chem. B (2012).
+[38] A. Chaudhri, I.E. Zarraga, S. Yadav, T.W. Patapoff, S.J. Shire, G.A. Voth, The role
+of amino acid sequence in the self-association of therapeutic monoclonal
+antibodies: insights from coarse-grained modeling, J. Phys. Chem. B 117
+(2013) 1269–1279.
+[39] W.G. Lilyestrom, S. Yadav, S.J. Shire, T.M. Scherer, Monoclonal antibody self-
+association, cluster formation, and rheology at high concentrations, J. Phys.
+Chem. B (2013).
+[40] I.E. Zarraga, R. Taing, J. Zarzar, J. Luoma, J. Hsiung, A. Patel, F. Lim, High shear
+rheology and anisotropy in concentrated solutions of monoclonal antibodies, J.
+Pharm. Sci. 102 (2013) 2538–2549.
+[41] E.J. Yearley, I.E. Zarraga, S.J. Shire, T.M. Scherer, Y. Gokarn, N.J. Wagner, Y. Liu,
+Small-angle neutron scattering characterization of monoclonal antibody
+conformations and interactions at high concentrations, Biophys. J. 105
+(2013) 720–731.
+[42] S. Kiese, A. Papppenberger, W. Friess, H.C. Mahler, Shaken, not stirred:
+mechanical stress testing of an IgG1 antibody, J. Pharm. Sci. 97 (2008) 4347–
+4366.
+[43] D.K. Sharma, D. King, P. Oma, C. Merchant, Micro-ﬂow imaging: ﬂow
+microscopy
+applied
+to
+sub-visible
+particulate
+analysis
+in
+protein
+formulations, AAPS J. 12 (2010) 455–464.
+[44] R. Strehl, V. Rombach-Riegraf, M. Diez, K. Egodage, M. Bluemel, M. Jeschke, A.V.
+Koulov, Discrimination between silicone oil droplets and protein aggregates in
+biopharmaceuticals: a novel multiparametric image ﬁlter for sub-visible
+particles in microﬂow imaging analysis, Pharm. Res. 29 (2012) 594–602.
+A. Allmendinger et al. / European Journal of Pharmaceutics and Biopharmaceutics xxx (2014) xxx–xxx
+11
+Please cite this article in press as: A. Allmendinger et al., Rheological characterization and injection forces of concentrated protein formulations: An alter-
+native predictive model for non-Newtonian solutions, Eur. J. Pharm. Biopharm. (2014), http://dx.doi.org/10.1016/j.ejpb.2014.01.009

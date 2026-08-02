@@ -1,0 +1,806 @@
+---PAGE 1---
+Research Article
+Delivery Considerations of Highly Viscous Polymeric Fluids Mimicking
+Concentrated Biopharmaceuticals: Assessment of Injectability via Measurement
+of Total Work Done BWT^
+Qiangnan Zhang,1 Mona A. Fassihi,2 and Reza Fassihi1,3
+Received 25 August 2017; accepted 23 January 2018
+Abstract.
+An account is given of the recent development of the highly viscous complex
+biopharmaceuticals in relation to syringeability and injectability. The speciﬁc objective of this
+study is to establish a convenient method to examine problem of the injectability for the
+needle-syringe-formulation system when complex formulations with diverse viscosities are
+used. This work presents the inter-relationship between needle size, syringe volume, viscosity,
+and injectability of polymeric solutions having typical viscosities encountered in concentrated
+biologics, by applying a constant probe crosshead speed on the plunger-syringe needle
+assembly and continuously recording the force-distance proﬁles. A computerized texture
+analyzer was used to accurately capture, display, and store force, displacement, and time
+data. The force-distance curve and area under the curve are determined, and total work done
+for complete extrusion of the syringe content was calculated automatically by applying an
+established Matlab program. Various concentrations (i.e., 0.5–4% w/v of polymeric ﬂuids/
+dispersions) of polyethylene oxide (PEO) and hydroxypropyl methylcellulose (HPMC) with
+viscosity ranges of 5–100 cP mimicking concentrated monoclonal antibody solutions and
+complex biopharmaceutical formulations are investigated. Results indicate that calculated
+values of total work done to completely extrude the syringe content are the most appropriate
+parameter that describes viscosity-injection force of dispersed formulations. Additionally, the
+rheological properties of HPMC and PEO ﬂuids in the context of syringeability and
+injectability are discussed.
+KEY WORDS: syringeability; injectability; HPMC; PEO; biologics.
+INTRODUCTION
+Syringeability (i.e., ease of withdrawal from vial to
+syringe) and injectability (i.e., formulation performance
+during injection including pre-ﬁlled syringes) are two very
+important constraints in handling highly concentrated and
+complex formulations of recombinant biologics, proteins, and
+biopharmaceutical drugs often not experienced with conven-
+tional small molecule simple parenteral (1). Biologics having
+high molecular weights (i.e., insulin 5.8 kDa; Humira
+consisting of 1330 amino acids, and MW 148 kDa) and high
+concentrations per milliliter (mg/mL) and their means of
+delivery as opposed to small molecular weight drugs (i.e.,
+epinephrine 183 Da) are associated with many challenges
+including their rheology. With advances in formulation
+design, the complexity of the formulations that are designed
+to enhance the solubility of insoluble drugs and provide
+greater stability for concentrated biologicals which tend to
+undergo aggregation, deamination, denaturation, hydrolysis,
+or oxidation has also changed dramatically (2–4). Multiple
+excipients, agents, and environmental factors have been
+investigated that can ensure both physical and chemical
+stability of biopharmaceuticals including the use of small
+sugars such as trehalose (5,6), dextran (7), surfactants like
+pluronic, polysorbate (8), and inﬂuence of pH, temperature,
+and ionic strength. Although peptides and proteins have high
+speciﬁcity and potency, in many cases, concerns related to the
+high dose of proteins with varying viscosities as often
+concentrated formulations with several hundred milligrams
+per milliliter are required especially to satisfy the limited
+volume allowed for subcutaneous injection as often preferred
+by FDA and patients. As early as 1979, Ritschel and Suzuki
+(9) and Dexter and Schott (10) proposed methods and
+procedures to determine force required to smoothly inject
+suspensions or oily parenteral into tissues for a given syringe-
+needle system. The high viscosity of the formulation affects
+both syringeability and formulation performance during
+1 School of Pharmacy, Temple University, 3307 North Broad St.,
+Philadelphia, Pennsylvania 19140, USA.
+2 Novartis Pharmaceuticals Corporation, One Health Plaza, East
+Hanover, New Jersey 07936-1080, USA.
+3 To whom correspondence should be addressed. (e–mail:
+reza.fassihi@temple.edu)
+AAPS PharmSciTech (# 2018)
+DOI: 10.1208/s12249-018-0963-x
+1530-9932/18/0000-0001/0 # 2018 The Author(s). This article is an open access publication
+
+---PAGE 2---
+injection, necessitating more force with an acceptable needle
+gauge and time needed. Presently, intravenous, intramuscular,
+and more convenient subcutaneous route is the most fre-
+quently used methods of delivering biologicals. Drug dosages
+and delivery systems for biopharmaceuticals include emul-
+sions, suspensions, liposomes, micro-emulsions, degradable
+microspheres, antibody drug conjugates (ADCs), recombi-
+nant biologicals, implants, extended release, and highly
+viscous and/or thixotropic gel systems (1). Approximate size
+spectrum showing dimensions of typical molecules, carrier
+types and drug delivery systems, and some of the commer-
+cialized biopharmaceutical products is presented in Fig. 1.
+It is imperative to consider formulation performance in the
+context of needle-syringe-formulation-trio system when designing
+biopharmaceutical formulations. Development of the biologic
+formulations is signiﬁcantly different to that of small molecule
+formulation (i.e., non-Newtonian in the former and Newtonian in the
+latter case) and it requires addition of multiple components and an
+in-depth understanding of the formulation design to assure maxi-
+mum stability and manufacturability, with full considerations of
+viscosity and dynamics of stress-strain shearing effects in the context
+of rheological behavior. For example, it has been reported that,
+changes in viscosity of highly concentrated formulations of human-
+ized monoclonal antibodies (mAbs) were linked to multivalent and
+concentration-dependent reversible self-association of a mAbs and
+electrostatic interactions in the presence of chaotropic anions
+impacting solution viscosity in an exponential mode (see Fig. 2) (3).
+Authors used a cone and plate rheometer, and viscosity measure-
+ments were performed by two cycles of shear-rate sweeps under
+deﬁned conditions (3).
+In this work, the term Bviscosity^ or Brheology^ refers to
+the ﬂow property or thickness of a liquid formulation.
+Typically, viscosities of liquids range from one to several
+thousand centipoise (cPs). For example, viscosity of water is
+~ 1–5 cP, blood is 10 cP, corn syrup 50–100 cP, maple syrup
+150–200 cP, castor oil 250–500 cP, and many concentrated
+biologicals have viscosities of 10–200 cPs (4,11–13).
+Viscosity is always inﬂuenced by formulation composi-
+tion. Einstein (14) recognized that in the dispersed systems,
+single particles enhanced the viscosity of a liquid as a simple
+function of their phase volume, according to the following
+relationship (Eq. 1):
+η ¼ ηmedium 1 þ 2:5ϕ
+ð
+Þ……
+ð1Þ
+where η is the viscosity of the suspension, ηmedium is the
+viscosity of the medium, and Φ is the volume fraction of solids
+in the suspension. This ﬁnding has great value for describing
+systems containing very low particle concentrations. How-
+ever, in many biologics and biopharmaceutical formulations,
+particle loadings are high with greater proximity to each other
+and thus higher viscosity. Krieger and Doughetry (15)
+developed a semi-empirical model to account for this
+Bcrowding^ effect (Eq. 2):
+η
+ηmedium
+¼
+1−
+η
+ηmedium
+
+−η
+½ ϕm
+……
+ð2Þ
+Fig. 1. Approximate size spectrum showing dimensions of typical molecules, carrier types and drug
+delivery systems, and some of the commercialized parenteral biopharmaceutical products
+Fig. 2. Changes in solution viscosity of mAbs in 30 mM histidine
+buffer at pH 6.0, with and without added salt in the formulations
+Zhang et al.
+
+---PAGE 3---
+Where Φm is the maximum volume fraction of solids in the
+system, [η] is the intrinsic viscosity with value of 2.5 for
+spheres. Addition of Φm parameter shows that there is a
+maximum volume of particles that can be added before the
+system becomes too viscous.
+Some examples of complex formulations with high
+viscosity and drug concentration currently on the market
+include biodegradable polymer-liquid carrier Eligard
+(leuprolide acetate) (16), Hyalgan (intra-articular injections
+based on sodium hyaluronate); Gel-One (cross-linked
+hyaluronate); Supartz FX (highly puriﬁed hyaluronic acid)
+(17), IM injection of oily system Faslodex (fulvestrant used in
+metastatic breast cancer), Lupron Depot extended release,
+highly concentrated recombinant interleukin-1 receptor an-
+tagonist (Kineret, anakinra 150 mg/mL), and a fully biode-
+gradable D,L-lactic-glycolic acids copolymer-based cylindrical
+implant Zoladex (goserelin acetate used in prostatic carci-
+noma, a pre-loaded 1.5-mm-diameter cylinder in a special
+single-use syringe with a 14-gauge siliconized needle (2.11-
+mm outer diameter) for subcutaneous delivery of implant, see
+Fig. 3).
+In many cases, these products have range of viscosities
+and compositions. It is likely that two or more formulations
+might have similar viscosity; however, depending on the
+nature of the formulations and its rheological behavior,
+syringeability among different formulations may vary signif-
+icantly. Hyalgan (sodium hyaluronate) formulation is a
+thixotropic gel system hence viscosity of the formulation is
+complex and decreases during the syringing process. On the
+other hand, Eligard (leuprolide acetate suspension) makes
+use of the shear thinning property of poly (lactic-co-glycolic
+acid) (PLGA (18,19)) solution to enhance the performance
+during injection period (ease of injectability).
+The rheology or likely thixotropic characteristics of such
+biologics and complex formulations in terms of stress-strain
+observed among the products vary especially when subjected
+to application of plunger force (shear stress) and conse-
+quently shear rate while the content of the syringe is extruded
+(shear rate and ﬂow velocity). Typical changes in ﬂow and
+thixotropic characteristics of dispersed systems in general
+when subjected to stress are illustrated in Fig. 4.
+Both FDA and ICH Q6A BGuidance for Industry^ on
+container-closure and pre-ﬁlled syringes for human drugs and
+biologics require syringe’s performance, test procedures, and
+acceptance criteria related to the functionality of the delivery
+system (20,21).
+In order to determine the relationship between viscosity
+of the formulation, syringe type, and needle size, one could
+calculate the plunger force applied to the formulation to fully
+extrude the material through a needle comparable to
+injectability performance (22).
+Theoretically, various viscous solutions emulating real
+drug-product rheology in terms of syringeability and/or
+injectability can be measured directly using the Hagen-
+Poiseuille equation, which is used to assess required force
+across a pipe or syringe to cause ﬂow (23) (see Eq. 3):
+F ¼ 128QLμA
+πD4
+……
+ð3Þ
+where F is the force (i.e., syringe plunger force), Q is the
+volumetric ﬂow rate, μ is the viscosity of the ﬂuid (i.e.,
+formulation), L is the length (displacement or distance
+traveled), D is the diameter of the pipe/needle bore diameter,
+and A is the area (i.e., syringe plunger area).
+The purpose of this study is to evaluate the inter-
+relationship between needle size, syringe volume, concentra-
+tion, and injectability of the formulations by applying a
+constant machine probe crosshead speed on the plunger-
+syringe needle assembly and continuously recording the
+force-displacement pattern. To this end, a computerized
+texture analyzer was used to accurately capture, display, and
+store force, displacement, and time data. The force-distance
+curve and area under the curve are determined, and total
+work (force-displacement) done for complete extrusion of the
+syringe content was calculated. Various ﬂuids with different
+concentrations (i.e., 0.5–4% w/v) of polyethylene oxide
+(PEO) and hydroxypropyl methylcellulose (HPMC) having
+viscosity range of 5–100 cP (24,25), mimicking viscosity
+Fig. 3. Preﬁlled syringe containing a semisolid cylindrical implant for
+subcutaneous delivery
+Fig. 4. Typical changes in shear rate with increasing shear stress
+observed for various structured liquids measured with a laboratory
+rheometer (cone and plate) showing shear thinning, shear thickening,
+and complex gel system behavior
+Assessment of injectability
+
+---PAGE 4---
+encountered with many concentrated biopharmaceutical
+formulations, are investigated.
+MATERIALS AND METHODS
+Materials and Equipment
+Texture
+analyzer
+(Texture
+Technologies
+Corp.,
+Scarsdale, NY) was used to evaluate and quantify the
+total force of injectability performed on a needle-syringe-
+formulation assembly. HPMC (Methocel, E5 PREM LV,
+The
+Dow
+Chemical
+Corp.)
+and
+PEO
+(WSRN-80,
+200,000mw, Union Carbide Corp.) were used as a model
+dispersed system to calculate and mimic the work of
+injection. The dispersed ﬂuids were prepared at a concen-
+tration of 0.5, 1, 2, and 4% w/v. The 3-mL (AHS,
+AH03L) and 6-mL (Covidien, 8881516937) disposable
+syringes with the barrel diameter of 9 and 13 mm
+respectively are used. These were ﬁtted with needle 1
+(18G, 0.84-mm bore diameter and 43 mm in length),
+needle 2 (21G, 0.51-mm bore diameter and 43 mm in
+length), or without a needle and were used to measure
+either force of injection or total work of injection to
+extrude the syringe content completely.
+Texture Analysis to Collect Force-Distance Data
+The measure of injectability was investigated using a
+texture analyzer (XT2i) which was calibrated for force
+and distance measurement. The syringe is positioned in a
+holder shown in Fig. 5. A corresponding probe to match
+the surface area of the plunger plate was used to extrude
+the ﬂuid volume of the syringe. During the test, the probe
+of the texture analyzer travels downward at a speed of
+1 mm/s, forcing the content of the syringe out and
+producing the force-distance plot. The experiments were
+repeated three times.
+The Study of Maximum Force, Dynamic Glide Force, and
+Total Work of Injection
+The measurement of the injectability was deﬁned as the
+ease of injection, represented by the injection force. The
+typical force distance-plot is shown in Fig. 6, which shows the
+proﬁle of 4% (w/v) HPMC in 3-and 6-mL syringes without a
+needle attached. In order to evaluate the injectability, the
+maximum force and the dynamic glide force were identiﬁed
+and calculated from the force-distance plot using Matlab
+code. The maximum force (Fmax) is the highest force before
+all the content is extruded. The dynamic glide force (DGF)
+(26) is the steady force which is required to sustain the
+movement of the ﬂuid out of the syringe. With the help of
+Matlab coding, the DGF is determined based on the average
+value of the longest force range where any two points of force
+differences are within experimental noise threshold (27). Due
+to the large amount of data collection per run (more than
+10,000 points recorded by texture analyzer besides two typical
+points of Fmax and DGF) and variations in needle gauges and
+syringe body materials, we have determined that the total
+work of injection (WT) more accurately characterizes extru-
+sion of syringe content rather than simple measurement of
+force used to extrude the content.
+The Study of the Work of Injection
+To calculate the work of injection, the beginning and the
+end of injection based on force-distance were determined.
+The ﬁrst point of injection is generated when the probe
+touches the plunger of the syringe. The last point is produced
+when all the content is fully extruded. Due to the high
+sensitivity of texture analyzer, the measured force-distance is
+not a smooth curve as slight resistance to ﬂow or frictional
+forces can easily cause departure from linearity. Besides, due
+to the high rate of data collection during the testing with
+texture analyzer (one point per 0.005 mm), simple curve
+ﬁtting can lead to signiﬁcant ﬁtting error. To address these
+concerns, we implemented a Matlab code which can deter-
+mine a short partial curve which contains the last point (28).
+Fig. 5. Analog system of injection carried out by a software-controlled texture analyzer in
+compression mode
+Zhang et al.
+
+---PAGE 5---
+Then, we conduct curve ﬁtting in this short partial curve.
+Therefore, the last point can be determined through the
+derivation of ﬁtted curve, and the error is minimized. To
+achieve this, a Matlab code is developed to import collected
+data for further processing. The numbers pointed to in Fig. 6
+(i.e., 45.26 and 45.48) are representative of the exact distance
+traveled where all the content has been extruded. The boxed
+area in both plots in Fig. 6 describes the entire distance that
+was used to calculate DGF and the calculation of the total
+work done to extrude the syringe content was based on the
+boxed distance.
+RESULTS
+Figure 5 shows a typical experimental setting with a ﬂat-
+ended probe with large enough surface area to uniformly
+force the syringe plunger downward in the syringe barrel.
+Figure 6 shows the force-distance proﬁles obtained using 4%
+w/v solution of HPMC at room temperature when extruded
+through a 3- and 6-mL syringe with no needle attached.
+Proﬁles show that complete extrusion of the syringe content
+can be described by four distinct phases. Phase-I or Fmax is
+the force applied to the plunger and detected by the system
+referred to as the Bbreak loose force^ which appears to be the
+maximum force (Fmax) leading to phase-II where a sharp drop
+toward a steady state follows. This initial two phases constitute
+the Bbreak-loose force^ leading to phase-III, a pseudo-steady
+phase referred to as Bdynamic-glide-force^ (DGF) which is
+required to sustain the movement of the ﬂuid while content is
+extruded. The last, phase-IV, is calculated using the Matlab
+coding approach representing the end of the injection (extrusion)
+which occurs at 45.58- and 45.26-mm distance for 6-and 3-mL
+syringes respectively. The ﬁnal sharp rise in force signiﬁes that
+the plunger has reached the end of the syringe barrel after all the
+content is extruded. Similar trends were also observed for other
+viscosity levels using both 3-and 6-mL syringes including use of
+the two needle gauges.
+Figures 7 and 8 show the dynamic glide force BDGF^ and
+the injection force BFmax^ for HPMC and PEO solutions
+respectively as determined by the texture analyzer. Measure-
+ment of injection forces indicates that the Fmax and DGF
+increase as a function of the viscosity of the polymeric
+solutions. In addition, with the decrease in the needle size
+and bore diameter, there is an increase in Fmax and DGF.
+Overall, it appears that there is an increasing general trend
+among the polymeric solutions with increasing concentra-
+tions. Both DGF and the Fmax under all conditions including
+use of needles with both 3- and 6-mL syringes show the same
+trend. It is also important to note that at certain concentra-
+tions, Fmax values are not sensitive enough to clearly
+demonstrate the differences. For example, when 2% (w/v)
+HPMC solution with 3-mL syringe was used (see Fig. 8a), the
+comparison of the Fmax values between needle 1, needle 2,
+and without a needle is fairly small. The actual differences
+between them being only 0.1 N. As can be seen in this case,
+using the index of injection force BFmax^ which is also used by
+others (26) does not accurately differentiate between various
+settings, and this parameter seems not to be descriptive
+enough as a measure of injectability.
+As a result of this observation, we have added a more
+signiﬁcant and descriptive parameter based on the AUC of
+the force-distance (F-D) proﬁles (see Fig. 6) representing
+total work done (WT) to completely extrude the syringe
+content. The total work involved, WT, was obtained by
+monitoring probe force BF^ and distance BD^ through which
+it acted. Using Eq. 4:
+WT ¼ ∫
+Dmax
+D F¼0 F:dD……
+ð4Þ
+By using this equation, we have calculated the AUC
+Barea under the entire force-distance plot^ representing the
+total work done BWT^ to extrude the syringe content. D
+indicates the entire moving distance of the probe from the
+beginning to the moment that the syringe content is fully
+extruded. This distance and force was automatically captured
+and stored by the written Matlab program (described
+previously, see BMaterials and Methods^) using different
+syringes and solution concentrations with and without needles
+of different bore diameters but constant length. The use of
+the concept of total work (WT) of injection was performed to
+compare behavior of different syringe-needle-formulation
+systems. The results for complete extrusion of both HPMC
+and PEO solutions are presented in Tables I and II. Figure 9
+shows the comparative plots of the total work done for
+various settings. The total work done in the case of 6-mL
+syringe is approximately three times greater than that of
+3-mL syringe using the same needle gauge. The range of
+injection work for 3-mL syringe is from about 20 to 100 J,
+while for the 6-mL syringe, this range is from 100 to 400 J as
+shown in Fig. 9. These results clearly indicate that syringe
+volume or barrel size in addition to the rheology of the
+formulation has a disproportionate increase in total work
+done to extrude the syringe content. This observation is
+consistent with that of others who have shown existence
+of exponential relationship between viscosity increases of
+model antibody formulations as concentration of antibody
+increased (3,4).
+This trend also shows that the higher the concentra-
+tion of the polymeric solution, a more disproportionate
+increase in the total work of injection especially as the
+needle bore diameter decreases. It appears that the total
+work of injection with different needle sizes and syringe
+Fig. 6. Force-distance proﬁle for a 4% (W/V) HPMC in 3- and 6-mL
+syringes with no needle attached
+Assessment of injectability
+
+---PAGE 6---
+volumes is signiﬁcantly impacted as concentration of the
+polymeric ﬂuids increases. Proﬁles in Fig. 9 clearly show
+that the total work done when needle 2 is attached is
+always greater than that with needle 1 and this effect is
+more
+pronounced
+with
+PEO
+solutions
+at
+higher
+concentrations. These data suggest that the work of
+injection increases as the syringe volume and concentra-
+tion of the solution increases and this effect dispropor-
+tionately increases as the needle bore diameter becomes
+smaller.
+Fig. 7. Dynamic glide force (DGF) values for different solution concentrations of HPMC and PEO using 3- and 6-mL syringes with and
+without needles (N = 3). The results are expressed as the mean of three experiments ± standard deviation
+Fig. 8. Maximum force (Fmax) values for different solution concentrations of HPMC and PEO using 3- and 6-mL syringes with and without
+needles (N = 3). The results are expressed as the mean of three experiments ± standard deviation
+Zhang et al.
+
+---PAGE 7---
+DISCUSSION
+In general, ﬂow of viscous liquid through a cylindrical
+pipe is the relative motion of adjacent concentric layers of
+liquid within the pipe. Flow through a syringe as plunger
+force is applied follows the same principle. The shear stress
+produced by the plunger force is linear from zero along the
+central axis to a maximum value at the wall, while the shear
+rate varies nonlinearly and ﬂow velocity is nearly zero at the
+wall and maximum along the central axis as shown in the Fig.
+10, and such behavior is dictated by the rheology of the
+formulation.
+Overall, the rheological property of the pseudoplastic
+systems and their ﬂow can be analyzed with the following
+exponential equation (29) (Eq. 5):
+FN ¼ ήG……
+ð5Þ
+where BFN^ is shearing stress required to produce a deﬁnite
+shearing rate BG^; the term Bή^ is a viscosity coefﬁcient. The
+exponent BN^ rises as the ﬂow tends toward a non-Newtonian
+and when N = 1, the ﬂow is Newtonian. Based on the volume
+of the syringe (i.e., 3 or 6 mL), its barrel diameter and bore
+diameter and length of the needles used, biologics, and
+biopharmaceuticals may demonstrate variety of non-
+Newtonian behavior during syringeability/injectability and
+their functionality will be especially affected by the particle
+number, size and size distribution, shape, zeta potential and
+electroviscous effects, and viscosity behavior of the internal
+(disperse) phase of the dispersion system. Both HPMC and
+PEO solutions at different concentrations have a strong
+impact on the rheological characteristics of the process. Thus,
+viscous and complex biologics and their functionality includ-
+ing syringeability and injectability behavior require method-
+ical examination.
+CONCLUSION
+With advances in formulation design, chemical and
+physical stabilization, and manufacturability, many biolog-
+icals and mAbs have become major biopharmaceutical
+products in the recent past for the treatment of cancer
+and many autoimmune diseases and have been success-
+fully commercialized. Many of these highly concentrated
+formulations (> 100 mg/mL, depending on the molecular
+structure and composition) are designed for subcutaneous
+delivery and present viscosity behavior that can change
+exponentially as concentration of the drug per milliliter
+increases. Highly concentrated systems present major
+concerns during syringeability and injectability especially
+as these products are typically stored refrigerated and
+temperature causes viscosity to increase signiﬁcantly.
+Results of this study indicate that the use of parameter
+Btotal work done^ BWT^ which entails the entire energy
+required to completely extrude the syringe content is a
+more precise assessment when compared to generally used
+factors like BFmax^ or BDGF^ in describing the ﬂow
+behavior
+of
+pseudoplastic
+systems
+subjected
+to
+syringeability and injectability. It is shown that total work
+done BWT^ to inject viscous solutions of polymers studied
+will vary with solution concentration, bore diameter of the
+needle,
+and
+syringe
+size
+(both
+barrel
+diameter
+and
+volume). Changing the needle bore diameter alone (i.e.,
+from larger to smaller) will disproportionately change the
+Table I. Total Work Done to Completely Extrude the HPMC Solutions Out of 3- and 6-mL Syringes with Attached Needle 1 (18G, 0.84 mm),
+Needle 2 (21G, 0.51 mm) and Without a Needle
+0.5% HPMC
+1% HPMC
+2% HPMC
+4% HPMC
+Work (J)
+3 mL
+6 mL
+3 mL
+6 mL
+3 mL
+6 mL
+3 mL
+6 mL
+Without a needle
+24.03 ± 1.54
+128.35 ± 15.6
+27.94 ± 0.94
+148.33 ± 14.4
+30.95 ± 0.78
+161.52 ± 4.32
+36.34 ± 4.50
+185.6 ± 3.08
+Needle 1
+26.73 ± 1.82
+148.89 ± 4.61
+31.07 ± 0.90
+170.61 ± 7.49
+34.19 ± 0.19
+173.23 ± 1.68
+49.51 ± 0.10
+199.14 ± 0.24
+Needle 2
+34.98 ± 2.24
+170.15 ± 5.01
+36.64 ± 0.99
+202.53 ± 7.72
+44.69 ± 0.57
+231.10 ± 4.46
+87.28 ± 4.08
+350.49 ± 13.30
+Results are expressed as the mean ± standard deviation
+HPMC hydroxypropyl methylcellulose
+Table II. Total Work Done to Completely Extrude PEO Solutions Out of 3- and 6-mL Syringes with Attached Needle 1 (18G, 0.84 mm),
+Needle 2 (21G, 0.51 mm) and Without a Needle
+0.5% PEO
+1% PEO
+2% PEO
+4% PEO
+Work (J)
+3 mL
+6 mL
+3 mL
+6 mL
+3 mL
+6 mL
+3 mL
+6 mL
+Without a needle
+28.82 ± 0.52
+107.95 ± 12.85
+31.26 ± 1.61
+115.86 ± 1.61
+39.85 ± 2.54
+130.72 ± 0.56
+45.01 ± 2.84
+140.97 ± 11.14
+Needle 1
+33.25 ± 3.37
+126.68 ± 5.81
+38.92 ± 0.12
+135.42 ± 1.23
+47.26 ± 2.36
+138.76 ± 2.00
+49.65 ± 2.23
+169.22 ± 5.74
+Needle 2
+45.80 ± 1.75
+145.51 ± 2.98
+48.25 ± 0.39
+175.84 ± 3.89
+54.28 ± 1.34
+214.62 ± 1.34
+101.84 ± 5.89
+376.91 ± 4.78
+Results are expressed as the mean ± standard deviation
+PEO polyethylene oxide
+Assessment of injectability
+
+---PAGE 8---
+value of total work done to extrude the same material at
+the same ﬂow rate. Both HPMC and PEO in general at
+the concentrations used appear to provide a convenient
+viscous system (exhibiting shear thinning behavior) repre-
+sentative of most injectable biopharmaceuticals in terms of
+their ﬂow behavior. The WT is signiﬁcantly impacted by
+the needle inner diameter and syringe barrel volume/
+dimensions as well as the injection rate (ﬂow rate). This is
+further accentuated by the formulation composition, drug
+molecular structure and concentration/mL, product com-
+plexity, and its rheological properties with unpredictable
+magnitudes
+on
+syringeability
+and/or
+injectability
+and
+overall product functionality. It is suggested that the
+syringe-needle-biologic
+formulation
+in
+the
+context of
+syringeability and/or injectability presents numerous un-
+certainties
+and
+the
+device
+designers,
+pharmaceutical
+Fig. 9. Total work done to extrude different concentrations of HPMC and PEO from 3- and 6-mL syringes with and without the needles (N = 3)
+Fig. 10. Schematic representation of dynamics of ﬂow through the syringe barrel showing
+linear (shear stress) and nonlinear (shear rate) relationship impacting ﬂow velocity at the
+wall and central axis
+Zhang et al.
+
+---PAGE 9---
+manufacturers, and syringe suppliers must fully examine
+functionality of the product in cohort before administra-
+tion to the patients.
+Open Access This article is distributed under the terms of the
+Creative Commons Attribution 4.0 International License
+(http://creativecommons.org/licenses/by/4.0/), which permits
+unrestricted use, distribution, and reproduction in any
+medium, provided you give appropriate credit to the original
+author(s) and the source, provide a link to the Creative
+Commons license, and indicate if changes were made.
+REFERENCES
+1.
+Mitragotri S, Burke PA, Langer R. Overcoming the challenges
+in administering biopharmaceuticals: formulation and delivery
+strategies. Nat Rev Drug Discov. 2014;13(9):655–72. https://
+doi.org/10.1038/nrd4363.
+2.
+Cleland JL, Powell MF, Shire SJ. The development of stable
+protein formulations: a close look at protein aggregation,
+deamidation, and oxidation. Crit Rev Ther Drug Carrier Syst.
+1992;10(4):307–77.
+3.
+Kanai S, Liu JU, Patapoff TW, Shire SJ. Reversible self-
+association of a concentrated monoclonal antibody solution
+mediated by Fab–Fab interaction that impacts solution viscosity.
+J Pharm Sci. 2008;97(10):4219–27. https://doi.org/10.1002/
+jps.21322.
+4.
+Rathore N, Pranay P, Bernacki J, Eu B, Ji W, Walls E.
+Characterization of protein rheology and delivery forces for
+combination products. J Pharm Sci. 2012;101(12):4472–80.
+https://doi.org/10.1002/jps.23297.
+5.
+Rajagopal K, Wood J, Tran B, Patapoff TW, Nivaggioli T.
+Trehalose limits BSA aggregation in spray-dried formulations at
+high temperatures: implications in preparing polymer implants
+for long-term protein delivery. J Pharm Sci. 2013;102(8):2655–
+66. https://doi.org/10.1002/jps.23634.
+6.
+Allison SD, Chang B, Randolph TW, Carpenter JF. Hydrogen
+bonding between sugar and protein is responsible for inhibition
+of dehydration-induced protein unfolding. Arch Biochem
+Biophys. 1999;365(2):289–98. https://doi.org/10.1006/
+abbi.1999.1175.
+7.
+Sasahara K, McPhie P, Minton AP. Effect of dextran on protein
+stability and conformation attributed to macromolecular
+crowding. J Mol Biol. 2003;326(4):1227–37. https://doi.org/
+10.1016/S0022-2836(02)01443-2.
+8.
+Kerwin BA. Polysorbates 20 and 80 used in the formulation of
+protein biotherapeutics: structure and degradation pathways. J
+Pharm Sci. 2008;97(8):2924–35. https://doi.org/10.1002/jps.21190.
+9.
+Ritschel WA, Suzuki K. In vitro testing of injectability. Pharm
+Ind. 1979;41:468–75.
+10.
+Dexter MB, Shott MJ. The evaluation of the force to expel oily
+injection vehicles from syringes. J Pharm Pharmacol.
+1979;31(1):497–500.
+https://doi.org/10.1111/j.2042-
+7158.1979.tb13570.x.
+11.
+Monkos K. Concentration and temperature dependence of
+viscosity in lysozyme aqueous solutions. Biochim Biophys Acta
+(BBA)-Protein Struct Mol Enzymol. 1997;1339(2):304–10.
+https://doi.org/10.1016/S0167-4838(97)00013-7.
+12.
+Monkos K. Viscosity analysis of the temperature dependence of
+the solution conformation of ovalbumin. Biophys Chem.
+2000;85(1):7–16. https://doi.org/10.1016/S0301-4622(00)00127-7.
+13.
+Tang Q, Munro PA, McCarthy OJ. Rheology of whey protein
+concentrate solutions as a function of concentration, tempera-
+ture, pH and salt concentration. J Dairy Res. 1993;60(3):349–61.
+https://doi.org/10.1017/S0022029900027692.
+14.
+Einstein A. Eine neue bestimmung der moleküldimensionen.
+Ann Phys. 1906;324(2):289–306. https://doi.org/10.1002/
+andp.19063240204.
+15.
+Krieger IM, Dougherty TJ. A mechanism for non-Newtonian
+ﬂow in suspensions of rigid spheres. Trans Soc Rheol.
+1959;3(1):137–52. https://doi.org/10.1122/1.548848.
+16.
+Ravivarapu HB, Moyer KL, Dunn RL. Sustained suppression of
+pituitary-gonadal axis with an injectable, in situ forming implant
+of leuprolide acetate. J Pharm Sci. 2000;89(6):732–41. https://
+doi.org/10.1002/(SICI)1520-6017(200006)89:6<732::AID-
+JPS4>3.0.CO;2-D.
+17.
+Chen M, Gupta V, Anselmo AC, Muraski JA, Mitragotri S.
+Topical delivery of hyaluronic acid into skin using SPACE-
+peptide carriers. J Control Release. 2014;173:67–74. https://
+doi.org/10.1016/j.jconrel.2013.10.007.
+18.
+Muthu MS, Rawat MK, Mishra A, Singh S. PLGA nanoparticle
+formulations of risperidone: preparation and neuropharmaco-
+logical evaluation. Nanomedicine. 2009;5(3):323–33. https://
+doi.org/10.1016/j.nano.2008.12.003.
+19.
+Brodbeck KJ, Pushpala S, McHugh AJ. Sustained release of
+human growth hormone from PLGA solution depots. Pharm
+Res.
+1999;16(12):1825–9.
+https://doi.org/10.1023/
+A:1018943107688.
+20.
+Food and Drug Administration. Guidance for industry, con-
+tainer closure systems for packaging human drugs and biologics.
+United States Department of Health and Human Services.
+1999:1–56.
+21.
+ICH S. Test procedures and acceptance criteria for new drug
+substances and new drug products: chemical substances. Inter-
+national Conference on Harmonisation, IFPMA, Geneva;1999.
+22.
+Overcashier DE, Chan EK, Hsu CC. Technical considerations in
+the development of preﬁlled syringes for protein products. Am
+Pharm Rev. 2006;9(7):77–83.
+23.
+Fry A. Injecting highly viscous drugs. Pharm Technol.
+2014;38:8–10.
+24.
+Chemistry of METHOCEL™cellulose ethers—a technical
+r e v i e w .
+h t t p : / / m s d s s e a r c h . d o w . c o m /
+P u b l i s h e d L i t e r a t u r e D O W C O M / d h _ 0 8 e 5 /
+0901b803808e5f58.pdf?ﬁlepath=dowwolff/pdfs/noreg/198-
+02289.pdf&fromPage=GetDoc. Accessed 23 Oct 2017.
+25.
+POLYOX TM water soluble resins combining ﬂexibility with
+c o n s i s t e n c y .
+h t t p : / / m s d s s e a r c h . d o w . c o m /
+P u b l i s h e d L i t e r a t u r e D O W C O M / d h _ 0 8 e 5 /
+0901b803808e5467.pdf?ﬁlepath=dowwolff/pdfs/noreg/326-
+00108.pdf&fromPage=GetDoc. Accessed 23 Oct 2017.
+26.
+Cilurzo F, Selmin F, Minghetti P, Adami M, Bertoni E, Lauria S,
+et al. Injectability evaluation: an open issue. AAPS
+PharmSciTech. 2011;12(2):604–9. https://doi.org/10.1208/s12249-
+011-9625-y.
+27.
+Wang N, Wu J. Maximizing the user’s beneﬁt in the mobile
+cloud computing. In: Proceedings of the Eighth Wireless of the
+Students, by the Students, and for the Students Workshop 2016
+Oct 3. ACM, pp. 21-23.
+28.
+Wang N, Wu J. Opportunistic wiﬁofﬂoading in a vehicular
+environment: waiting or downloading now?. In Computer
+communications, IEEE INFOCOM 2016-The 35th Annual
+IEEE International Conference on 2016 Apr 10. IEEE, pp. 1-9.
+29.
+Alfred M, James D, Camarata A. Physical chemical principles in
+the pharmaceutical sciences. Physical Pharmacy Lea & Febiger
+Washington Square. 1983;600.
+Assessment of injectability
