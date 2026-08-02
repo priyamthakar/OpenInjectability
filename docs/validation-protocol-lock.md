@@ -3,6 +3,11 @@
 **Status:** protocol draft locked for future experimental work; **no experimental
 dataset has been accepted yet**.
 
+**2026-08-02 update:** a public literature scrape was attempted (see
+[literature-scrape-assessment.md](literature-scrape-assessment.md)). No open
+dataset met the fluid-resistance-only measurand bar; scrape alone does **not**
+unlock independent validation.
+
 ## Scope
 
 Compare **predicted fluid-resistance force** from OpenInjectability v0.1

@@ -1,6 +1,6 @@
 # Phase status (durable)
 
-**Updated:** 2026-08-01  
+**Updated:** 2026-08-02  
 **Branch tip (at write time):** see `git log -1` on `main`  
 **Package:** `0.1.0` alpha — internal verification only
 
@@ -9,7 +9,7 @@
 | A — v0.1 hardening | **Complete** | Sensitivity contract, construction-time types, batch duplicates, VALIDATION claims map, mypy+CI matrix |
 | B — spec completion | **Complete** | Config load, inverse screening, multi-step sensitivity, warning codes, CLI completion, audit bundle, docs |
 | C — release gates | **Complete** | Version agreement, language audit, wheel smoke JSON/MD/HTML/PDF/plot, suite green |
-| D — independent experimental validation | **Blocked** | Protocol locked in [validation-protocol-lock.md](validation-protocol-lock.md); no external Newtonian dataset available; `validation_status` unchanged |
+| D — independent experimental validation | **Blocked after literature scrape** | Protocol locked; public scrape documented in [literature-scrape-assessment.md](literature-scrape-assessment.md) — open tables are almost all **total glide force**, not fluid-only force; `validation_status` unchanged |
 | E — public release | **Blocked** | Requires completed D + registry/signing credentials; no false PyPI publish |
 
 ## What must not happen while blocked
