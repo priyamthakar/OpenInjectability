@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "meta": {
+    "purpose": "Empty template for a real experimental panel. rows must stay empty until real lab or literature values are entered.",
+    "do_not": [
+      "Copy tests/reference_data into this panel",
+      "Invent measured_fluid_force_n or measured_pressure_pa",
+      "Use force_definition total_glide or unknown for comparison rows",
+      "Claim independently_validated from this template alone"
+    ],
+    "required_row_fields": [
+      "scenario_id",
+      "fluid",
+      "viscosity_value",
+      "viscosity_unit",
+      "viscosity_temperature_c",
+      "newtonian_evidence",
+      "needle_id_mm",
+      "needle_length_mm",
+      "needle_geometry_source",
+      "barrel_id_mm",
+      "barrel_geometry_source",
+      "volume_ml",
+      "injection_time_s OR flow_rate_ml_s",
+      "measured_fluid_force_n OR measured_pressure_pa",
+      "force_definition (fluid_only | pressure_area only for comparison)",
+      "method_notes",
+      "citation_or_lab_log"
+    ],
+    "optional_row_fields": [
+      "density_kg_m3",
+      "is_synthetic_smoke_test (tests only; never true in a real panel)"
+    ],
+    "example_row_structure_documentation_only": {
+      "scenario_id": "<unique-id>",
+      "fluid": "<fluid-or-formulation-label>",
+      "viscosity_value": null,
+      "viscosity_unit": "cP",
+      "viscosity_temperature_c": null,
+      "newtonian_evidence": "<rheology report or citation>",
+      "needle_id_mm": null,
+      "needle_length_mm": null,
+      "needle_geometry_source": "<drawing-or-caliper-log>",
+      "barrel_id_mm": null,
+      "barrel_geometry_source": "<drawing-or-caliper-log>",
+      "volume_ml": null,
+      "injection_time_s": null,
+      "flow_rate_ml_s": null,
+      "measured_fluid_force_n": null,
+      "measured_pressure_pa": null,
+      "force_definition": "fluid_only",
+      "method_notes": "<how fluid resistance was isolated>",
+      "citation_or_lab_log": "<DOI, notebook page, or LIMS ID>",
+      "density_kg_m3": null
+    },
+    "sha256_manifest": "After filling rows, run: openinjectability validate-experimental <panel.json> --out <dir>. Archive panel + experimental_comparison.{json,md} + manifest.sha256.",
+    "report_status_vocabulary": [
+      "insufficient_data",
+      "experimental_comparison"
+    ],
+    "never_emitted": "independently_validated"
+  },
+  "rows": []
+}

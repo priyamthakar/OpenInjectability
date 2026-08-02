@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "document_type": "literature_setup_reference_NOT_validation_panel",
+  "warning": "This file records PUBLISHED geometry and empty-syringe friction only. It does NOT contain measured fluid-only force rows and MUST NOT be passed to validate-experimental as evidence of independent validation. Absolute glycerol F_exp-F_fric values appear only in Verwulgen Fig. 6 (not tabulated); do not invent them.",
+  "citation": {
+    "title": "Assessment of Forces in Intradermal Injection Devices: Hydrodynamic Versus Human Factors",
+    "authors": "Verwulgen S, Beyers K, Van Mulder T, Peeters T, Truijen S, Dams F, Vankerckhoven V",
+    "year": 2018,
+    "doi": "10.1007/s11095-018-2397-2",
+    "pmid": "29671074",
+    "free_author_pdf": "https://repository.uantwerpen.be/docman/irua/9e7a65/150639_2019_04_19.pdf"
+  },
+  "syringe": {
+    "description": "HSW Soft-Ject Low Dead Space Luer Lock, 1 mL",
+    "barrel_id_mm": 4.67,
+    "barrel_id_mm_sd": 0.03,
+    "barrel_geometry_source": "Verwulgen 2018 calliper measurement (±0.02 mm accuracy)"
+  },
+  "empty_syringe_friction_n": [
+    {"plunger_speed_mm_min": 50, "friction_force_n": 0.561, "sd": 0.0722},
+    {"plunger_speed_mm_min": 125, "friction_force_n": 0.766, "sd": 0.0932},
+    {"plunger_speed_mm_min": 175, "friction_force_n": 0.829, "sd": 0.111},
+    {"plunger_speed_mm_min": 200, "friction_force_n": 0.852, "sd": 0.115},
+    {"plunger_speed_mm_min": 250, "friction_force_n": 0.902, "sd": 0.148},
+    {"plunger_speed_mm_min": 350, "friction_force_n": 1.014, "sd": 0.154}
+  ],
+  "needles_table_i_measured": [
+    {"needle_no": 1, "brand": "BD", "gauge": "26G", "measured_id_mm": 0.269, "measured_length_mm": 15.651},
+    {"needle_no": 2, "brand": "BD", "gauge": "26G", "measured_id_mm": 0.262, "measured_length_mm": 18.857},
+    {"needle_no": 3, "brand": "BD", "gauge": "26G", "measured_id_mm": 0.256, "measured_length_mm": 22.290},
+    {"needle_no": 4, "brand": "EXEL", "gauge": "27G", "measured_id_mm": 0.216, "measured_length_mm": 19.424},
+    {"needle_no": 5, "brand": "HSW FINE", "gauge": "27G", "measured_id_mm": 0.212, "measured_length_mm": 38.482},
+    {"needle_no": 6, "brand": "HSW FINE", "gauge": "27G", "measured_id_mm": 0.208, "measured_length_mm": 44.411},
+    {"needle_no": 7, "brand": "HSW FINE", "gauge": "27G", "measured_id_mm": 0.213, "measured_length_mm": 48.139},
+    {"needle_no": 8, "brand": "HSW FINE", "gauge": "27G", "measured_id_mm": 0.210, "measured_length_mm": 56.369},
+    {"needle_no": 9, "brand": "EXEL", "gauge": "28G", "measured_id_mm": 0.203, "measured_length_mm": 27.130},
+    {"needle_no": 10, "brand": "EXEL", "gauge": "30G", "measured_id_mm": 0.158, "measured_length_mm": 22.299},
+    {"needle_no": 11, "brand": "EXEL", "gauge": "30G", "measured_id_mm": 0.155, "measured_length_mm": 33.952},
+    {"needle_no": 12, "brand": "TSK", "gauge": "31G", "measured_id_mm": 0.138, "measured_length_mm": 18.635},
+    {"needle_no": 13, "brand": "TSK", "gauge": "32G", "measured_id_mm": 0.128, "measured_length_mm": 17.923},
+    {"needle_no": 14, "brand": "TSK", "gauge": "32G", "measured_id_mm": 0.127, "measured_length_mm": 18.534, "notes": "Used for glycerol viscosity series; Table III lists d_n=0.130 mm L=18.5 mm for regression"},
+    {"needle_no": 15, "brand": "TSK", "gauge": "33G", "measured_id_mm": 0.104, "measured_length_mm": 18.794}
+  ],
+  "glycerol_series_published_viscosities_mpa_s": [1.1, 1.5, 2.1, 2.9, 4.3],
+  "glycerol_series_needle_no": 14,
+  "glycerol_force_availability": "Fig. 6 scatter only; slope 0.78 intercept 0.10 N R2 99.7% vs model — absolute F_exp-F_fric not tabulated; cannot build panel rows without digitizing/inventing",
+  "water_overall_regression": {
+    "n_points": 90,
+    "statement": "F_exp - F_fric = 0.91 F_s + 0.020 N",
+    "r_squared": 0.955,
+    "note": "Regression against their model F_s, not a raw data table for OpenInjectability panel import"
+  },
+  "how_to_use": [
+    "Replicate geometry (barrel 4.67 mm ID, needle #14 or other measured IDs) on a load cell.",
+    "Subtract empty-syringe friction at the same plunger speed (Table II).",
+    "Record measured_fluid_force_n = F_total - F_friction with force_definition fluid_only.",
+    "Fill validation/experimental/panel_*.json from panel.template.json and run: openinjectability validate-experimental ..."
+  ]
+}

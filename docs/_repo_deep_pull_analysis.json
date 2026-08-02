@@ -1,0 +1,1760 @@
+{
+  "zenodo_query_summary": [
+    {
+      "query": "syringe injection force",
+      "type_filter": "dataset",
+      "total": 6678,
+      "returned": 25,
+      "error": null,
+      "sample_titles": [
+        [
+          15730941,
+          "Syringe Services Programs in the U.S., 2024"
+        ],
+        [
+          14768720,
+          "Syringe Services Programs in the U.S., 2019-2020"
+        ],
+        [
+          13844160,
+          "Fracture Caging in a Porous Lab Fault: Experiment Dataset (sensor coordinates added)"
+        ],
+        [
+          20415817,
+          "Longitudinal Census of Syringe Services Programs in the United States (LC-SSUS)"
+        ],
+        [
+          10327296,
+          "Syringe"
+        ]
+      ]
+    },
+    {
+      "query": "syringe force viscosity",
+      "type_filter": "dataset",
+      "total": 5752,
+      "returned": 25,
+      "error": null,
+      "sample_titles": [
+        [
+          15730941,
+          "Syringe Services Programs in the U.S., 2024"
+        ],
+        [
+          14768720,
+          "Syringe Services Programs in the U.S., 2019-2020"
+        ],
+        [
+          10224311,
+          "A multiscale theory for spreading and migration of adhesion-reinforced mesenchymal cells"
+        ],
+        [
+          13844160,
+          "Fracture Caging in a Porous Lab Fault: Experiment Dataset (sensor coordinates added)"
+        ],
+        [
+          5813789,
+          "Elasticity and damping ratio measurement of droplets on super-hydrophobic surfaces"
+        ]
+      ]
+    },
+    {
+      "query": "injection force needle viscosity",
+      "type_filter": "dataset",
+      "total": 7449,
+      "returned": 25,
+      "error": null,
+      "sample_titles": [
+        [
+          5022172,
+          "Data from: Influence of needle-insertion depth on epidural spread and clinical outcomes in caudal ep"
+        ],
+        [
+          4278029,
+          "Sarcomere length non-uniformities dictate force production along the descending limb of the force-le"
+        ],
+        [
+          10224311,
+          "A multiscale theory for spreading and migration of adhesion-reinforced mesenchymal cells"
+        ],
+        [
+          5813789,
+          "Elasticity and damping ratio measurement of droplets on super-hydrophobic surfaces"
+        ],
+        [
+          18672234,
+          "Dataset for Insights from Virtual Chemistry: shear and bulk viscosity of organic liquids via molecul"
+        ]
+      ]
+    },
+    {
+      "query": "glycerol syringe force",
+      "type_filter": "dataset",
+      "total": 5420,
+      "returned": 25,
+      "error": null,
+      "sample_titles": [
+        [
+          8024992,
+          "Surface tension coefficient of acqueous glycerol from Molecular Dynamics simulations"
+        ],
+        [
+          12706111,
+          "Data from: Effects of PcG gene knockdowns on adult morphology"
+        ],
+        [
+          15730941,
+          "Syringe Services Programs in the U.S., 2024"
+        ],
+        [
+          14768720,
+          "Syringe Services Programs in the U.S., 2019-2020"
+        ],
+        [
+          17155962,
+          "AMOEBA force field parameters for choline chloride\u2013based deep eutectic solvents"
+        ]
+      ]
+    },
+    {
+      "query": "glycerol needle injection force",
+      "type_filter": "dataset",
+      "total": 7122,
+      "returned": 25,
+      "error": null,
+      "sample_titles": [
+        [
+          5022172,
+          "Data from: Influence of needle-insertion depth on epidural spread and clinical outcomes in caudal ep"
+        ],
+        [
+          8024992,
+          "Surface tension coefficient of acqueous glycerol from Molecular Dynamics simulations"
+        ],
+        [
+          4278029,
+          "Sarcomere length non-uniformities dictate force production along the descending limb of the force-le"
+        ],
+        [
+          17155962,
+          "AMOEBA force field parameters for choline chloride\u2013based deep eutectic solvents"
+        ],
+        [
+          12706111,
+          "Data from: Effects of PcG gene knockdowns on adult morphology"
+        ]
+      ]
+    },
+    {
+      "query": "injectability viscosity",
+      "type_filter": "dataset",
+      "total": 567,
+      "returned": 25,
+      "error": null,
+      "sample_titles": [
+        [
+          13749011,
+          "Myers et al. - Two material analogue experiments of lava dome extrusion"
+        ],
+        [
+          13645524,
+          "Data for: Klein et al., Viscosity of aqueous ammonium nitrate--organic particles: Equilibrium partit"
+        ],
+        [
+          10371967,
+          "The Search for Novel Proline Analogs for Viscosity Reduction and Stabilization of Highly Concentrate"
+        ],
+        [
+          7249598,
+          "Kinematic viscosity of gas phase methane at different temperatures and pressures"
+        ],
+        [
+          7782713,
+          "The role of blood viscosity in hovering flight of hawkmoths"
+        ]
+      ]
+    },
+    {
+      "query": "glide force syringe",
+      "type_filter": "dataset",
+      "total": 5285,
+      "returned": 25,
+      "error": null,
+      "sample_titles": [
+        [
+          15730941,
+          "Syringe Services Programs in the U.S., 2024"
+        ],
+        [
+          14768720,
+          "Syringe Services Programs in the U.S., 2019-2020"
+        ],
+        [
+          20415817,
+          "Longitudinal Census of Syringe Services Programs in the United States (LC-SSUS)"
+        ],
+        [
+          10327296,
+          "Syringe"
+        ],
+        [
+          14026287,
+          "Program and Operational Characteristics of Syringe Services Programs\u2014Data from the National Survey o"
+        ]
+      ]
+    },
+    {
+      "query": "syringeability viscosity",
+      "type_filter": "dataset",
+      "total": 567,
+      "returned": 25,
+      "error": null,
+      "sample_titles": [
+        [
+          13749011,
+          "Myers et al. - Two material analogue experiments of lava dome extrusion"
+        ],
+        [
+          13645524,
+          "Data for: Klein et al., Viscosity of aqueous ammonium nitrate--organic particles: Equilibrium partit"
+        ],
+        [
+          10371967,
+          "The Search for Novel Proline Analogs for Viscosity Reduction and Stabilization of Highly Concentrate"
+        ],
+        [
+          7249598,
+          "Kinematic viscosity of gas phase methane at different temperatures and pressures"
+        ],
+        [
+          7782713,
+          "The role of blood viscosity in hovering flight of hawkmoths"
+        ]
+      ]
+    },
+    {
+      "query": "Hagen Poiseuille syringe",
+      "type_filter": "dataset",
+      "total": 614,
+      "returned": 25,
+      "error": null,
+      "sample_titles": [
+        [
+          15730941,
+          "Syringe Services Programs in the U.S., 2024"
+        ],
+        [
+          14768720,
+          "Syringe Services Programs in the U.S., 2019-2020"
+        ],
+        [
+          6610025,
+          "GouDa - Generation of universal Data Sets"
+        ],
+        [
+          5021351,
+          "Self-Assessment Questions - Operating Systems and Computer Networks"
+        ],
+        [
+          6387447,
+          "Supplementary material for \"Modeling styles in conceptual data modeling: Reflecting observations in "
+        ]
+      ]
+    },
+    {
+      "query": "injection force glycerol",
+      "type_filter": "dataset",
+      "total": 6764,
+      "returned": 25,
+      "error": null,
+      "sample_titles": [
+        [
+          8024992,
+          "Surface tension coefficient of acqueous glycerol from Molecular Dynamics simulations"
+        ],
+        [
+          17155962,
+          "AMOEBA force field parameters for choline chloride\u2013based deep eutectic solvents"
+        ],
+        [
+          5060102,
+          "Molecular dynamics simulation of tricaproin in gas phase using machine-learning potential ANI2x"
+        ],
+        [
+          7756756,
+          "Shear viscosity coefficient of acqueous glycerol from non-equilibrium Molecular Dynamics simulations"
+        ],
+        [
+          20744054,
+          "FORinFPRO-HIMD: Multimodal Sensor Dataset for Hybrid Injection Molding of Continuous Fiber-Reinforce"
+        ]
+      ]
+    },
+    {
+      "query": "plunger force viscosity",
+      "type_filter": "dataset",
+      "total": 5639,
+      "returned": 25,
+      "error": null,
+      "sample_titles": [
+        [
+          10224311,
+          "A multiscale theory for spreading and migration of adhesion-reinforced mesenchymal cells"
+        ],
+        [
+          13933191,
+          "Data from: Meadow orchards as a good practice example for improving biodiversity in intensive apple "
+        ],
+        [
+          5813789,
+          "Elasticity and damping ratio measurement of droplets on super-hydrophobic surfaces"
+        ],
+        [
+          10559643,
+          "Data from: Abrupt boundaries between mountain meadows and forests separate ground-dwelling invertebr"
+        ],
+        [
+          18672234,
+          "Dataset for Insights from Virtual Chemistry: shear and bulk viscosity of organic liquids via molecul"
+        ]
+      ]
+    },
+    {
+      "query": "break loose force syringe",
+      "type_filter": "dataset",
+      "total": 6443,
+      "returned": 25,
+      "error": null,
+      "sample_titles": [
+        [
+          15193447,
+          "Data for determining the conditions of blockage of perforated sifting surfaces by particles of loose"
+        ],
+        [
+          15730941,
+          "Syringe Services Programs in the U.S., 2024"
+        ],
+        [
+          14768720,
+          "Syringe Services Programs in the U.S., 2019-2020"
+        ],
+        [
+          20415817,
+          "Longitudinal Census of Syringe Services Programs in the United States (LC-SSUS)"
+        ],
+        [
+          13941170,
+          "NA12878, 22RV1 and NB4 sequence dataset"
+        ]
+      ]
+    },
+    {
+      "query": "extrusion force syringe",
+      "type_filter": "dataset",
+      "total": 5456,
+      "returned": 25,
+      "error": null,
+      "sample_titles": [
+        [
+          10075714,
+          "Numerical simulation of friction extrusion: Process characteristics and material deformation due to "
+        ],
+        [
+          15730941,
+          "Syringe Services Programs in the U.S., 2024"
+        ],
+        [
+          14768720,
+          "Syringe Services Programs in the U.S., 2019-2020"
+        ],
+        [
+          7965677,
+          "Data for: Microstructure evolution and texture development during production of homogeneous fine-gra"
+        ],
+        [
+          20415817,
+          "Longitudinal Census of Syringe Services Programs in the United States (LC-SSUS)"
+        ]
+      ]
+    },
+    {
+      "query": "needle diameter viscosity force",
+      "type_filter": "dataset",
+      "total": 10033,
+      "returned": 25,
+      "error": null,
+      "sample_titles": [
+        [
+          4932588,
+          "Data from: Smooth muscle regional contribution to vaginal wall function"
+        ],
+        [
+          4937114,
+          "Data from: Characterization of cytoplasmic viscosity of hundreds of single tumor cells based on micr"
+        ],
+        [
+          20116016,
+          "ANALYSIS OF THE EFUsmanova Feruzakhon Bakhadirzhanovna FECT OF MACHINE NEEDLES ON KNITTED FABRICS DU"
+        ],
+        [
+          4278029,
+          "Sarcomere length non-uniformities dictate force production along the descending limb of the force-le"
+        ],
+        [
+          18399493,
+          "Data for \"A note on the settling velocity of sea spray spume droplets\""
+        ]
+      ]
+    },
+    {
+      "query": "\"injection force\" AND (syringe OR needle)",
+      "type_filter": "dataset",
+      "total": 0,
+      "returned": 0,
+      "error": null,
+      "sample_titles": []
+    },
+    {
+      "query": "\"glide force\" AND syringe",
+      "type_filter": "dataset",
+      "total": 0,
+      "returned": 0,
+      "error": null,
+      "sample_titles": []
+    },
+    {
+      "query": "syringe OR needle AND viscosity AND force AND dataset",
+      "type_filter": "dataset",
+      "total": 0,
+      "returned": 0,
+      "error": null,
+      "sample_titles": []
+    },
+    {
+      "query": "Allmendinger injection force",
+      "type_filter": "dataset",
+      "total": 6572,
+      "returned": 25,
+      "error": null,
+      "sample_titles": [
+        [
+          20744054,
+          "FORinFPRO-HIMD: Multimodal Sensor Dataset for Hybrid Injection Molding of Continuous Fiber-Reinforce"
+        ],
+        [
+          16961174,
+          "Injectable and viscoelastic click alginate hydrogels for spatio-temporal T cell administration in vi"
+        ],
+        [
+          4989104,
+          "Data from: Numerical and experimental study of pyrophoric activated metal Mg surface combustion char"
+        ],
+        [
+          5741397,
+          "A statistical method to optimize the chemical etching process of Zinc Oxide thin films"
+        ],
+        [
+          4651528,
+          "Microarray analysis of EZH2 knockout HaCat cell lines"
+        ]
+      ]
+    },
+    {
+      "query": "Cilurzo injectability",
+      "type_filter": "dataset",
+      "total": 1,
+      "returned": 1,
+      "error": null,
+      "sample_titles": [
+        [
+          17795230,
+          "Dataset for Bibliometric Analysis of Orodispersible Films (2014-2025)"
+        ]
+      ]
+    },
+    {
+      "query": "Newtonian viscosity syringe force",
+      "type_filter": "dataset",
+      "total": 5865,
+      "returned": 25,
+      "error": null,
+      "sample_titles": [
+        [
+          7241443,
+          "Dynamic viscosity of liquid lithium at different temperatures"
+        ],
+        [
+          5898259,
+          "4D flow evaluation of blood non-Newtonian behavior in left ventricle flow analysis"
+        ],
+        [
+          10892267,
+          "Code from: Effect of fluid elasticity on the emergence of oscillations in an active elastic filament"
+        ],
+        [
+          7463298,
+          "Data set for EMPIR project MeDDII Report A2.3.3"
+        ],
+        [
+          7463285,
+          "Data set for EMPIR project MeDDII Report A2.1.4"
+        ]
+      ]
+    },
+    {
+      "query": "syringe injection force",
+      "type_filter": null,
+      "total": 60347,
+      "returned": 15,
+      "error": null,
+      "sample_titles": [
+        [
+          6927295,
+          "injection of PVA MBs via microcatheter in microfluid channel"
+        ],
+        [
+          1470591,
+          "Flow simulation of a collagen solution in syringes with different geometries"
+        ],
+        [
+          3066863,
+          "Flow simulation of a collagen solution in syringes with different geometries"
+        ],
+        [
+          2660401,
+          "Flow Simulation of a Natural Polymer in a Syringe Needle Delivery Device"
+        ],
+        [
+          7067996,
+          "An inexpensive larval-injection method for dsRNA delivery in cotton bollworm"
+        ]
+      ]
+    },
+    {
+      "query": "\"injection force\" viscosity",
+      "type_filter": null,
+      "total": 7804,
+      "returned": 15,
+      "error": null,
+      "sample_titles": [
+        [
+          16961174,
+          "Injectable and viscoelastic click alginate hydrogels for spatio-temporal T cell administration in vi"
+        ],
+        [
+          2288388,
+          "Viscosity"
+        ],
+        [
+          13749011,
+          "Myers et al. - Two material analogue experiments of lava dome extrusion"
+        ],
+        [
+          20187446,
+          "QONNING QOVUSHQOQLIGINI ANIQLASHNING BIOFIZIK USULLARI"
+        ],
+        [
+          7146381,
+          "Effects of isocyanate addition on viscosity of ester-based polyurethanes"
+        ]
+      ]
+    },
+    {
+      "query": "glycerol needle force",
+      "type_filter": null,
+      "total": 52406,
+      "returned": 15,
+      "error": null,
+      "sample_titles": [
+        [
+          3484809,
+          "Support Video of Modification of Glycerol Force Field for Simulating Diffusion-limited Silver Crysta"
+        ],
+        [
+          8024992,
+          "Surface tension coefficient of acqueous glycerol from Molecular Dynamics simulations"
+        ],
+        [
+          3605971,
+          "Illustrative Review on Needle Free Injection Technology"
+        ],
+        [
+          10487852,
+          "Fig. 2 in Cloning, heterologous expression and biochemical characterization of plastidial sn-glycero"
+        ],
+        [
+          10487860,
+          "Fig. 6 in Cloning, heterologous expression and biochemical characterization of plastidial sn-glycero"
+        ]
+      ]
+    }
+  ],
+  "exact_phrase_zeros": [
+    "\"injection force\" AND (syringe OR needle)",
+    "\"glide force\" AND syringe",
+    "syringe OR needle AND viscosity AND force AND dataset"
+  ],
+  "interesting_title_hits": [
+    {
+      "matched_query": "glide force syringe",
+      "id": 14848642,
+      "doi": "10.5281/zenodo.14848642",
+      "title": "Dataset for \"Room-temperature vacancy emission from jog on edge dislocation in FCC nickel under glide force\"",
+      "access_right": "open",
+      "resource_type": "dataset",
+      "resource_subtype": null,
+      "creators": [
+        "Yifan, Wang",
+        "Wu-Rong, Jian",
+        "Wei, Cai"
+      ],
+      "keywords": null,
+      "description_snip": "<p>LAMMPS script, python analysis data, and processed data for the Scripta manuscript \"Room-temperature vacancy emission from jog on edge dislocation in FCC nickel under glide force\"</p>",
+      "n_files": 1,
+      "file_keys": [
+        "Ni_edge.7z"
+      ],
+      "tabularish_files": [],
+      "record_url": "https://zenodo.org/records/14848642"
+    }
+  ],
+  "top_scored_candidates": [
+    {
+      "score": 4,
+      "source": "zenodo",
+      "query": "plunger force viscosity",
+      "id": 7358867,
+      "doi": "10.5281/zenodo.7358867",
+      "title": "Data from: Shifts in ground-dwelling predator communities in response to changes in management intensity in Alpine meadows",
+      "access_right": "open",
+      "resource_type": "dataset",
+      "resource_subtype": null,
+      "creators": [
+        "Plunger, Julia",
+        "Guariento, Elia",
+        "Steinwandter, Michael",
+        "Colla, Filippo",
+        "Rief, Alexander",
+        "Seeber, Julia"
+      ],
+      "keywords": [
+        "soil fauna, arthropoda, abundance data, Alpine grassland, traits, Red List"
+      ],
+      "description_snip": "<p>Here, we provide raw abundance data from a small-scale case study on the effects of management intensity on ground-dwelling macro-invertebrate communities in extensively and intensively managed hay meadows in South Tyrol, Italy. The fauna was sampled with the pitfall trap methods in two seasons (autumn 2018 and spring 2019). The predatory groups Araneae, Opiliones, Carabidae, Staphylinidae, and",
+      "n_files": 1,
+      "file_keys": [
+        "Plunger_etal._2022_SoilOrganisms_RawData.xlsx"
+      ],
+      "tabularish_files": [
+        "Plunger_etal._2022_SoilOrganisms_RawData.xlsx"
+      ],
+      "record_url": "https://zenodo.org/records/7358867"
+    },
+    {
+      "score": 3,
+      "source": "zenodo",
+      "query": "syringe force viscosity",
+      "id": 7542638,
+      "doi": "10.5061/dryad.bk3j9kdbs",
+      "title": "Flagellate grazing morphometrics, particle tracking, prey-handling behavior, clearance rates and forces",
+      "access_right": "open",
+      "resource_type": "dataset",
+      "resource_subtype": null,
+      "creators": [
+        "Suzuki-Tellier, Sei",
+        "Andersen, Anders Peter",
+        "Ki\u00f8rboe, Thomas"
+      ],
+      "keywords": null,
+      "description_snip": "<p>Heterotrophic nanoflagellates are the main consumers of bacteria and picophytoplankton in the ocean. In their micro-scale world, viscosity impedes predator-prey contact, and the mechanisms that allow flagellates to daily clear a volume of water for prey corresponding to 10<sup>6</sup> times their own volume is unclear. It is also unclear what limits the observed maximum ingestion rates of about",
+      "n_files": 6,
+      "file_keys": [
+        "Dataset2_HNF_PreySize_HandTime_DAT.csv",
+        "Dataset_Flagellate_Grazing_Morphometrics_particle_tracking_prey-handling_behavior_clearance_rates_and_forces_SuzukiTellier_Andersen_Kiorboe_2021_readme.txt",
+        "Dataset5_HNF_VideoInfo_DAT.csv",
+        "Dataset4_HNF_ClearRate_Force_DAT.csv",
+        "Dataset3_HNF_FlowRate_ForceAngle_DAT.csv",
+        "Dataset1_HNF_Morpho_Flagellum_DAT.csv"
+      ],
+      "tabularish_files": [
+        "Dataset2_HNF_PreySize_HandTime_DAT.csv",
+        "Dataset_Flagellate_Grazing_Morphometrics_particle_tracking_prey-handling_behavior_clearance_rates_and_forces_SuzukiTellier_Andersen_Kiorboe_2021_readme.txt",
+        "Dataset5_HNF_VideoInfo_DAT.csv",
+        "Dataset4_HNF_ClearRate_Force_DAT.csv",
+        "Dataset3_HNF_FlowRate_ForceAngle_DAT.csv",
+        "Dataset1_HNF_Morpho_Flagellum_DAT.csv"
+      ],
+      "record_url": "https://zenodo.org/records/7542638"
+    },
+    {
+      "score": 3,
+      "source": "zenodo",
+      "query": "plunger force viscosity",
+      "id": 10836666,
+      "doi": "10.5281/zenodo.10836666",
+      "title": "Laser assisted fabrication of mechanochemically robust Ti3Au intermetallic at Au-Ti interface",
+      "access_right": "open",
+      "resource_type": "dataset",
+      "resource_subtype": null,
+      "creators": [
+        "Bialas, Oktawian",
+        "Appiah, Augustine N.S.",
+        "Wala, Marta",
+        "Kunwar, Anil",
+        "Wo\u017aniak, Anna",
+        "Nuckowski, Pawe\u0142 M."
+      ],
+      "keywords": null,
+      "description_snip": "<p>Description:</p>\n<p>&nbsp; &nbsp; &nbsp; a. Materials Properties used in the Finite Element Analysis (FEA):&nbsp;</p>\n<ol>\n<li><strong>specific_enthalpy.zip</strong> :The specific enthalpy (h) data&nbsp; for Au and Ti are presented in the table of temperature (K) and specific enthalpy (J/kg) columns. specific_h_au0001.dat file corresponds to gold and specific_h_ti0001.datcorresponds to Titanium",
+      "n_files": 9,
+      "file_keys": [
+        "information_total_geometry_microscale.csv",
+        "top_and_bottom_layers_comparison_microscale.csv",
+        "specific_enthalpy.zip",
+        "viscosity.zip",
+        "initial_configurations_of_molecular_slabs.zip",
+        "nanoindentation-force-ti3au-imc.csv",
+        "nanoindentation-force-titanium.csv",
+        "radial_distance_irradiance_intensity_data.csv",
+        "laser_material_interface.csv"
+      ],
+      "tabularish_files": [
+        "information_total_geometry_microscale.csv",
+        "top_and_bottom_layers_comparison_microscale.csv",
+        "specific_enthalpy.zip",
+        "viscosity.zip",
+        "initial_configurations_of_molecular_slabs.zip",
+        "nanoindentation-force-ti3au-imc.csv",
+        "nanoindentation-force-titanium.csv",
+        "radial_distance_irradiance_intensity_data.csv",
+        "laser_material_interface.csv"
+      ],
+      "record_url": "https://zenodo.org/records/10836666"
+    },
+    {
+      "score": 2,
+      "source": "zenodo",
+      "query": "syringe injection force",
+      "id": 17123158,
+      "doi": "10.5281/zenodo.17123158",
+      "title": "MedibotDDoS Dataset (2025)",
+      "access_right": "open",
+      "resource_type": "dataset",
+      "resource_subtype": null,
+      "creators": [
+        "Lu, Wei"
+      ],
+      "keywords": [
+        "cybersecurity, IoMT, DDoS, dataset, intrusion detection"
+      ],
+      "description_snip": "<p>The MedibotDDoS dataset captures 200K+ traffic records with 13 features, representing benign and attack traffic against a medical syringe pump control system. It demonstrates how botnet-induced DDoS traffic disrupts healthcare devices, making it valuable for intrusion detection, anomaly detection, and medical device security research.</p>\n<h3>Context</h3>\n<ul>\n<li>The MedibotDDoS dataset was ge",
+      "n_files": 1,
+      "file_keys": [
+        "medibotddos.xlsx"
+      ],
+      "tabularish_files": [
+        "medibotddos.xlsx"
+      ],
+      "record_url": "https://zenodo.org/records/17123158"
+    },
+    {
+      "score": 2,
+      "source": "zenodo",
+      "query": "syringe injection force",
+      "id": 20744054,
+      "doi": "10.5281/zenodo.20744054",
+      "title": "FORinFPRO-HIMD: Multimodal Sensor Dataset for Hybrid Injection Molding of Continuous Fiber-Reinforced Polypropylene Composites",
+      "access_right": "open",
+      "resource_type": "dataset",
+      "resource_subtype": null,
+      "creators": [
+        "Kini, Rohan",
+        "Schweizer, Lukas"
+      ],
+      "keywords": null,
+      "description_snip": "<p>This dataset contains data from an hybrid injection molding experiment conducted at the University of Augsburg within the framework of the research project FORinFPRO (Project No. AZ-1596-23), funded by the Bayerische Transformations- und Forschungsstiftung. The experiments were performed on a hybrid injection molding demonstrator based on the <em>Erlanger Tr&auml;ger</em>, which serves exclusiv",
+      "n_files": 3,
+      "file_keys": [
+        "cycle_001_pt.csv",
+        "cycle_001_us_rms.csv",
+        "cycle_001_machine_data.csv"
+      ],
+      "tabularish_files": [
+        "cycle_001_pt.csv",
+        "cycle_001_us_rms.csv",
+        "cycle_001_machine_data.csv"
+      ],
+      "record_url": "https://zenodo.org/records/20744054"
+    },
+    {
+      "score": 2,
+      "source": "zenodo",
+      "query": "syringe force viscosity",
+      "id": 10892267,
+      "doi": "10.5061/dryad.9p8cz8wqs",
+      "title": "Code from: Effect of fluid elasticity on the emergence of oscillations in an active elastic filament",
+      "access_right": "open",
+      "resource_type": "dataset",
+      "resource_subtype": null,
+      "creators": [
+        "Link, Kathryn",
+        "Guy, Robert",
+        "Thomases, Becca",
+        "Arratia, Paulo"
+      ],
+      "keywords": [
+        "viscoelastic fluid",
+        "Flagella",
+        "dynamic buckling instability",
+        "follower force"
+      ],
+      "description_snip": "<p>Many microorganisms propel through complex media by deformations of their flagella. The beat is thought to emerge from interactions between forces of the surrounding fluid, passive elastic response from deformations of the flagellum, and active forces from internal molecular motors. The beat varies in response to changes in the fluid rheology, including elasticity, but there is limited data on ",
+      "n_files": 4,
+      "file_keys": [
+        "README.md",
+        "Follower_Force_Simulations.zip",
+        "experimental_viscous_data.csv",
+        "experimental_viscoelastic_data.csv"
+      ],
+      "tabularish_files": [
+        "Follower_Force_Simulations.zip",
+        "experimental_viscous_data.csv",
+        "experimental_viscoelastic_data.csv"
+      ],
+      "record_url": "https://zenodo.org/records/10892267"
+    },
+    {
+      "score": 2,
+      "source": "zenodo",
+      "query": "injection force needle viscosity",
+      "id": 5022172,
+      "doi": "10.5061/dryad.8pp13mm",
+      "title": "Data from: Influence of needle-insertion depth on epidural spread and clinical outcomes in caudal epidural injections: a randomized clinical trial",
+      "access_right": "open",
+      "resource_type": "dataset",
+      "resource_subtype": null,
+      "creators": [
+        "Park, Sang Jun",
+        "Yoon, Kyung Bong",
+        "Shin, Dong Ah",
+        "Kim, Kiwook",
+        "Kim, Tae Lim",
+        "Kim, Shin Hyung"
+      ],
+      "keywords": null,
+      "description_snip": "Background: A caudal epidural steroid injection (CESI) is a commonly used method to improve\nsymptoms of lumbosacral pain. We compared the achievement of successful epidurograms and\npatient-reported clinical outcomes following different needle-insertion depths during CESI.\nMethods: For the conventional method group, the needle was advanced into the sacral canal.\nFor the alternative method group, th",
+      "n_files": 8,
+      "file_keys": [
+        "Table 3.docx",
+        "Data sheet for Caudal Block.xlsx",
+        "Table 1.docx",
+        "Table 2.docx",
+        "Table 4.docx",
+        "Figure 1.jpg",
+        "Figure 2.jpeg",
+        "Figure 3.jpeg"
+      ],
+      "tabularish_files": [
+        "Data sheet for Caudal Block.xlsx"
+      ],
+      "record_url": "https://zenodo.org/records/5022172"
+    },
+    {
+      "score": 2,
+      "source": "zenodo",
+      "query": "injection force needle viscosity",
+      "id": 5094273,
+      "doi": "10.5061/dryad.zs7h44j95",
+      "title": "Recognition and differentiation of Dural puncture click sensation",
+      "access_right": "open",
+      "resource_type": "dataset",
+      "resource_subtype": null,
+      "creators": [
+        "Utsumi, Isao",
+        "Hascilowicz, Tomasz",
+        "Omi, Sachiko"
+      ],
+      "keywords": null,
+      "description_snip": "<p><b>Background:</b> We hypothesized that the click perceived when puncturing the dura-arachnoid with fine-gauge spinal needles can be subjectively identified, and investigated whether it may be distinguishable among different needle types.</p>\n\n<p><b>Methods:</b> Subjective and objective evaluations were performed. First, physicians punctured the polyamide film or porcine dura mater (n=70 and n=",
+      "n_files": 3,
+      "file_keys": [
+        "PD_measurement_data.xlsx",
+        "S1_Figure._LDTF_calculations.xlsx",
+        "PA_measurement_data.xlsx"
+      ],
+      "tabularish_files": [
+        "PD_measurement_data.xlsx",
+        "S1_Figure._LDTF_calculations.xlsx",
+        "PA_measurement_data.xlsx"
+      ],
+      "record_url": "https://zenodo.org/records/5094273"
+    },
+    {
+      "score": 2,
+      "source": "zenodo",
+      "query": "injection force needle viscosity",
+      "id": 5117688,
+      "doi": "10.25338/B8FW6R",
+      "title": "Buffering lidocaine heightens aversion to cornual nerve injections in dairy calves",
+      "access_right": "open",
+      "resource_type": "dataset",
+      "resource_subtype": null,
+      "creators": [
+        "Tucker, Cassandra",
+        "Adcock, Sarah"
+      ],
+      "keywords": [
+        "Disbudding",
+        "Cattle",
+        "lidocaine",
+        "Pain"
+      ],
+      "description_snip": "<p>It is best practice to numb the horn buds before disbudding dairy calves, which can be achieved by injecting lidocaine, a local anesthetic, around the cornual nerve. In humans, the acute pain that occurs upon injection of lidocaine can be reduced by neutralizing the pH of the solution with an alkalizing agent, such as sodium bicarbonate. We evaluated whether buffering lidocaine would reduce cal",
+      "n_files": 4,
+      "file_keys": [
+        "Adcock_Tucker_2021_Heart_Rate_through_Time.xlsx",
+        "Adcock_Tucker_2021_Behavior_Data.xlsx",
+        "Adcock_Tucker_2021_HRV_Data.xlsx",
+        "Adcock_Tucker_2021_Thermal_Data.xlsx"
+      ],
+      "tabularish_files": [
+        "Adcock_Tucker_2021_Heart_Rate_through_Time.xlsx",
+        "Adcock_Tucker_2021_Behavior_Data.xlsx",
+        "Adcock_Tucker_2021_HRV_Data.xlsx",
+        "Adcock_Tucker_2021_Thermal_Data.xlsx"
+      ],
+      "record_url": "https://zenodo.org/records/5117688"
+    },
+    {
+      "score": 2,
+      "source": "zenodo",
+      "query": "injection force needle viscosity",
+      "id": 6351630,
+      "doi": "10.5281/zenodo.6351630",
+      "title": "Raw Data for the article: Portal vein puncture-related complications during transjugular intrahepatic portosystemic shunt creation: Colapinto needle set vs R\u00f6sch-Uchida needle set",
+      "access_right": "open",
+      "resource_type": "dataset",
+      "resource_subtype": null,
+      "creators": [
+        "Roberto Miraglia"
+      ],
+      "keywords": [
+        "Hemorrhage",
+        "Interventional",
+        "Liver",
+        "TIPS"
+      ],
+      "description_snip": "<p>Transjugular portal vein puncture is considered the riskiest step in TIPS creation with possible incidence of portal vein puncture-related complications (PVPC). The Colapinto and the R&ouml;sch-Uchida needle sets are two different needle sets currently available. To date, there have been no randomized control trials or systematic reviews which compare the incidence of PVPC when using the two di",
+      "n_files": 4,
+      "file_keys": [
+        "Charts for TIPS systematic review.xlsx",
+        "Charts for write up.xlsx",
+        "TIPS meta-analysis complete flowchart.xlsx",
+        "TIPS systematic review raw data.xlsx"
+      ],
+      "tabularish_files": [
+        "Charts for TIPS systematic review.xlsx",
+        "Charts for write up.xlsx",
+        "TIPS meta-analysis complete flowchart.xlsx",
+        "TIPS systematic review raw data.xlsx"
+      ],
+      "record_url": "https://zenodo.org/records/6351630"
+    },
+    {
+      "score": 2,
+      "source": "zenodo",
+      "query": "glide force syringe",
+      "id": 7625938,
+      "doi": "10.5061/dryad.kwh70rz80",
+      "title": "Bridging the gap: Optimising connectivity solutions for an arboreal gliding mammal",
+      "access_right": "open",
+      "resource_type": "dataset",
+      "resource_subtype": null,
+      "creators": [
+        "Lee, Rachel",
+        "Mendes, Calebe",
+        "Liang, Stacey",
+        "Yang, Vera",
+        "Eng, Delaney",
+        "Ong, Wei Bin"
+      ],
+      "keywords": [
+        "connectivity model",
+        "conservation planning",
+        "road mitigation",
+        "gap-crossing",
+        "glide pole",
+        "colugo",
+        "Galeopterus variegatus"
+      ],
+      "description_snip": "<p>Connectivity modelling tools are important for developing mitigation strategies to alleviate negative impacts on animal movement caused by road networks. Arboreal gliding mammals are especially vulnerable to road widening as they are unable to cross gaps beyond their gliding capacity. However, there are limitations of conventional raster-based modelling techniques when applied on this group.\u00a0We",
+      "n_files": 7,
+      "file_keys": [
+        "Glide_ratio.csv",
+        "README.md",
+        "Road_shapefiles.zip",
+        "Elevation_rasters.zip",
+        "Trees_shapefiles.zip",
+        "Pole_attributes_12m.RData",
+        "For_visualization.zip"
+      ],
+      "tabularish_files": [
+        "Glide_ratio.csv",
+        "Road_shapefiles.zip",
+        "Elevation_rasters.zip",
+        "Trees_shapefiles.zip",
+        "For_visualization.zip"
+      ],
+      "record_url": "https://zenodo.org/records/7625938"
+    },
+    {
+      "score": 2,
+      "source": "zenodo",
+      "query": "glide force syringe",
+      "id": 7712368,
+      "doi": "10.5281/zenodo.7712368",
+      "title": "Positive selection screen in yeast for inhibitors of SARS-CoV-2 Main Protease. Dataset from docking studies.",
+      "access_right": "open",
+      "resource_type": "dataset",
+      "resource_subtype": null,
+      "creators": [
+        "Sunniva Sigurdard\u00f3ttir",
+        "Su\u00e9len Fernandes Silva",
+        "Ievgeniia Tiukova",
+        "Hanna Alalam",
+        "Ross D. King",
+        "Morten Gr\u00f8tli"
+      ],
+      "keywords": null,
+      "description_snip": "<p>Best docked poses from XP docking and covalent docking (Glide; Schr&ouml;dinger 2021-2) towards the SARS-CoV-2 MPro protein (PDB ID 7CB7). List of ligands is also included.&nbsp;&nbsp;</p>",
+      "n_files": 3,
+      "file_keys": [
+        "Compounds.xlsx",
+        "XPDocking.zip",
+        "CovalentDocking.zip"
+      ],
+      "tabularish_files": [
+        "Compounds.xlsx",
+        "XPDocking.zip",
+        "CovalentDocking.zip"
+      ],
+      "record_url": "https://zenodo.org/records/7712368"
+    },
+    {
+      "score": 2,
+      "source": "zenodo",
+      "query": "break loose force syringe",
+      "id": 15193447,
+      "doi": "10.5281/zenodo.15193447",
+      "title": "Data for determining the conditions of blockage of perforated sifting surfaces by particles of loose grain material",
+      "access_right": "open",
+      "resource_type": "dataset",
+      "resource_subtype": null,
+      "creators": [
+        "Kharchenko, Serhii",
+        "Samborski, Sylwester"
+      ],
+      "keywords": [
+        "blocking",
+        "hole",
+        "perforated surface",
+        "sifting",
+        "loos materials",
+        "force of adhesion"
+      ],
+      "description_snip": "<p>The blocking of the holes of sieving surfaces depends on a number of factors, among which the key ones are the properties of the particles of the loose material and the parameters of the holes. &nbsp;</p>\n<p><br>1. The data are presented \"Determination of the Young's modulus of loose material particles\" in the form of a tabular dependence of the change in the Young's modulus for particles of lo",
+      "n_files": 5,
+      "file_keys": [
+        "Determination of the Young's modulus of loose material particles.csv",
+        "Dependence of the adhesion force Fad (N) on the relative velocity of the loose material particle (Vrp).csv",
+        "Dependence of the adhesion force Fad (N) on the number of sublayers of loose material  (kml).csv",
+        "Dependence of the adhesion force Fad (N) on the contact coefficient ke.csv",
+        "Dependence of the adhesion force Fad (N) on the thickness of the perforated screening surface (hs).csv"
+      ],
+      "tabularish_files": [
+        "Determination of the Young's modulus of loose material particles.csv",
+        "Dependence of the adhesion force Fad (N) on the relative velocity of the loose material particle (Vrp).csv",
+        "Dependence of the adhesion force Fad (N) on the number of sublayers of loose material  (kml).csv",
+        "Dependence of the adhesion force Fad (N) on the contact coefficient ke.csv",
+        "Dependence of the adhesion force Fad (N) on the thickness of the perforated screening surface (hs).csv"
+      ],
+      "record_url": "https://zenodo.org/records/15193447"
+    },
+    {
+      "score": 2,
+      "source": "zenodo",
+      "query": "break loose force syringe",
+      "id": 5023753,
+      "doi": "10.5061/dryad.8pp2rt0",
+      "title": "Data from: Individual diet differences in a molluscivore shorebird are associated with the size of body instruments for internal processing rather than for feeding",
+      "access_right": "open",
+      "resource_type": "dataset",
+      "resource_subtype": null,
+      "creators": [
+        "Zhang, Shou",
+        "Ma, Zhijun",
+        "Feng, Chen-Chen",
+        "Melville, David",
+        "van Gils, Jan",
+        "Piersma, Theunis"
+      ],
+      "keywords": [
+        "flexible trait",
+        "break force",
+        "great knot",
+        "inflexible trait",
+        "Calidris tenuirostris"
+      ],
+      "description_snip": "Especially in birds, it is widely found that the size of individual prey items follows the size of the instruments of prey capture, handling and processing, i.e. bill size. In fact, this is the natural history basis of major discoveries on adaptative evolution in the face of changing food resources. In some birds, e.g. the molluscivore shorebirds ingesting hard-shelled prey, most of the prey proce",
+      "n_files": 1,
+      "file_keys": [
+        "gizzard determines great knot's diet.xlsx"
+      ],
+      "tabularish_files": [
+        "gizzard determines great knot's diet.xlsx"
+      ],
+      "record_url": "https://zenodo.org/records/5023753"
+    },
+    {
+      "score": 2,
+      "source": "zenodo",
+      "query": "break loose force syringe",
+      "id": 4997567,
+      "doi": "10.5061/dryad.gd077",
+      "title": "Data from: How to best smash a snail: the effect of tooth shape on crushing load",
+      "access_right": "open",
+      "resource_type": "dataset",
+      "resource_subtype": null,
+      "creators": [
+        "Crofts, S. B.",
+        "Summers, A. P."
+      ],
+      "keywords": [
+        "Nucella lamellosa",
+        "rapid prototyping",
+        "shell failure",
+        "Tooth Morphology",
+        "durophagy",
+        "Nucella ostrina"
+      ],
+      "description_snip": "Organisms that are durophagous, hard prey consumers, have a diversity of tooth forms. To determine why we see this variation, we tested whether some tooth forms break shells better than others. We measured the force needed with three series of aluminium tooth models, which varied in concavity and the morphology of a stress concentrating cusp, to break a shell. We created functionally identical cop",
+      "n_files": 1,
+      "file_keys": [
+        "How to smash a snail.xlsx"
+      ],
+      "tabularish_files": [
+        "How to smash a snail.xlsx"
+      ],
+      "record_url": "https://zenodo.org/records/4997567"
+    },
+    {
+      "score": 2,
+      "source": "zenodo",
+      "query": "needle diameter viscosity force",
+      "id": 4977476,
+      "doi": "10.5061/dryad.6m905qfvz",
+      "title": "Variations in leaf economics spectrum traits for an evergreen coniferous species: Tree size dominates over environment factors",
+      "access_right": "open",
+      "resource_type": "dataset",
+      "resource_subtype": null,
+      "creators": [
+        "Liu, Zhili",
+        "Hikosaka, Kouki",
+        "Li, Fengri",
+        "Jin, Guangze"
+      ],
+      "keywords": [
+        "DBH",
+        "foliar nitrogen content",
+        "light intensity",
+        "needle longevity",
+        "Pinus koraiensis",
+        "soil nitrogen content",
+        "Specific leaf area",
+        "tree height"
+      ],
+      "description_snip": "<ol>\n\t<li>Many leaf traits strongly vary with tree size and environmental factors, but the importance of these factors to intraspecific variations of leaf traits in forest trees have rarely been <a><span>simultaneously</span></a> evaluated.</li>\n\t<li>We measured needle longevity and specific leaf area (SLA) and nitrogen (N) content of every needle age (0 to 4 year old) for 65 individuals with 0.3-",
+      "n_files": 1,
+      "file_keys": [
+        "original_data.xlsx"
+      ],
+      "tabularish_files": [
+        "original_data.xlsx"
+      ],
+      "record_url": "https://zenodo.org/records/4977476"
+    },
+    {
+      "score": 2,
+      "source": "zenodo",
+      "query": "needle diameter viscosity force",
+      "id": 4726245,
+      "doi": "10.5061/dryad.mkkwh710d",
+      "title": "How head shape and substrate particle size affect fossorial locomotion in lizards",
+      "access_right": "open",
+      "resource_type": "dataset",
+      "resource_subtype": null,
+      "creators": [
+        "Bergmann, Philip J",
+        "Berry, David S"
+      ],
+      "keywords": [
+        "penetration force",
+        "physical model",
+        "head shape",
+        "lizards",
+        "phenotypic evolution"
+      ],
+      "description_snip": "<p>Granular substrates ranging from silt to gravel cover much of the Earth's land area, providing an important habitat for fossorial animals. Many of these animals use their heads to penetrate the substrate. Although there is considerable variation in head shape, how head shape affects fossorial locomotor performance in different granular substrates is poorly understood. Here, head shape variation",
+      "n_files": 4,
+      "file_keys": [
+        "Bergmann_and_Berry_Lizard_Head_Shape_Data.xlsx",
+        "Bergmann_and_Berry_Container_Dimension_Data.xlsx",
+        "Bergmann_and_Berry_tree.txt",
+        "Bergmann_and_Berry_Penetration_Force_Data.xlsx"
+      ],
+      "tabularish_files": [
+        "Bergmann_and_Berry_Lizard_Head_Shape_Data.xlsx",
+        "Bergmann_and_Berry_Container_Dimension_Data.xlsx",
+        "Bergmann_and_Berry_tree.txt",
+        "Bergmann_and_Berry_Penetration_Force_Data.xlsx"
+      ],
+      "record_url": "https://zenodo.org/records/4726245"
+    },
+    {
+      "score": 2,
+      "source": "zenodo",
+      "query": "Allmendinger injection force",
+      "id": 4950197,
+      "doi": "10.5061/dryad.k9q7h",
+      "title": "Data from: Glucocorticoid induces incoordination between glutamatergic and GABAergic neurons in the amygdala",
+      "access_right": "open",
+      "resource_type": "dataset",
+      "resource_subtype": null,
+      "creators": [
+        "Wang, Guang-Yan",
+        "Zhu, Zhaoming",
+        "Cui, Shan",
+        "Wang, Jin-Hui",
+        "Zhu, Zhao-Ming"
+      ],
+      "keywords": [
+        "dexamethasone",
+        "Amygdala",
+        "GABA",
+        "Neuron",
+        "synapse",
+        "glutamate"
+      ],
+      "description_snip": "Background: Stressful life leads to mood disorders. Chronic mild stress is presumably major etiology for depression, and acute severe stress leads to anxiety. These stressful situations may impair hypothalamus-pituitary-adrenal axis and in turn induce synapse dysfunction. However, it remains elusive how the stress hormones mess up subcellular compartments and interactions between excitatory and in",
+      "n_files": 16,
+      "file_keys": [
+        "ISI (25 uM DEX washing-on-Gluergic neurons) 14cells.xls",
+        "25 uM DEX washing-on IPSC  10cells.xlsx",
+        "25 uM washing-on-IPSC 10cells.opj",
+        "washing-on EPSC 14cells.xlsx",
+        "ISI(injection-PN) Ctrl.19 Inj.28.xlsx",
+        "25 uM washing-on sEPSC 14cells.opj",
+        "ISI(injection-IN) Ctrl.11 Inj.11.xlsx",
+        "ISI(DEX injection-Gluergic neuron ) Ctrl.19 Inj. 28.opj",
+        "40 mg per kg body weight DEX injectioin-sEPSC Ctrl.12 Inj.19.opj",
+        "40 mg per kg DEX injection-sIPSC Ctrl.13 Inj.11.opj",
+        "injection-sEPSC Ctrl.12 Inj.19.xlsx",
+        "injection-sIPSC Ctrl.13 Inj.11.xlsx",
+        "ISI(25 uM DEX washing-on-GABAergic neurons\uff0913Cells.opj",
+        "ISI(25 uM DEX washing-on-GABAergic neurons) 13cells.xls",
+        "ISI\uff0825 uM DEX washing-on-Gluergic neuron\uff0914Cells.opj",
+        "ISI(DEX injection-GABAergic neuron) Ctrl.11 Inj.11.opj"
+      ],
+      "tabularish_files": [
+        "ISI (25 uM DEX washing-on-Gluergic neurons) 14cells.xls",
+        "25 uM DEX washing-on IPSC  10cells.xlsx",
+        "washing-on EPSC 14cells.xlsx",
+        "ISI(injection-PN) Ctrl.19 Inj.28.xlsx",
+        "ISI(injection-IN) Ctrl.11 Inj.11.xlsx",
+        "injection-sEPSC Ctrl.12 Inj.19.xlsx",
+        "injection-sIPSC Ctrl.13 Inj.11.xlsx",
+        "ISI(25 uM DEX washing-on-GABAergic neurons) 13cells.xls"
+      ],
+      "record_url": "https://zenodo.org/records/4950197"
+    },
+    {
+      "score": 0,
+      "source": "zenodo",
+      "query": "syringe injection force",
+      "id": 7738236,
+      "doi": "10.5281/zenodo.7738236",
+      "title": "Dataset for manuscript: Rock anisotropy promotes hydraulic fracture containment at depth",
+      "access_right": "open",
+      "resource_type": "dataset",
+      "resource_subtype": null,
+      "creators": [
+        "Lu, Guanyi",
+        "Momeni, Seyyedmaalek",
+        "Peruzzo, Carlo",
+        "Moukhtari, Fatima-Ezzahra",
+        "Lecampion, Brice"
+      ],
+      "keywords": [
+        "hydraulic fracture containment",
+        "laboratory hydraulic fracturing experiments",
+        "acoustic emission monitoring",
+        "active acoustic scan"
+      ],
+      "description_snip": "<p>This is the&nbsp;experimental data&nbsp;used in manuscript: &quot;Rock anisotropy promotes hydraulic fracture containment at depth&quot;.</p>\n\n<p>This data set has 5 folders:&nbsp;</p>\n\n<p>K1, T2, M3 and M4 contain the raw data collected by active acoustic monitoring system and various pumps and transducers.&nbsp;<br>\nThe readings of the Top Industrie syringe pump (for fluid injection), pressur",
+      "n_files": 6,
+      "file_keys": [
+        "K1.zip",
+        "T2.zip",
+        "ReadMe.txt",
+        "Processed_data.zip",
+        "M4.zip",
+        "M3.zip"
+      ],
+      "tabularish_files": [
+        "K1.zip",
+        "T2.zip",
+        "ReadMe.txt",
+        "Processed_data.zip",
+        "M4.zip",
+        "M3.zip"
+      ],
+      "record_url": "https://zenodo.org/records/7738236"
+    },
+    {
+      "score": 0,
+      "source": "zenodo",
+      "query": "syringe injection force",
+      "id": 14027061,
+      "doi": "10.5281/zenodo.14027061",
+      "title": "Microbial Metabolomics of Methanotrophes from Gradient Syringe",
+      "access_right": "open",
+      "resource_type": "dataset",
+      "resource_subtype": null,
+      "creators": [
+        "Kalinski, Jarmo-Charles"
+      ],
+      "keywords": null,
+      "description_snip": "<p>Non-targeted metabolomics of organic extracts from methanotropes cultured on agarose in gradient syringe (ambient air vs methane) recorded on Exploris 480</p>",
+      "n_files": 2,
+      "file_keys": [
+        "neg-mzML.zip",
+        "pos-mzML.zip"
+      ],
+      "tabularish_files": [
+        "neg-mzML.zip",
+        "pos-mzML.zip"
+      ],
+      "record_url": "https://zenodo.org/records/14027061"
+    }
+  ],
+  "n_candidates": 44,
+  "positive_score_count": 18,
+  "figshare_targeted": [
+    {
+      "article_id": "32195520",
+      "version": 1,
+      "title": "Additional file 10 of Guiding syringe selection for intravitreal injections: injectability and stability analysis of compounded pegcetacoplan (SYFOVRE) and the broader implications for high-viscosity ophthalmic therapies",
+      "doi": "10.6084/m9.figshare.32195520.v1",
+      "url": "https://springernature.figshare.com/articles/dataset/Additional_file_10_of_Guiding_syringe_selection_for_intravitreal_injections_injectability_and_stability_analysis_of_compounded_pegcetacoplan_SYFOVRE_and_the_broader_implications_for_high-viscosity_ophthalmic_therapies/32195520/1",
+      "defined_type": "dataset",
+      "license": {
+        "value": 47,
+        "name": "CC BY + CC0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "description": "Supplementary Material 10: Table S2. Unaggregated eye characteristics and raw injection force data.",
+      "tags": [
+        "SYFOVRE",
+        "Pegcetacoplan",
+        "Faricimab",
+        "Aflibercept",
+        "Syringe selection",
+        "Age-related macular degeneration",
+        "Anti-VEGF",
+        "Silicone oil",
+        "High viscosity formulations",
+        "Injectability"
+      ],
+      "categories": [
+        "Biophysics",
+        "Medicine",
+        "Cell Biology",
+        "Molecular Biology",
+        "Physiology",
+        "Pharmacology",
+        "Biotechnology",
+        "Environmental Sciences not elsewhere classified",
+        "Sociology",
+        "Immunology",
+        "Biological Sciences not elsewhere classified",
+        "Cancer",
+        "Infectious Diseases"
+      ],
+      "authors": [
+        "Tina Felfeli",
+        "Natalie M. Lane",
+        "Efrem D. Mandelcorn"
+      ],
+      "files": [
+        {
+          "name": "40942_2026_832_MOESM10_ESM.xlsx",
+          "size": 17293,
+          "download_url": "https://ndownloader.figshare.com/files/64317894",
+          "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "is_link_only": false,
+          "id": 64317894
+        }
+      ]
+    },
+    {
+      "article_id": "20800108",
+      "version": 1,
+      "title": "Enabling faster subcutaneous delivery of larger volume, high viscosity fluids",
+      "doi": "10.6084/m9.figshare.20800108.v1",
+      "url": "https://tandf.figshare.com/articles/dataset/Enabling_faster_subcutaneous_delivery_of_larger_volume_high_viscosity_fluids/20800108/1",
+      "defined_type": "dataset",
+      "license": {
+        "value": 1,
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "description": "<p>Many current subcutaneous (SC) biologic therapies may require >1 mL volume or have increased viscosity, necessitating new delivery system approaches. This study evaluated 2-mL large-volume autoinjector (LVAI) delivery performance across varying solution viscosities and design inputs to assess the design space and identify configurations that produce practical injection times.</p> <p>Investigational LVAI delivery duration and volume, depot location, and tissue effects were examined in both air and in vivo models across various pre-filled syringe (PFS) cannula types (27\u00a0G Ultra-thin wall [UTW], 27\u00a0G special thin wall [STW], or 29\u00a0G thin-wall [TW]), drive spring forces (SF<sub>LOW</sub> or SF<sub>HIGH</sub>), and Newtonian solutions (2.3\u201350 centipoise [cP]).</p> <p>Within each design configuration, increasing PFS internal diameters and spring forces reduced delivery times, while increasing viscosity increased times. The 27\u00a0G UTW PFS/SF<sub>HIGH</sub> combination achieved shorter delivery times across all injection conditions, with 2 mL in vivo durations <15\u00a0seconds at \u226431 cP and routinely <20\u00a0seconds at 39 and 51 cP, with nominal and transitory tissue effects.</p> <p>PFS cannula and spring force combinations can be tailored to achieve various injection durations across viscosities, while UTW PFS enables faster rates to potentially better accommodate human factors during LVAI injection, especially at high viscosity.</p>",
+      "tags": [
+        "Autoinjector/auto-injector",
+        "large-volume subcutaneous injection",
+        "prefilled syringe/PFS",
+        "ultra-thin wall cannula",
+        "high viscosity",
+        "tissue response",
+        "biotherapy/biologic therapy/biotherapeutic delivery"
+      ],
+      "categories": [
+        "Biophysics",
+        "Space Science",
+        "Medicine",
+        "Physiology",
+        "Sociology",
+        "Biological Sciences not elsewhere classified"
+      ],
+      "authors": [
+        "Christopher J. Rini",
+        "Bruce C. Roberts",
+        "Aishwarya Vaidyanathan",
+        "Aojun Li",
+        "Rick Klug",
+        "Douglas B. Sherman",
+        "Ronald J. Pettis"
+      ],
+      "files": [
+        {
+          "name": "iedd_a_2116425_sm8405.docx",
+          "size": 809200,
+          "download_url": "https://ndownloader.figshare.com/files/37056214",
+          "mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "is_link_only": false,
+          "id": 37056214
+        },
+        {
+          "name": "iedd_a_2116425_sm8404.docx",
+          "size": 56217,
+          "download_url": "https://ndownloader.figshare.com/files/37056217",
+          "mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "is_link_only": false,
+          "id": 37056217
+        }
+      ]
+    },
+    {
+      "article_id": "32195520",
+      "version": null,
+      "title": "Additional file 10 of Guiding syringe selection for intravitreal injections: injectability and stability analysis of compounded pegcetacoplan (SYFOVRE) and the broader implications for high-viscosity ophthalmic therapies",
+      "doi": "10.6084/m9.figshare.32195520.v1",
+      "url": "https://springernature.figshare.com/articles/dataset/Additional_file_10_of_Guiding_syringe_selection_for_intravitreal_injections_injectability_and_stability_analysis_of_compounded_pegcetacoplan_SYFOVRE_and_the_broader_implications_for_high-viscosity_ophthalmic_therapies/32195520",
+      "defined_type": "dataset",
+      "license": {
+        "value": 47,
+        "name": "CC BY + CC0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "description": "Supplementary Material 10: Table S2. Unaggregated eye characteristics and raw injection force data.",
+      "tags": [
+        "SYFOVRE",
+        "Pegcetacoplan",
+        "Faricimab",
+        "Aflibercept",
+        "Syringe selection",
+        "Age-related macular degeneration",
+        "Anti-VEGF",
+        "Silicone oil",
+        "High viscosity formulations",
+        "Injectability"
+      ],
+      "categories": [
+        "Biophysics",
+        "Medicine",
+        "Cell Biology",
+        "Molecular Biology",
+        "Physiology",
+        "Pharmacology",
+        "Biotechnology",
+        "Environmental Sciences not elsewhere classified",
+        "Sociology",
+        "Immunology",
+        "Biological Sciences not elsewhere classified",
+        "Cancer",
+        "Infectious Diseases"
+      ],
+      "authors": [
+        "Tina Felfeli",
+        "Natalie M. Lane",
+        "Efrem D. Mandelcorn"
+      ],
+      "files": [
+        {
+          "name": "40942_2026_832_MOESM10_ESM.xlsx",
+          "size": 17293,
+          "download_url": "https://ndownloader.figshare.com/files/64317894",
+          "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "is_link_only": false,
+          "id": 64317894
+        }
+      ]
+    },
+    {
+      "article_id": "20800108",
+      "version": null,
+      "title": "Enabling faster subcutaneous delivery of larger volume, high viscosity fluids",
+      "doi": "10.6084/m9.figshare.20800108.v1",
+      "url": "https://tandf.figshare.com/articles/dataset/Enabling_faster_subcutaneous_delivery_of_larger_volume_high_viscosity_fluids/20800108",
+      "defined_type": "dataset",
+      "license": {
+        "value": 1,
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "description": "<p>Many current subcutaneous (SC) biologic therapies may require >1 mL volume or have increased viscosity, necessitating new delivery system approaches. This study evaluated 2-mL large-volume autoinjector (LVAI) delivery performance across varying solution viscosities and design inputs to assess the design space and identify configurations that produce practical injection times.</p> <p>Investigational LVAI delivery duration and volume, depot location, and tissue effects were examined in both air and in vivo models across various pre-filled syringe (PFS) cannula types (27\u00a0G Ultra-thin wall [UTW], 27\u00a0G special thin wall [STW], or 29\u00a0G thin-wall [TW]), drive spring forces (SF<sub>LOW</sub> or SF<sub>HIGH</sub>), and Newtonian solutions (2.3\u201350 centipoise [cP]).</p> <p>Within each design configuration, increasing PFS internal diameters and spring forces reduced delivery times, while increasing viscosity increased times. The 27\u00a0G UTW PFS/SF<sub>HIGH</sub> combination achieved shorter delivery times across all injection conditions, with 2 mL in vivo durations <15\u00a0seconds at \u226431 cP and routinely <20\u00a0seconds at 39 and 51 cP, with nominal and transitory tissue effects.</p> <p>PFS cannula and spring force combinations can be tailored to achieve various injection durations across viscosities, while UTW PFS enables faster rates to potentially better accommodate human factors during LVAI injection, especially at high viscosity.</p>",
+      "tags": [
+        "Autoinjector/auto-injector",
+        "large-volume subcutaneous injection",
+        "prefilled syringe/PFS",
+        "ultra-thin wall cannula",
+        "high viscosity",
+        "tissue response",
+        "biotherapy/biologic therapy/biotherapeutic delivery"
+      ],
+      "categories": [
+        "Biophysics",
+        "Space Science",
+        "Medicine",
+        "Physiology",
+        "Sociology",
+        "Biological Sciences not elsewhere classified"
+      ],
+      "authors": [
+        "Christopher J. Rini",
+        "Bruce C. Roberts",
+        "Aishwarya Vaidyanathan",
+        "Aojun Li",
+        "Rick Klug",
+        "Douglas B. Sherman",
+        "Ronald J. Pettis"
+      ],
+      "files": [
+        {
+          "name": "iedd_a_2116425_sm8405.docx",
+          "size": 809200,
+          "download_url": "https://ndownloader.figshare.com/files/37056214",
+          "mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "is_link_only": false,
+          "id": 37056214
+        },
+        {
+          "name": "iedd_a_2116425_sm8404.docx",
+          "size": 56217,
+          "download_url": "https://ndownloader.figshare.com/files/37056217",
+          "mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "is_link_only": false,
+          "id": 37056217
+        }
+      ]
+    }
+  ],
+  "felfeli_xlsx_inspect": {
+    "sheet": "wide summary (3)",
+    "n_data_rows": 46,
+    "header_row": [
+      "date",
+      "syringe",
+      "fluid_density",
+      "EYEID",
+      "type",
+      "needle",
+      "IOP_prior",
+      "IOP_post",
+      "inj_max",
+      "inj_mean",
+      "inj_time",
+      "reflux",
+      "Time (s) ->",
+      "0",
+      "0.5",
+      "1",
+      "1.5",
+      "2",
+      "2.5",
+      "3"
+    ],
+    "summary_columns": [
+      "date",
+      "syringe",
+      "fluid_density",
+      "EYEID",
+      "type",
+      "needle",
+      "IOP_prior",
+      "IOP_post",
+      "inj_max",
+      "inj_mean",
+      "inj_time",
+      "reflux"
+    ],
+    "time_series": "columns Time (s) -> then 0, 0.5, ... force/pressure samples",
+    "unique_values": {
+      "syringe": [
+        "BD",
+        "ClearJect",
+        "StaClear",
+        "ZR0.2"
+      ],
+      "fluid_density": [
+        "120 cP",
+        "15 cP"
+      ],
+      "needle": [
+        "27G"
+      ],
+      "type": [
+        "ND",
+        "phakic",
+        "pseudophakic"
+      ]
+    },
+    "sample_rows": [
+      {
+        "date": "Feb-02-2025",
+        "syringe": "StaClear",
+        "fluid_density": "120 cP",
+        "EYEID": "2025-01-OD",
+        "type": "phakic",
+        "needle": "27G",
+        "IOP_prior": 23,
+        "IOP_post": 20,
+        "inj_max": 137,
+        "inj_mean": 85.4,
+        "inj_time": 7.5,
+        "reflux": "n"
+      },
+      {
+        "date": "Feb-02-2025",
+        "syringe": "ClearJect",
+        "fluid_density": "120 cP",
+        "EYEID": "2025-01-OD",
+        "type": "phakic",
+        "needle": "27G",
+        "IOP_prior": 18,
+        "IOP_post": 24,
+        "inj_max": 177,
+        "inj_mean": 122.7,
+        "inj_time": 8.39,
+        "reflux": "y"
+      },
+      {
+        "date": "Feb-02-2025",
+        "syringe": "ZR0.2",
+        "fluid_density": "120 cP",
+        "EYEID": "2025-01-OD",
+        "type": "phakic",
+        "needle": "27G",
+        "IOP_prior": 18,
+        "IOP_post": 29,
+        "inj_max": 104,
+        "inj_mean": 88.8,
+        "inj_time": 12,
+        "reflux": "n"
+      },
+      {
+        "date": "Feb-02-2025",
+        "syringe": "StaClear",
+        "fluid_density": "120 cP",
+        "EYEID": "2025-02-OD",
+        "type": "pseudophakic",
+        "needle": "27G",
+        "IOP_prior": 18,
+        "IOP_post": 30,
+        "inj_max": 87,
+        "inj_mean": 69,
+        "inj_time": 8.69,
+        "reflux": "n"
+      },
+      {
+        "date": "Feb-02-2025",
+        "syringe": "ClearJect",
+        "fluid_density": "120 cP",
+        "EYEID": "2025-02-OD",
+        "type": "pseudophakic",
+        "needle": "27G",
+        "IOP_prior": 19,
+        "IOP_post": 18,
+        "inj_max": 536,
+        "inj_mean": 448.5,
+        "inj_time": 6.38,
+        "reflux": "y"
+      },
+      {
+        "date": "Feb-02-2025",
+        "syringe": "BD",
+        "fluid_density": "120 cP",
+        "EYEID": "2025-02-OD",
+        "type": "pseudophakic",
+        "needle": "27G",
+        "IOP_prior": 11,
+        "IOP_post": 19,
+        "inj_max": 206,
+        "inj_mean": 96.4,
+        "inj_time": 14.38,
+        "reflux": "n"
+      },
+      {
+        "date": "Feb-02-2025",
+        "syringe": "ZR0.2",
+        "fluid_density": "120 cP",
+        "EYEID": "2025-03-OD",
+        "type": "phakic",
+        "needle": "27G",
+        "IOP_prior": 15,
+        "IOP_post": 18,
+        "inj_max": 96,
+        "inj_mean": 55,
+        "inj_time": 12,
+        "reflux": "y"
+      },
+      {
+        "date": "Feb-02-2025",
+        "syringe": "StaClear",
+        "fluid_density": "120 cP",
+        "EYEID": "2025-03-OD",
+        "type": "phakic",
+        "needle": "27G",
+        "IOP_prior": 12,
+        "IOP_post": 14,
+        "inj_max": 133,
+        "inj_mean": 71,
+        "inj_time": 10.5,
+        "reflux": "n"
+      }
+    ],
+    "notes": "Values under raw time series appear numeric pressure-like (inj_max ~87-177); not SI force N confirmed from file alone; labeled as raw injection pressure over time in header row 1."
+  },
+  "phase_d_complete_dataset_found": false,
+  "verdict_notes": "Exact-phrase Zenodo queries for injection/glide force + syringe returned 0 hits. Broad keyword dataset searches return thousands of false positives (SSP directories, MD glycerol, lava dome, cement injectability). No Zenodo deposit with experimental syringe fluid-resistance force CSV/XLS vs viscosity+geometry. Figshare 32195520 XLSX downloadable with real force/pressure time series but tissue IVI, gauge-only, no F_fluid. Figshare 20800108 DOCX delivery-time stats only."
+}

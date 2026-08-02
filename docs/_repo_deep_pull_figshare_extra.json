@@ -1,0 +1,348 @@
+[
+  {
+    "article_id": 32195520,
+    "title": "Additional file 10 of Guiding syringe selection for intravitreal injections: injectability and stability analysis of compounded pegcetacoplan (SYFOVRE) and the broader implications for high-viscosity ophthalmic therapies",
+    "doi": "10.6084/m9.figshare.32195520.v1",
+    "url": "https://springernature.figshare.com/articles/dataset/Additional_file_10_of_Guiding_syringe_selection_for_intravitreal_injections_injectability_and_stability_analysis_of_compounded_pegcetacoplan_SYFOVRE_and_the_broader_implications_for_high-viscosity_ophthalmic_therapies/32195520",
+    "defined_type": "dataset",
+    "license": {
+      "value": 47,
+      "name": "CC BY + CC0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "description": "Supplementary Material 10: Table S2. Unaggregated eye characteristics and raw injection force data.",
+    "files": [
+      {
+        "name": "40942_2026_832_MOESM10_ESM.xlsx",
+        "size": 17293,
+        "download_url": "https://ndownloader.figshare.com/files/64317894",
+        "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      }
+    ],
+    "downloaded": [
+      {
+        "path": "E:\\OpenInjectability\\docs\\_tmp_figshare\\32195520_40942_2026_832_MOESM10_ESM.xlsx",
+        "size": 17293,
+        "name": "40942_2026_832_MOESM10_ESM.xlsx"
+      }
+    ],
+    "xlsx_preview": {
+      "40942_2026_832_MOESM10_ESM.xlsx": {
+        "wide summary (3)": [
+          [
+            "Eye information and injection summary",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            "Raw injection pressure over time",
+            null,
+            null
+          ],
+          [
+            "date",
+            "syringe",
+            "fluid_density",
+            "EYEID",
+            "type",
+            "needle",
+            "IOP_prior",
+            "IOP_post",
+            "inj_max",
+            "inj_mean",
+            "inj_time",
+            "reflux",
+            "Time (s) ->",
+            "0",
+            "0.5"
+          ],
+          [
+            "Feb-02-2025",
+            "StaClear",
+            "120 cP",
+            "2025-01-OD",
+            "phakic",
+            "27G",
+            "23",
+            "20",
+            "137",
+            "85.4",
+            "7.5",
+            "n",
+            null,
+            "10",
+            "41"
+          ],
+          [
+            "Feb-02-2025",
+            "ClearJect",
+            "120 cP",
+            "2025-01-OD",
+            "phakic",
+            "27G",
+            "18",
+            "24",
+            "177",
+            "122.7",
+            "8.39",
+            "y",
+            null,
+            "36",
+            "53"
+          ],
+          [
+            "Feb-02-2025",
+            "ZR0.2",
+            "120 cP",
+            "2025-01-OD",
+            "phakic",
+            "27G",
+            "18",
+            "29",
+            "104",
+            "88.8",
+            "12",
+            "n",
+            null,
+            "51",
+            "75"
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "article_id": 20800108,
+    "title": "Enabling faster subcutaneous delivery of larger volume, high viscosity fluids",
+    "doi": "10.6084/m9.figshare.20800108.v1",
+    "url": "https://tandf.figshare.com/articles/dataset/Enabling_faster_subcutaneous_delivery_of_larger_volume_high_viscosity_fluids/20800108",
+    "defined_type": "dataset",
+    "license": {
+      "value": 1,
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "description": "<p>Many current subcutaneous (SC) biologic therapies may require >1 mL volume or have increased viscosity, necessitating new delivery system approaches. This study evaluated 2-mL large-volume autoinjector (LVAI) delivery performance across varying solution viscosities and design inputs to assess the design space and identify configurations that produce practical injection times.</p> <p>Investigational LVAI delivery duration and volume, depot location, and tissue effects were examined in both air and in vivo models across various pre-filled syringe (PFS) cannula types (27\u00a0G Ultra-thin wall [UTW], 27\u00a0G special thin wall [STW], or 29\u00a0G thin-wall [TW]), drive spring forces (SF<sub>LOW</sub> or SF<sub>HIGH</sub>), and Newtonian solutions (2.3\u201350 centipoise [cP]).</p> <p>Within each design confi",
+    "files": [
+      {
+        "name": "iedd_a_2116425_sm8405.docx",
+        "size": 809200,
+        "download_url": "https://ndownloader.figshare.com/files/37056214",
+        "mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      },
+      {
+        "name": "iedd_a_2116425_sm8404.docx",
+        "size": 56217,
+        "download_url": "https://ndownloader.figshare.com/files/37056217",
+        "mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      }
+    ],
+    "downloaded": [
+      {
+        "path": "E:\\OpenInjectability\\docs\\_tmp_figshare\\20800108_iedd_a_2116425_sm8405.docx",
+        "size": 809200,
+        "name": "iedd_a_2116425_sm8405.docx"
+      },
+      {
+        "path": "E:\\OpenInjectability\\docs\\_tmp_figshare\\20800108_iedd_a_2116425_sm8404.docx",
+        "size": 56217,
+        "name": "iedd_a_2116425_sm8404.docx"
+      }
+    ],
+    "text_snips": {
+      "iedd_a_2116425_sm8405.docx": "Supplementa l Figure 1 Supplementa l Figure 1: Average (\u00b1SD) delivery time in air versus average delivery time in vivo for all injections per viscosity: SF HIGH 27G STW and UTW (top) , SF LOW 27G STW, SF HIGH 29G TW (bottom) device configurations. Dotted red line repr e sents nominal 15 second injection duration. G = gauge; SF LOW = Low Spring Force; SF HIGH = High Spring Force; TW = thin wall; STW = special thin wall; UTW = ultra-thin wall. Supplementa l Figure 2 Supplemental Figure 2: A single injection case ( SF High 27G STW, 5 cP ) which showed p redominant SC deposition with an observation of nominal intradermal injectate (blue circle) . CP = centipoise; G = gauge; SC = subcutaneous; SF HIGH = High Spring Force; STW = special thin wall. Supplemental Figure 3 Supplemental Figure 3 : Observed erythema (left) and wheal (right) scores (0-4) by viscosity over time expressed as a percentage of total injections for LVAI SF LOW 27G STW (top) and SF HIGH 29G TW device configurations (bottom) immediately after injection (T0) and through resolution by viscosity. Regardless of injection test condition, all erythema resolved to non-detectable levels (Score=0; dark green) by T-60 minutes (T1) post-injection; all wheal scores resolved within 2 hours (T2) post injection. G = gauge; LVAI = large volume autoinjector; SF LOW = Low Spring Force; SF HIGH = High Spring Force; TW = thin wall; STW = special thin wall; UTW = ultra-thin wall.",
+      "iedd_a_2116425_sm8404.docx": "Supplemental Table 1 Device Contrast Estimate SE df Lwr Upr t.ratio p-value Result 29G TW, SF HIGH 2.3cP - 5.8cP -3.93 0.61 26 -5.99 -1.86 -6.41 <0.001 Significant 29G TW, SF HIGH 2.3cP - 11.8cP -12.08 0.64 30 -14.20 -9.95 -18.87 <0.001 Significant 29G TW, SF HIGH 2.3cP - 20.4cP -24.91 0.61 26 -26.97 -22.84 -40.63 <0.001 Significant 29G TW, SF HIGH 5.8cP - 11.8cP -8.15 0.63 151 -10.11 -6.19 -12.85 <0.001 Significant 29G TW, SF HIGH 5.8cP - 20.4cP -20.98 0.62 95 -22.91 -19.06 -34.05 <0.001 Significant 29G TW, SF HIGH 11.8cP - 20.4cP -12.83 0.63 220 -14.75 -10.91 -20.51 <0.001 Significant 27G STW, SF LOW 2.3cP - 5.8cP -2.48 0.61 26 -4.55 -0.42 -4.05 0.009 Significant 27G STW, SF LOW 2.3cP - 11.8cP -6.00 0.61 26 -8.06 -3.94 -9.80 <0.001 Significant 27G STW, SF LOW 2.3cP - 20.4cP -12.10 0.62 12 -14.45 -9.74 -19.63 <0.001 Significant 27G STW, SF LOW 5.8cP - 11.8cP -3.52 0.61 93 -5.44 -1.60 -5.73 <0.001 Significant 27G STW, SF LOW 5.8cP - 20.4cP -9.61 0.61 26 -11.68 -7.55 -15.68 <0.001 Significant 27G STW, SF LOW 11.8cP - 20.4cP -6.09 0.61 26 -8.16 -4.03 -9.95 <0.001 Significant 27G STW, SF HIGH 2.3cP - 5.8cP -1.98 0.61 26 -4.04 0.09 -3.22 0.071 NS 27G STW, SF HIGH 2.3cP - 11.8cP -3.91 0.61 153 -5.79 -2.03 -6.43 <0.001 Significant 27G STW, SF HIGH 2.3cP - 20.4cP -8.77 0.60 156 -10.62 -6.93 -14.71 <0.001 Significant 27G STW, SF HIGH 2.3cP - 31cP -12.36 0.61 26 -14.42 -10.29 -20.13 <0.001 Significant 27G STW, SF HIGH 2.3cP - 39cP -15.83 0.62 100 -17.76 -13.90 -25.56 <0.001 Significant 27G STW, SF HIGH 5.8cP - 11.8cP -1.93 0.61 26 -4.00 0.13 -3.14 0.086 NS 27G STW, SF HIGH 5.8cP - 20.4cP -6.79 0.60 25 -8.82 -4.77 -11.33 <0.001 Significant 27G STW, SF HIGH 5.8cP - 31cP -10.38 0.62 12 -12.73 -8.02 -16.84 <0.001 Significant 27G STW, SF HIGH 5.8cP - 39cP -13.85 0.61 26 -15.91 -11.78 -22.57 <0.001 Significant 27G STW, SF HIGH 11.8cP - 20.4cP -4.86 0.60 110 -6.73 -2.99 -8.09 <0.001 Significant 27G STW, SF HIGH 11.8cP - 31cP -8.44 0.61 26 -10.51 -6.38 -13.73 <0.001 Significant 27G STW, SF HIGH 11.8cP - 39cP -11.92 0.62 101 -13.85 -9.98 -19.21 <0.001 Significant 27G STW, SF HIGH 20.4cP - 31cP -3.58 0.60 25 -5.60 -1.56 -5.97 <0.001 Significant 27G STW, SF HIGH 20.4cP - 39cP -7.05 0.59 213 -8.86 -5.25 -12.04 <0.001 Significant 27G STW, SF HIGH 31cP - 39cP -3.47 0.61 26 -5.54 -1.41 -5.66 <0.001 Significant 27G UTW, SF HIGH 5.8cP - 11.8cP -1.23 0.57 43 -3.08 0.61 -2.16 0.766 NS 27G UTW, SF HIGH 5.8cP - 20.4cP -4.99 0.62 96 -6.91 -3.06 -8.09 <0.001 Significant 27G UTW, SF HIGH 5.8cP - 31cP -6.98 0.61 94 -8.90 -5.06 -11.34 <0.001 Significant 27G UTW, SF HIGH 5.8cP - 39cP -10.71 0.62 96 -12.64 -8.79 -17.37 <0.001 Significant 27G UTW, SF HIGH 5.8cP - 51cP -12.47 0.60 34 -14.43 -10.52 -20.93 <0.001 Significant 27G UTW, SF HIGH 11.8cP - 20.4cP -3.76 0.57 68 -5.55 -1.96 -6.60 <0.001 Significant 27G UTW, SF HIGH 11.8cP - 31cP -5.74 0.57 44 -7.59 -3.89 -10.02 <0.001 Significant 27G UTW, SF HIGH 11.8cP - 39cP -9.48 0.57 68 -11.28 -7.68 -16.65 <0.001 Significant 27G UTW, SF HIGH 11.8cP - 51cP -11.24 0.55 18 -13.20 -9.29 -20.28 <0.001 Significant 27G UTW, SF HIGH 20.4cP - 31cP -1.99 0.61 151 -3.86 -0.11 -3.27 0.028 Significant 27G UTW, SF HIGH 20.4cP - 39cP -5.73 0.58 219 -7.52 -3.93 -9.80 <0.001 Significant 27G UTW, SF HIGH 20.4cP - 51cP -7.49 0.59 41 -9.41 -5.56 -12.59 <0.001 Significant 27G UTW, SF HIGH 31cP - 39cP -3.74 0.61 151 -5.62 -1.86 -6.15 <0.001 Significant 27G UTW, SF HIGH 31cP - 51cP -5.50 0.59 34 -7.45 -3.55 -9.24 <0.001 Significant 27G UTW, SF HIGH 39cP"
+    }
+  },
+  {
+    "article_id": 31976504,
+    "title": "Additional file 1 of The effect of syringe design and cannula dimensions on time-force curve in intravitreal injection across different drug viscosities: area under the curve and peak injection force",
+    "doi": "10.6084/m9.figshare.31976504.v1",
+    "url": "https://springernature.figshare.com/articles/journal_contribution/Additional_file_1_of_The_effect_of_syringe_design_and_cannula_dimensions_on_time-force_curve_in_intravitreal_injection_across_different_drug_viscosities_area_under_the_curve_and_peak_injection_force/31976504",
+    "defined_type": "journal contribution",
+    "license": {
+      "value": 47,
+      "name": "CC BY + CC0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "description": "Supplementary Material 1",
+    "files": [
+      {
+        "name": "40942_2026_833_MOESM1_ESM.pdf",
+        "size": 32281,
+        "download_url": "https://ndownloader.figshare.com/files/63607190",
+        "mimetype": "application/pdf"
+      }
+    ],
+    "downloaded": [
+      {
+        "path": "E:\\OpenInjectability\\docs\\_tmp_figshare\\31976504_40942_2026_833_MOESM1_ESM.pdf",
+        "size": 32281,
+        "name": "40942_2026_833_MOESM1_ESM.pdf"
+      }
+    ],
+    "text_snips": {
+      "40942_2026_833_MOESM1_ESM.pdf": "PDF size=32281 (not text-extracted)"
+    }
+  },
+  {
+    "article_id": 31976507,
+    "title": "Additional file 2 of The effect of syringe design and cannula dimensions on time-force curve in intravitreal injection across different drug viscosities: area under the curve and peak injection force",
+    "doi": "10.6084/m9.figshare.31976507.v1",
+    "url": "https://springernature.figshare.com/articles/journal_contribution/Additional_file_2_of_The_effect_of_syringe_design_and_cannula_dimensions_on_time-force_curve_in_intravitreal_injection_across_different_drug_viscosities_area_under_the_curve_and_peak_injection_force/31976507",
+    "defined_type": "journal contribution",
+    "license": {
+      "value": 47,
+      "name": "CC BY + CC0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "description": "Supplementary Material 2",
+    "files": [
+      {
+        "name": "40942_2026_833_MOESM2_ESM.docx",
+        "size": 16136,
+        "download_url": "https://ndownloader.figshare.com/files/63607193",
+        "mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      }
+    ],
+    "downloaded": [
+      {
+        "path": "E:\\OpenInjectability\\docs\\_tmp_figshare\\31976507_40942_2026_833_MOESM2_ESM.docx",
+        "size": 16136,
+        "name": "40942_2026_833_MOESM2_ESM.docx"
+      }
+    ],
+    "text_snips": {
+      "40942_2026_833_MOESM2_ESM.docx": "Figure S1. AUCs of Different Force-Time Curves . Despite the repeated measurement of force over time showing sizable variation , their AUCs remain within a small range , illustrating how AUC can enable comparable results despite varying injection profiles . Shown measurements are from expelling BSS through a 33G cannula using Syringe C."
+    }
+  },
+  {
+    "article_id": 31976510,
+    "title": "Additional file 3 of The effect of syringe design and cannula dimensions on time-force curve in intravitreal injection across different drug viscosities: area under the curve and peak injection force",
+    "doi": "10.6084/m9.figshare.31976510.v1",
+    "url": "https://springernature.figshare.com/articles/journal_contribution/Additional_file_3_of_The_effect_of_syringe_design_and_cannula_dimensions_on_time-force_curve_in_intravitreal_injection_across_different_drug_viscosities_area_under_the_curve_and_peak_injection_force/31976510",
+    "defined_type": "journal contribution",
+    "license": {
+      "value": 47,
+      "name": "CC BY + CC0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "description": "Supplementary Material 3",
+    "files": [
+      {
+        "name": "40942_2026_833_MOESM3_ESM.docx",
+        "size": 40354,
+        "download_url": "https://ndownloader.figshare.com/files/63607196",
+        "mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      }
+    ],
+    "downloaded": [
+      {
+        "path": "E:\\OpenInjectability\\docs\\_tmp_figshare\\31976510_40942_2026_833_MOESM3_ESM.docx",
+        "size": 40354,
+        "name": "40942_2026_833_MOESM3_ESM.docx"
+      }
+    ],
+    "text_snips": {
+      "40942_2026_833_MOESM3_ESM.docx": "Table S1. Descriptive statistics of AUC recordings. Cannula size Syringe Descriptive statistics Liquids BSS PEG 40,000 PEG 400 Tween 30G Syringe A Number of values 5 5 5 5 Mean 3.892 16.548 60.600 30.546 Std. Deviation 0.636 0.660 7.099 3.020 Std. Error of Mean 0.284 0.295 3.175 1.351 95% CI 3.102 to 4.681 15.728 to 17.368 51.786 to 69.414 26.796 to 34.296 Syringe B Number of values 5 5 5 5 Mean 4.551 49.272 125.640 98.880 Std. Deviation 1.277 4.435 11.872 9.760 Std. Error of Mean 0.571 1.983 5.409 4.365 95% CI 2.966 to 6.136 43.766 to 54.778 110.899 to 140.381 86.762 to 110.998 Syringe C Number of values 5 5 5 5 Mean 4.504 51.140 132.080 99.694 Std. Deviation 0.959 1.545 8.395 6.718 Std. Error of Mean 0.429 0.691 3.755 3.004 95% CI 3.313 to 5.695 49.222 to 53.058 121.656 to 142.504 91.353 to 108.035 33G Syringe A Number of values 5 5 5 5 Mean 5.988 64.174 211.920 149.420 Std. Deviation 0.326 1.861 18.646 17.054 Std. Error of Mean 0.146 0.832 8.339 7.627 95% CI 5.583 to 6.393 61.863 to 66.485 188.768 to 235.072 128.245 to 170.595 Syringe B Number of values 5 5 5 5 Mean 10.917 189.100 617.420 537.880 Std. Deviation 0.870 12.824 121.676 88.794 Std. Error of Mean 0.389 5.735 54.415 39.710 95% CI 9.837 to 1.997 173.177 to 205.023 466.339 to 768.501 427.628 to 648.132 Syringe C Number of values 5 5 5 5 Mean 10.477 230.280 819.220 459.260 Std. Deviation 0.418 37.184 88.659 37.659 Std. Error of Mean 0.187 16.629 39.650 16.842 95% CI 9.958 to 10.996 184.110 to 276.450 709.135 to 929.305 412.500 to 506.020 Mean, SD, SEM and 95% CI given in [N\u00b7s]. Table S2. Results of the two-way ANOVA performed, analyzing effects of cannulas, syringes and their interaction on area under the curve of the injection. Effect F ( Dfn , DFd ) p-value Partial \u03b7\u00b2 BSS Interaction F (2, 24) = 20.93 p<0.0001 0.64 Cannula F (1, 24) = 261.00 p<0.0001 0.92 Syringe F (2, 24) = 36.00 p<0.0001 0.75 PEG 40,000 Interaction F (2, 24) = 43.45 p<0.0001 0.78 Cannula F (1, 24) = 427.20 p<0.0001 0.95 Syringe F (2, 24) = 106.50 p<0.0001 0.90 PEG 400 Interaction F (2, 24) = 47.39 p<0.0001 0.80 Cannula F (1, 24) = 380.10 p<0.0001 0.94 Syringe F (2, 24) = 77.93 p<0.0001 0.87 Tween + BSS Interaction F (2, 24) = 42.78 p<0.0001 0.78 Cannula F (1, 24) = 432.00 p<0.0001 0.95 Syringe F (2, 24) = 91.95 p<0.0001 0.88 Table S3. Results of Tukey\u2019s post-hoc test of area under the curve. Comparison Mean difference 95% CI of diff. Adjusted p-Value BSS 30G Syringe A vs. Syringe B -0.6592 -1.947 to 0.6290 0.4209 Syringe A vs. Syringe C -0.6120 -1.900 to 0.6762 0.4725 Syringe B vs. Syringe C 0.04720 -1.241 to 1.335 0.9954 33G Syringe A vs. Syringe B -4.929 -6.217 to -3.641 <0.0001 Syringe A vs. Syringe C -4.488 -5.777 to -3.200 <0.0001 Syringe B vs. Syringe C 0.4404 -0.8478 to 1.729 0.6739 PEG 40,000 30G Syringe A vs. Syringe B -32.72 -58.30 to -7.150 0.0105 Syringe A vs. Syringe C -34.59 -60.17 to -9.018 0.0068 Syringe B vs. Syringe C -1.868 -27.44 to 23.71 0.9818 33G Syringe A vs. Syringe B -124.9 -150.5 to -99.35 <0.0001 Syringe A vs. Syringe C -166.1 -191.7 to -140.5 <0.0001 Syringe B vs. Syringe C -41.18 -66.75 to -15.61 0.0014 PEG 400 30G Syringe A vs. Syringe B -65.04 -163.4 to 33.33 0.2444 Syringe A vs. Syringe C -71.48 -169.9 to 26.89 0.1863 Syringe B vs. Syringe C -6.440 -104.8 to 91.93 0.9854 33G Syringe A vs. Syringe B -405.5 -503.9 to -307.1 <0.0001 Syringe A vs. Syringe C -607.3 -705.7 to -508.9 <0.0001 Syringe B vs. Syringe C -201.8 -300.2 to -103.4 <0.0001 Tween + BSS 30G Syringe A vs. Syri"
+    }
+  },
+  {
+    "article_id": 32195514,
+    "title": "Additional file 8 of Guiding syringe selection for intravitreal injections: injectability and stability analysis of compounded pegcetacoplan (SYFOVRE) and the broader implications for high-viscosity ophthalmic therapies",
+    "doi": "10.6084/m9.figshare.32195514.v1",
+    "url": "https://springernature.figshare.com/articles/figure/Additional_file_8_of_Guiding_syringe_selection_for_intravitreal_injections_injectability_and_stability_analysis_of_compounded_pegcetacoplan_SYFOVRE_and_the_broader_implications_for_high-viscosity_ophthalmic_therapies/32195514",
+    "defined_type": "figure",
+    "license": {
+      "value": 47,
+      "name": "CC BY + CC0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "description": "Supplementary Material 8: Figure S8. Mid-range injection force for different needles used in intravitreal injections. Injection force of 0.2 mL Zero Residual syringes with various Luer-Lock needle attachments. Syringes were compounded with 0.12 mL of a 15 cP viscosity mimic. The indicated needle was affixed, and the device was primed to 0.1 mL prior to mock injection. All mock injections were performed by the same individual. Bars represent the aggregate average of the mean injection force for multiple injections and error bars indicate the standard deviation. Different letters indicate statistically significant differences (ANOVA, Tukey\u2019s HSD, p-value\u2009<\u20090.05).",
+    "files": [
+      {
+        "name": "40942_2026_832_MOESM8_ESM.png",
+        "size": 56808,
+        "download_url": "https://ndownloader.figshare.com/files/64317888",
+        "mimetype": "image/png"
+      }
+    ],
+    "downloaded": [
+      {
+        "path": "E:\\OpenInjectability\\docs\\_tmp_figshare\\32195514_40942_2026_832_MOESM8_ESM.png",
+        "size": 56808,
+        "name": "40942_2026_832_MOESM8_ESM.png"
+      }
+    ]
+  },
+  {
+    "article_id": 32195496,
+    "title": "Additional file 2 of Guiding syringe selection for intravitreal injections: injectability and stability analysis of compounded pegcetacoplan (SYFOVRE) and the broader implications for high-viscosity ophthalmic therapies",
+    "doi": "10.6084/m9.figshare.32195496.v1",
+    "url": "https://springernature.figshare.com/articles/figure/Additional_file_2_of_Guiding_syringe_selection_for_intravitreal_injections_injectability_and_stability_analysis_of_compounded_pegcetacoplan_SYFOVRE_and_the_broader_implications_for_high-viscosity_ophthalmic_therapies/32195496",
+    "defined_type": "figure",
+    "license": {
+      "value": 47,
+      "name": "CC BY + CC0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "description": "Supplementary Material 2: Figure S2. Injection force of various syringes for 15 cP solution delivered into human cadaver eye vitreous. 0.2 mL Zero Residual (ZR), 1 mL BD Luer-Lock (BD), 0.25 mL StaClear (SC), and 0.5 mL ClearJect (CJ) syringes were compounded with either 0.12 mL of a 15 cP (above) or 120 cP (Fig. 3) viscosity mimic solution. A BD 27G x \u00bd\u201d precision glide needle was affixed, and the device was primed to 0.1 mL prior to injection into the vitreous of human cadaver eyes. All injections were performed by the same ophthalmologist. (A) Injection force over time of various syringes filled with 15 cP mid range viscosity mimic solution. Dots represent the mean injection force at 0.5 s intervals. The lines represent a non-linear regression fit for injection force over time for each ",
+    "files": [
+      {
+        "name": "40942_2026_832_MOESM2_ESM.png",
+        "size": 191359,
+        "download_url": "https://ndownloader.figshare.com/files/64317870",
+        "mimetype": "image/png"
+      }
+    ],
+    "downloaded": [
+      {
+        "path": "E:\\OpenInjectability\\docs\\_tmp_figshare\\32195496_40942_2026_832_MOESM2_ESM.png",
+        "size": 191359,
+        "name": "40942_2026_832_MOESM2_ESM.png"
+      }
+    ]
+  },
+  {
+    "article_id": 27412368,
+    "title": "Flow and injection characteristics of pharmaceutical parenteral formulations using a micro-capillary rheometer",
+    "doi": "",
+    "url": "https://research-repository.rmit.edu.au/articles/journal_contribution/Flow_and_injection_characteristics_of_pharmaceutical_parenteral_formulations_using_a_micro-capillary_rheometer/27412368",
+    "defined_type": "journal contribution",
+    "license": {
+      "value": 203,
+      "name": "All rights reserved",
+      "url": "https://rightsstatements.org/page/InC/1.0/"
+    },
+    "description": "A micro-capillary rheometer consisted of a fine needle with an internal diameter of 347?m attached to a 1ml removable-needle syringe within an Instron device that operated in compression mode to provide various crosshead speeds ranging from 150 to 950mmmin-1 covering typical clinical injection rates, and that determined the resulting force on the plunger. The crosshead speed and the resulting force were used to calculate the shear rate and the shear stress respectively. These were used in standard capillary flow expressions together with an independent measurement of the wall frictional force and allowed the viscosity of parenteral Newtonian solutions and non-Newtonian suspensions to be measured quantitatively and their rheological behaviour in needles of clinical dimensions to be establis",
+    "files": []
+  },
+  {
+    "article_id": 32923061,
+    "title": "Guiding syringe selection for intravitreal injections: injectability and stability analysis of compounded pegcetacoplan (SYFOVRE) and the broader implications for high-viscosity ophthalmic therapies",
+    "doi": "",
+    "url": "https://repository.rcsi.com/articles/journal_contribution/Guiding_syringe_selection_for_intravitreal_injections_injectability_and_stability_analysis_of_compounded_pegcetacoplan_SYFOVRE_and_the_broader_implications_for_high-viscosity_ophthalmic_therapies/32923061",
+    "defined_type": "journal contribution",
+    "license": {
+      "value": 1,
+      "name": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "description": "<p dir=\"ltr\"><b>Purpose</b>: SYFOVRE, the brand name of pegcetacoplan and the first FDA-approved treatment for geographic atrophy arising from dry age-related macular degeneration, is currently available only in vial format. Consequently, it is often compounded and transferred into syringes. This study aims to identify the optimal syringe type for both storage and intravitreal injection (IVI) of medium- and high-viscosity formulations such as SYFOVRE. </p><p dir=\"ltr\"><b>Methods</b>: SYFOVRE was prepared in four syringe types and stored under refrigeration in amber bags for up to 110 days. Samples were evaluated for potency, aggregation, protein integrity, binding activity, pH, appearance, sterility, and container closure integrity. Syringe particulate contribution was examined using light",
+    "files": [
+      {
+        "name": "Guiding syringe selection for intravitreal injections injectability and stability analysis of compounded pegcetacoplan (SYFOVRE) and the broader implications for high-viscosity ophthalmic therapies.pdf",
+        "size": 5505861,
+        "download_url": "https://ndownloader.figshare.com/files/66386135",
+        "mimetype": "application/pdf"
+      }
+    ]
+  }
+]

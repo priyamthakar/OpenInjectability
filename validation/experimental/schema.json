@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openinjectability.local/schemas/experimental_panel_v1.json",
+  "title": "OpenInjectability experimental validation panel",
+  "description": "Panel of independently measured Newtonian fluid-resistance rows for Phase D comparison. Not development fixtures.",
+  "type": "object",
+  "required": ["schema_version", "rows"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0"
+    },
+    "meta": {
+      "type": "object",
+      "description": "Free-form provenance for the panel file (study ID, operator, etc.).",
+      "additionalProperties": true
+    },
+    "rows": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/experimental_row" }
+    }
+  },
+  "$defs": {
+    "experimental_row": {
+      "type": "object",
+      "required": [
+        "scenario_id",
+        "fluid",
+        "viscosity_value",
+        "viscosity_unit",
+        "viscosity_temperature_c",
+        "newtonian_evidence",
+        "needle_id_mm",
+        "needle_length_mm",
+        "needle_geometry_source",
+        "barrel_id_mm",
+        "barrel_geometry_source",
+        "volume_ml",
+        "force_definition",
+        "method_notes",
+        "citation_or_lab_log"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "scenario_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Unique identifier within the panel."
+        },
+        "fluid": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Fluid or formulation label; mapped to AssessmentInput.formulation_id."
+        },
+        "viscosity_value": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "viscosity_unit": {
+          "type": "string",
+          "enum": ["cP", "mPa_s", "Pa_s"]
+        },
+        "viscosity_temperature_c": {
+          "type": "number",
+          "description": "Viscosity measurement temperature; v0.1 sets use temperature equal (no correction)."
+        },
+        "newtonian_evidence": {
+          "type": "string",
+          "minLength": 1
+        },
+        "needle_id_mm": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "needle_length_mm": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "needle_geometry_source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "barrel_id_mm": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "barrel_geometry_source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "volume_ml": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "injection_time_s": {
+          "type": ["number", "null"],
+          "exclusiveMinimum": 0,
+          "description": "Required unless flow_rate_ml_s is supplied."
+        },
+        "flow_rate_ml_s": {
+          "type": ["number", "null"],
+          "exclusiveMinimum": 0,
+          "description": "Required unless injection_time_s is supplied."
+        },
+        "measured_fluid_force_n": {
+          "type": ["number", "null"],
+          "exclusiveMinimum": 0,
+          "description": "Measured fluid-side force (N). Required unless measured_pressure_pa is supplied."
+        },
+        "measured_pressure_pa": {
+          "type": ["number", "null"],
+          "exclusiveMinimum": 0,
+          "description": "Measured fluid/needle pressure (Pa). Converted via barrel area when force is absent."
+        },
+        "force_definition": {
+          "type": "string",
+          "enum": ["fluid_only", "pressure_area", "total_glide", "unknown"],
+          "description": "Only fluid_only and pressure_area are accepted for comparison; total_glide and unknown are rejected."
+        },
+        "method_notes": {
+          "type": "string",
+          "minLength": 1
+        },
+        "citation_or_lab_log": {
+          "type": "string",
+          "minLength": 1
+        },
+        "density_kg_m3": {
+          "type": ["number", "null"],
+          "exclusiveMinimum": 0,
+          "description": "Optional density for Reynolds diagnostics."
+        },
+        "is_synthetic_smoke_test": {
+          "type": "boolean",
+          "description": "If true, row is for code-path smoke tests only; never use in a real experimental panel."
+        }
+      },
+      "anyOf": [
+        { "required": ["injection_time_s"] },
+        { "required": ["flow_rate_ml_s"] }
+      ],
+      "oneOf": [
+        {
+          "required": ["measured_fluid_force_n"],
+          "not": { "required": ["measured_pressure_pa"] }
+        },
+        {
+          "required": ["measured_pressure_pa"]
+        },
+        {
+          "required": ["measured_fluid_force_n", "measured_pressure_pa"]
+        }
+      ]
+    }
+  }
+}

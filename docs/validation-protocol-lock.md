@@ -51,3 +51,19 @@ resistance (or needle pressure drop converted via measured barrel area) for
 `validation_status` must remain
 `internal_validation; experimental_validation_pending` until the published report
 exists. Never set `independently_validated` without that record.
+
+## Comparison pipeline (infrastructure; no dataset accepted)
+
+Panel schema, empty template, and how-to for real lab rows live under
+[`validation/experimental/`](../validation/experimental/README.md).
+
+Run a comparison **without** advancing package status:
+
+```bash
+openinjectability validate-experimental path/to/panel.json --out path/to/report_dir
+```
+
+Outputs: `experimental_comparison.json`, `experimental_comparison.md`, and
+`manifest.sha256` (input + output digests). Report status is only
+`experimental_comparison` or `insufficient_data` — never `independently_validated`.
+Do not use `tests/reference_data/` as an experimental panel.

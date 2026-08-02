@@ -1,0 +1,260 @@
+{
+  "document": "agent-repo-deep-pull",
+  "phase": "D",
+  "searched_on": "2026-08-02",
+  "purpose": "Deep search Zenodo + Figshare APIs for downloadable CSV/XLS related to syringe injection force + viscosity; inspect user-named Figshare DOIs; report Phase-D completeness only from real files.",
+  "no_fabrication": true,
+  "phase_d_complete_dataset_found": false,
+  "protocol_fields_required": {
+    "mu": "dynamic viscosity measured + temperature; Newtonian attestation",
+    "d": "needle inner diameter measured/traceable (not gauge-only)",
+    "L": "needle length traceable",
+    "barrel": "barrel / plunger inner diameter",
+    "Q": "volumetric flow rate or controlled injection time + volume",
+    "F_fluid": "fluid-side force or pressure (friction-separated or pressure transducer)"
+  },
+  "api_notes": {
+    "zenodo_size_limit_unauthenticated": 25,
+    "zenodo_size_50_error": "Page size cannot be greater than 25 without auth",
+    "figshare_search": "POST https://api.figshare.com/v2/articles/search with JSON body {search_for: ...}"
+  },
+  "zenodo": {
+    "base": "https://zenodo.org/api/records",
+    "queries": [
+      {"q": "syringe injection force", "type": "dataset", "total": 6678},
+      {"q": "syringe force viscosity", "type": "dataset", "total": 5752},
+      {"q": "injection force needle viscosity", "type": "dataset", "total": 7449},
+      {"q": "glycerol syringe force", "type": "dataset", "total": 5420},
+      {"q": "glycerol needle injection force", "type": "dataset", "total": 7122},
+      {"q": "injectability viscosity", "type": "dataset", "total": 567},
+      {"q": "glide force syringe", "type": "dataset", "total": 5285},
+      {"q": "syringeability viscosity", "type": "dataset", "total": 567},
+      {"q": "Hagen Poiseuille syringe", "type": "dataset", "total": 614},
+      {"q": "injection force glycerol", "type": "dataset", "total": 6764},
+      {"q": "plunger force viscosity", "type": "dataset", "total": 5639},
+      {"q": "break loose force syringe", "type": "dataset", "total": 6443},
+      {"q": "extrusion force syringe", "type": "dataset", "total": 5456},
+      {"q": "needle diameter viscosity force", "type": "dataset", "total": 10033},
+      {"q": "Allmendinger injection force", "type": "dataset", "total": 6572},
+      {"q": "Cilurzo injectability", "type": "dataset", "total": 1, "note": "Bibliometric ODF dataset only (id 17795230)"},
+      {"q": "Newtonian viscosity syringe force", "type": "dataset", "total": 5865},
+      {"q": "\"injection force\" AND (syringe OR needle)", "type": "dataset", "total": 0},
+      {"q": "\"glide force\" AND syringe", "type": "dataset", "total": 0},
+      {"q": "type:dataset AND syringe AND viscosity AND needle AND force", "type": "dataset", "total": 0},
+      {"q": "title:\"injection force\"", "type": "dataset", "total": 0},
+      {"q": "title:injectability AND (syringe OR needle)", "type": "dataset", "total": 0},
+      {"q": "title:syringeability", "type": "dataset", "total": 0},
+      {"q": "title:\"glide force\"", "type": "dataset", "total": 1, "note": "Nickel dislocation glide force — not syringe"},
+      {"q": "syringe injection force", "type": null, "total": 60347},
+      {"q": "\"injection force\" viscosity", "type": null, "total": 7804},
+      {"q": "glycerol needle force", "type": null, "total": 52406}
+    ],
+    "result_summary": "Exact phrase/title queries for injection/glide force + syringe/needle return 0 relevant hits. Broad keyword dataset searches return thousands of false positives (syringe services programs, MD aqueous glycerol viscosity/surface tension, lava/cement injectability, blood viscosity). No downloadable experimental syringe fluid-resistance force CSV/XLS with viscosity+geometry on Zenodo.",
+    "phase_d_usable_deposits": []
+  },
+  "figshare": {
+    "base": "https://api.figshare.com/v2",
+    "targeted_dois": [
+      "10.6084/m9.figshare.32195520.v1",
+      "10.6084/m9.figshare.20800108.v1"
+    ],
+    "search_queries": [
+      "injection force syringe",
+      "syringe viscosity force"
+    ],
+    "datasets_inspected": [
+      {
+        "id": "felfeli-2026-figshare-32195520",
+        "title": "Additional file 10 of Guiding syringe selection for intravitreal injections... (raw injection force/pressure data)",
+        "doi": "10.6084/m9.figshare.32195520.v1",
+        "article_id": 32195520,
+        "download_url": "https://ndownloader.figshare.com/files/64317894",
+        "parent_paper_doi": "10.1186/s40942-026-00832-3",
+        "format": "XLSX",
+        "file_name": "40942_2026_832_MOESM10_ESM.xlsx",
+        "file_size_bytes": 17293,
+        "access": "public_download",
+        "inspected": true,
+        "sheet": "wide summary (3)",
+        "n_data_rows": 46,
+        "columns_summary": [
+          "date",
+          "syringe",
+          "fluid_density",
+          "EYEID",
+          "type",
+          "needle",
+          "IOP_prior",
+          "IOP_post",
+          "inj_max",
+          "inj_mean",
+          "inj_time",
+          "reflux"
+        ],
+        "columns_timeseries": "Raw injection pressure over time; Time (s) -> 0, 0.5, 1, ... numeric samples",
+        "unique_values_observed": {
+          "syringe": ["BD", "ClearJect", "StaClear", "ZR0.2"],
+          "fluid_density": ["15 cP", "120 cP"],
+          "needle": ["27G"],
+          "type": ["ND", "phakic", "pseudophakic"]
+        },
+        "exact_sample_rows": [
+          {
+            "date": "Feb-02-2025",
+            "syringe": "StaClear",
+            "fluid_density": "120 cP",
+            "EYEID": "2025-01-OD",
+            "type": "phakic",
+            "needle": "27G",
+            "IOP_prior": 23,
+            "IOP_post": 20,
+            "inj_max": 137,
+            "inj_mean": 85.4,
+            "inj_time": 7.5,
+            "reflux": "n",
+            "source": "downloaded XLSX row; DOI 10.6084/m9.figshare.32195520.v1"
+          },
+          {
+            "date": "Feb-02-2025",
+            "syringe": "ClearJect",
+            "fluid_density": "120 cP",
+            "EYEID": "2025-01-OD",
+            "type": "phakic",
+            "needle": "27G",
+            "IOP_prior": 18,
+            "IOP_post": 24,
+            "inj_max": 177,
+            "inj_mean": 122.7,
+            "inj_time": 8.39,
+            "reflux": "y",
+            "source": "downloaded XLSX row; DOI 10.6084/m9.figshare.32195520.v1"
+          },
+          {
+            "date": "Feb-02-2025",
+            "syringe": "ZR0.2",
+            "fluid_density": "120 cP",
+            "EYEID": "2025-01-OD",
+            "type": "phakic",
+            "needle": "27G",
+            "IOP_prior": 18,
+            "IOP_post": 29,
+            "inj_max": 104,
+            "inj_mean": 88.8,
+            "inj_time": 12,
+            "reflux": "n",
+            "source": "downloaded XLSX row; DOI 10.6084/m9.figshare.32195520.v1"
+          }
+        ],
+        "fields_present": {
+          "mu": "partial — labels 15 cP / 120 cP only; no temperature; not glycerol–water series",
+          "d": "no — gauge only (27G)",
+          "L": "no",
+          "barrel": "partial — syringe brand only",
+          "Q": "no — variable inj_time; clinical-style injection into eye",
+          "F_fluid": "no — total injection pressure/effort into tissue (friction + tissue); not fluid-only"
+        },
+        "phase_d_usable": false,
+        "phase_d_notes": "Real downloadable experimental pressure/force time series, but wrong measurand (tissue IVI), incomplete geometry, no friction separation."
+      },
+      {
+        "id": "rini-2022-figshare-20800108",
+        "title": "Enabling faster subcutaneous delivery of larger volume, high viscosity fluids (supplementary materials)",
+        "doi": "10.6084/m9.figshare.20800108.v1",
+        "article_id": 20800108,
+        "download_urls": [
+          "https://ndownloader.figshare.com/files/37056214",
+          "https://ndownloader.figshare.com/files/37056217"
+        ],
+        "parent_paper_doi": "10.1080/17425247.2022.2116425",
+        "format": "DOCX (not CSV/XLS)",
+        "files": [
+          {"name": "iedd_a_2116425_sm8405.docx", "size": 809200, "role": "supplemental figures — delivery time air vs in vivo"},
+          {"name": "iedd_a_2116425_sm8404.docx", "size": 56217, "role": "Supplemental Table 1 device contrast estimates by viscosity/gauge/spring"}
+        ],
+        "access": "public_download",
+        "inspected": true,
+        "metrics_in_si": [
+          "delivery time",
+          "viscosity levels cP (2.3, 5.8, 11.8, 20.4, 31, 39 and related contrasts)",
+          "gauge/wall (27G STW/UTW, 29G TW)",
+          "spring force tiers SF LOW / SF HIGH",
+          "erythema/wheal scores"
+        ],
+        "fields_present": {
+          "mu": "yes-ish — Newtonian cP series referenced in SI/paper",
+          "d": "no — gauge/wall only",
+          "L": "no",
+          "barrel": "no",
+          "Q": "partial — delivery time under spring, not imposed constant Q",
+          "F_fluid": "no — spring force category; no measured fluid resistance force"
+        },
+        "phase_d_usable": false,
+        "phase_d_notes": "Explicit high-viscosity Newtonian delivery-time study; wrong primary measurand for OpenInjectability F_f validation.",
+        "exact_data_rows_extracted": null,
+        "reason_no_row_extraction": "SI is DOCX statistics on delivery time contrasts, not a complete μ-d-L-barrel-Q-F_fluid row panel."
+      },
+      {
+        "id": "ackermann-2026-figshare-si",
+        "title": "The effect of syringe design and cannula dimensions on time-force curve... (Additional files 1–3)",
+        "article_ids": [31976504, 31976507, 31976510],
+        "dois": [
+          "10.6084/m9.figshare.31976504.v1",
+          "10.6084/m9.figshare.31976507.v1",
+          "10.6084/m9.figshare.31976510.v1"
+        ],
+        "parent_paper_doi": "10.1186/s40942-026-00833-2",
+        "format": "PDF + DOCX stats (not raw CSV)",
+        "access": "public_download",
+        "inspected": true,
+        "table_s1_auc_N_s_means": {
+          "units": "N·s",
+          "n_per_cell": 5,
+          "source_doi": "10.6084/m9.figshare.31976510.v1",
+          "cells": [
+            {"cannula": "30G", "syringe": "A", "BSS": 3.892, "PEG_40000": 16.548, "PEG_400": 60.6, "Tween": 30.546},
+            {"cannula": "30G", "syringe": "B", "BSS": 4.551, "PEG_40000": 49.272, "PEG_400": 125.64, "Tween": 98.88},
+            {"cannula": "30G", "syringe": "C", "BSS": 4.504, "PEG_40000": 51.14, "PEG_400": 132.08, "Tween": 99.694},
+            {"cannula": "33G", "syringe": "A", "BSS": 5.988, "PEG_40000": 64.174, "PEG_400": 211.92, "Tween": 149.42},
+            {"cannula": "33G", "syringe": "B", "BSS": 10.917, "PEG_40000": 189.1, "PEG_400": 617.42, "Tween": 537.88},
+            {"cannula": "33G", "syringe": "C", "BSS": 10.477, "PEG_40000": 230.28, "PEG_400": 819.22, "Tween": 459.26}
+          ],
+          "note": "Exact means copied from SI DOCX text; SD/SEM/CI also present in SI but not all copied here."
+        },
+        "fields_present": {
+          "mu": "partial — complex viscosity in paper (not machine-readable complete rows with T)",
+          "d": "no — 30G/33G only",
+          "L": "in paper (13 mm / 9 mm) not as SI CSV fields",
+          "barrel": "plunger diameters in paper not SI CSV",
+          "Q": "no — manual injection; AUC not fixed Q",
+          "F_fluid": "no — total force-time AUC; no empty-syringe friction baseline"
+        },
+        "phase_d_usable": false,
+        "phase_d_notes": "Best open factorial force×viscosity×geometry stats near-miss; still total resistance, gauge-only ID, no friction separation, not glycerol Newtonian panel."
+      },
+      {
+        "id": "figshare-27412368-micro-capillary",
+        "title": "Flow and injection characteristics of pharmaceutical parenteral formulations using a micro-capillary",
+        "article_id": 27412368,
+        "files": [],
+        "access": "no_files_in_api",
+        "phase_d_usable": false,
+        "phase_d_notes": "Title relevant but API returned zero downloadable files."
+      }
+    ]
+  },
+  "verdict": {
+    "phase_d_complete_dataset_found": false,
+    "phase_d_repository_data_availability": "NONE_USABLE",
+    "summary": "Deep Zenodo + Figshare API pull found no downloadable CSV/XLS panel with Newtonian μ, measured needle d+L, barrel ID, Q, and friction-separated F_fluid. Figshare 32195520 is a real force/pressure XLSX (tissue IVI). Figshare 20800108 is delivery-time SI. Ackermann SI has AUC N·s stats only. Zenodo exact-phrase queries returned 0 relevant datasets.",
+    "implication": "Phase D independent experimental validation remains blocked from Zenodo/Figshare repository sources alone."
+  },
+  "working_artifacts": [
+    "docs/_repo_deep_pull_search.py",
+    "docs/_repo_deep_pull_analyze.py",
+    "docs/_repo_deep_pull_figshare_extra.py",
+    "docs/_repo_deep_pull_zenodo_extra.py",
+    "docs/_repo_deep_pull_raw.json",
+    "docs/_repo_deep_pull_analysis.json",
+    "docs/_repo_deep_pull_figshare_extra.json"
+  ]
+}

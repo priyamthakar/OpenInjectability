@@ -21,6 +21,8 @@ from .models import (
 )
 from .plotting import force_vs_needle_geometry
 from .reporting import write_report
+from .validation_report import load_panel
+from .validation_report import write_report as write_experimental_report
 
 INPUT_SCHEMA: dict[str, Any] = {
     "schema_version": "1.0",
@@ -102,6 +104,21 @@ def _parser() -> argparse.ArgumentParser:
 
     status = sub.add_parser("validation-status", help="show scientific validation status")
     status.add_argument("--json", action="store_true")
+
+    experimental = sub.add_parser(
+        "validate-experimental",
+        help=(
+            "compare an experimental panel JSON to model fluid-resistance force "
+            "(never claims independently_validated)"
+        ),
+    )
+    experimental.add_argument("panel_json", type=Path)
+    experimental.add_argument(
+        "--out",
+        type=Path,
+        required=True,
+        help="output directory for report JSON, Markdown, and manifest.sha256",
+    )
 
     schema = sub.add_parser("schema", help="print the input schema")
     schema.add_argument("--format", choices=["json", "yaml"], default="json", dest="fmt")
@@ -189,6 +206,21 @@ def main(argv: list[str] | None = None) -> int:
                 json.dumps(payload, indent=2)
                 if args.json
                 else "\n".join(f"{key}: {value}" for key, value in payload.items())
+            )
+            return 0
+
+        if args.command == "validate-experimental":
+            panel = load_panel(args.panel_json)
+            written = write_experimental_report(
+                panel,
+                args.out,
+                panel_path=args.panel_json,
+            )
+            summary = written["summary"]
+            print(
+                "experimental report: "
+                f"status={summary['status']}; n={summary['n']}; "
+                f"out={written['out_dir']}"
             )
             return 0
 
