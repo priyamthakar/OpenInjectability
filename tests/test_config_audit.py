@@ -3,11 +3,30 @@ import zipfile
 from pathlib import Path
 
 import pytest
+import tomllib
 
-from openinjectability import AssessmentInput, InputValidationError, assess
+from openinjectability import AssessmentInput, InputValidationError, __version__, assess
 from openinjectability.audit import write_audit_bundle
 from openinjectability.cli import main
 from openinjectability.config import load_config
+
+
+def test_version_source_matches_packaging_results_and_registry():
+    root = Path(__file__).parents[1]
+    pyproject = tomllib.loads((root / "pyproject.toml").read_text(encoding="utf-8"))
+    manifest = json.loads(
+        (root / "src/openinjectability/validation_registry/manifest.json").read_text(
+            encoding="utf-8"
+        )
+    )
+
+    assert pyproject["project"]["dynamic"] == ["version"]
+    assert pyproject["tool"]["setuptools"]["dynamic"]["version"]["attr"] == (
+        "openinjectability._version.__version__"
+    )
+    assert manifest["package_version"] == __version__
+    assert manifest["distribution"] == "https://pypi.org/project/openinjectability/"
+    assert assess(_case()).package_version == __version__
 
 
 def _case(**changes):
@@ -51,6 +70,8 @@ def test_load_json_config_multi_step_sensitivity(tmp_path):
     assert config.sensitivity_relative_changes == (-0.1, 0.1)
     result = assess(_case(), config=config)
     assert result.effective_configuration["temperature_tolerance_c"] == 0.25
+    assert result.effective_configuration["display_force_unit"] == "N"
+    assert result.effective_configuration["display_pressure_unit"] == "MPa"
 
 
 def test_load_yaml_config(tmp_path):
@@ -99,12 +120,17 @@ def test_audit_bundle_is_deterministic(tmp_path):
         assert names == sorted(names)
         assert "manifest.sha256" in names
         manifest = json.loads(archive.read("manifest.sha256"))
-        assert "results.json" in manifest
+        assert manifest["algorithm"] == "sha256"
+        assert "results/assessment.json" in manifest["files"]
+        assert "input/normalized.csv" in manifest["files"]
+        assert "config/effective_config.json" in manifest["files"]
+        assert "provenance/environment.json" in manifest["files"]
+        assert "provenance/validation_manifest.json" in manifest["files"]
 
 
 def test_cli_version_and_schema(capsys):
     assert main(["version"]) == 0
-    assert capsys.readouterr().out.strip() == "0.1.0"
+    assert capsys.readouterr().out.strip() == "0.1.1"
     assert main(["schema", "--format", "json"]) == 0
     payload = json.loads(capsys.readouterr().out)
     assert payload["result_name"] == "predicted fluid-resistance force"

@@ -161,8 +161,7 @@ def main() -> None:
             "protein formulations: an alternative predictive model for "
             "non-Newtonian solutions."
         ),
-        "in_free_full_text_query3": "24560966"
-        in (classic_note.get("free_full_text_pmids") or []),
+        "in_free_full_text_query3": "24560966" in (classic_note.get("free_full_text_pmids") or []),
         "has_pmc_via_elink": False,
         "access": (
             "abstract-only / paywalled (not free full text on PubMed; "
@@ -197,9 +196,7 @@ def main() -> None:
                     "source": r["source"],
                     "pmcid": r["pmcid"],
                     "access": (
-                        "PMC OA"
-                        if r["has_pmc"]
-                        else "abstract-only / no PMC (likely paywalled)"
+                        "PMC OA" if r["has_pmc"] else "abstract-only / no PMC (likely paywalled)"
                     ),
                 }
             )
@@ -216,23 +213,17 @@ def main() -> None:
     lines.append("")
     lines.append(f"Generated (UTC): `{data['generated_at_utc']}`")
     lines.append("")
-    lines.append(
-        "**Source:** NCBI E-utilities (`esearch` → `esummary` → `elink` pubmed→pmc)."
-    )
+    lines.append("**Source:** NCBI E-utilities (`esearch` → `esummary` → `elink` pubmed→pmc).")
     lines.append("")
     lines.append(data["disclaimer"])
     lines.append("")
     lines.append("## Query hit counts")
     lines.append("")
-    lines.append(
-        "| # | Query | Count | Returned (retmax) | With PMC link |"
-    )
+    lines.append("| # | Query | Count | Returned (retmax) | With PMC link |")
     lines.append("|---|---|---:|---:|---:|")
     for i, res in enumerate(data["queries"], 1):
         pmc_n = sum(1 for r in res["rows"] if r["has_pmc_fulltext_link"])
-        lines.append(
-            f"| {i} | {res['label']} | {res['count']} | {res['returned']} | {pmc_n} |"
-        )
+        lines.append(f"| {i} | {res['label']} | {res['count']} | {res['returned']} | {pmc_n} |")
     lines.append("")
 
     for i, res in enumerate(data["queries"], 1):
@@ -243,10 +234,7 @@ def main() -> None:
         lines.append("```")
         lines.append("")
         lines.append(f"- **Count:** {res['count']}")
-        lines.append(
-            f"- **PMIDs returned:** "
-            f"{', '.join(res['ids']) if res['ids'] else '(none)'}"
-        )
+        lines.append(f"- **PMIDs returned:** {', '.join(res['ids']) if res['ids'] else '(none)'}")
         lines.append("")
         if not res["rows"]:
             lines.append("_No records returned._")
@@ -275,9 +263,7 @@ def main() -> None:
         f"- **Allmendinger[author] AND injection AND free full text[filter]:** "
         f"count = **{a['free_full_text_filter_count']}**"
     )
-    lines.append(
-        f"  - PMIDs: {', '.join(a['free_full_text_pmids']) or '(none)'}"
-    )
+    lines.append(f"  - PMIDs: {', '.join(a['free_full_text_pmids']) or '(none)'}")
     lines.append(
         "  - These free-full-text hits are **not** the classic 2014 "
         "injection-force paper (manufacturing / gene therapy topics)."
@@ -286,10 +272,7 @@ def main() -> None:
         f"- **Allmendinger[author] AND injection (no free-full-text filter):** "
         f"count = **{a['unfiltered_injection_count']}**"
     )
-    lines.append(
-        f"  - PMIDs: "
-        f"{', '.join(a['unfiltered_injection_pmids']) or '(none)'}"
-    )
+    lines.append(f"  - PMIDs: {', '.join(a['unfiltered_injection_pmids']) or '(none)'}")
     lines.append("")
     lines.append("### Classic Allmendinger 2014")
     lines.append("")
@@ -299,9 +282,7 @@ def main() -> None:
     lines.append(f"- In free-full-text Query 3: **{c['in_free_full_text_query3']}**")
     lines.append(f"- {c['note']}")
     lines.append("")
-    lines.append(
-        "### Force / injectability-related Allmendinger papers (unfiltered search)"
-    )
+    lines.append("### Force / injectability-related Allmendinger papers (unfiltered search)")
     lines.append("")
     lines.append("| PMID | Access | Date | Source | Title |")
     lines.append("|---|---|---|---|---|")
@@ -327,13 +308,10 @@ def main() -> None:
         "glycerol+needle+force; down-rank: hydrogels, gene therapy, COGs, cement)."
     )
     lines.append(
-        "**Friction-corrected force:** not asserted from metadata — full-text "
-        "review required."
+        "**Friction-corrected force:** not asserted from metadata — full-text review required."
     )
     lines.append("")
-    lines.append(
-        "| Rank | PMID | PMCID | Score | Friction-corrected force? | Title |"
-    )
+    lines.append("| Rank | PMID | PMCID | Score | Friction-corrected force? | Title |")
     lines.append("|---:|---|---|---:|---|---|")
     for i, r in enumerate(top10, 1):
         title = (r["title"] or "").replace("|", "\\|")
@@ -381,15 +359,10 @@ def main() -> None:
     lines.append("")
     lines.append("## Files")
     lines.append("")
+    lines.append("- Machine-readable: [`docs/agent-pubmed-batch.json`](agent-pubmed-batch.json)")
+    lines.append("- This report: [`docs/agent-pubmed-batch.md`](agent-pubmed-batch.md)")
     lines.append(
-        "- Machine-readable: [`docs/agent-pubmed-batch.json`](agent-pubmed-batch.json)"
-    )
-    lines.append(
-        "- This report: [`docs/agent-pubmed-batch.md`](agent-pubmed-batch.md)"
-    )
-    lines.append(
-        "- Reproducible script: "
-        "[`scripts/pubmed_agent_batch.py`](../scripts/pubmed_agent_batch.py)"
+        "- Reproducible script: [`scripts/pubmed_agent_batch.py`](../scripts/pubmed_agent_batch.py)"
     )
     lines.append("")
 

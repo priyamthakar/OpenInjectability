@@ -1,8 +1,15 @@
 # OpenInjectability: full project plan
 
 **Prepared:** 2026-08-01  
-**Updated:** 2026-08-02  
+**Updated:** 2026-08-11
+
 **Baseline:** v0.1.0 alpha on [PyPI](https://pypi.org/project/openinjectability/0.1.0/) — Phases A–C complete; D literature comparison only; E alpha published  
+**Current repository:** v0.1.1 maintenance candidate prepared locally; Trusted Publishing and public release pending
+
+**Completion evidence:** [COMPLETION_AUDIT.md](COMPLETION_AUDIT.md) — local software
+scope complete; scientific-review approval, independent experimental validation and
+public 0.1.1 artifact convergence remain open.
+
 **Governance sources:** [PROJECT_GOAL.md](PROJECT_GOAL.md), [HANDOFF.md](HANDOFF.md), [PROJECT_SPECIFICATION.md](PROJECT_SPECIFICATION.md), [VALIDATION.md](VALIDATION.md), [docs/phase-status.md](docs/phase-status.md), [docs/README.md](docs/README.md)
 
 ## Grounding (verified 2026-08-02)

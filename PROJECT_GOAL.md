@@ -46,10 +46,16 @@ The final product is complete when it provides:
 
 ## Immediate evidence-gated objective
 
-**v0.1.0 alpha is complete and published** on
-[PyPI](https://pypi.org/project/openinjectability/0.1.0/): hardening, spec
-completion, release gates, literature comparison pipeline, and public install
-path.
+**v0.1.0 alpha is complete and published** on PyPI. Repository version `0.1.1`
+is a maintenance release candidate with centralized versioning, stronger
+repository-wide quality gates, provenance-rich reports, a synthetic scientist
+walkthrough, and token-free release automation. It is not public until the
+matching GitHub release completes Trusted Publishing.
+
+The locally achievable software definition is audited in
+[COMPLETION_AUDIT.md](COMPLETION_AUDIT.md). The project as a whole is still incomplete
+because independent experimental validation and the converged public 0.1.1 release do
+not yet have evidence.
 
 **Next evidence-gated objective:** obtain independently traceable Newtonian
 experimental rows (author SI tables or wet-lab friction-subtracted force) under

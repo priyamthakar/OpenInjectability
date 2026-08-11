@@ -1,5 +1,30 @@
 # Changelog
 
+## 0.1.1 — Unreleased
+
+### Changed
+
+- Centralized the package version and added a packaging/registry agreement test.
+- Added normalized input provenance, package version, validation status, warnings, and
+  exclusions consistently to human-readable reports.
+- Added a synthetic multi-geometry formulation-screening tutorial and acceptance test.
+- Completed the four-plot specification surface and embedded plots in HTML/PDF reports.
+- Added stable error codes, row-level CSV rejections, explicit provenance and diagnostic
+  null reasons to structured results.
+- Expanded audit bundles with original/normalized inputs, reports, figures, environment,
+  validation registry and a declared SHA-256 manifest.
+- Added property-based tests and a standalone equation cross-implementation.
+- Expanded CI to enforce repository-wide Ruff linting and formatting.
+- Replaced token-based local publication with a GitHub OIDC Trusted Publishing workflow.
+- Added repository, issue tracker, changelog, and homepage package metadata.
+
+### Scientific boundary
+
+- Calculation equations and result schema remain unchanged.
+- Package status remains `internal_validation; experimental_validation_pending`.
+- The new screening example is synthetic software-demonstration data, not validation
+  evidence.
+
 ## 0.1.0 — 2026-08-02
 
 ### Added

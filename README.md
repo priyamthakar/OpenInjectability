@@ -43,12 +43,16 @@ openinjectability assess examples/formulation.csv `
   --config examples/assessment.json `
   --results assessment.json `
   --report assessment.md `
-  --plot force-vs-needle.png `
+  --plots-dir assessment-figures `
   --audit-bundle audit.zip
 ```
 
 PDF and plot output require the `reports` extra. Markdown and HTML reports require no
 optional dependency beyond the core install.
+
+`assess` preserves valid CSV rows and writes invalid or unsupported rows to the
+top-level `rejected` list with stable error codes. `--plots-dir` generates the complete
+geometry, pressure/flow, scenario-comparison, and sensitivity plot set.
 
 ```powershell
 openinjectability version
@@ -77,6 +81,7 @@ openinjectability validate-experimental `
 Panel schema and rules: [validation/experimental/README.md](validation/experimental/README.md).
 
 Documentation index: [docs/README.md](docs/README.md) — also
+[formulation-screening example](docs/formulation-screening-example.md),
 [scientific basis](docs/scientific-basis.md),
 [input schema](docs/input-schema.md),
 [interpretation](docs/interpretation.md),
@@ -86,6 +91,9 @@ Documentation index: [docs/README.md](docs/README.md) — also
 [PROJECT_SPECIFICATION.md](PROJECT_SPECIFICATION.md),
 [project.md](project.md),
 [HANDOFF.md](HANDOFF.md).
+
+Requirement-level closure and remaining external gates are recorded in
+[COMPLETION_AUDIT.md](COMPLETION_AUDIT.md).
 
 ## Backend engine API
 
@@ -108,7 +116,8 @@ returned value remains the predicted fluid-resistance force, not total device fo
 
 ## Status
 
-**Version 0.1.0 is alpha.** Development status on PyPI classifiers is `3 - Alpha`.
+**Repository version 0.1.1 is an unpublished alpha release candidate.** The current
+public PyPI release remains `0.1.0`. Development status is `3 - Alpha`.
 
 | Area | State |
 |---|---|
@@ -116,7 +125,7 @@ returned value remains the predicted fluid-resistance force, not total device fo
 | Equations / internal reference cases | `internal_validation` (unit-tested) |
 | Independent experimental validation | **Pending** — package `experimental_validation_pending` |
 | Literature comparison (Allmendinger 2014 digitized panel) | Report status `experimental_comparison` only; **not** `independently_validated` |
-| Public PyPI alpha (Phase E) | **Published** — [0.1.0 on PyPI](https://pypi.org/project/openinjectability/0.1.0/) |
+| Public PyPI alpha (Phase E) | **0.1.0 published**; **0.1.1 prepared locally, not yet published** |
 | Independently validated / signed “validated” release | **Blocked** on true experimental D (not figure digitization alone) |
 
 - Do **not** describe this release as experimentally validated.

@@ -1,5 +1,6 @@
 import json
 import math
+import runpy
 from pathlib import Path
 
 import pytest
@@ -72,13 +73,23 @@ def test_hand_calculated_reference_fixture_matches_engine():
     assert result.outputs["fluid_resistance_force_n"] == pytest.approx(
         expected["fluid_resistance_force_n"]
     )
-    assert result.outputs["wall_shear_rate_s_1"] == pytest.approx(
-        expected["wall_shear_rate_s_1"]
-    )
+    assert result.outputs["wall_shear_rate_s_1"] == pytest.approx(expected["wall_shear_rate_s_1"])
     assert result.outputs["reynolds_number"] == pytest.approx(expected["reynolds_number"])
     assert result.outputs["fluid_resistance_force_n"] == pytest.approx(
         expected["simplified_force_n"]
     )
+
+
+def test_standalone_cross_implementation_matches_core():
+    root = Path(__file__).parents[1]
+    fixture = json.loads(
+        (root / "tests/reference_data/reference_case.json").read_text(encoding="utf-8")
+    )
+    namespace = runpy.run_path(str(root / "validation/independent_reference.py"))
+    independent = namespace["calculate"](fixture["inputs"])
+    result = assess(AssessmentInput(**fixture["inputs"]))
+    for name, value in independent.items():
+        assert result.outputs[name] == pytest.approx(value, rel=1e-12)
 
 
 @pytest.mark.parametrize(
@@ -201,9 +212,7 @@ def test_bool_viscosity_does_not_coerce_silently():
 
 
 def test_inverse_screening_quantities_when_ceiling_supplied():
-    result = assess(
-        case(force_ceiling_n=50.0, force_ceiling_source="lab protocol FORCE-1")
-    )
+    result = assess(case(force_ceiling_n=50.0, force_ceiling_source="lab protocol FORCE-1"))
     assert result.outputs["max_flow_rate_m3_s_at_force_ceiling"] is not None
     assert result.outputs["min_injection_time_s_at_force_ceiling"] is not None
     assert any(w.code == "INVERSE_SCREENING_QUANTITIES" for w in result.warnings)
@@ -228,3 +237,12 @@ def test_shear_and_rating_warning_codes():
     assert "COMPONENT_PRESSURE_RATING_EXCEEDED" in codes
     assert "GAUGE_GEOMETRY_METADATA_INCONSISTENT" in codes
     assert "GEOMETRY_TOLERANCE_ABSENT" in codes
+
+
+def test_viscosity_evidence_range_warning_and_remediation():
+    result = assess(case(validated_viscosity_min=40.0, validated_viscosity_max=80.0))
+    warning = next(
+        item for item in result.warnings if item.code == "VISCOSITY_OUTSIDE_EVIDENCE_RANGE"
+    )
+    assert warning.field == "viscosity_value"
+    assert warning.remediation

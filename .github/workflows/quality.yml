@@ -23,9 +23,11 @@ jobs:
       - run: python -m pip install --upgrade pip
       - run: python -m pip install -e ".[dev,reports]"
       - run: python -m pytest --cov=openinjectability --cov-branch --cov-fail-under=87 -q
-      - run: python -m ruff check src tests
+      - run: python -m ruff check .
+      - run: python -m ruff format --check .
       - run: python -m mypy --strict src
       - run: python -m build
+      - run: python scripts/verify_distribution.py dist
       - name: Installed wheel smoke
         run: |
           python -m venv "$RUNNER_TEMP/wheel-smoke"

@@ -90,11 +90,11 @@ QUERIES: list[tuple[str, str]] = [
     ),
     (
         "oa_newtonian_syringeability",
-        "TITLE_ABS:(newtonian) AND TITLE_ABS:(syringeability OR injectability OR \"injection force\") AND OPEN_ACCESS:y",
+        'TITLE_ABS:(newtonian) AND TITLE_ABS:(syringeability OR injectability OR "injection force") AND OPEN_ACCESS:y',
     ),
     (
         "oa_viscous_contribution_injection",
-        'TITLE_ABS:((viscous OR hydrodynamic) AND (contribution OR component OR portion)) AND TITLE_ABS:(injection OR glide OR syringe) AND OPEN_ACCESS:y',
+        "TITLE_ABS:((viscous OR hydrodynamic) AND (contribution OR component OR portion)) AND TITLE_ABS:(injection OR glide OR syringe) AND OPEN_ACCESS:y",
     ),
     (
         "oa_rheology_injection_force_glycerol",
@@ -114,7 +114,7 @@ QUERIES: list[tuple[str, str]] = [
     ),
     (
         "oa_rathore_viscosity_force",
-        'AUTH:Rathore AND (viscosity OR rheology) AND (syringe OR needle OR inject) AND OPEN_ACCESS:y',
+        "AUTH:Rathore AND (viscosity OR rheology) AND (syringe OR needle OR inject) AND OPEN_ACCESS:y",
     ),
     (
         "all_rathore_viscosity_force",
@@ -143,9 +143,7 @@ def keywords_from_text(text: str) -> dict[str, bool]:
         "glide_force": "glide force" in t or "dynamic glide" in t,
         "injection_force": "injection force" in t or "extrusion force" in t,
         "injectability": "injectability" in t or "syringeability" in t,
-        "hagen_poiseuille": "hagen-poiseuille" in t
-        or "hagen–poiseuille" in t
-        or "poiseuille" in t,
+        "hagen_poiseuille": "hagen-poiseuille" in t or "hagen–poiseuille" in t or "poiseuille" in t,
         "friction": "friction" in t,
         "break_loose": "break-loose" in t or "break loose" in t or "breakloose" in t,
         "hydrodynamic": "hydrodynamic force" in t or "hydrodynamic contribution" in t,
@@ -159,11 +157,7 @@ def keywords_from_text(text: str) -> dict[str, bool]:
         ),
         "gauge_only": bool(
             ("gauge" in t or " g " in t or "g tw" in t)
-            and not (
-                "inner diameter" in t
-                or "internal diameter" in t
-                or "needle diameter" in t
-            )
+            and not ("inner diameter" in t or "internal diameter" in t or "needle diameter" in t)
         ),
         "barrel": "barrel" in t or "syringe diameter" in t or "prefilled syringe" in t,
         "syringe_device": "syringe" in t or "needle" in t or "prefilled" in t,
@@ -206,9 +200,7 @@ def keywords_from_text(text: str) -> dict[str, bool]:
                 "filler",
             ]
         ),
-        "microfluidic": (
-            "microfluidic" in t or "lab-on-a-chip" in t or "syringe-on-chip" in t
-        ),
+        "microfluidic": ("microfluidic" in t or "lab-on-a-chip" in t or "syringe-on-chip" in t),
         "non_newtonian_hint": any(
             x in t
             for x in [
@@ -304,9 +296,7 @@ def assess_candidate(hit: dict, source_queries: list[str]) -> dict:
         reasons.append("injectability / injection-glide force / syringe-HP context")
     else:
         score -= 5
-        reject.append(
-            "lacks clear injectability/injection-force/syringe fluid-resistance context"
-        )
+        reject.append("lacks clear injectability/injection-force/syringe fluid-resistance context")
 
     if keys["newtonian"] or keys["glycerol"]:
         score += 4
@@ -341,8 +331,10 @@ def assess_candidate(hit: dict, source_queries: list[str]) -> dict:
     if keys["flow_rate"]:
         score += 2
         reasons.append("flow rate / speed / crosshead language")
-    if keys["pressure"] and inject_context and (
-        keys["viscosity"] or keys["glycerol"] or keys["newtonian"]
+    if (
+        keys["pressure"]
+        and inject_context
+        and (keys["viscosity"] or keys["glycerol"] or keys["newtonian"])
     ):
         score += 1
         reasons.append("pressure + rheology in injectability context")
@@ -380,24 +372,16 @@ def assess_candidate(hit: dict, source_queries: list[str]) -> dict:
         )
     if keys["cement_dental"]:
         score -= 5
-        reject.append(
-            "cement/dental/filler class — not Newtonian syringe/needle fluid panel"
-        )
+        reject.append("cement/dental/filler class — not Newtonian syringe/needle fluid panel")
     if keys["microfluidic"]:
         score -= 4
-        reject.append(
-            "microfluidic geometry — not clinical needle+barrel validation panel"
-        )
+        reject.append("microfluidic geometry — not clinical needle+barrel validation panel")
     if keys["protein_mab"] and not keys["newtonian"] and not keys["glycerol"]:
         score -= 2
-        reject.append(
-            "protein/mAb focus — often non-Newtonian; total force likely"
-        )
+        reject.append("protein/mAb focus — often non-Newtonian; total force likely")
     if keys["non_newtonian_hint"] and not keys["newtonian"] and not keys["glycerol"]:
         score -= 2
-        reject.append(
-            "explicit non-Newtonian language without Newtonian control panel"
-        )
+        reject.append("explicit non-Newtonian language without Newtonian control panel")
     if keys["review_only"] and not keys["glycerol"]:
         score -= 2
         reject.append("appears review/opinion rather than experimental panel")
@@ -459,9 +443,7 @@ def assess_candidate(hit: dict, source_queries: list[str]) -> dict:
         if reject:
             why += " | reject risks: " + "; ".join(reject[:4])
     else:
-        why = "Reject/low: " + (
-            "; ".join(reject[:5]) if reject else "low relevance score"
-        )
+        why = "Reject/low: " + ("; ".join(reject[:5]) if reject else "low relevance score")
         if reasons:
             why += " | weak positives: " + "; ".join(reasons[:3])
 
@@ -577,7 +559,7 @@ def main() -> None:
             print(f"  ERROR: {e}")
 
     assessed: list[dict] = []
-    for _key, hit in by_id.items():
+    for hit in by_id.values():
         a = assess_candidate(hit, hit["source_queries"])
         entry = {
             "pmid": hit.get("pmid"),
@@ -661,10 +643,14 @@ def main() -> None:
         "# EuropePMC deep search — Phase D candidates",
         "",
         "**API:** `https://www.ebi.ac.uk/europepmc/webservices/rest/search`",
-        "**Method:** Python `urllib`; `resultType=core`; preferred `OPEN_ACCESS:y`; "
-        "also author searches without OA filter.",
-        "**Protocol bar:** measured μ(+T), measured needle ID+L, barrel ID, Q or t+V, "
-        "fluid-side/friction-corrected force or pressure.",
+        (
+            "**Method:** Python `urllib`; `resultType=core`; preferred `OPEN_ACCESS:y`; "
+            "also author searches without OA filter."
+        ),
+        (
+            "**Protocol bar:** measured μ(+T), measured needle ID+L, barrel ID, Q or t+V, "
+            "fluid-side/friction-corrected force or pressure."
+        ),
         "**Rule:** No invented numbers; abstract screening only for ranking.",
         "",
         "## Query hit counts",
@@ -723,13 +709,9 @@ def main() -> None:
     )
     if high_score_open:
         for p in high_score_open:
-            lines.append(
-                f"- {p.get('pmcid') or p.get('pmid')}: {p.get('title')} — {p.get('note')}"
-            )
+            lines.append(f"- {p.get('pmcid') or p.get('pmid')}: {p.get('title')} — {p.get('note')}")
     else:
-        lines.append(
-            "- None met the high-score open-access threshold used for shortlist."
-        )
+        lines.append("- None met the high-score open-access threshold used for shortlist.")
 
     lines.extend(
         [

@@ -7,6 +7,7 @@ import uuid
 from collections.abc import Iterable
 from dataclasses import asdict, replace
 
+from ._version import __version__
 from .models import (
     AssessmentConfig,
     AssessmentInput,
@@ -15,6 +16,7 @@ from .models import (
     InputValidationError,
     ScientificBoundaryError,
     SensitivityItem,
+    UnitError,
     utc_now_iso,
 )
 
@@ -30,15 +32,23 @@ EXCLUSIONS = (
 def _finite_positive(name: str, value: float | None, *, required: bool = True) -> None:
     if value is None:
         if required:
-            raise InputValidationError(f"{name} is required")
+            raise InputValidationError(
+                f"{name} is required", code="MISSING_REQUIRED_VALUE", field=name
+            )
         return
     if not math.isfinite(value) or value <= 0:
-        raise InputValidationError(f"{name} must be finite and greater than zero")
+        raise InputValidationError(
+            f"{name} must be finite and greater than zero",
+            code="NONPOSITIVE_OR_NONFINITE_VALUE",
+            field=name,
+        )
 
 
 def _required_text(name: str, value: str | None) -> None:
     if value is None or not value.strip():
-        raise InputValidationError(f"{name} must be a non-empty string")
+        raise InputValidationError(
+            f"{name} must be a non-empty string", code="MISSING_PROVENANCE", field=name
+        )
 
 
 def _viscosity_pa_s(value: float, unit: str) -> float:
@@ -46,7 +56,11 @@ def _viscosity_pa_s(value: float, unit: str) -> float:
         return value
     if unit in {"cP", "mPa_s"}:
         return value / 1000.0
-    raise InputValidationError(f"unsupported viscosity_unit: {unit!r}")
+    raise UnitError(
+        f"unsupported viscosity_unit: {unit!r}",
+        code="UNSUPPORTED_VISCOSITY_UNIT",
+        field="viscosity_unit",
+    )
 
 
 def _validate(case: AssessmentInput, config: AssessmentConfig) -> None:
@@ -71,11 +85,13 @@ def _validate(case: AssessmentInput, config: AssessmentConfig) -> None:
     for name in ("viscosity_temperature_c", "use_temperature_c"):
         value = getattr(case, name)
         if not math.isfinite(value):
-            raise InputValidationError(f"{name} must be finite")
+            raise InputValidationError(f"{name} must be finite", code="NONFINITE_VALUE", field=name)
 
     if case.rheology_class.strip().lower() != "newtonian":
         raise ScientificBoundaryError(
-            "v0.1 supports Newtonian fluids only; non-Newtonian or unknown rheology is rejected"
+            "v0.1 supports Newtonian fluids only; non-Newtonian or unknown rheology is rejected",
+            code="UNSUPPORTED_RHEOLOGY",
+            field="rheology_class",
         )
 
     if abs(case.viscosity_temperature_c - case.use_temperature_c) > (
@@ -83,26 +99,65 @@ def _validate(case: AssessmentInput, config: AssessmentConfig) -> None:
     ):
         raise ScientificBoundaryError(
             "viscosity measurement temperature and use temperature differ beyond "
-            f"{config.temperature_tolerance_c:g} degC; v0.1 performs no temperature correction"
+            f"{config.temperature_tolerance_c:g} degC; v0.1 performs no temperature correction",
+            code="TEMPERATURE_MISMATCH",
+            field="use_temperature_c",
         )
 
     _finite_positive("injection_time_s", case.injection_time_s, required=False)
     _finite_positive("flow_rate_ml_s", case.flow_rate_ml_s, required=False)
     if case.injection_time_s is None and case.flow_rate_ml_s is None:
-        raise InputValidationError("supply injection_time_s or flow_rate_ml_s")
+        raise InputValidationError(
+            "supply injection_time_s or flow_rate_ml_s",
+            code="MISSING_TIME_OR_FLOW",
+            field="injection_time_s",
+        )
 
     if case.injection_time_s is not None and case.flow_rate_ml_s is not None:
         implied = case.volume_ml / case.injection_time_s
         error = abs(case.flow_rate_ml_s - implied) / max(abs(case.flow_rate_ml_s), abs(implied))
         if error > config.time_flow_relative_tolerance:
             raise InputValidationError(
-                "injection_time_s and flow_rate_ml_s are inconsistent with volume_ml"
+                "injection_time_s and flow_rate_ml_s are inconsistent with volume_ml",
+                code="TIME_FLOW_INCONSISTENT",
+                field="flow_rate_ml_s",
             )
 
     _finite_positive("density_kg_m3", case.density_kg_m3, required=False)
     _finite_positive("force_ceiling_n", case.force_ceiling_n, required=False)
     if case.force_ceiling_n is not None:
         _required_text("force_ceiling_source", case.force_ceiling_source)
+
+    for optional_name in (
+        "validated_shear_rate_min_s_1",
+        "validated_shear_rate_max_s_1",
+        "component_pressure_rating_pa",
+        "geometry_tolerance_relative",
+    ):
+        _finite_positive(optional_name, getattr(case, optional_name), required=False)
+    if (
+        case.validated_shear_rate_min_s_1 is not None
+        and case.validated_shear_rate_max_s_1 is not None
+        and case.validated_shear_rate_min_s_1 > case.validated_shear_rate_max_s_1
+    ):
+        raise InputValidationError(
+            "validated_shear_rate_min_s_1 must not exceed validated_shear_rate_max_s_1",
+            code="INVALID_EVIDENCE_RANGE",
+            field="validated_shear_rate_min_s_1",
+        )
+
+    _finite_positive("validated_viscosity_min", case.validated_viscosity_min, required=False)
+    _finite_positive("validated_viscosity_max", case.validated_viscosity_max, required=False)
+    if (
+        case.validated_viscosity_min is not None
+        and case.validated_viscosity_max is not None
+        and case.validated_viscosity_min > case.validated_viscosity_max
+    ):
+        raise InputValidationError(
+            "validated_viscosity_min must not exceed validated_viscosity_max",
+            code="INVALID_EVIDENCE_RANGE",
+            field="validated_viscosity_min",
+        )
 
     _finite_positive("temperature_tolerance_c", config.temperature_tolerance_c)
     _finite_positive("time_flow_relative_tolerance", config.time_flow_relative_tolerance)
@@ -163,18 +218,17 @@ def _sensitivity_changes(config: AssessmentConfig) -> tuple[float, ...]:
     return (-config.sensitivity_relative_change, config.sensitivity_relative_change)
 
 
-def _perturbed_force(case: AssessmentInput, config: AssessmentConfig) -> float:
+def _perturbed_outputs(case: AssessmentInput, config: AssessmentConfig) -> dict[str, float | None]:
     """Rerun the validated scientific core for one perturbed case."""
 
     _validate(case, config)
-    force = _calculate(case)["fluid_resistance_force_n"]
-    assert force is not None
-    return force
+    return _calculate(case)
 
 
 def _sensitivity(
     case: AssessmentInput,
     baseline_force: float,
+    baseline_pressure: float,
     config: AssessmentConfig,
 ) -> tuple[SensitivityItem, ...]:
     items: list[SensitivityItem] = []
@@ -185,15 +239,28 @@ def _sensitivity(
         "needle_id_mm",
         "barrel_id_mm",
     ):
+        elasticity = {
+            "viscosity_value": 1.0,
+            "needle_length_mm": 1.0,
+            "needle_id_mm": -4.0,
+            "barrel_id_mm": 2.0,
+        }[field_name]
         for change in changes:
             changed = replace(case, **{field_name: getattr(case, field_name) * (1 + change)})
-            force = _perturbed_force(changed, config)
+            perturbed = _perturbed_outputs(changed, config)
+            pressure = perturbed["needle_pressure_drop_pa"]
+            force = perturbed["fluid_resistance_force_n"]
+            assert pressure is not None
+            assert force is not None
             items.append(
                 SensitivityItem(
                     input_name=field_name,
                     relative_change=change,
+                    needle_pressure_drop_pa=pressure,
+                    pressure_relative_change=(pressure / baseline_pressure) - 1.0,
                     fluid_resistance_force_n=force,
                     force_relative_change=(force / baseline_force) - 1.0,
+                    analytical_force_elasticity=elasticity,
                 )
             )
     # Prefer supplied rate field; when both are present, null the companion so the
@@ -211,21 +278,26 @@ def _sensitivity(
             case,
             **{rate_field: rate_value * (1 + change), **companion},
         )
-        force = _perturbed_force(changed, config)
+        perturbed = _perturbed_outputs(changed, config)
+        pressure = perturbed["needle_pressure_drop_pa"]
+        force = perturbed["fluid_resistance_force_n"]
+        assert pressure is not None
+        assert force is not None
         items.append(
             SensitivityItem(
                 input_name=rate_field,
                 relative_change=change,
+                needle_pressure_drop_pa=pressure,
+                pressure_relative_change=(pressure / baseline_pressure) - 1.0,
                 fluid_resistance_force_n=force,
                 force_relative_change=(force / baseline_force) - 1.0,
+                analytical_force_elasticity=(-1.0 if rate_field == "injection_time_s" else 1.0),
             )
         )
     return tuple(items)
 
 
-def assess(
-    case: AssessmentInput, config: AssessmentConfig | None = None
-) -> AssessmentResult:
+def assess(case: AssessmentInput, config: AssessmentConfig | None = None) -> AssessmentResult:
     """Assess one supported scenario or raise a typed fail-closed error."""
 
     effective = config or AssessmentConfig()
@@ -240,6 +312,10 @@ def assess(
                 severity="warning",
                 field="density_kg_m3",
                 message="Density was not supplied, so Reynolds number was not calculated.",
+                remediation=(
+                    "Supply a traceable density at the use temperature if a Reynolds "
+                    "diagnostic is required."
+                ),
             )
         )
     if case.force_ceiling_n is not None:
@@ -255,6 +331,10 @@ def assess(
                         "Predicted fluid-resistance force exceeds the user-provided "
                         "experimentally justified ceiling."
                     ),
+                    remediation=(
+                        "Review the user-supplied fluid-force ceiling and the declared "
+                        "formulation, geometry, and delivery rate."
+                    ),
                 )
             )
 
@@ -269,9 +349,7 @@ def assess(
         needle_id = case.needle_id_mm / 1000.0
         barrel_id = case.barrel_id_mm / 1000.0
         volume = case.volume_ml / 1_000_000.0
-        q_max = (case.force_ceiling_n * needle_id**4) / (
-            32.0 * mu * length * barrel_id**2
-        )
+        q_max = (case.force_ceiling_n * needle_id**4) / (32.0 * mu * length * barrel_id**2)
         outputs = {
             **outputs,
             "max_flow_rate_m3_s_at_force_ceiling": q_max,
@@ -288,6 +366,10 @@ def assess(
                     "screening quantities from the user-supplied force ceiling; "
                     "they are not total device capability."
                 ),
+                remediation=(
+                    "Treat these values as idealized screening outputs and verify them "
+                    "against qualified device and experimental evidence."
+                ),
             )
         )
 
@@ -298,6 +380,32 @@ def assess(
                 severity="info",
                 field="geometry_tolerance_relative",
                 message="Geometry manufacturing tolerance was not supplied.",
+                remediation=(
+                    "Supply a provenance-backed relative geometry tolerance when available."
+                ),
+            )
+        )
+
+    if (
+        case.validated_viscosity_min is not None
+        and case.viscosity_value < case.validated_viscosity_min
+    ) or (
+        case.validated_viscosity_max is not None
+        and case.viscosity_value > case.validated_viscosity_max
+    ):
+        warnings.append(
+            AssessmentWarning(
+                code="VISCOSITY_OUTSIDE_EVIDENCE_RANGE",
+                severity="warning",
+                field="viscosity_value",
+                message=(
+                    "Declared viscosity lies outside the user-declared validated "
+                    "viscosity range in the same declared unit."
+                ),
+                remediation=(
+                    "Provide evidence covering the declared viscosity or reject the "
+                    "scenario from use."
+                ),
             )
         )
 
@@ -306,11 +414,7 @@ def assess(
     if (
         case.validated_shear_rate_min_s_1 is not None
         and case.validated_shear_rate_max_s_1 is not None
-        and not (
-            case.validated_shear_rate_min_s_1
-            <= shear
-            <= case.validated_shear_rate_max_s_1
-        )
+        and not (case.validated_shear_rate_min_s_1 <= shear <= case.validated_shear_rate_max_s_1)
     ):
         warnings.append(
             AssessmentWarning(
@@ -318,8 +422,11 @@ def assess(
                 severity="warning",
                 field="wall_shear_rate_s_1",
                 message=(
-                    "Apparent wall shear rate lies outside the declared rheology "
-                    "evidence range."
+                    "Apparent wall shear rate lies outside the declared rheology evidence range."
+                ),
+                remediation=(
+                    "Provide rheology evidence covering the calculated shear-rate range "
+                    "or reject the scenario from use."
                 ),
             )
         )
@@ -340,6 +447,10 @@ def assess(
                     "Gauge label and needle geometry source metadata do not appear "
                     "to reference the same designation; ID remains authoritative."
                 ),
+                remediation=(
+                    "Confirm the gauge label and drawing or measurement identifier; the "
+                    "declared inner diameter remains authoritative."
+                ),
             )
         )
 
@@ -358,12 +469,16 @@ def assess(
                     "Predicted needle pressure drop exceeds the user-provided "
                     "component pressure rating."
                 ),
+                remediation=(
+                    "Confirm the component rating provenance and reduce the modeled rate "
+                    "or revise geometry only through qualified inputs."
+                ),
             )
         )
 
     return AssessmentResult(
         schema_version="1.0",
-        package_version="0.1.0",
+        package_version=__version__,
         model_id=effective.model_id,
         run_id=str(uuid.uuid4()),
         generated_at_utc=utc_now_iso(),
@@ -376,8 +491,23 @@ def assess(
             "barrel_id_m": case.barrel_id_mm / 1000.0,
             "volume_m3": case.volume_ml / 1_000_000.0,
         },
+        provenance={
+            "source_file_sha256": None,
+            "source_file_reason": "not_applicable_in_memory_api",
+            "geometry_sources": {
+                "needle": case.needle_geometry_source,
+                "barrel": case.barrel_geometry_source,
+            },
+            "rheology_evidence": case.newtonian_evidence,
+            "effective_configuration": asdict(effective),
+        },
         outputs=outputs,
-        sensitivity=_sensitivity(case, force, effective),
+        diagnostic_reasons=(
+            {"reynolds_number": "LAMINARITY_NOT_NUMERICALLY_VERIFIED"}
+            if outputs["reynolds_number"] is None
+            else {}
+        ),
+        sensitivity=_sensitivity(case, force, pressure, effective),
         warnings=tuple(warnings),
         exclusions=EXCLUSIONS,
         validation_status="internal_validation; experimental_validation_pending",

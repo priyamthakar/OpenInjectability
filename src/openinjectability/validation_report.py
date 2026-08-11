@@ -101,9 +101,7 @@ def _experimental_force_n(row: Mapping[str, Any]) -> float:
                 "pressure-to-force conversion did not yield a positive finite force"
             )
         return force
-    raise InputValidationError(
-        "supply measured_fluid_force_n or measured_pressure_pa"
-    )
+    raise InputValidationError("supply measured_fluid_force_n or measured_pressure_pa")
 
 
 def _row_to_assessment_input(row: Mapping[str, Any]) -> AssessmentInput:
@@ -274,14 +272,8 @@ def _markdown_report(
         f"- Report status: **{summary['status']}**",
         f"- Comparable rows (n): `{summary['n']}`",
         f"- Rejected rows: `{summary['n_rejected']}`",
-        (
-            f"- Median absolute relative error: "
-            f"`{summary['median_abs_relative_error']}`"
-        ),
-        (
-            f"- Criterion (median abs relative error ≤): "
-            f"`{summary['criterion_abs_relative_error']}`"
-        ),
+        (f"- Median absolute relative error: `{summary['median_abs_relative_error']}`"),
+        (f"- Criterion (median abs relative error ≤): `{summary['criterion_abs_relative_error']}`"),
         f"- Pass/fail vs criterion: `{summary['pass_fail']}`",
         "",
         "## Important",
@@ -350,9 +342,7 @@ def write_report(
     if panel_path is not None:
         panel_sha = file_sha256(panel_path)
     else:
-        canonical = json.dumps(
-            panel, sort_keys=True, allow_nan=False, separators=(",", ":")
-        )
+        canonical = json.dumps(panel, sort_keys=True, allow_nan=False, separators=(",", ":"))
         panel_sha = hashlib.sha256(canonical.encode("utf-8")).hexdigest()
         panel_path_str = panel_path_str or "<in-memory-panel>"
 

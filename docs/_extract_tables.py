@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Extract and score tables from EuropePMC fullTextXML (no fabrication)."""
+
 from __future__ import annotations
 
 import json
@@ -69,9 +70,7 @@ def extract_tables(root):
                             cells.append(text_of(cell))
                     if cells:
                         rows.append(cells)
-        tables.append(
-            {"label": label, "caption": caption, "n_rows": len(rows), "rows": rows}
-        )
+        tables.append({"label": label, "caption": caption, "n_rows": len(rows), "rows": rows})
     return tables
 
 
@@ -92,45 +91,39 @@ def get_meta(root):
 
 
 KEYWORDS = {
-    "viscosity": re.compile(r"viscos|mPa|cP\b|Pa[\s·\-]?s|\bη\b|\bμ\b", re.I),
+    "viscosity": re.compile(r"viscos|mPa|cP\b|Pa[\s·\-]?s|\bη\b|\bμ\b", re.IGNORECASE),
     "needle_d": re.compile(
         r"needle.*(ID|inner|diameter|bore|gauge)|gauge|inner diameter|ID\s*\(|needle diameter|bore",
-        re.I,
+        re.IGNORECASE,
     ),
-    "length": re.compile(r"length|½|1/2|\bin\b|\bmm\b|half.?inch", re.I),
-    "barrel": re.compile(r"barrel|syringe.*(ID|diameter)|plunger|PFS|prefilled|pre-filled", re.I),
+    "length": re.compile(r"length|½|1/2|\bin\b|\bmm\b|half.?inch", re.IGNORECASE),
+    "barrel": re.compile(
+        r"barrel|syringe.*(ID|diameter)|plunger|PFS|prefilled|pre-filled", re.IGNORECASE
+    ),
     "flow": re.compile(
         r"flow\s*rate|mL/s|ml/s|mm/s|injection\s*speed|Q\s*=|crosshead|extension\s*rate|injection rate",
-        re.I,
+        re.IGNORECASE,
     ),
     "force_pressure": re.compile(
         r"force|glide|break.?loose|pressure|\bN\b|newton|MPa|kPa|psi|injection\s*force|work\s*\(",
-        re.I,
+        re.IGNORECASE,
     ),
 }
 
 
 def score_table(t: dict) -> dict:
-    blob = (
-        t["label"]
-        + " "
-        + t["caption"]
-        + " "
-        + " ".join(" | ".join(r) for r in t["rows"][:40])
-    )
+    blob = t["label"] + " " + t["caption"] + " " + " ".join(" | ".join(r) for r in t["rows"][:40])
     scores = {k: bool(rx.search(blob)) for k, rx in KEYWORDS.items()}
-    scores["has_numeric_force"] = bool(
-        re.search(r"\d+\.?\d*\s*(N|mN|lbf)\b", blob, re.I)
-    )
+    scores["has_numeric_force"] = bool(re.search(r"\d+\.?\d*\s*(N|mN|lbf)\b", blob, re.IGNORECASE))
     scores["has_numeric_visc"] = bool(
-        re.search(r"\d+\.?\d*\s*(cP|mPa|Pa\s*s|mPa·s|mPa s|mPas)", blob, re.I)
+        re.search(r"\d+\.?\d*\s*(cP|mPa|Pa\s*s|mPa·s|mPa s|mPas)", blob, re.IGNORECASE)
     )
-    scores["has_gauge"] = bool(re.search(r"\d+\s*G\b|gauge", blob, re.I))
+    scores["has_gauge"] = bool(re.search(r"\d+\s*G\b|gauge", blob, re.IGNORECASE))
     scores["has_needle_id_mm"] = bool(
         re.search(
             r"(inner\s*diameter|ID|bore).{0,30}\d+\.?\d*\s*mm|\d+\.?\d*\s*mm.{0,30}(ID|inner|bore)",
             blob,
-            re.I,
+            re.IGNORECASE,
         )
     )
     core = ["viscosity", "needle_d", "length", "barrel", "flow", "force_pressure"]
@@ -145,7 +138,7 @@ def main():
         try:
             tree = ET.parse(p)
             root = tree.getroot()
-        except Exception as e:
+        except (ET.ParseError, OSError) as e:
             results.append({"file": p.name, "error": str(e)})
             continue
         title, doi, pmcid = get_meta(root)
@@ -174,19 +167,19 @@ def main():
                 "n_tables": len(tables),
                 "tables": scored,
                 "body_mentions": {
-                    "viscosity": bool(re.search(r"viscos", body_sample, re.I)),
-                    "needle": bool(re.search(r"needle", body_sample, re.I)),
-                    "barrel": bool(re.search(r"barrel", body_sample, re.I)),
+                    "viscosity": bool(re.search(r"viscos", body_sample, re.IGNORECASE)),
+                    "needle": bool(re.search(r"needle", body_sample, re.IGNORECASE)),
+                    "barrel": bool(re.search(r"barrel", body_sample, re.IGNORECASE)),
                     "glide_force": bool(
                         re.search(
                             r"glide\s*force|injection\s*force|break.?loose",
                             body_sample,
-                            re.I,
+                            re.IGNORECASE,
                         )
                     ),
-                    "hagen": bool(re.search(r"hagen|poiseuille", body_sample, re.I)),
-                    "friction": bool(re.search(r"friction", body_sample, re.I)),
-                    "newtonian": bool(re.search(r"newtonian", body_sample, re.I)),
+                    "hagen": bool(re.search(r"hagen|poiseuille", body_sample, re.IGNORECASE)),
+                    "friction": bool(re.search(r"friction", body_sample, re.IGNORECASE)),
+                    "newtonian": bool(re.search(r"newtonian", body_sample, re.IGNORECASE)),
                 },
             }
         )

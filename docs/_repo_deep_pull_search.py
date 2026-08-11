@@ -1,4 +1,5 @@
 """Deep pull: Zenodo + Figshare APIs for syringe injection force / viscosity CSV/XLS."""
+
 from __future__ import annotations
 
 import json
@@ -142,10 +143,13 @@ def main():
                         report["candidates_for_download_inspect"].append(
                             {"source": "zenodo", "query": q, **s}
                         )
-        except Exception as e:
+        # Per-query isolation is intentional for exploratory remote API batches.
+        except Exception as e:  # noqa: BLE001
             entry["error"] = f"{type(e).__name__}: {e}"
         report["zenodo_queries"].append(entry)
-        print(f"ZENODO q={q!r} total={entry['total']} hits={len(entry['hits'])} err={entry['error']}")
+        print(
+            f"ZENODO q={q!r} total={entry['total']} hits={len(entry['hits'])} err={entry['error']}"
+        )
 
     # Also search without type=dataset for injection force (broader)
     broad_qs = [
@@ -162,7 +166,8 @@ def main():
             for h in hits[:15]:
                 s = summarize_zenodo_hit(h)
                 entry["hits"].append(s)
-        except Exception as e:
+        # Per-query isolation is intentional for exploratory remote API batches.
+        except Exception as e:  # noqa: BLE001
             entry["error"] = f"{type(e).__name__}: {e}"
         report["zenodo_queries"].append(entry)
         print(f"ZENODO-broad q={q!r} total={entry['total']} hits={len(entry['hits'])}")
@@ -202,7 +207,8 @@ def main():
             )
             for f in entry["files"]:
                 print(f"  file: {f['name']} size={f['size']} url={f['download_url']}")
-        except Exception as e:
+        # Per-record isolation is intentional for heterogeneous repository data.
+        except Exception as e:  # noqa: BLE001
             report["figshare_targeted"].append(
                 {"article_id": aid, "version": ver, "error": f"{type(e).__name__}: {e}"}
             )
@@ -234,7 +240,8 @@ def main():
             print(f"FIGSHARE-search q={q!r} n={len(hits)}")
             for s in simplified[:8]:
                 print(f"  {s['id']}: {s['title'][:100]}")
-        except Exception as e:
+        # Per-query isolation is intentional for exploratory remote API batches.
+        except Exception as e:  # noqa: BLE001
             report["figshare_search"].append({"query": q, "error": f"{type(e).__name__}: {e}"})
             print(f"FIGSHARE-search ERR {q}: {e}")
 

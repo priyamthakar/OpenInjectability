@@ -21,7 +21,11 @@ One CSV row is one formulation/device scenario. Required columns:
 | `injection_time_s` or `flow_rate_ml_s` | at least one; both must be consistent with volume |
 
 Optional: `needle_gauge_label`, `density_kg_m3`, `force_ceiling_n` with
-`force_ceiling_source`, `notes`.
+`force_ceiling_source`, `notes`, `validated_viscosity_min`,
+`validated_viscosity_max`, `validated_shear_rate_min_s_1`,
+`validated_shear_rate_max_s_1`, `component_pressure_rating_pa`, and
+`geometry_tolerance_relative`. Evidence-range values use the corresponding declared
+input unit and never trigger a silent model change.
 
 ## Run-level configuration
 
@@ -31,8 +35,15 @@ YAML or JSON (`--config`) may set:
 - `time_flow_relative_tolerance`
 - `sensitivity.relative_changes` (multi-step OAT list)
 - `calculation_model` (must be `newtonian_hagen_poiseuille_v1`)
+- `report.display_force_unit` (v0.1: `N`)
+- `report.display_pressure_unit` (v0.1: `MPa`)
 
 Effective configuration is always serialized with results.
+
+CSV assessments retain valid rows and serialize every invalid or unsupported row under
+`rejected` with row number, scenario ID, stable error code, error type, affected field,
+and explanation. Exit code 2 indicates input rejection; exit code 3 indicates a
+scientific-boundary rejection.
 
 CLI: `openinjectability schema --format json` prints the machine-readable schema.
 

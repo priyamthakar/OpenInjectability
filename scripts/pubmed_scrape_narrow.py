@@ -59,7 +59,9 @@ def score_text(text: str) -> dict[str, bool]:
         ),
         "mentions_barrel": "barrel" in lower or "syringe diameter" in lower,
         "mentions_flow_rate": "ml/min" in lower or "mm/min" in lower or "flow rate" in lower,
-        "mentions_friction": "friction" in lower or "break-loose" in lower or "break loose" in lower,
+        "mentions_friction": "friction" in lower
+        or "break-loose" in lower
+        or "break loose" in lower,
         "mentions_hagen": "hagen" in lower or "poiseuille" in lower,
         "has_table_like": "<table" in lower or "table " in lower,
     }
@@ -107,7 +109,7 @@ def main() -> None:
             r".{0,80}injection force.{0,80}",
             r".{0,60}inner diameter.{0,80}",
         ]:
-            for m in re.finditer(pat, xml, flags=re.I | re.S):
+            for m in re.finditer(pat, xml, flags=re.IGNORECASE | re.DOTALL):
                 snippets.append(re.sub(r"\s+", " ", m.group(0))[:200])
                 if len(snippets) >= 12:
                     break

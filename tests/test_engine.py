@@ -40,7 +40,7 @@ def test_engine_exposes_immutable_versioned_capabilities():
     metadata = engine_metadata()
 
     assert metadata.engine_name == "OpenInjectabilityEngine"
-    assert metadata.engine_version == "0.1.0"
+    assert metadata.engine_version == "0.1.1"
     assert metadata.supported_rheology_classes == ("newtonian",)
     assert metadata.filesystem_side_effects is False
     assert "syringe friction" in metadata.exclusions[0]

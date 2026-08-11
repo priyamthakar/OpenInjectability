@@ -1,4 +1,5 @@
 """Inspect additional Figshare articles from keyword search (Ackermann SI, micro-capillary, etc.)."""
+
 from __future__ import annotations
 
 import json
@@ -113,7 +114,9 @@ def main():
                                     ws = wb[sn]
                                     rows = []
                                     for i, row in enumerate(ws.iter_rows(values_only=True)):
-                                        rows.append([str(c) if c is not None else None for c in row[:15]])
+                                        rows.append(
+                                            [str(c) if c is not None else None for c in row[:15]]
+                                        )
                                         if i >= 4:
                                             break
                                     sheets[sn] = rows
@@ -123,11 +126,15 @@ def main():
                                 for sn, rows in sheets.items():
                                     print("   ", sn, "row0", rows[0] if rows else None)
                         elif low.endswith(".pdf"):
-                            entry.setdefault("text_snips", {})[name] = f"PDF size={sz} (not text-extracted)"
-                    except Exception as de:
+                            entry.setdefault("text_snips", {})[name] = (
+                                f"PDF size={sz} (not text-extracted)"
+                            )
+                    # Per-file isolation is intentional for heterogeneous repository data.
+                    except Exception as de:  # noqa: BLE001
                         entry.setdefault("download_errors", []).append(f"{name}: {de}")
                         print("  download err", de)
-        except Exception as e:
+        # Per-record isolation keeps one remote/data-format failure from ending the batch.
+        except Exception as e:  # noqa: BLE001
             entry["error"] = f"{type(e).__name__}: {e}"
             print("ERR", aid, e)
         report.append(entry)
