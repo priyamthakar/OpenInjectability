@@ -69,3 +69,4 @@ packages = ["openinjectability"]
 [[tool.mypy.overrides]]
 module = ["reportlab.*", "matplotlib.*", "yaml"]
 ignore_missing_imports = true
+follow_imports = "skip"
