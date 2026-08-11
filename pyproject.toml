@@ -36,6 +36,7 @@ dev = [
   "pytest-cov>=5",
   "ruff>=0.8",
   "types-PyYAML>=6",
+  "tomli>=2; python_version < '3.11'",
 ]
 reports = ["matplotlib>=3.8", "reportlab>=4", "PyYAML>=6"]
 

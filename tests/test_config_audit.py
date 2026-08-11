@@ -3,7 +3,11 @@ import zipfile
 from pathlib import Path
 
 import pytest
-import tomllib
+
+try:
+    import tomllib
+except ModuleNotFoundError:  # pragma: no cover - Python 3.10 compatibility
+    import tomli as tomllib
 
 from openinjectability import AssessmentInput, InputValidationError, __version__, assess
 from openinjectability.audit import write_audit_bundle
