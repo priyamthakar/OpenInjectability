@@ -67,6 +67,6 @@ warn_unused_configs = true
 packages = ["openinjectability"]
 
 [[tool.mypy.overrides]]
-module = ["reportlab.*", "matplotlib.*", "yaml"]
+module = ["reportlab.*", "matplotlib.*", "numpy", "numpy.*", "yaml"]
 ignore_missing_imports = true
 follow_imports = "skip"
