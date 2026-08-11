@@ -46,8 +46,8 @@ readability.
 3. Run the locked comparison without hidden correction factors, investigate discrepancies,
    and publish the permitted fixtures and hashed validation report.
 4. Advance validation vocabulary only to the level supported by that report.
-5. Configure the PyPI Trusted Publisher and protected GitHub `pypi` environment, merge a
-   green commit, publish signed/tagged release `v0.1.1`, and verify a fresh public-index
-   install.
+5. Register the PyPI Trusted Publisher (the protected GitHub `pypi` environment is
+   configured), merge the green pull request, publish signed/tagged release `v0.1.1`,
+   and verify a fresh public-index install.
 
 Until all five gates have direct evidence, the project and active goal must remain open.

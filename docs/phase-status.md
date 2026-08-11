@@ -13,7 +13,7 @@
 | B — spec completion | **Complete locally** | Full result provenance/rejections, stable errors, pressure+force sensitivity, four plot classes, complete reports/audit bundle, property tests and standalone cross-check |
 | C — release gates | **Complete locally for 0.1.1** | 73 tests; 90.05% branch coverage; repository-wide Ruff/format, strict mypy, build/Twine checks, installed-wheel smoke and rendered PDF review |
 | D — independent experimental validation | **Literature comparison pass (digitized); not independent** | Allmendinger 2014 panel (12 rows); median \|rel err\| ≈ 13.5%; report `experimental_comparison` only; package still `experimental_validation_pending` |
-| E — public release | **0.1.0 published; 0.1.1 pending** | 0.1.1 requires Trusted Publisher configuration and GitHub release `v0.1.1`; validated marketing still waits on true D |
+| E — public release | **0.1.0 published; 0.1.1 pending** | GitHub `pypi` environment is configured; PyPI publisher registration, merge and release `v0.1.1` remain; validated marketing still waits on true D |
 
 ## What must not happen while blocked
 

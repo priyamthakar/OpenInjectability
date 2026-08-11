@@ -22,7 +22,7 @@ See [PROJECT_GOAL.md](PROJECT_GOAL.md). Result is always **predicted fluid-resis
 | B — spec completion | **Done** |
 | C — release gates | **Done locally for 0.1.1** (73 tests; 90.05% branch coverage; Ruff, format, mypy, build, Twine, installed-wheel smoke, rendered PDF review) |
 | D — independent experimental validation | **Literature `experimental_comparison` only** (digitized Allmendinger 2014); **not** independently validated |
-| E — public alpha release | **0.1.0 on PyPI**; 0.1.1 publication awaits Trusted Publisher setup and GitHub release |
+| E — public alpha release | **0.1.0 on PyPI**; GitHub `pypi` environment configured; 0.1.1 awaits PyPI publisher registration, merge and release |
 
 Durable table: [docs/phase-status.md](docs/phase-status.md).
 
@@ -63,8 +63,9 @@ Requirement-level status: [COMPLETION_AUDIT.md](COMPLETION_AUDIT.md).
 ## Next objectives (honest)
 
 1. **Optional stronger D:** author SI tables or wet-lab friction-subtracted Newtonian rows → re-run `validate-experimental`; only then consider advancing validation vocabulary.
-2. **Release:** configure the PyPI Trusted Publisher and protected GitHub `pypi`
-   environment, then publish GitHub release `v0.1.1`; all local gates pass.
+2. **Release:** register the PyPI Trusted Publisher (the protected GitHub `pypi`
+   environment is configured), then merge the green draft PR and publish GitHub
+   release `v0.1.1`; all local and PR CI gates pass.
 3. **Security:** revoke the former PyPI API token; 0.1.1 publishing does not use
    `~\.pypirc` or token environment variables.
 4. **Product:** use/monitor PyPI installs and collect formulation-scientist feedback

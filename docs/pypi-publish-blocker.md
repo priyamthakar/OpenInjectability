@@ -15,12 +15,16 @@ openinjectability --version   # 0.1.0
 
 ## 0.1.1 one-time setup
 
+The protected GitHub environment `pypi` was created on 2026-08-11 with
+`priyamthakar` as the required reviewer. The PyPI-side Trusted Publisher remains
+pending and must be registered by the PyPI project owner.
+
 1. In PyPI project settings, add a pending Trusted Publisher for:
    - owner: `priyamthakar`
    - repository: `OpenInjectability`
    - workflow: `publish.yml`
    - environment: `pypi`
-2. In GitHub repository settings, create environment `pypi` and require manual approval.
+2. **Complete:** GitHub environment `pypi` requires manual approval.
 3. Revoke the former long-lived PyPI token. The 0.1.1 workflow does not use
    `.pypirc`, `TWINE_PASSWORD`, or another publication secret.
 
