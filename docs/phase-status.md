@@ -1,16 +1,19 @@
 # Phase status (durable)
 
-**Updated:** 2026-08-02  
+**Updated:** 2026-08-11
+
 **Branch tip (at write time):** see `git log -1` on `main`  
-**Package:** `0.1.0` alpha on PyPI — [pypi.org/project/openinjectability/0.1.0](https://pypi.org/project/openinjectability/0.1.0/)
+**Repository:** `0.1.1` maintenance release candidate
+
+**Public package:** `0.1.0` alpha on [PyPI](https://pypi.org/project/openinjectability/0.1.0/)
 
 | Phase | Status | Evidence |
 |---|---|---|
 | A — v0.1 hardening | **Complete** | Sensitivity contract, construction-time types, batch duplicates, VALIDATION claims map, mypy+CI matrix |
-| B — spec completion | **Complete** | Config load, inverse screening, multi-step sensitivity, warning codes, CLI completion, audit bundle, docs |
-| C — release gates | **Complete** | Version agreement, language audit, wheel smoke JSON/MD/HTML/PDF/plot, suite green |
+| B — spec completion | **Complete locally** | Full result provenance/rejections, stable errors, pressure+force sensitivity, four plot classes, complete reports/audit bundle, property tests and standalone cross-check |
+| C — release gates | **Complete locally for 0.1.1** | 73 tests; 90.05% branch coverage; repository-wide Ruff/format, strict mypy, build/Twine checks, installed-wheel smoke and rendered PDF review |
 | D — independent experimental validation | **Literature comparison pass (digitized); not independent** | Allmendinger 2014 panel (12 rows); median \|rel err\| ≈ 13.5%; report `experimental_comparison` only; package still `experimental_validation_pending` |
-| E — public release | **Alpha published on PyPI** | `pip install openinjectability==0.1.0` verified; still **not** marketed as independently validated; signed/stable “validated” release waits on true D |
+| E — public release | **0.1.0 published; 0.1.1 pending** | GitHub `pypi` environment is configured; PyPI publisher registration, merge and release `v0.1.1` remain; validated marketing still waits on true D |
 
 ## What must not happen while blocked
 
@@ -26,6 +29,8 @@
 2. Obtain independently traceable Newtonian measurements (viscosity, geometry, force/pressure).
 3. Reproduce with this package version; publish hashed validation report.
 4. Only then advance validation status and prepare a signed public release (credentials required).
+
+Full requirement ledger: [`../COMPLETION_AUDIT.md`](../COMPLETION_AUDIT.md).
 
 ## Related artifacts
 

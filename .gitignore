@@ -35,6 +35,8 @@ Thumbs.db
 /assessment.pdf
 /force-vs-needle.png
 /audit.zip
+/output/
+/tmp/
 
 # Ad-hoc plots under repo root only; keep docs and validation trees
 /*.png

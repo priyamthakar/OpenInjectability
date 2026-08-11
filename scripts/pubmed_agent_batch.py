@@ -123,10 +123,7 @@ def esummary(pmids: list[str]) -> dict:
         return out
     for i in range(0, len(pmids), 100):
         chunk = pmids[i : i + 100]
-        url = (
-            f"{BASE}/esummary.fcgi?db=pubmed&retmode=json"
-            f"&id={','.join(chunk)}"
-        )
+        url = f"{BASE}/esummary.fcgi?db=pubmed&retmode=json&id={','.join(chunk)}"
         data = fetch_json(url)
         time.sleep(0.34)
         for uid in data.get("result", {}).get("uids", []):
@@ -139,10 +136,7 @@ def elink_pmc(pmids: list[str]) -> dict[str, list[str]]:
     """Map PMID -> list of numeric PMC IDs via elink pubmed_pmc (one ID at a time)."""
     mapping: dict[str, list[str]] = {p: [] for p in pmids}
     for p in pmids:
-        url = (
-            f"{BASE}/elink.fcgi?dbfrom=pubmed&db=pmc&retmode=json"
-            f"&linkname=pubmed_pmc&id={p}"
-        )
+        url = f"{BASE}/elink.fcgi?dbfrom=pubmed&db=pmc&retmode=json&linkname=pubmed_pmc&id={p}"
         data = fetch_json(url)
         time.sleep(0.34)
         for linkset in data.get("linksets", []):
@@ -185,9 +179,7 @@ def build_row(pid: str, r: dict, pmc_map: dict[str, list[str]]) -> dict:
         "has_pmc_fulltext_link": bool(pmc_fmt),
         "pubmed_url": f"https://pubmed.ncbi.nlm.nih.gov/{pid}/",
         "pmc_url": (
-            f"https://www.ncbi.nlm.nih.gov/pmc/articles/{pmc_fmt[0]}/"
-            if pmc_fmt
-            else None
+            f"https://www.ncbi.nlm.nih.gov/pmc/articles/{pmc_fmt[0]}/" if pmc_fmt else None
         ),
     }
     eloc = r.get("elocationid") or ""
@@ -310,9 +302,7 @@ def main() -> None:
 
     allm_free = next((r for r in results if r["id"] == "q3_allmendinger_author"), None)
     allm_all = next((r for r in classic if r["id"] == "classic_allmendinger_2014"), None)
-    allm_broad = next(
-        (r for r in classic if r["id"] == "classic_allmendinger_broader"), None
-    )
+    allm_broad = next((r for r in classic if r["id"] == "classic_allmendinger_broader"), None)
 
     allm_oa_note = {
         "free_full_text_filter_count": allm_free["count"] if allm_free else None,
@@ -389,23 +379,17 @@ def main() -> None:
     lines.append("")
     lines.append(f"Generated (UTC): `{payload['generated_at_utc']}`")
     lines.append("")
-    lines.append(
-        "**Source:** NCBI E-utilities (`esearch` → `esummary` → `elink` pubmed→pmc)."
-    )
+    lines.append("**Source:** NCBI E-utilities (`esearch` → `esummary` → `elink` pubmed→pmc).")
     lines.append("")
     lines.append(payload["disclaimer"])
     lines.append("")
     lines.append("## Query hit counts")
     lines.append("")
-    lines.append(
-        "| # | Query | Count | Returned (retmax) | With PMC link |"
-    )
+    lines.append("| # | Query | Count | Returned (retmax) | With PMC link |")
     lines.append("|---|---|---:|---:|---:|")
     for i, res in enumerate(results, 1):
         pmc_n = sum(1 for r in res["rows"] if r["has_pmc_fulltext_link"])
-        lines.append(
-            f"| {i} | {res['label']} | {res['count']} | {res['returned']} | {pmc_n} |"
-        )
+        lines.append(f"| {i} | {res['label']} | {res['count']} | {res['returned']} | {pmc_n} |")
     lines.append("")
 
     for i, res in enumerate(results, 1):
@@ -416,10 +400,7 @@ def main() -> None:
         lines.append("```")
         lines.append("")
         lines.append(f"- **Count:** {res['count']}")
-        lines.append(
-            f"- **PMIDs returned:** "
-            f"{', '.join(res['ids']) if res['ids'] else '(none)'}"
-        )
+        lines.append(f"- **PMIDs returned:** {', '.join(res['ids']) if res['ids'] else '(none)'}")
         lines.append("")
         if not res["rows"]:
             lines.append("_No records returned._")
@@ -447,17 +428,12 @@ def main() -> None:
         f"- **Allmendinger[author] AND injection AND free full text[filter]:** "
         f"count = **{allm_oa_note['free_full_text_filter_count']}**"
     )
-    lines.append(
-        f"  - PMIDs: {', '.join(allm_oa_note['free_full_text_pmids']) or '(none)'}"
-    )
+    lines.append(f"  - PMIDs: {', '.join(allm_oa_note['free_full_text_pmids']) or '(none)'}")
     lines.append(
         f"- **Allmendinger[author] AND injection (no free-full-text filter):** "
         f"count = **{allm_oa_note['unfiltered_injection_count']}**"
     )
-    lines.append(
-        f"  - PMIDs: "
-        f"{', '.join(allm_oa_note['unfiltered_injection_pmids']) or '(none)'}"
-    )
+    lines.append(f"  - PMIDs: {', '.join(allm_oa_note['unfiltered_injection_pmids']) or '(none)'}")
     lines.append(
         f"- **Broader Allmendinger + injection force / injectability / rheolog*:** "
         f"count = **{allm_oa_note['broader_rheology_count']}**"
@@ -506,13 +482,10 @@ def main() -> None:
         "dental/gel/cement)."
     )
     lines.append(
-        "**Friction-corrected force:** not asserted from metadata — review "
-        "checklist only."
+        "**Friction-corrected force:** not asserted from metadata — review checklist only."
     )
     lines.append("")
-    lines.append(
-        "| Rank | PMID | PMCID | Score | Friction-corrected force? | Title |"
-    )
+    lines.append("| Rank | PMID | PMCID | Score | Friction-corrected force? | Title |")
     lines.append("|---:|---|---|---:|---|---|")
     for i, r in enumerate(top10, 1):
         title = (r["title"] or "").replace("|", "\\|")
@@ -554,9 +527,7 @@ def main() -> None:
     lines.append("")
     lines.append("## Files")
     lines.append("")
-    lines.append(
-        "- Machine-readable: [`docs/agent-pubmed-batch.json`](agent-pubmed-batch.json)"
-    )
+    lines.append("- Machine-readable: [`docs/agent-pubmed-batch.json`](agent-pubmed-batch.json)")
     lines.append("- This report: [`docs/agent-pubmed-batch.md`](agent-pubmed-batch.md)")
     lines.append("")
 

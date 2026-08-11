@@ -1,5 +1,14 @@
 # Roadmap
 
+## Prepared (v0.1.1 maintenance candidate)
+
+- Centralized package version and version-agreement regression test
+- Provenance-rich human-readable reports with unchanged JSON schema
+- Synthetic formulation-scientist screening walkthrough
+- Repository-wide lint and format enforcement
+- GitHub OIDC Trusted Publishing workflow with no local token uploader
+- Publication pending PyPI Trusted Publisher and protected environment setup
+
 ## Completed (v0.1.0 alpha)
 
 - Newtonian Hagen–Poiseuille core with fail-closed boundaries

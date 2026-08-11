@@ -1,37 +1,55 @@
-# PyPI publish status — openinjectability 0.1.0
+# PyPI release status and Trusted Publishing setup
 
-**Published:** **yes** (2026-08-02)  
-**URL:** https://pypi.org/project/openinjectability/0.1.0/
+**Current public release:** 0.1.0 (published 2026-08-02)
 
-## Verified
+**Prepared repository release:** 0.1.1 (not yet published)
+
+**URL:** https://pypi.org/project/openinjectability/
+
+## Current public install
 
 ```powershell
 python -m pip install openinjectability==0.1.0
 openinjectability --version   # 0.1.0
 ```
 
-## How it was published
+## 0.1.1 one-time setup
 
-- Account-scoped API token in user `~\.pypirc` (not in git)
-- `python -m build` + `python -m twine upload dist/*`
+The protected GitHub environment `pypi` was created on 2026-08-11 with
+`priyamthakar` as the required reviewer. The PyPI-side Trusted Publisher remains
+pending and must be registered by the PyPI project owner.
 
-## Later releases
+1. In PyPI project settings, add a pending Trusted Publisher for:
+   - owner: `priyamthakar`
+   - repository: `OpenInjectability`
+   - workflow: `publish.yml`
+   - environment: `pypi`
+2. **Complete:** GitHub environment `pypi` requires manual approval.
+3. Revoke the former long-lived PyPI token. The 0.1.1 workflow does not use
+   `.pypirc`, `TWINE_PASSWORD`, or another publication secret.
+
+## Local preflight
 
 ```powershell
 cd E:\OpenInjectability
-# bump version in pyproject.toml / __init__.py / CHANGELOG first
-python -m build
-python -m twine upload dist/*
+.\scripts\release_preflight.ps1
 ```
 
-Or: `.\scripts\publish_pypi.ps1` (uses `~\.pypirc` or `TWINE_*` env).
+The preflight is credential-free and never uploads. It requires a clean working tree and
+runs the suite, coverage gate, repository-wide Ruff checks, strict mypy, build, and
+`twine check`.
 
-## Security
+## Publish 0.1.1
 
-If the API token was ever pasted into chat or a log, **revoke it** on PyPI and
-create a new entire-account token; update `~\.pypirc` only (never commit).
+After merging a clean, fully green commit, create and publish GitHub release `v0.1.1`.
+`.github/workflows/publish.yml` verifies that the tag matches the package version, builds
+and checks the distributions, then requests a short-lived PyPI OIDC credential through
+the protected `pypi` environment.
+
+Do not restore token publication as a fallback. If Trusted Publishing fails, diagnose
+the owner/repository/workflow/environment identity and rerun the GitHub release workflow.
 
 ## Scientific boundary
 
-Alpha on PyPI is **not** independently experimentally validated. Package status
+Neither 0.1.0 nor 0.1.1 is independently experimentally validated. Package status
 remains `experimental_validation_pending`.

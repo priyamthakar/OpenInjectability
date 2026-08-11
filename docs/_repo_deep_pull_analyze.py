@@ -1,4 +1,5 @@
 """Analyze raw Zenodo/Figshare search for Phase-D relevance; inspect Felfeli XLSX deeply."""
+
 from __future__ import annotations
 
 import json
@@ -108,7 +109,9 @@ def main():
                 "total": qe.get("total"),
                 "returned": len(qe.get("hits") or []),
                 "error": qe.get("error"),
-                "sample_titles": [(h.get("id"), (h.get("title") or "")[:100]) for h in (qe.get("hits") or [])[:5]],
+                "sample_titles": [
+                    (h.get("id"), (h.get("title") or "")[:100]) for h in (qe.get("hits") or [])[:5]
+                ],
             }
         )
 
@@ -122,7 +125,11 @@ def main():
         header = rows[1] if len(rows) > 1 else None
         data_rows = rows[2:] if len(rows) > 2 else []
         # unique values for key cols
-        col_idx = {name: i for i, name in enumerate(header or []) if name is not None and not isinstance(name, (int, float))}
+        col_idx = {
+            name: i
+            for i, name in enumerate(header or [])
+            if name is not None and not isinstance(name, (int, float))
+        }
         uniques = {}
         for col in ["syringe", "fluid_density", "needle", "type"]:
             if col in col_idx:
@@ -182,9 +189,7 @@ def main():
 
     analysis = {
         "zenodo_query_summary": query_summary,
-        "exact_phrase_zeros": [
-            q["query"] for q in query_summary if q.get("total") == 0
-        ],
+        "exact_phrase_zeros": [q["query"] for q in query_summary if q.get("total") == 0],
         "interesting_title_hits": interesting,
         "top_scored_candidates": scored[:20],
         "n_candidates": len(scored),

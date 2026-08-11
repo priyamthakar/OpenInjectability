@@ -147,10 +147,7 @@ def test_cli_validate_experimental_empty(tmp_path: Path, capsys) -> None:
 
 def test_template_panel_loads_as_empty() -> None:
     template = (
-        Path(__file__).resolve().parents[1]
-        / "validation"
-        / "experimental"
-        / "panel.template.json"
+        Path(__file__).resolve().parents[1] / "validation" / "experimental" / "panel.template.json"
     )
     panel = load_panel(template)
     assert panel["rows"] == []
@@ -204,8 +201,6 @@ def test_allmendinger2014_digitized_panel_literature_comparison(
         assert comparison["assessment_validation_status"] == (
             "internal_validation; experimental_validation_pending"
         )
-        assert "experimental_validation_pending" in comparison[
-            "assessment_validation_status"
-        ]
+        assert "experimental_validation_pending" in comparison["assessment_validation_status"]
         assert FORBIDDEN_STATUS not in comparison["assessment_validation_status"]
         assert comparison.get("is_synthetic_smoke_test") is False

@@ -9,7 +9,13 @@ from pathlib import Path
 
 import pytest
 
-from openinjectability import AssessmentInput, InputValidationError, ScientificBoundaryError, assess
+from openinjectability import (
+    AssessmentInput,
+    InputValidationError,
+    ScientificBoundaryError,
+    ValidationRegistryError,
+    assess,
+)
 from openinjectability.audit import write_audit_bundle
 from openinjectability.cli import _exit_for_error, main
 from openinjectability.config import load_config
@@ -117,6 +123,23 @@ def test_cli_exit_codes_for_domain_errors(tmp_path, capsys):
     assert code == 3
     assert "error:" in capsys.readouterr().err
 
+
+def test_cli_preserves_valid_rows_and_records_rejected_rows(tmp_path, capsys):
+    source = tmp_path / "mixed.csv"
+    _write_csv(source, [_good_row(), _good_row(scenario_id="bad-2", viscosity_value="")])
+    output = tmp_path / "mixed.json"
+
+    assert main(["assess", str(source), "--results", str(output)]) == 2
+    payload = json.loads(output.read_text(encoding="utf-8"))
+    assert len(payload["results"]) == 1
+    assert len(payload["rejected"]) == 1
+    rejection = payload["rejected"][0]
+    assert rejection["row_number"] == 3
+    assert rejection["scenario_id"] == "bad-2"
+    assert rejection["error_code"] == "MISSING_REQUIRED_VALUE"
+    assert rejection["field"] == "viscosity_value"
+    assert "error: row 3" in capsys.readouterr().err
+
     # input validation (inconsistent time/flow)
     path2 = tmp_path / "bad.csv"
     _write_csv(
@@ -146,6 +169,7 @@ def test_cli_validation_status_text(capsys):
 def test_exit_for_error_helpers():
     assert _exit_for_error(ScientificBoundaryError("x")) == 3
     assert _exit_for_error(InputValidationError("y")) == 2
+    assert _exit_for_error(ValidationRegistryError("registry")) == 5
     assert _exit_for_error(ValueError("z")) == 2
     with pytest.raises(RuntimeError):
         _exit_for_error(RuntimeError("boom"))
@@ -217,4 +241,4 @@ def test_main_module_entry_reports_version(monkeypatch, capsys):
     with pytest.raises(SystemExit) as exc:
         runpy.run_module("openinjectability.__main__", run_name="__main__")
     assert exc.value.code == 0
-    assert "0.1.0" in capsys.readouterr().out
+    assert "0.1.1" in capsys.readouterr().out

@@ -1,4 +1,5 @@
 """Extra precise Zenodo queries."""
+
 from __future__ import annotations
 
 import json
@@ -30,10 +31,10 @@ def main():
         "glycerol water syringe needle force",
         "type:dataset AND syringe AND viscosity AND needle AND force",
         "title:syringeability",
-        "title:\"glide force\"",
+        'title:"glide force"',
         "Allmendinger glycerol",
-        "\"break-loose\" syringe",
-        "\"expulsion force\" needle",
+        '"break-loose" syringe',
+        '"expulsion force" needle',
     ]
     for q in queries:
         try:
@@ -46,7 +47,8 @@ def main():
                 files = [f.get("key") for f in (h.get("files") or [])][:5]
                 print(f"  {h.get('id')} | {(m.get('title') or '')[:110]}")
                 print(f"    files={files}")
-        except Exception as e:
+        # Per-query isolation is intentional for exploratory remote API batches.
+        except Exception as e:  # noqa: BLE001
             print(f"ERR {q!r}: {e}")
 
 

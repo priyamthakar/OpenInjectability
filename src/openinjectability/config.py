@@ -74,12 +74,24 @@ def load_config(path: str | Path | None) -> AssessmentConfig:
         changes_tuple = None
         relative_change = float(single)
 
+    report_block = raw.get("report") or {}
+    if not isinstance(report_block, dict):
+        raise InputValidationError("report must be an object when provided")
+    force_unit = str(report_block.get("display_force_unit", "N"))
+    pressure_unit = str(report_block.get("display_pressure_unit", "MPa"))
+    if force_unit != "N":
+        raise InputValidationError("report.display_force_unit supports only 'N'")
+    if pressure_unit != "MPa":
+        raise InputValidationError("report.display_pressure_unit supports only 'MPa'")
+
     return AssessmentConfig(
         temperature_tolerance_c=temperature,
         time_flow_relative_tolerance=time_flow,
         sensitivity_relative_change=relative_change,
         sensitivity_relative_changes=changes_tuple,
         model_id=model,
+        display_force_unit="N",
+        display_pressure_unit="MPa",
     )
 
 

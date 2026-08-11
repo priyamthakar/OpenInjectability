@@ -10,6 +10,7 @@ from __future__ import annotations
 from collections.abc import Iterable
 from dataclasses import asdict, dataclass
 
+from ._version import __version__
 from .core import EXCLUSIONS, assess
 from .models import (
     AssessmentConfig,
@@ -21,7 +22,7 @@ from .models import (
     RejectedAssessment,
 )
 
-PACKAGE_VERSION = "0.1.0"
+PACKAGE_VERSION = __version__
 SCHEMA_VERSION = "1.0"
 MODEL_ID = "newtonian_hagen_poiseuille_v1"
 VALIDATION_STATUS = "internal_validation; experimental_validation_pending"
@@ -108,7 +109,9 @@ class OpenInjectabilityEngine:
                             row_number=row_number,
                             scenario_id=scenario_id,
                             error_type="InputValidationError",
+                            error_code="DUPLICATE_SCENARIO_ID",
                             message=f"duplicate scenario_id: {scenario_id!r}",
+                            field="scenario_id",
                         )
                     )
                     continue
@@ -121,7 +124,9 @@ class OpenInjectabilityEngine:
                         row_number=row_number,
                         scenario_id=scenario_id,
                         error_type=type(exc).__name__,
+                        error_code=exc.code,
                         message=str(exc),
+                        field=exc.field,
                     )
                 )
         return BatchResult(results=tuple(results), rejected=tuple(rejected))

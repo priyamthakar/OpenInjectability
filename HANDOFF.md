@@ -1,9 +1,14 @@
 # OpenInjectability handoff
 
-**Snapshot date:** 2026-08-02  
-**Package version:** `0.1.0`  
-**Lifecycle state:** alpha on PyPI; experimental validation still pending  
-**PyPI:** https://pypi.org/project/openinjectability/0.1.0/
+**Snapshot date:** 2026-08-11
+
+**Repository version:** `0.1.1` release candidate
+
+**Public version:** `0.1.0` alpha on PyPI
+
+**Lifecycle state:** 0.1.1 prepared locally; experimental validation still pending
+
+**PyPI:** https://pypi.org/project/openinjectability/
 
 ## Product destination
 
@@ -15,9 +20,9 @@ See [PROJECT_GOAL.md](PROJECT_GOAL.md). Result is always **predicted fluid-resis
 |---|---|
 | A — v0.1 hardening | **Done** |
 | B — spec completion | **Done** |
-| C — release gates | **Done** |
+| C — release gates | **Done locally for 0.1.1** (73 tests; 90.05% branch coverage; Ruff, format, mypy, build, Twine, installed-wheel smoke, rendered PDF review) |
 | D — independent experimental validation | **Literature `experimental_comparison` only** (digitized Allmendinger 2014); **not** independently validated |
-| E — public alpha release | **Done on PyPI** (`0.1.0`); full “validated” release still blocked on true D |
+| E — public alpha release | **0.1.0 on PyPI**; GitHub `pypi` environment configured; 0.1.1 awaits PyPI publisher registration, merge and release |
 
 Durable table: [docs/phase-status.md](docs/phase-status.md).
 
@@ -43,11 +48,28 @@ python -m pytest --cov=openinjectability --cov-branch --cov-fail-under=87
 - Notes: `docs/pdf-ingestion-2026-08-02.md`
 - Package `validation_status` remains `internal_validation; experimental_validation_pending`
 
+## 0.1.1 maintenance candidate
+
+- Single package-version source with agreement tests
+- Provenance-rich Markdown, HTML, and PDF reports
+- Synthetic formulation-scientist screening walkthrough
+- Repository-wide Ruff lint and format gates
+- GitHub OIDC Trusted Publishing workflow; local token upload removed
+- Complete reports, four required plot classes, row-level rejections and full audit bundle
+- Property-based tests and standalone arithmetic cross-implementation
+
+Requirement-level status: [COMPLETION_AUDIT.md](COMPLETION_AUDIT.md).
+
 ## Next objectives (honest)
 
 1. **Optional stronger D:** author SI tables or wet-lab friction-subtracted Newtonian rows → re-run `validate-experimental`; only then consider advancing validation vocabulary.
-2. **Ops:** revoke PyPI token if it was exposed in chat; create a new entire-account token in `~\.pypirc`.
-3. **Product:** use/monitor PyPI installs; patch releases as needed without overclaiming validation.
+2. **Release:** register the PyPI Trusted Publisher (the protected GitHub `pypi`
+   environment is configured), then merge the green draft PR and publish GitHub
+   release `v0.1.1`; all local and PR CI gates pass.
+3. **Security:** revoke the former PyPI API token; 0.1.1 publishing does not use
+   `~\.pypirc` or token environment variables.
+4. **Product:** use/monitor PyPI installs and collect formulation-scientist feedback
+   without overclaiming validation.
 
 ## Scientific boundary
 

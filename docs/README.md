@@ -1,6 +1,9 @@
 # Documentation index
 
-**Package:** [openinjectability 0.1.0 on PyPI](https://pypi.org/project/openinjectability/0.1.0/)  
+**Repository:** 0.1.1 maintenance release candidate
+
+**Public package:** [openinjectability 0.1.0 on PyPI](https://pypi.org/project/openinjectability/0.1.0/)
+
 **Status:** alpha — `internal_validation` / `experimental_validation_pending`
 
 ## Start here
@@ -10,10 +13,12 @@
 | [../README.md](../README.md) | Install, quick start, scientific boundary |
 | [phase-status.md](phase-status.md) | Phase A–E tracker |
 | [../HANDOFF.md](../HANDOFF.md) | Current engineering checkpoint |
+| [../COMPLETION_AUDIT.md](../COMPLETION_AUDIT.md) | Requirement-by-requirement completion evidence and blockers |
 | [../VALIDATION.md](../VALIDATION.md) | Claims-to-evidence map |
 | [scientific-basis.md](scientific-basis.md) | Equations and exclusions |
 | [input-schema.md](input-schema.md) | CSV / config inputs |
 | [interpretation.md](interpretation.md) | How to read results |
+| [formulation-screening-example.md](formulation-screening-example.md) | Synthetic CSV-to-report workflow for formulation scientists |
 | [roadmap.md](roadmap.md) | What’s done vs deferred |
 | [validation-protocol-lock.md](validation-protocol-lock.md) | Phase D protocol |
 | [../validation/experimental/README.md](../validation/experimental/README.md) | Experimental panel pipeline |
@@ -22,7 +27,7 @@
 
 | Doc | Purpose |
 |---|---|
-| [pypi-publish-blocker.md](pypi-publish-blocker.md) | PyPI 0.1.0 publish status + re-release commands |
+| [pypi-publish-blocker.md](pypi-publish-blocker.md) | 0.1.1 Trusted Publishing setup and release procedure |
 | [../CHANGELOG.md](../CHANGELOG.md) | Version history |
 | [../CITATION.cff](../CITATION.cff) | Citation metadata |
 

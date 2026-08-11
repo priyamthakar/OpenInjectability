@@ -41,29 +41,68 @@ _OPTIONAL_TEXT_FIELDS = (
 class OpenInjectabilityError(ValueError):
     """Base class for user-correctable assessment errors."""
 
+    default_code = "OPENINJECTABILITY_ERROR"
+
+    def __init__(
+        self,
+        message: str,
+        *,
+        code: str | None = None,
+        field: str | None = None,
+    ) -> None:
+        super().__init__(message)
+        self.code = code or self.default_code
+        self.field = field
+
 
 class InputValidationError(OpenInjectabilityError):
     """Input is missing, non-finite, non-positive, or internally inconsistent."""
 
+    default_code = "INPUT_VALIDATION_ERROR"
+
+
+class InputSchemaError(InputValidationError):
+    """Input file or structured payload does not satisfy the supported schema."""
+
+    default_code = "INPUT_SCHEMA_ERROR"
+
+
+class UnitError(InputValidationError):
+    """A declared unit is unsupported or inconsistent with the input contract."""
+
+    default_code = "UNIT_ERROR"
+
 
 class ScientificBoundaryError(OpenInjectabilityError):
     """Input requests science outside the validated model boundary."""
+
+    default_code = "SCIENTIFIC_BOUNDARY_ERROR"
+
+
+class ValidationRegistryError(OpenInjectabilityError):
+    """Installed validation registry is missing or inconsistent with the package."""
+
+    default_code = "VALIDATION_REGISTRY_ERROR"
 
 
 def _require_real_number(name: str, value: object) -> float:
     """Reject bool and non-numeric values; require a finite real number."""
 
     if isinstance(value, bool) or not isinstance(value, (int, float)):
-        raise InputValidationError(f"{name} must be a finite real number")
+        raise InputValidationError(
+            f"{name} must be a finite real number", code="INVALID_TYPE", field=name
+        )
     number = float(value)
     if not math.isfinite(number):
-        raise InputValidationError(f"{name} must be a finite real number")
+        raise InputValidationError(
+            f"{name} must be a finite real number", code="NONFINITE_VALUE", field=name
+        )
     return number
 
 
 def _require_text(name: str, value: object) -> str:
     if not isinstance(value, str):
-        raise InputValidationError(f"{name} must be a string")
+        raise InputValidationError(f"{name} must be a string", code="INVALID_TYPE", field=name)
     return value
 
 
@@ -76,6 +115,8 @@ class AssessmentConfig:
     sensitivity_relative_change: float = 0.10
     sensitivity_relative_changes: tuple[float, ...] | None = None
     model_id: str = "newtonian_hagen_poiseuille_v1"
+    display_force_unit: Literal["N"] = "N"
+    display_pressure_unit: Literal["MPa"] = "MPa"
 
 
 @dataclass(frozen=True)
@@ -108,6 +149,8 @@ class AssessmentInput:
     validated_shear_rate_max_s_1: float | None = None
     component_pressure_rating_pa: float | None = None
     geometry_tolerance_relative: float | None = None
+    validated_viscosity_min: float | None = None
+    validated_viscosity_max: float | None = None
 
     def __post_init__(self) -> None:
         """Construction-time runtime type checks (spec 10); scientific rules stay in core."""
@@ -115,8 +158,10 @@ class AssessmentInput:
         for name in _REQUIRED_TEXT_FIELDS:
             _require_text(name, getattr(self, name))
         if not isinstance(self.viscosity_unit, str) or self.viscosity_unit not in _VISCOSITY_UNITS:
-            raise InputValidationError(
-                "viscosity_unit must be one of 'cP', 'mPa_s', or 'Pa_s'"
+            raise UnitError(
+                "viscosity_unit must be one of 'cP', 'mPa_s', or 'Pa_s'",
+                code="UNSUPPORTED_VISCOSITY_UNIT",
+                field="viscosity_unit",
             )
         for name in _REQUIRED_NUMERIC_FIELDS:
             _require_real_number(name, getattr(self, name))
@@ -129,6 +174,8 @@ class AssessmentInput:
             "validated_shear_rate_max_s_1",
             "component_pressure_rating_pa",
             "geometry_tolerance_relative",
+            "validated_viscosity_min",
+            "validated_viscosity_max",
         ):
             value = getattr(self, name)
             if value is not None:
@@ -145,14 +192,18 @@ class AssessmentWarning:
     severity: Literal["info", "warning"]
     message: str
     field: str | None = None
+    remediation: str = "Review the declared input and its supporting evidence."
 
 
 @dataclass(frozen=True)
 class SensitivityItem:
     input_name: str
     relative_change: float
+    needle_pressure_drop_pa: float
+    pressure_relative_change: float
     fluid_resistance_force_n: float
     force_relative_change: float
+    analytical_force_elasticity: float
 
 
 @dataclass(frozen=True)
@@ -164,7 +215,9 @@ class AssessmentResult:
     generated_at_utc: str
     status: Literal["passed", "passed_with_warnings"]
     normalized_input: dict[str, Any]
+    provenance: dict[str, Any]
     outputs: dict[str, float | None]
+    diagnostic_reasons: dict[str, str]
     sensitivity: tuple[SensitivityItem, ...]
     warnings: tuple[AssessmentWarning, ...]
     exclusions: tuple[str, ...]
@@ -180,7 +233,9 @@ class RejectedAssessment:
     row_number: int
     scenario_id: str | None
     error_type: str
+    error_code: str
     message: str
+    field: str | None = None
 
 
 @dataclass(frozen=True)
